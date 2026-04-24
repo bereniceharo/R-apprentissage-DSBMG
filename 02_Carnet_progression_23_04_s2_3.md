@@ -148,13 +148,13 @@ Tu contrôles l'ordre des niveaux avec l'argument levels
 - **Prochaine étape** : Session 2.4 — Git + GitHub
 
 #### Session 2.4 — Git + GitHub
-- **Date** :
-- **Durée** :
-- **Prévu** :
-- **Fait** :
-- **Acquis** :
-- **Flou** :
-- **Prochaine étape** :
+- **Date** : 24 avril 2026
+- **Durée** : 01h 
+- **Prévu** : Git+gitHub
+- **Fait** :installation creation de compte et configurations gitHub 
+- **Acquis** : creation compte, commit, push, utilisation de Git
+- **Flou** : pourquoi les termes commits, push et versionner?
+- **Prochaine étape** : Data frame des indicateurs prioritaires
 
 #### Session 2.5 — Data frame des indicateurs prioritaires
 - **Date** :
