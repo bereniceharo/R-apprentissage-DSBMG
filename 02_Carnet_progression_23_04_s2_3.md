@@ -157,24 +157,28 @@ Tu contrôles l'ordre des niveaux avec l'argument levels
 - **Prochaine étape** : Data frame des indicateurs prioritaires
 
 #### Session 2.5 — Data frame des indicateurs prioritaires
-- **Date** :
-- **Durée** :
-- **Prévu** :
-- **Fait** :
-- **Acquis** :
+- **Date** : 26/04/2025
+- **Durée** : 01h
+- **Prévu** : dictionnaire avec data frame
+- **Fait** : 
+créer un dictionnaire d'indicateurs structuré à partir de ta réflexion métier, 
+identifier et corriger des problèmes de cohérence (espaces parasites, casse, nommage), 
+et mobiliser les acquis des sessions précédentes (indexation, filtrage, is.na(), 
+coercition logique)
+- **Acquis** : oui tout ce qui a était prévu
 - **Flou** :
-- **Prochaine étape** :
+- **Prochaine étape** : semaine 3
 
 #### Récapitulatif semaine 2
 
 | Compétence attendue | Auto-éval (1-5) | Commentaire |
 |---|---|---|
-| Créer un data frame manuellement | | |
-| Premier `git commit` et `git push` réussis | | |
-| Comprendre l'utilité d'un facteur | | |
+| Créer un data frame manuellement |4 | |
+| Premier `git commit` et `git push` réussis |4 | |
+| Comprendre l'utilité d'un facteur |4.5 | |
 
-**Décision** :
-**Points à réviser** :
+**Décision** : On progresse 
+**Points à réviser** : création d'un dossier clone sur gitHub
 
 ---
 
