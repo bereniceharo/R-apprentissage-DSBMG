@@ -178,7 +178,7 @@ coercition logique)
 | Comprendre l'utilité d'un facteur |4.5 | |
 
 **Décision** : On progresse 
-**Points à réviser** : création d'un dossier clone sur gitHub
+**Points à réviser** : facteur vs character
 
 ---
 
