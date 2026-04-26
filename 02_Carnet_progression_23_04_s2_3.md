@@ -188,6 +188,13 @@ coercition logique)
 **Heures totales investies** : ___ h
 
 #### Session 3.1 — Lire un CSV
+- **Date** : 26/04/2025
+- **Durée** : 01h
+- **Prévu** : la fonction read.csv() et read.csv2()
+- **Fait** : lire csv et connaitre les argument utilisés
+- **Acquis** : read.csv et read.csv2 avec les arguments na.string, head et encode
+- **Flou** : 
+- **Prochaine étape** : session 3.2 - lecture excel
 #### Session 3.2 — Lire un Excel
 #### Session 3.3 — Sauvegarder
 #### Session 3.4 — Chemins relatifs / projets RStudio
