@@ -224,6 +224,7 @@ Session 3.5 — Importation et inspection d'un vrai fichier ENDOS-BF : lignes ag
 **Heures totales investies** : ___ h
 
 #### Session 4.1 — `if/else`
+validé
 #### Session 4.2 — Boucles `for`
 #### Session 4.3 — Vectorisation et `apply`
 #### Session 4.4 — Fonctions personnalisées
