@@ -25,6 +25,26 @@ table(indic2025$statut_cpn4)
 
 table(indic2025$statut_cpn4)
 
+couvertures <- c(45, 72, 38, 61, 55)
+noms_fs <- c("CSPS Kossodo", "CSPS Tampouy", "CSPS Pazanni", 
+             "CSPS Kilwin", "CSPS Larlé")
+
+status <- character(5)
+for(i in 1:5){
+  if(couvertures[i]>= 50) { 
+    status[i] <- paste("norme", noms_fs[i], sep = " ")
+  } else {
+    status[i] <- paste("en alerte", noms_fs[i], sep = " ")
+  }
+}
+status
+
+
+
+
+
+
+
 
 
 
