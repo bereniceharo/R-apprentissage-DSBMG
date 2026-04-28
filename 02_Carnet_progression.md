@@ -243,10 +243,9 @@ complétée
 structure de la boucle for
     construction de la boucle for, application sur un vecteur
     de longueur 5, la fonction paste(), la fonction print(),
-    la fonction character pour la creation d'un vecteur vide pour stocker
-    les résultats de la boucle for
-- **Ce qui reste flou** quand il faut utiliser if/else et ifelse dans la 
-            boucle for?
+    la fonction character() pour la creation d'un vecteur vide pour stocker
+    les résultats de la boucle for, la fonction length()
+- **Ce qui reste flou** 
 #### Session 4.3 — Vectorisation et `apply`
 #### Session 4.4 — Fonctions personnalisées
 #### Session 4.5 — Fonctions avec arguments par défaut
