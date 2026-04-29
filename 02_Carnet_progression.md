@@ -246,7 +246,13 @@ structure de la boucle for
     la fonction character() pour la creation d'un vecteur vide pour stocker
     les résultats de la boucle for, la fonction length()
 - **Ce qui reste flou** 
-#### Session 4.3 — Vectorisation et `apply`
+#### Session 4.3 — Vectorisation et `apply
+- **Date et durée**: 29 avril, 02h
+- **Ce qui était prévu**  Vectorisation et `apply
+- **Ce qui a été fait** lapply, sapply, tapply
+- **Ce qui est acquis** vectorisation et les fonction du groupe apply
+- **Ce qui reste flou** 
+- **Prochaine étape** Fonctions personnalisées
 #### Session 4.4 — Fonctions personnalisées
 #### Session 4.5 — Fonctions avec arguments par défaut
 
