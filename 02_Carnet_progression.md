@@ -40,7 +40,7 @@ Pour chaque concept que tu vas inscrire, applique l'algorithme suivant — c'est
 Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 
 | Valeur | Signification |
-|-------------------|-----------------------------------------------------|
+|--------------------|----------------------------------------------------|
 | **À jour** | Aucune révision n'est encore due. Le J+1 (ou J+7, J+30) suivant n'est pas encore arrivé. |
 | **Dû J+1** | Le J+1 est arrivé ou dépassé, et la révision n'a pas été faite. |
 | **Dû J+7** | Le J+7 est arrivé ou dépassé, et la révision n'a pas été faite. |
@@ -52,13 +52,13 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | \# | Concept | Source/sessions | Date d'introduction | J+1 | J+7 | J+30 | Statut |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | 0 | Concepts fondamentaux R : assignation `<-`, opérateurs `=` vs `==`, fonctions et arguments | session 1.1, 1.2 | 19/04/2026 | 20/04/2026 | 26/04/2026 | 19/05/2026 | Dû J+7 |
-| 1 | Principaux types données, coercition, NA | session 1.3 | 22/04/2026 | 23/04/2026 | 29/04/2026 | 22/05/2026 | Dû J+7 |
-| 2 | Vecteurs, indexation | session 1.4 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | Dû J+7 |
-| 3 | Les fonctions du groupe which() | session 1.5 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | Dû J+7 |
-| 4 | Liste, indexation d'une liste | session 2.1 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | Dû J+7 |
-| 5 | Structures data frames et manipulations, facteurs | 2.2, 2.3 | 24/04/2026 | 25/04/2026 | 01/05/2026 | 24/05/2026 | Dû J+7 |
+| 1 | Principaux types données, coercition, NA | session 1.3 | 22/04/2026 | 23/04/2026 | 29/04/2026 | 22/05/2026 | Dû J+30 |
+| 2 | Vecteurs, indexation | session 1.4 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | Dû J+30 |
+| 3 | Les fonctions du groupe which() | session 1.5 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | Dû J+30 |
+| 4 | Liste, indexation d'une liste | session 2.1 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | Dû J+30 |
+| 5 | Structures data frames et manipulations, facteurs | 2.2, 2.3 | 24/04/2026 | 25/04/2026 | 01/05/2026 | 24/05/2026 | Dû J+30 |
 | 6 | GitHub, commits et push, versioning | 2.4 | 24/04/2026 | 25/04/2026 | 01/05/2026 | 24/05/2026 | Dû J+7 |
-| 7 | Indexation, filtrage, `is.na()`, coercition logique sur un data frame réel | 2.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+1 |
+| 7 | Indexation, filtrage, `is.na()`, coercition logique sur un data frame réel | 2.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+30 |
 | 8a | lecture de fichiers: `read.csv2()`,`read_excel`, piège francophone, | session 3.1, 3.2, 3.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+1 |
 | 8b | Sauvegarde fichier: `write.csv()`, `write_xlsx`, `saveRDS` | 3.3 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+1 |
 | 8c | Organisation de projet | 3.4 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+1 |
@@ -260,7 +260,7 @@ complétée - **Date et durée**: 27 avril, 01h - **Ce qui était prévu** condi
 #### Validation des indicateurs de progression du mois 1
 
 | Indicateur | Validé (Oui/Partiel/Non) | Commentaire |
-|------------------------------------|------------------|------------------|
+|------------------------------------|-------------------|-------------------|
 | Importer un Excel, filtrer, résumer, exporter sans aide |  |  |
 | Écrire une fonction qui prend des arguments et retourne un résultat |  |  |
 | Avoir un dépôt GitHub avec au moins 4 commits documentés |  |  |
@@ -301,7 +301,7 @@ complétée - **Date et durée**: 27 avril, 01h - **Ce qui était prévu** condi
 #### Validation des indicateurs de progression du mois 2
 
 | Indicateur                                           | Validé | Commentaire |
-|-------------------------------------|------------------|------------------|
+|------------------------------------|------------------|------------------|
 | Manipuler un dataset avec `dplyr` sans copier-coller |        |             |
 | Produire 5 types de graphiques différents            |        |             |
 | Pivoter des données entre format long et large       |        |             |
@@ -438,3 +438,5 @@ complétée - **Date et durée**: 27 avril, 01h - **Ce qui était prévu** condi
 ## NOTES LIBRES
 
 (Espace pour réflexions, idées, questions à poser plus tard, ressources à explorer, etc.)
+
+1er mai 2026 — Première application du cadre renforcé (7 dispositifs). Retrieval practice de 3 questions. 6 concepts consolidés à J+30. Capacité de reformulation post-séance fonctionnelle, à entretenir.
