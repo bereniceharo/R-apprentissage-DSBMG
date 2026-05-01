@@ -37,7 +37,7 @@ Pour chaque concept que tu vas inscrire, applique l'algorithme suivant — c'est
 
 ### Les 5 valeurs possibles — et seulement celles-là
 
-Pour éviter le flou, je te propose un vocabulaire fermé. Tu n'utilises que ces 5 valeurs :
+Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 
 | Valeur | Signification |
 |-------------------|-----------------------------------------------------|
