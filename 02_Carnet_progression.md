@@ -258,7 +258,7 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 -   **Fait** : lignes agrégées à identifier, NA structurels, décalage d'index avec which.max()
 -   **Acquis** : Importation et inspection d'un vrai fichier ENDOS-BF
 -   **Flou** : non
-- **Prochaine étape** : semaine 4
+- **Prochaine étape** : semaine 4, les fonctions
 #### Récapitulatif semaine 3 
 Session 3.1 — read.csv() vs read.csv2(), le piège francophone, les erreurs silencieuses d'importation. 
 Session 3.2 — read_excel() avec le paramètre sheet, excel_sheets() pour lister les feuilles. 
