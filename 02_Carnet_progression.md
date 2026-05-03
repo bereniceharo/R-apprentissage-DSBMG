@@ -50,21 +50,21 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 ### TABLE DE RAPPEL
 
 | \# | Concept | Source/sessions | Date d'introduction | J+1 | J+7 | J+30 | Statut |
-|-----|-----------------------|------------|---------|--------|---------|-------|-------------|
-| 0 | Concepts fondamentaux R : assignation `<-`, opérateurs `=` vs `==`, fonctions et arguments | session 1.1, 1.2 | 19/04/2026 | 20/04/2026 | 26/04/2026 | 19/05/2026 | Dû J+7 |
+|---------|---------|---------|---------|---------|---------|---------|---------|
+| 0 | Concepts fondamentaux R : assignation `<-`, opérateurs `=` vs `==`, fonctions et arguments | session 1.1, 1.2 | 19/04/2026 | 20/04/2026 | 26/04/2026 | 19/05/2026 | Dû J+30 |
 | 1 | Principaux types données, coercition, NA | session 1.3 | 22/04/2026 | 23/04/2026 | 29/04/2026 | 22/05/2026 | Dû J+30 |
 | 2 | Vecteurs, indexation | session 1.4 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | Dû J+30 |
 | 3 | Les fonctions du groupe which() | session 1.5 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | Dû J+30 |
 | 4 | Liste, indexation d'une liste | session 2.1 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | Dû J+30 |
 | 5 | Structures data frames et manipulations, facteurs | 2.2, 2.3 | 24/04/2026 | 25/04/2026 | 01/05/2026 | 24/05/2026 | Dû J+30 |
-| 6 | GitHub, commits et push, versioning | 2.4 | 24/04/2026 | 25/04/2026 | 01/05/2026 | 24/05/2026 | Dû J+7 |
+| 6 | GitHub, commits et push, versioning | 2.4 | 24/04/2026 | 25/04/2026 | 01/05/2026 | 24/05/2026 | Dû J+30 |
 | 7 | Indexation, filtrage, `is.na()`, coercition logique sur un data frame réel | 2.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+30 |
-| 8a | lecture de fichiers: `read.csv2()`,`read_excel`, piège francophone, | session 3.1, 3.2, 3.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+7 |
-| 8b | Sauvegarde fichier: `write.csv()`, `write_xlsx`, `saveRDS` | 3.3 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+7 |
-| 8c | Organisation de projet | 3.4 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+7 |
+| 8a | lecture de fichiers: `read.csv2()`,`read_excel`, piège francophone, | session 3.1, 3.2, 3.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+30 |
+| 8b | Sauvegarde fichier: `write.csv()`, `write_xlsx`, `saveRDS` | 3.3 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+30 |
+| 8c | Organisation de projet | 3.4 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+30 |
 | 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 04/05/2026 | 27/05/2026 | Dû J+7 |
 | 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 05/05/2026 | 28/05/2026 | Dû J+7 |
-| 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 06/05/2026 | 29/05/2026 | Dû J+1 |
+| 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 06/05/2026 | 29/05/2026 | Dû J+7 |
 |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |
@@ -301,7 +301,7 @@ complétée - **Date et durée**: 27 avril, 01h - **Ce qui était prévu** condi
 #### Validation des indicateurs de progression du mois 2
 
 | Indicateur                                           | Validé | Commentaire |
-|-----------------------------------------|---------------|---------------|
+|-------------------------------------|------------------|------------------|
 | Manipuler un dataset avec `dplyr` sans copier-coller |        |             |
 | Produire 5 types de graphiques différents            |        |             |
 | Pivoter des données entre format long et large       |        |             |
