@@ -356,20 +356,22 @@ complétée
 
 #### Mini-projet de fin de mois (`resumer_indicateur()`)
 
--   **Statut** :
--   **Lien GitHub** :
--   **Difficultés rencontrées** :
--   **Améliorations possibles** :
+-   **Statut** :complété et testé sur données réelles DS-BMG.
+-   **Lien GitHub** : https://github.com/bereniceharo/R-apprentissage-DSBMG.git
+-   **Difficultés rencontrées** : la selection de la colonne du df, df$colonne vs
+                                  df[[colonne]]
+-   **Améliorations possibles** : Pas d'ameliorations suggérée; adaptée pour mon niveau
 
 #### Réflexion personnelle
 
--   **Ce qui a marché dans ma méthode** :
--   **Ce qui n'a pas marché** :
--   **Ajustements pour le mois 2** :
+-   **Ce qui a marché dans ma méthode** : La methode learning by doing sur data réel
+-   **Ce qui n'a pas marché** : le respect des échéances des revisions par espacement,
+                                introduction de nouveaux concepts sans souvent les explicité clairement
+-   **Ajustements pour le mois 2** : Toujours bien expliquer les nouveaux concepts 
 
 #### Décision
 
--   [ ] Passer au mois 2
+-   [X] Passer au mois 2
 -   [ ] Consolider avant de continuer (préciser quoi : \_\_\_)
 -   [ ] Étaler le rythme (préciser : \_\_\_)
 
