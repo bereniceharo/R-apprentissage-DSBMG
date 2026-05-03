@@ -65,7 +65,7 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 04/05/2026 | 27/05/2026 | À jour |
 | 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 05/05/2026 | 28/05/2026 | À jour|
 | 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 06/05/2026 | 29/05/2026 | À jour |
-|  |  |  |  |  |  |  |  |
+| 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05 | 10/05 | 02/06 | À jour |  
 |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |
 
