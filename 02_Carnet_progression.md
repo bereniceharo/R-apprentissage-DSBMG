@@ -72,7 +72,7 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 06/05/2026 | 29/05/2026 | À jour |
 | 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05 | 10/05 | 02/06 | À jour |  
 | 13 |  Arguments par défaut, stop(), any(), early return| 4.5 | 03/05/2026 | 04/05 | 10/05 | 02/06 | À jour |
-|  |  |  |  |  |  |  |  |
+| 14 |df[[colonne]] vs df$colonne — accès dynamique à une colonne| mini-projet mois 1 | 03/05/2026 | 04/05 | 10/05 | 02/06 | À jour |
 |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |
@@ -327,7 +327,7 @@ complétée
   - stop() pour interrompre avec un message explicite
   - Gestion du mode débogage Browse[1]>
 - **Ce qui est acquis**:
-  - Calcul u taux avec unité paramétrable via argument par défaut
+  - Calcul d'un taux avec unité paramétrable via argument par défaut
   - Rejet les données invalides avec un message explicite
   - Fonction sur des vecteurs entiers, pas seulement des scalaires
 - **Ce qui reste flou**: la limite de stop() sur vecteur avec NA n'a pas été explorée 
