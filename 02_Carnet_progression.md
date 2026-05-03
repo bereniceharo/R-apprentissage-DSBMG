@@ -51,20 +51,20 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 
 | \# | Concept | Source/sessions | Date d'introduction | J+1 | J+7 | J+30 | Statut |
 |---------|---------|---------|---------|---------|---------|---------|---------|
-| 0 | Concepts fondamentaux R : assignation `<-`, opérateurs `=` vs `==`, fonctions et arguments | session 1.1, 1.2 | 19/04/2026 | 20/04/2026 | 26/04/2026 | 19/05/2026 | Dû J+30 |
-| 1 | Principaux types données, coercition, NA | session 1.3 | 22/04/2026 | 23/04/2026 | 29/04/2026 | 22/05/2026 | Dû J+30 |
-| 2 | Vecteurs, indexation | session 1.4 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | Dû J+30 |
-| 3 | Les fonctions du groupe which() | session 1.5 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | Dû J+30 |
-| 4 | Liste, indexation d'une liste | session 2.1 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | Dû J+30 |
-| 5 | Structures data frames et manipulations, facteurs | 2.2, 2.3 | 24/04/2026 | 25/04/2026 | 01/05/2026 | 24/05/2026 | Dû J+30 |
-| 6 | GitHub, commits et push, versioning | 2.4 | 24/04/2026 | 25/04/2026 | 01/05/2026 | 24/05/2026 | Dû J+30 |
-| 7 | Indexation, filtrage, `is.na()`, coercition logique sur un data frame réel | 2.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+30 |
-| 8a | lecture de fichiers: `read.csv2()`,`read_excel`, piège francophone, | session 3.1, 3.2, 3.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+30 |
-| 8b | Sauvegarde fichier: `write.csv()`, `write_xlsx`, `saveRDS` | 3.3 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+30 |
-| 8c | Organisation de projet | 3.4 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | Dû J+30 |
-| 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 04/05/2026 | 27/05/2026 | Dû J+7 |
-| 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 05/05/2026 | 28/05/2026 | Dû J+7 |
-| 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 06/05/2026 | 29/05/2026 | Dû J+7 |
+| 0 | Concepts fondamentaux R : assignation `<-`, opérateurs `=` vs `==`, fonctions et arguments | session 1.1, 1.2 | 19/04/2026 | 20/04/2026 | 26/04/2026 | 19/05/2026 | À jour |
+| 1 | Principaux types données, coercition, NA | session 1.3 | 22/04/2026 | 23/04/2026 | 29/04/2026 | 22/05/2026 | À jour |
+| 2 | Vecteurs, indexation | session 1.4 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | À jour |
+| 3 | Les fonctions du groupe which() | session 1.5 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | À jour |
+| 4 | Liste, indexation d'une liste | session 2.1 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | À jour |
+| 5 | Structures data frames et manipulations, facteurs | 2.2, 2.3 | 24/04/2026 | 25/04/2026 | 01/05/2026 | 24/05/2026 | À jour|
+| 6 | GitHub, commits et push, versioning | 2.4 | 24/04/2026 | 25/04/2026 | 01/05/2026 | 24/05/2026 | À jour |
+| 7 | Indexation, filtrage, `is.na()`, coercition logique sur un data frame réel | 2.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour|
+| 8a | lecture de fichiers: `read.csv2()`,`read_excel`, piège francophone, | session 3.1, 3.2, 3.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour|
+| 8b | Sauvegarde fichier: `write.csv()`, `write_xlsx`, `saveRDS` | 3.3 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour |
+| 8c | Organisation de projet | 3.4 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour |
+| 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 04/05/2026 | 27/05/2026 | À jour |
+| 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 05/05/2026 | 28/05/2026 | À jour|
+| 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 06/05/2026 | 29/05/2026 | À jour |
 |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |
@@ -167,7 +167,7 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 
 #### Session 2.2 — Data frames
 
--   **Date** : 24 avril 2025
+-   **Date** : 24 avril 2026
 -   **Durée** :1h30
 -   **Prévu** :data frame
 -   **Fait** :
@@ -194,7 +194,7 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 
 #### Session 2.5 — Data frame des indicateurs prioritaires
 
--   **Date** : 26/04/2025
+-   **Date** : 26/04/2026
 -   **Durée** : 01h
 -   **Prévu** : dictionnaire avec data frame
 -   **Fait** : créer un dictionnaire d'indicateurs structuré à partir de ta réflexion métier, identifier et corriger des problèmes de cohérence (espaces parasites, casse, nommage), et mobiliser les acquis des sessions précédentes (indexation, filtrage, is.na(), coercition logique)
@@ -220,13 +220,52 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 
 #### Session 3.1 — Lire un CSV
 
--   **Date** : 26/04/2025
+-   **Date** : 26/04/2026
 -   **Durée** : 01h
 -   **Prévu** : la fonction read.csv() et read.csv2()
 -   **Fait** : lire csv et connaitre les argument utilisés
 -   **Acquis** : read.csv et read.csv2 avec les arguments na.string, head et encode
 -   **Flou** :
--   **Prochaine étape** : session 3.2 - lecture excel \#### Session 3.2 — Lire un Excel completé \#### Session 3.3 — Sauvegarder complété \#### Session 3.4 — Chemins relatifs / projets RStudio complété \#### Session 3.5 — Cas réel ENDOS-BF complété \#### Récapitulatif semaine 3 Session 3.1 — read.csv() vs read.csv2(), le piège francophone, les erreurs silencieuses d'importation. Session 3.2 — read_excel() avec le paramètre sheet, excel_sheets() pour lister les feuilles. Session 3.3 — Trois formats de sauvegarde : write.csv2() pour partager, write_xlsx() pour l'institutionnel, saveRDS() pour toi. Le CSV perd les types, le RDS conserve tout. Session 3.4 — Chemins relatifs avec les projets RStudio, getwd(). Session 3.5 — Importation et inspection d'un vrai fichier ENDOS-BF : lignes agrégées à identifier, NA structurels, décalage d'index avec which.max().
+-   **Prochaine étape** : session 3.2 - lecture excel \
+#### Session 3.2 — Lire un Excel 
+-   **Date** : 26/04/2026
+-   **Durée** : 01h
+-   **Prévu** : lire un fichier excel
+-   **Fait** : read_excel() avec le paramètre sheet
+-   **Acquis** : lire excel
+-   **Flou** :
+- **Prochaine étape** : sauvegarder
+#### Session 3.3 — Sauvegarder
+-   **Date** : 26/04/2026
+-   **Durée** : 3o minutes
+-   **Prévu** : sauvegarde
+-   **Fait** : write.csv2() pour partager, write_xlsx() pour l'institutionnel
+-   **Acquis** : sauvegarde dans les trois formats principaux
+-   **Flou** : Non
+- **Prochaine étape** : Chemins relatifs / projets RStudio 
+#### Session 3.4 — Chemins relatifs / projets RStudio 
+-   **Date** : 26/04/2026
+-   **Durée** : 30 minutes
+-   **Prévu** : Chemins relatifs / projets RStudio 
+-   **Fait** : Chemins relatifs avec les projets RStudio, getwd()
+-   **Acquis** : Chemins relatifs avec les projets RStudio, getwd()
+-   **Flou** : non
+- **Prochaine étape** : cas réel ENDOS-BF
+#### Session 3.5 — Cas réel ENDOS-BF 
+-   **Date** : 26/04/2026
+-   **Durée** : 01h30
+-   **Prévu** :  Importation et inspection d'un vrai fichier ENDOS-BF
+-   **Fait** : lignes agrégées à identifier, NA structurels, décalage d'index avec which.max()
+-   **Acquis** : Importation et inspection d'un vrai fichier ENDOS-BF
+-   **Flou** : non
+- **Prochaine étape** : semaine 4
+#### Récapitulatif semaine 3 
+Session 3.1 — read.csv() vs read.csv2(), le piège francophone, les erreurs silencieuses d'importation. 
+Session 3.2 — read_excel() avec le paramètre sheet, excel_sheets() pour lister les feuilles. 
+Session 3.3 — Trois formats de sauvegarde : write.csv2() pour partager, write_xlsx() pour l'institutionnel, saveRDS() pour toi. 
+Le CSV perd les types, le RDS conserve tout. 
+Session 3.4 — Chemins relatifs avec les projets RStudio, getwd(). 
+Session 3.5 — Importation et inspection d'un vrai fichier ENDOS-BF : lignes agrégées à identifier, NA structurels, décalage d'index avec which.max().
 
 | Compétence attendue                           | Auto-éval (1-5) |
 |-----------------------------------------------|-----------------|
@@ -242,7 +281,34 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 
 #### Session 4.1 — `if/else`
 
-complétée - **Date et durée**: 27 avril, 01h - **Ce qui était prévu** conditions if/else - **Ce qui a été fait** if/else ifelse - **Ce qui est acquis** - conditions vectorisées avec `ifelse() **Ce qui reste flou** - lfelse imbriqué **Prochaine étape** Boucles`for`\#### Session 4.2 — Boucles`for`- **Date et durée**: 28 avril, 02h - **Ce qui était prévu** boucle for - **Ce qui a été fait** structure de la boucle for construction de la boucle for, application sur un vecteur de longueur 5, la fonction paste(), la fonction print(), la fonction character pour la creation d'un vecteur vide pour stocker les résultats de la boucle for - **Ce qui est acquis** structure de la boucle for construction de la boucle for, application sur un vecteur de longueur 5, la fonction paste(), la fonction print(), la fonction character() pour la creation d'un vecteur vide pour stocker les résultats de la boucle for, la fonction length() - **Ce qui reste flou** -  \#### Session 4.3 — Vectorisation et`apply - **Date et durée**: 29 avril, 02h - **Ce qui était prévu** Vectorisation et\`apply - **Ce qui a été fait** lapply, sapply, tapply - **Ce qui est acquis** vectorisation et les fonction du groupe apply - **Ce qui reste flou** - **Prochaine étape** Fonctions personnalisées \#### Session 4.4 — Fonctions personnalisées \#### Session 4.5 — Fonctions avec arguments par défaut
+complétée 
+- **Date et durée**: 27 avril, 01h 
+- **Ce qui était prévu** conditions if/else 
+- **Ce qui a été fait** if/else ifelse 
+- **Ce qui est acquis** - conditions vectorisées avec `ifelse() 
+**Ce qui reste flou** - lfelse imbriqué. flou clos.
+**Prochaine étape** Boucles`for`
+#### Session 4.2 — Boucles`for`
+- **Date et durée**: 28 avril 2026, 02h 
+- **Ce qui était prévu** boucle for 
+- **Ce qui a été fait** structure de la boucle for construction de la boucle for, application sur un vecteur de longueur 5, la fonction paste(), la fonction print(), la fonction character pour la creation d'un vecteur vide pour stocker les résultats de la boucle for 
+- **Ce qui est acquis** structure de la boucle for construction de la boucle for, application sur un vecteur de longueur 5, la fonction paste(), la fonction print(), la fonction character() pour la creation d'un vecteur vide pour stocker les résultats de la boucle for, la fonction length() 
+- **Ce qui reste flou**: non
+#### Session 4.3 — Vectorisation et`apply 
+- **Date et durée**: 29 avril 2026, 02h 
+- **Ce qui était prévu** Vectorisation et\`apply 
+- **Ce qui a été fait** lapply, sapply, tapply 
+- **Ce qui est acquis** vectorisation et les fonction du groupe apply 
+- **Ce qui reste flou**: non
+- **Prochaine étape** Fonctions personnalisées 
+#### Session 4.4 — Fonctions personnalisées 
+- **Date et durée**: 03 mai 2026, 01h30 
+- **Ce qui était prévu** Fonctions personnalisées 
+- **Ce qui a été fait** Structure d'une fonction, Écriture d'une fonction métier réelle, Test sur scalaires et cas limites, Application vectorisée sur un data frame de FS
+- **Ce qui est acquis** Structure d'une fonction, Écriture d'une fonction métier réelle, Test sur scalaires, Application vectorisée sur un data frame de FS
+- **Ce qui reste flou** gestion des cas limites
+- **Prochaine étape** Fonctions avec arguments par défaut
+#### Session 4.5 — Fonctions avec arguments par défaut
 
 #### Récapitulatif semaine 4
 
