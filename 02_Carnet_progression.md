@@ -8,8 +8,13 @@
 
 À mettre à jour **à la fin de chaque session** (5-10 minutes maximum). C'est un journal de bord, pas un mémoire — la valeur vient de la régularité, pas de l'exhaustivité.
 
-À chaque entrée : - **Date et durée** - **Ce qui était prévu**\
-- **Ce qui a été fait** - **Ce qui est acquis** - **Ce qui reste flou** - **Prochaine étape**
+À chaque entrée : 
+- **Date et durée** 
+- **Ce qui était prévu**
+- **Ce qui a été fait** 
+- **Ce qui est acquis** 
+- **Ce qui reste flou** 
+- **Prochaine étape**
 
 À la fin de chaque **semaine** : un récapitulatif court (auto-évaluation 1-5 sur les compétences attendues).
 
@@ -66,9 +71,13 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 05/05/2026 | 28/05/2026 | À jour|
 | 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 06/05/2026 | 29/05/2026 | À jour |
 | 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05 | 10/05 | 02/06 | À jour |  
+| 13 |  Arguments par défaut, stop(), any(), early return| 4.5 | 03/05/2026 | 04/05 | 10/05 | 02/06 | À jour |
 |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |
-
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
 ---
 ## SUIVI HEBDOMADAIRE
 ---
@@ -309,27 +318,41 @@ complétée
 - **Ce qui reste flou** gestion des cas limites
 - **Prochaine étape** Fonctions avec arguments par défaut
 #### Session 4.5 — Fonctions avec arguments par défaut
+- **Date et durée** : 3 mai 2026, 01h
+- **Ce qui était prévu**: Fonctions avec arguments par défaut
+- **Ce qui a été fait**:
+  - Arguments par défaut : syntaxe et comportement
+  - Early return : éliminer les cas invalides avant le corps principal
+  - any() pour évaluer une condition sur un vecteur
+  - stop() pour interrompre avec un message explicite
+  - Gestion du mode débogage Browse[1]>
+- **Ce qui est acquis**:
+  - Calcul u taux avec unité paramétrable via argument par défaut
+  - Rejet les données invalides avec un message explicite
+  - Fonction sur des vecteurs entiers, pas seulement des scalaires
+- **Ce qui reste flou**: la limite de stop() sur vecteur avec NA n'a pas été explorée 
+- **Prochaine étape**: semaine 5
 
 #### Récapitulatif semaine 4
 
 | Compétence attendue                                   | Auto-éval (1-5) |
 |-------------------------------------------------------|-----------------|
-| Écrire une fonction simple                            |                 |
-| Comprendre quand utiliser une boucle vs vectorisation |                 |
+| Écrire une fonction simple                            |        4        |
+| Comprendre quand utiliser une boucle vs vectorisation |      3.5        |
 
 ------------------------------------------------------------------------
 
 ### BILAN MOIS 1
 
-**Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales investies** : \_\_\_ h **Heures prévues** : 20-28 h
+**Période réelle** : du \_19\_04\_20\26_\_ au \_03\_05\_20\26_\_ **Heures totales investies** : \_\_\_ h **Heures prévues** : 20-28 h
 
 #### Validation des indicateurs de progression du mois 1
 
 | Indicateur | Validé (Oui/Partiel/Non) | Commentaire |
 |------------------------|------------------------|------------------------|
-| Importer un Excel, filtrer, résumer, exporter sans aide |  |  |
-| Écrire une fonction qui prend des arguments et retourne un résultat |  |  |
-| Avoir un dépôt GitHub avec au moins 4 commits documentés |  |  |
+| Importer un Excel, filtrer, résumer, exporter sans aide |  oui|  |
+| Écrire une fonction qui prend des arguments et retourne un résultat | oui |  |
+| Avoir un dépôt GitHub avec au moins 4 commits documentés | oui |  |
 
 #### Mini-projet de fin de mois (`resumer_indicateur()`)
 
