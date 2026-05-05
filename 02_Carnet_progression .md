@@ -76,8 +76,7 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | 15 | filter(), select(), arrange(), mutate(), pipe |> |5.1, 5.3|04/05/2026 | 05/05 | 11/05 | 03/06 | À jour |
 | 16 | grepl() — détection de pattern dans un vecteur character, table(), unique() | 5.1, 5.3 | 04/05/2026 | 05/05  | 11/05 | 03/06 | À jour |
 | 17 | group_by() + summarise() — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05 | 12/05 | 04/06 | À jour |
-|  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |
+| 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05 | 12/05 | 04/06 | À jour |
 |  |  |  |  |  |  |  |  |
 ---
 ## SUIVI HEBDOMADAIRE
@@ -445,26 +444,37 @@ complétée
 - **Ce qui reste flou** : distinction NaN vs NA à approfondir sur cas réels
 - **Prochaine étape** : Session 5.5 — exercice métier moyenne CPN4 par CSPS sur 12 mois
 
-#### Session 5.5 — Exercice métier : moyenne CPN4 par CSPS sur 12 mois
-- **Date et durée** :
+#### Session 5.5 — Exercice métier : moyenne CPN4 par CSPS
+- **Date et durée** : 05 mai 2026, ~1h
 - **Ce qui était prévu** : Exercice métier : moyenne CPN4 par CSPS sur 12 mois
 - **Ce qui a été fait** :
+  Adaptation de l'exercice — fichier FS_2025 en agrégat annuel, pas mensuel ;
+  calcul de la distribution CPN4 des CSPS (moyenne, min, max, nombre sous 50%) ;
+  identification et tri des 20 CSPS sous le seuil de 50% ;
+  interprétation de la valeur aberrante 219% (sous-estimation cible, erreur saisie, 
+  débordement d'aire) ;
+  lecture opérationnelle du résultat — CSPS Gueswende le plus critique à 12.8%
 - **Ce qui est acquis** :
-- **Ce qui reste flou** :
-- **Prochaine étape** :
+  Chaîne complète filter() + summarise() + select() + arrange() sur données réelles ;
+  sum() sur vecteur logique pour compter les lignes vérifiant une condition ;
+  lecture critique d'un résultat — valeur > 100% n'est pas automatiquement une erreur ;
+  20 CSPS sur 40 sous 50% de couverture CPN4 dans le DS-BMG en 2025
+- **Ce qui reste flou** : néant
+- **Prochaine étape** : Semaine 6 — tidyr et nettoyage des données
 
 #### Récapitulatif semaine 5
 
 | Compétence attendue | Auto-éval (1-5) | Commentaire |
 |---|---|---|
-| Utiliser le pipe `\|>` correctement | | |
-| Filtrer un data frame avec `filter()` | | |
-| Sélectionner des colonnes avec `select()` | | |
-| Trier avec `arrange()` et `desc()` | | |
-| Créer une colonne avec `mutate()` | | |
-| Grouper et résumer avec `group_by()` + `summarise()` | | |
+| Utiliser le pipe `\|>` correctement | 4 | |
+| Filtrer un data frame avec `filter()` | 4 | |
+| Sélectionner des colonnes avec `select()` | 4 | |
+| Trier avec `arrange()` et `desc()` | 4 | |
+| Créer une colonne avec `mutate()` | 4 | |
+| Grouper et résumer avec `group_by()` + `summarise()` | 4 | |
 
-**Décision** : **Points à réviser** :
+**Décision** : passer à la semaine 6
+**Points à réviser** : ordre des conditions ifelse() imbriqués
 
 ---
 
