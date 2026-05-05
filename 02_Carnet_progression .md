@@ -77,7 +77,7 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | 16 | grepl() — détection de pattern dans un vecteur character, table(), unique() | 5.1, 5.3 | 04/05/2026 | 05/05  | 11/05 | 03/06 | À jour |
 | 17 | group_by() + summarise() — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05 | 12/05 | 04/06 | À jour |
 | 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05 | 12/05 | 04/06 | À jour |
-|  |  |  |  |  |  |  |  |
+| 19|  |  |  |  |  |  |  |
 ---
 ## SUIVI HEBDOMADAIRE
 ---

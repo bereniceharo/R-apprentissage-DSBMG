@@ -96,6 +96,85 @@ indicateurs_2025[which.max(indicateurs_2025$`CibleFS-Couverture en CPN4 2025 FS 
                  c("organisationunitname", "CibleFS-Couverture en CPN4 2025 FS Public")]
 
 
+install.packages("epirhandbook")
+# install the latest version of the Epi R Handbook package
+pacman::p_install_gh("appliedepi/epirhandbook")
+
+fs <- c("CSPS Somgande", "CSPS Paspanga", "CSPS Karpala")
+couvertures <- c(72, 45, 88)
+
+fs_couverture <- character() 
+for(i in 1:length(couvertures)){
+  fs_couverture[i] <- paste("La FS",fs[i],"a une couverture de", paste0(couvertures[i],"%")) 
+  print(fs_couverture[i])}
+
+FS_2025 |>
+  filter(
+    !grepl("CM",`organisationunitname`),
+    !grepl("DS", `organisationunitname`),
+    !grepr("Dispensaire",`organisationunitname`)
+    !grepl("infirm", `organisationunitname`)
+    ) |>
+  select(`organisationunitname`,
+         `CibleFS-Couverture en CPN4 2025 FS Public`) |>
+  arrange(des(`CibleFS-Couverture en CPN4 2025 FS Public`))
+
+FS_2025 <- readRDS("district_2025.rds")
+type_fs <- FS_2025 |>
+  ifelse(grepl("CM",`organisationunitname`), "CM",
+         ifelse(grepl("CMA",`organisationunitname`), "CMA"),
+         ifelse(grepl("DS",`organisationunitname`), "District"),
+         ifelse(grepl("CSPS", `organisationunitname`), "CSPS"),
+         "Infirmerie et dispensaire"
+         )
+FS_2025_type <- FS_2025 |>
+  mutate(type_fs = ifelse(grepl("CMA",`organisationunitname`), "CMA",
+                          ifelse(grepl("CMU",`organisationunitname`), "CMU",
+                                 ifelse(grepl("CM",`organisationunitname`), "CM",
+                                        ifelse(grepl("DS",`organisationunitname`), "District",
+                                               ifelse(grepl("CSPS", `organisationunitname`), "CSPS",
+                                                      "Infirmerie et dispensaire")
+                                        )
+                                 )
+                          )
+  ))|>
+  group_by(type_fs)|>
+  summarise(moyen_cpn4 = mean(`CibleFS-Couverture en CPN4 2025 FS Public`,
+                              na.rm = TRUE))
+print(FS_2025_type)
+View(FS_2025)
+
+#Dans les CSPS uniquement,
+#quelle est la distribution de la couverture CPN4 — moyenne, 
+#minimum, maximum et nombre de CSPS sous 50%
+#retourne la moyenne des couvertures cpn4 des csps, la valeur maximale de couverture
+# des csps, le minimum et le mombre de FS ayant une couvertur de moins de 50%
+# On aura un tiblle de 4 colonnnes et une ligne
+csps_2025 <- FS_2025|>
+  filter(grepl("CSPS", organisationunitname))|>
+  summarise(
+    moyenne_cpn4_csps = mean(`CibleFS-Couverture en CPN4 2025 FS Public`, na.rm = TRUE),
+    max_cpn4_csps = max(`CibleFS-Couverture en CPN4 2025 FS Public`, na.rm = TRUE),
+    min_cpn4_csps = min(`CibleFS-Couverture en CPN4 2025 FS Public`, na.rm = TRUE),
+    nombre_csps_50 = sum(`CibleFS-Couverture en CPN4 2025 FS Public`< 50, na.rm = TRUE)
+  )
+print(csps_2025)
+#retourner liste csps à partir de leurs valeurs
+# Écris le code qui retourne la liste des CSPS avec leur couverture CPN4, 
+# triés du plus faible au plus élevé, en ne gardant que ceux sous 50%.  
+# retourne une table avec 2 colonnes et 20 lignes correspondant au nombre de csps
+csps_desc_50 <- FS_2025 |> 
+  filter(grepl("CSPS", organisationunitname)& `CibleFS-Couverture en CPN4 2025 FS Public`<50) |> 
+  select(organisationunitname, `CibleFS-Couverture en CPN4 2025 FS Public`) |>
+  arrange(`CibleFS-Couverture en CPN4 2025 FS Public`)
+print(csps_desc_50)
+
+
+
+
+
+
+
 
 
 
