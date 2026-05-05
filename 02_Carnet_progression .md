@@ -75,6 +75,7 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | 14 |df[[colonne]] vs df$colonne — accès dynamique à une colonne| mini-projet mois 1 | 03/05/2026 | 04/05 | 10/05 | 02/06 | À jour |
 | 15 | filter(), select(), arrange(), mutate(), pipe |> |5.1, 5.3|04/05/2026 | 05/05 | 11/05 | 03/06 | À jour |
 | 16 | grepl() — détection de pattern dans un vecteur character, table(), unique() | 5.1, 5.3 | 04/05/2026 | 05/05  | 11/05 | 03/06 | À jour |
+| 17 | group_by() + summarise() — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05 | 12/05 | 04/06 | À jour |
 |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |
@@ -179,10 +180,11 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 -   **Date** : 24 avril 2026
 -   **Durée** :1h30
 -   **Prévu** :data frame
--   **Fait** :
+-   **Fait** :structures data frame
 -   **Acquis** :structure du data frame, syntaxe [ligne, colonne], ajout de colonne, filtrage conditionnel
 -   **Flou** : le filtre et la selection des données dans une table surtout avec le vide avant et après dans les crochets
--   **Prochaine étape** : session 2.3 -facteurs \#### Session 2.3 — Facteurs
+-   **Prochaine étape** : session 2.3 -facteurs 
+#### Session 2.3 — Facteurs
 -   **Date** : 24/04/2026
 -   **Durée** :30 minutes
 -   **Prévu** :Facteurs
@@ -425,12 +427,23 @@ complétée
 - **Prochaine étape** :Session 5.4 — group_by() et summarise()
 
 #### Session 5.4 — `group_by()` et `summarise()`
-- **Date et durée** :
+- **Date et durée** : 05 mai 2026, ~1h30
 - **Ce qui était prévu** : `group_by()` et `summarise()`
-- **Ce qui a été fait** :
-- **Ce qui est acquis** :
-- **Ce qui reste flou** :
-- **Prochaine étape** :
+- **Ce qui a été fait** : 
+  Mécanique de group_by() — étiquettes invisibles sans réduction de lignes ; 
+  summarise() pour calculer une statistique par groupe ; 
+  création d'une colonne type_fs avec mutate() + ifelse() imbriqués ; 
+  piège de l'ordre des conditions grepl() (spécifique avant général) ; 
+  calcul de moyenne CPN4 par type de FS sur données réelles DS-BMG ; 
+  summarise() multi-statistiques (mean, min, max) en une seule chaîne
+- **Ce qui est acquis** : 
+  group_by() seul ne modifie pas le nombre de lignes ; 
+  summarise() réduit à une ligne par groupe ; 
+  na.rm = TRUE obligatoire — un seul NA contamine tout le groupe ; 
+  NaN = na.rm a exclu toutes les valeurs (groupe entièrement vide) ; 
+  ordre des ifelse() imbriqués : du plus spécifique au plus général
+- **Ce qui reste flou** : distinction NaN vs NA à approfondir sur cas réels
+- **Prochaine étape** : Session 5.5 — exercice métier moyenne CPN4 par CSPS sur 12 mois
 
 #### Session 5.5 — Exercice métier : moyenne CPN4 par CSPS sur 12 mois
 - **Date et durée** :

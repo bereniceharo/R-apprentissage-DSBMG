@@ -24,3 +24,6 @@ resumer_indicateur(indicateurs_2025,
 
 indicateurs_2025[which.max(indicateurs_2025$`CibleFS-Couverture en CPN4 2025 FS Public`), 
                  c("organisationunitname", "CibleFS-Couverture en CPN4 2025 FS Public")]
+str(indicateurs_2025)
+head(indicateurs_2025)
+dim(indicateurs_2025)

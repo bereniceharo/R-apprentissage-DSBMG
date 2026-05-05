@@ -26,6 +26,17 @@ indic25$organisationunitname[25]
 indic25$`Nombre de CPN4 2025 FS Public`[25]
 
 max(indic25$`Nombre de CPN4 2025 FS Public`[-1], na.rm = TRUE)
+saveRDS(indicateurs_2025, "district_2025.RDS")
+
+district_2025 <- readRDS("district_2025.RDS")
+head(district_2025, 10)
+dim(district_2025)
+colnames(district_2025)
+
+
+
+
+
 
 
 
