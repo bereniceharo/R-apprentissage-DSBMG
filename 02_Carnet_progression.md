@@ -26,19 +26,21 @@
 
 Cette table tient le compte des concepts à réviser selon le calendrier J+1, J+7, J+30. À chaque session, Claude pose une question sur un concept dont la révision est due. - Bonne réponse → cocher la case et passer à l'échéance suivante. - Erreur ou hésitation → laisser la case vide, le concept reste dû.
 
-Pour chaque concept que tu vas inscrire, applique l'algorithme suivant — c'est mécanique, tu ne devrais jamais hésiter :
+Pour chaque concept inscrit dans la table, Claude applique 
+l'algorithme suivant en début de session, en utilisant 
+exclusivement la date réelle du jour (jamais une date 
+inscrite dans ce carnet) :
 
-1.  Calcule J+1, J+7, J+30 à partir de la date d'introduction.
+1. Si la date d'introduction est égale à la date du jour
+   → "À jour" (aucune révision n'est encore due)
 
-2.  Compare à aujourd'hui (1er mai 2026)
+2. Sinon, si J+30 est dépassé → "Dû J+30"
 
-3.  Si **J+30 dépassé** → *"Dû J+30"*. Sinon →
+3. Sinon, si J+7 est dépassé → "Dû J+7"
 
-4.  Si **J+7 dépassé** → *"Dû J+7"*. Sinon →
+4. Sinon, si J+1 est dépassé → "Dû J+1"
 
-5.  Si **J+1 dépassé** → *"Dû J+1"*. Sinon →
-
-6.  → *"À jour"*.
+5. Sinon → "À jour"
 
 ### Les 5 valeurs possibles — et seulement celles-là
 
