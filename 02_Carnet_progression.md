@@ -24,7 +24,10 @@
 
 ## TABLE DE RAPPEL PAR ESPACEMENT
 
-Cette table tient le compte des concepts à réviser selon le calendrier J+1, J+7, J+30. À chaque session, Claude pose une question sur un concept dont la révision est due. - Bonne réponse → cocher la case et passer à l'échéance suivante. - Erreur ou hésitation → laisser la case vide, le concept reste dû.
+Cette table tient le compte des concepts à réviser selon le calendrier J+1, J+7, J+30. 
+À chaque session, Claude pose une question sur un concept dont la révision est due.
+- Bonne réponse → cocher la case et passer à l'échéance suivante. 
+- Erreur ou hésitation → laisser la case vide, le concept reste dû.
 
 Pour chaque concept inscrit dans la table, Claude applique 
 l'algorithme suivant en début de session, en utilisant 
