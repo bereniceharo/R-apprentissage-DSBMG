@@ -38,3 +38,11 @@ ncol(csps_2025)
 names(csps_2025)
 sum(is.na(csps_2025_long$valeur))
 
+saveRDS(csps_2025, "csps_2025.rds")
+saveRDS(csps_2025_long, "csps_2025_long.rds")
+
+
+
+
+
+
