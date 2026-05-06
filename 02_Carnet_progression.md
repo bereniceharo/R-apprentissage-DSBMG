@@ -72,17 +72,18 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | 8a | Lecture de fichiers : `read.csv2()`, `read_excel`, piège francophone | session 3.1, 3.2, 3.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour |
 | 8b | Sauvegarde fichier : `write.csv2()`, `write_xlsx`, `saveRDS` | 3.3 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour |
 | 8c | Organisation de projet | 3.4 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour |
-| 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 04/05/2026 | 27/05/2026 | Dû J+7 |
-| 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 05/05/2026 | 28/05/2026 | Dû J+7 |
-| 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 06/05/2026 | 29/05/2026 | Dû J+7 |
-| 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 02/06/2026 | Dû J+1 |
-| 13 | Arguments par défaut, stop(), any(), early return | 4.5 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 02/06/2026 | Dû J+1 |
-| 14 | `df[[colonne]]` vs `df$colonne` — accès dynamique à une colonne | mini-projet mois 1 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 02/06/2026 | Dû J+1 |
+| 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 04/05/2026 | 27/05/2026 | À jour |
+| 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 05/05/2026 | 28/05/2026 | À jour |
+| 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 06/05/2026 | 29/05/2026 | À jour |
+| 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 02/06/2026 | À jour |
+| 13 | Arguments par défaut, stop(), any(), early return | 4.5 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 02/06/2026 | À jour |
+| 14 | `df[[colonne]]` vs `df$colonne` — accès dynamique à une colonne | mini-projet mois 1 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 02/06/2026 | À jour |
 | 15 | `filter()`, `select()`, `arrange()`, `mutate()`, pipe `\|>` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 11/05/2026 | 03/06/2026 | Dû J+1 |
 | 16 | `grepl()` — détection de pattern dans un vecteur character, `table()`, `unique()` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 11/05/2026 | 03/06/2026 | Dû J+1 |
 | 17 | `group_by()` + `summarise()` — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05/2026 | 12/05/2026 | 04/06/2026 | À jour |
 | 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05/2026 | 12/05/2026 | 04/06/2026 | Dû J+1 |
 | 19 | `pivot_longer()` / `pivot_wider()` — format large vs long | 6.1 | 06/05/2026 | 07/05/2026 | 13/05/2026 | 05/06/2026 | À jour |
+| 20 | Import structuré multi-niveaux : `col_names = FALSE`, `unlist()`, forward fill, `colnames()` | 6.1 rappels | 06/05/2026 | 07/05/2026 | 13/05/2026 | 05/06/2026 | À jour |
 ---
 ## SUIVI HEBDOMADAIRE
 ---
