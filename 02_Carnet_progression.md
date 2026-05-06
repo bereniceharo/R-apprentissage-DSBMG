@@ -59,30 +59,30 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 
 ### TABLE DE RAPPEL
 
-| \# | Concept | Source/sessions | Date d'introduction | J+1 | J+7 | J+30 | Statut |
+| # | Concept | Source/sessions | Date d'introduction | J+1 | J+7 | J+30 | Statut |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | 0 | Concepts fondamentaux R : assignation `<-`, opérateurs `=` vs `==`, fonctions et arguments | session 1.1, 1.2 | 19/04/2026 | 20/04/2026 | 26/04/2026 | 19/05/2026 | À jour |
 | 1 | Principaux types données, coercition, NA | session 1.3 | 22/04/2026 | 23/04/2026 | 29/04/2026 | 22/05/2026 | À jour |
 | 2 | Vecteurs, indexation | session 1.4 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | À jour |
 | 3 | Les fonctions du groupe which() | session 1.5 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | À jour |
 | 4 | Liste, indexation d'une liste | session 2.1 | 23/04/2026 | 24/04/2026 | 30/04/2026 | 23/05/2026 | À jour |
-| 5 | Structures data frames et manipulations, facteurs | 2.2, 2.3 | 24/04/2026 | 25/04/2026 | 01/05/2026 | 24/05/2026 | À jour|
+| 5 | Structures data frames et manipulations, facteurs | 2.2, 2.3 | 24/04/2026 | 25/04/2026 | 01/05/2026 | 24/05/2026 | À jour |
 | 6 | GitHub, commits et push, versioning | 2.4 | 24/04/2026 | 25/04/2026 | 01/05/2026 | 24/05/2026 | À jour |
-| 7 | Indexation, filtrage, `is.na()`, coercition logique sur un data frame réel | 2.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour|
-| 8a | lecture de fichiers: `read.csv2()`,`read_excel`, piège francophone, | session 3.1, 3.2, 3.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour|
-| 8b | Sauvegarde fichier: `write.csv()`, `write_xlsx`, `saveRDS` | 3.3 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour |
+| 7 | Indexation, filtrage, `is.na()`, coercition logique sur un data frame réel | 2.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour |
+| 8a | Lecture de fichiers : `read.csv2()`, `read_excel`, piège francophone | session 3.1, 3.2, 3.5 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour |
+| 8b | Sauvegarde fichier : `write.csv2()`, `write_xlsx`, `saveRDS` | 3.3 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour |
 | 8c | Organisation de projet | 3.4 | 26/04/2026 | 27/04/2026 | 03/05/2026 | 26/05/2026 | À jour |
-| 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 04/05/2026 | 27/05/2026 | À jour |
-| 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 05/05/2026 | 28/05/2026 | À jour|
-| 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 06/05/2026 | 29/05/2026 | À jour |
-| 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05 | 10/05 | 02/06 | À jour |  
-| 13 |  Arguments par défaut, stop(), any(), early return| 4.5 | 03/05/2026 | 04/05 | 10/05 | 02/06 | À jour |
-| 14 |df[[colonne]] vs df$colonne — accès dynamique à une colonne| mini-projet mois 1 | 03/05/2026 | 04/05 | 10/05 | 02/06 | À jour |
-| 15 | filter(), select(), arrange(), mutate(), pipe |> |5.1, 5.3|04/05/2026 | 05/05 | 11/05 | 03/06 | À jour |
-| 16 | grepl() — détection de pattern dans un vecteur character, table(), unique() | 5.1, 5.3 | 04/05/2026 | 05/05  | 11/05 | 03/06 | À jour |
-| 17 | group_by() + summarise() — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05 | 12/05 | 04/06 | À jour |
-| 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05 | 12/05 | 04/06 | À jour |
-| 19|  |  |  |  |  |  |
+| 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 04/05/2026 | 27/05/2026 | Dû J+7 |
+| 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 05/05/2026 | 28/05/2026 | Dû J+7 |
+| 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 06/05/2026 | 29/05/2026 | Dû J+7 |
+| 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 02/06/2026 | Dû J+1 |
+| 13 | Arguments par défaut, stop(), any(), early return | 4.5 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 02/06/2026 | Dû J+1 |
+| 14 | `df[[colonne]]` vs `df$colonne` — accès dynamique à une colonne | mini-projet mois 1 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 02/06/2026 | Dû J+1 |
+| 15 | `filter()`, `select()`, `arrange()`, `mutate()`, pipe `\|>` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 11/05/2026 | 03/06/2026 | Dû J+1 |
+| 16 | `grepl()` — détection de pattern dans un vecteur character, `table()`, `unique()` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 11/05/2026 | 03/06/2026 | Dû J+1 |
+| 17 | `group_by()` + `summarise()` — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05/2026 | 12/05/2026 | 04/06/2026 | À jour |
+| 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05/2026 | 12/05/2026 | 04/06/2026 | Dû J+1 |
+| 19 | `pivot_longer()` / `pivot_wider()` — format large vs long | 6.1 | 06/05/2026 | 07/05/2026 | 13/05/2026 | 05/06/2026 | À jour |
 ---
 ## SUIVI HEBDOMADAIRE
 ---
@@ -488,12 +488,23 @@ complétée
 **Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales investies** : \_\_\_ h
 
 #### Session 6.1 — `pivot_longer()` et `pivot_wider()`
-- **Date et durée** :
+- **Date et durée** : 06/05/2026, ~1h30
 - **Ce qui était prévu** : `pivot_longer()` et `pivot_wider()` (format long vs large)
-- **Ce qui a été fait** :
-- **Ce qui est acquis** :
-- **Ce qui reste flou** :
-- **Prochaine étape** :
+- **Ce qui a été fait** : 
+  Distinction format large vs format long — critère : les noms 
+  d'indicateurs sont-ils des en-têtes de colonnes ou des valeurs ;
+  pivot_longer() — cols, names_to, values_to, values_drop_na ;
+  pivot_wider() — names_from, values_from ;
+  application sur données réelles DS-BMG : 40 CSPS × 33 indicateurs 
+  → 1320 lignes ; clarification sur l'usage métier du format long 
+  (facet_wrap, heatmap, automatisation)
+- **Ce qui est acquis** : 
+  pivot_longer() transforme les noms de colonnes en valeurs ;
+  pivot_wider() fait l'inverse ;
+  cols = -colonne_id pour exclure l'identifiant du pivot ;
+  values_drop_na = TRUE pour alléger le data frame
+- **Ce qui reste flou** : néant
+- **Prochaine étape** : Session 6.2 — separate() et unite()
 
 #### Session 6.2 — `separate()` et `unite()`
 - **Date et durée** :
@@ -1709,7 +1720,7 @@ complétée
 - [ ] Consolidation par projets concrets seulement
 - [ ] Formation d'autres MCD à R
 - [ ] Autre :
-
+|> 
 ------------------------------------------------------------------------
 
 ## NOTES LIBRES

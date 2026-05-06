@@ -143,14 +143,14 @@ FS_2025_type <- FS_2025 |>
                               na.rm = TRUE))
 print(FS_2025_type)
 View(FS_2025)
-
+library(dplyr)
 #Dans les CSPS uniquement,
 #quelle est la distribution de la couverture CPN4 — moyenne, 
 #minimum, maximum et nombre de CSPS sous 50%
 #retourne la moyenne des couvertures cpn4 des csps, la valeur maximale de couverture
 # des csps, le minimum et le mombre de FS ayant une couvertur de moins de 50%
 # On aura un tiblle de 4 colonnnes et une ligne
-csps_2025 <- FS_2025|>
+csps_2025 <- indicateurs_2025|>
   filter(grepl("CSPS", organisationunitname))|>
   summarise(
     moyenne_cpn4_csps = mean(`CibleFS-Couverture en CPN4 2025 FS Public`, na.rm = TRUE),
@@ -169,7 +169,7 @@ csps_desc_50 <- FS_2025 |>
   arrange(`CibleFS-Couverture en CPN4 2025 FS Public`)
 print(csps_desc_50)
 
-
+dim(csps_2025)
 
 
 
