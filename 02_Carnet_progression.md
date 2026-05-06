@@ -497,7 +497,7 @@ complétée
   pivot_longer() — cols, names_to, values_to, values_drop_na ;
   pivot_wider() — names_from, values_from ;
   application sur données réelles DS-BMG : 40 CSPS × 33 indicateurs 
-  → 1320 lignes ; clarification sur l'usage métier du format long 
+  → 1320 lignes ; clarification sur l'usage métier format long 
   (facet_wrap, heatmap, automatisation)
 - **Ce qui est acquis** : 
   pivot_longer() transforme les noms de colonnes en valeurs ;
