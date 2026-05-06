@@ -1716,4 +1716,19 @@ complétée
 
 (Espace pour réflexions, idées, questions à poser plus tard, ressources à explorer, etc.)
 
-1er mai 2026 — Première application du cadre renforcé (7 dispositifs). Retrieval practice de 3 questions. 6 concepts consolidés à J+30. Capacité de reformulation post-séance fonctionnelle, à entretenir.
+#1er mai 2026 — Première application du cadre renforcé (7 dispositifs).
+Retrieval practice de 3 questions. 6 concepts consolidés à J+30. 
+Capacité de reformulation post-séance fonctionnelle, à entretenir.
+
+#05 mai 2026 — Session technique : connexion Claude → GitHub opérationnelle.
+
+- URL de lecture directe configurée :
+  https://raw.githubusercontent.com/bereniceharo/R-apprentissage-DSBMG/refs/heads/main/02_Carnet_progression.md
+- Dépôt rendu public pour permettre le fetch sans authentification
+- Algorithme de la TABLE DE RAPPEL corrigé : suppression de la date figée 
+  "1er mai 2026" — Claude calcule désormais les statuts à partir de la date 
+  réelle du jour, annoncée explicitement en début de session
+- Leçon Git apprise : toujours vérifier avec grep + git diff avant de commiter ;
+  un commit vide ne modifie pas le fichier sur GitHub
+- Commande de vérification à retenir :
+  grep -c "Compare à aujourd'hui" 02_Carnet_progression.md && echo "PROBLEME" || echo "OK"
