@@ -565,6 +565,7 @@ complétée
 
 #### Session 7.2 — Bar charts
 - **Date et durée** :
+- **Ce qui était prévu** : Bar charts pour comparer des FS
 - **Ce qui a été fait** :
 - **Ce qui est acquis** :
 - **Ce qui reste flou** :
