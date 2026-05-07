@@ -37,7 +37,6 @@ inscrite dans ce carnet) :
 1. Si la date d'introduction est égale à la date du jour
    → "À jour" (aucune révision n'est encore due)
 
-2. Sinon, si J+30 est dépassé → "Dû J+30"
 
 3. Sinon, si J+7 est dépassé → "Dû J+7"
 
