@@ -36,8 +36,7 @@ inscrite dans ce carnet) :
 
 1. Si la date d'introduction est égale à la date du jour
    → "À jour" (aucune révision n'est encore due)
-
-
+2. Sinon, si J+30 est dépassé → "Dû J+30"
 3. Sinon, si J+7 est dépassé → "Dû J+7"
 
 4. Sinon, si J+1 est dépassé → "Dû J+1"
@@ -83,6 +82,10 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05/2026 | 12/05/2026 | 04/06/2026 | Dû J+1 |
 | 19 | `pivot_longer()` / `pivot_wider()` — format large vs long | 6.1 | 06/05/2026 | 07/05/2026 | 13/05/2026 | 05/06/2026 | À jour |
 | 20 | Import structuré multi-niveaux : `col_names = FALSE`, `unlist()`, forward fill, `colnames()` | 6.1 rappels | 06/05/2026 | 07/05/2026 | 13/05/2026 | 05/06/2026 | À jour |
+| 21 | `str_to_upper/lower()`, `str_squish()`, `str_replace()` — normalisation de chaînes de caractères | 6.4 | 07/05/2026 | 08/05/2026 | 14/05/2026 |04/06/2026 | À jour |
+| 22 | `separate()` et `unite()` — découpage et fusion de colonnes | 6.2 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
+| 23 | `complete.cases()`, `replace_na()` — gestion des NA dans un pipeline | 6.3 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
+
 ---
 ## SUIVI HEBDOMADAIRE
 ---
@@ -507,28 +510,50 @@ complétée
 - **Prochaine étape** : Session 6.2 — separate() et unite()
 
 #### Session 6.2 — `separate()` et `unite()`
-- **Date et durée** :
+- **Date et durée** : 07/05/2026, ~30min
 - **Ce qui était prévu** : `separate()`, `unite()`
 - **Ce qui a été fait** :
+  separate() — découper une colonne composite en plusieurs colonnes ;
+  unite() — fusionner plusieurs colonnes en une seule ;
+  application sur format période "2025-T1" → colonnes annee + trimestre
 - **Ce qui est acquis** :
-- **Ce qui reste flou** :
-- **Prochaine étape** :
+  separate() : col, into, sep — colonne d'origine supprimée par défaut (remove = TRUE) ;
+  si le séparateur est absent, R produit un Warning (pas une erreur) et retourne NA ;
+  unite() : col, colonnes sources, sep — symétrique à separate() ;
+  ordre des arguments : donner le séparateur visible dans les données, pas celui souhaité
+- **Ce qui reste flou** : néant
+- **Prochaine étape** : Session 6.3
 
 #### Session 6.3 — Gestion des `NA`
-- **Date et durée** :
+- **Date et durée** : 07/05/2026, ~20min
 - **Ce qui était prévu** : Gestion des `NA` : `na.rm`, `complete.cases()`, `replace_na()`
 - **Ce qui a été fait** :
+  na.rm = TRUE dans les fonctions statistiques ;
+  complete.cases() pour identifier les lignes sans aucun NA ;
+  replace_na() pour substituer les NA par une valeur, y compris une valeur calculée
 - **Ce qui est acquis** :
-- **Ce qui reste flou** :
-- **Prochaine étape** :
+  complete.cases() retourne un vecteur logique — TRUE si ligne complète, FALSE sinon ;
+  mean() sans na.rm retourne NA dès qu'un seul NA est présent ;
+  replace_na(col, mean(col, na.rm = TRUE)) — imputation par la moyenne en une ligne
+- **Ce qui reste flou** : néant
+- **Prochaine étape** : Session 6.4
 
 #### Session 6.4 — `stringr` initial : noms de FS incohérents
-- **Date et durée** :
+- **Date et durée** : 07/05/2026, ~1h
 - **Ce qui était prévu** : `stringr` initial : noms de FS incohérents
 - **Ce qui a été fait** :
+  str_to_upper() / str_to_lower() pour normaliser la casse ;
+  str_squish() pour supprimer les espaces parasites internes et externes ;
+  str_replace() pour remplacer des abréviations par des formes complètes ;
+  application sur données réelles TLOH 2026 DS-BMG (noms de maladies
+  incohérents entre feuilles 2025 et 2026)
 - **Ce qui est acquis** :
-- **Ce qui reste flou** :
-- **Prochaine étape** :
+  str_to_upper() conserve les accents (È, É, Ü) ;
+  str_squish() et str_to_upper() sont indépendantes — ordre indifférent ;
+  str_replace() cherche le pattern partout dans la chaîne — risque de
+  correspondance partielle sur les abréviations courtes (\\b pour y remédier)
+- **Ce qui reste flou** : néant
+- **Prochaine étape** : Session 6.5 — cas réel nettoyage fichier supervision
 
 #### Session 6.5 — Cas réel : nettoyer un fichier de supervision
 - **Date et durée** :

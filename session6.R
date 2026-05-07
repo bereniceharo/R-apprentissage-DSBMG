@@ -47,7 +47,7 @@ excel_sheets("SYNTHESE_TLOH_2026_DS_BLMG.xlsx")
 synthese_tloh_2025 <- read_excel("SYNTHESE_TLOH_2026_DS_BLMG.xlsx", sheet = "TLOH_2025_SYNTHESE")
 dim(tloh_2026)
 dim(synthese_tloh_2025)
-str(tloh_2026)
+str(tloh_2026))
 
 
 
