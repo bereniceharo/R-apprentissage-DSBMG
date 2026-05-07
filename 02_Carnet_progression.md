@@ -1743,4 +1743,3 @@ Capacité de reformulation post-séance fonctionnelle, à entretenir.
 - Leçon Git apprise : toujours vérifier avec grep + git diff avant de commiter ;
   un commit vide ne modifie pas le fichier sur GitHub
 - Commande de vérification à retenir :
-  grep -c "Compare à aujourd'hui" 02_Carnet_progression.md && echo "PROBLEME" || echo "OK"
