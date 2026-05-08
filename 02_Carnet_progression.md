@@ -85,7 +85,7 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | 21 | `str_to_upper/lower()`, `str_squish()`, `str_replace()` — normalisation de chaînes de caractères | 6.4 | 07/05/2026 | 08/05/2026 | 14/05/2026 |04/06/2026 | À jour |
 | 22 | `separate()` et `unite()` — découpage et fusion de colonnes | 6.2 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
 | 23 | `complete.cases()`, `replace_na()` — gestion des NA dans un pipeline | 6.3 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
-
+| 24 | `identical()` — vérifier l'égalité exacte de deux objets R | 6.5 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
 ---
 ## SUIVI HEBDOMADAIRE
 ---
@@ -556,23 +556,32 @@ complétée
 - **Prochaine étape** : Session 6.5 — cas réel nettoyage fichier supervision
 
 #### Session 6.5 — Cas réel : nettoyer un fichier de supervision
-- **Date et durée** :
-- **Ce qui était prévu** : Cas réel : nettoyer un fichier de supervision avec problèmes typiques
+- **Date et durée** : 07/05/2026, ~1h
+- **Ce qui était prévu** : Cas réel : nettoyer un fichier de supervision 
+  avec problèmes typiques
 - **Ce qui a été fait** :
+  Normalisation des noms de maladies entre feuilles TLOH 2025 et 2026 ;
+  pipeline complet str_to_upper() + str_squish() + str_replace() × 6 ;
+  vérification finale avec identical()
 - **Ce qui est acquis** :
-- **Ce qui reste flou** :
-- **Prochaine étape** :
+  str_replace() cherche le pattern tel quel — si le vecteur est déjà 
+  en majuscules, le pattern doit l'être aussi ;
+  bug silencieux : aucun warning si le pattern ne matche pas ;
+  identical() pour vérifier deux vecteurs attendus égaux
+- **Ce qui reste flou** : néant
+- **Prochaine étape** : Semaine 7 — ggplot2
 
 #### Récapitulatif semaine 6
 
 | Compétence attendue | Auto-éval (1-5) | Commentaire |
 |---|---|---|
-| Pivoter entre format long et large | | |
-| Séparer et unir des colonnes | | |
-| Gérer les `NA` avec `replace_na()` et `complete.cases()` | | |
-| Normaliser des noms de FS avec `stringr` | | |
+| Pivoter entre format long et large |4 | |
+| Séparer et unir des colonnes | 4| |
+| Gérer les `NA` avec `replace_na()` et `complete.cases()` |4 | |
+| Normaliser des noms avec `stringr` |3 | |
 
-**Décision** : **Points à réviser** :
+**Décision** : passer à la semaine 7
+**Points à réviser** : pattern case-sensitive dans str_replace()
 
 ---
 

@@ -49,13 +49,42 @@ dim(tloh_2026)
 dim(synthese_tloh_2025)
 str(tloh_2026))
 
+noms_2025 <- c("Méningite", "Rougeole", "Diarrhée sanguinolente",
+               "Choléra", "Ictère fébrile", "PFA", "TNN",
+               "SG", "IRAS", "Dengue", "Charbon")
+
+noms_2026 <- c("Méningite", "Rougeole", 
+               "Diarrhée sanguinolente (Shigellose)",
+               "Choléra", "Ictère Fébrile (fièvre jaune)",
+               "Paralysie flasque aigue (PFA)",
+               "Tétanos Neo natal (TNN)",
+               "Syndromes Grippaux (SG)",
+               "Infection Respiratoire Aigüe Sévère (IRAS)",
+               "Dengue", "Charbon ")
 
 
+# prédit : vecteur de 11 éléments, tout en majuscules, 
+# sans espaces parasites, abréviations remplacées par formes complètes
+#Tous les éléments de noms_2025_clean seront en majustcule
+noms_2025_clean <- noms_2025 |>
+  str_to_upper() |>
+  str_squish() |>
+  str_replace("ICTÈRE FÉBRILE", "ICTÈRE FÉBRILE (FIÈVRE JAUNE)") |>  
+  str_replace("DIARRHÉE SANGUINOLENTE","DIARRHÉE SANGUINOLENTE (SHIGELLOSE)" ) |>  
+  str_replace("PFA","PARALYSIE FLASQUE AIGUE (PFA)") |>   
+  str_replace("TNN","TÉTANOS NEO NATAL (TNN)") |>   
+  str_replace("SG","SYNDROMES GRIPPAUX (SG)") |>   
+  str_replace("IRAS","INFECTION RESPIRATOIRE AIGÜE SÉVÈRE (IRAS)")     
 
+print(noms_2025_clean)
 
+noms_2025_clean
 
+str_to_upper("Paralysie flasque aigue (PFA)")
 
-
-
-
+noms_2026_clean <- noms_2026 |> 
+  str_to_upper() |> 
+  str_squish()
+print(noms_2026_clean)
+identical(noms_2025_clean, noms_2026_clean)
 
