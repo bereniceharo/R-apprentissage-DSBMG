@@ -85,7 +85,7 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | 21 | `str_to_upper/lower()`, `str_squish()`, `str_replace()` — normalisation de chaînes de caractères | 6.4 | 07/05/2026 | 08/05/2026 | 14/05/2026 |04/06/2026 | À jour |
 | 22 | `separate()` et `unite()` — découpage et fusion de colonnes | 6.2 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
 | 23 | `complete.cases()`, `replace_na()` — gestion des NA dans un pipeline | 6.3 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
-| 24 | `identical()` — vérifier l'égalité exacte de deux objets R | 6.5 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
+| 24 | `identical()`— vérifier l'égalité exacte de deux objets R | 6.5 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
 ---
 ## SUIVI HEBDOMADAIRE
 ---
