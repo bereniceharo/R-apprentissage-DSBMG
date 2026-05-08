@@ -86,6 +86,8 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | 22 | `separate()` et `unite()` — découpage et fusion de colonnes | 6.2 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
 | 23 | `complete.cases()`, `replace_na()` — gestion des NA dans un pipeline | 6.3 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
 | 24 | `identical()`— vérifier l'égalité exacte de deux objets R | 6.5 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
+| 25 | `ggplot()`, `aes()`, `geom_*()` — logique des trois couches obligatoires | 7.1 | 08/05/2026 | 09/05/2026 | 15/05/2026 |07/06/2026 | À jour |
+
 ---
 ## SUIVI HEBDOMADAIRE
 ---
@@ -590,12 +592,25 @@ complétée
 **Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales investies** : \_\_\_ h
 
 #### Session 7.1 — Grammaire ggplot2 : `data + aes + geom`
-- **Date et durée** :
+- **Date et durée** : 08/05/2026, ~1h30
 - **Ce qui était prévu** : Grammaire ggplot2 : `data + aes + geom`
 - **Ce qui a été fait** :
+  Logique des trois couches obligatoires : ggplot(), aes(), geom_*() ;
+  geom_point() sur données réelles DS-BMG (couverture CPN4 des CSPS) ;
+  coord_flip() pour lisibilité avec 40 CSPS ;
+  reorder() dans aes() pour trier par valeur ;
+  labs() pour titres et étiquettes professionnelles ;
+  geom_vline() pour ligne de seuil OMS à 80% ;
+  scale_color_manual() — introduced, not yet practiced
 - **Ce qui est acquis** :
-- **Ce qui reste flou** :
-- **Prochaine étape** :
+  aes() contrôle toute propriété visuelle dépendant des données ;
+  propriété fixe → hors aes() ; propriété variable → dans aes() ;
+  coord_flip() retourne le graphique — vline/hline se définissent
+  par rapport aux données, pas au visuel ;
+  reorder() remplace la variable dans aes(x=), ne s'y ajoute pas ;
+  backticks obligatoires sur tout nom de colonne à caractères spéciaux
+- **Ce qui reste flou** : néant
+- **Prochaine étape** : Session 7.2 — Bar charts
 
 #### Session 7.2 — Bar charts
 - **Date et durée** :
