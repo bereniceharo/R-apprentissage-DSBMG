@@ -76,17 +76,19 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 02/06/2026 | À jour |
 | 13 | Arguments par défaut, stop(), any(), early return | 4.5 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 02/06/2026 | À jour |
 | 14 | `df[[colonne]]` vs `df$colonne` — accès dynamique à une colonne | mini-projet mois 1 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 02/06/2026 | À jour |
-| 15 | `filter()`, `select()`, `arrange()`, `mutate()`, pipe `\|>` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 11/05/2026 | 03/06/2026 | Dû J+1 |
-| 16 | `grepl()` — détection de pattern dans un vecteur character, `table()`, `unique()` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 11/05/2026 | 03/06/2026 | Dû J+1 |
+| 15 | `filter()`, `select()`, `arrange()`, `mutate()`, pipe `\|>` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 11/05/2026 | 03/06/2026 | À jour|
+| 16 | `grepl()` — détection de pattern dans un vecteur character, `table()`, `unique()` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 11/05/2026 | 03/06/2026 |À jour  |
 | 17 | `group_by()` + `summarise()` — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05/2026 | 12/05/2026 | 04/06/2026 | À jour |
-| 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05/2026 | 12/05/2026 | 04/06/2026 | Dû J+1 |
-| 19 | `pivot_longer()` / `pivot_wider()` — format large vs long | 6.1 | 06/05/2026 | 07/05/2026 | 13/05/2026 | 05/06/2026 | À jour |
+| 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05/2026 | 12/05/2026 | 04/06/2026 | À jour|
+| 19 | `pivot_longer()` / `pivot_wider()` — format large vs long | 6.1 | 06/05/2026 | 07/05/2026 | 13/05/2026 | 05/06/2026 |À jour  |
 | 20 | Import structuré multi-niveaux : `col_names = FALSE`, `unlist()`, forward fill, `colnames()` | 6.1 rappels | 06/05/2026 | 07/05/2026 | 13/05/2026 | 05/06/2026 | À jour |
 | 21 | `str_to_upper/lower()`, `str_squish()`, `str_replace()` — normalisation de chaînes de caractères | 6.4 | 07/05/2026 | 08/05/2026 | 14/05/2026 |04/06/2026 | À jour |
 | 22 | `separate()` et `unite()` — découpage et fusion de colonnes | 6.2 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
 | 23 | `complete.cases()`, `replace_na()` — gestion des NA dans un pipeline | 6.3 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
 | 24 | `identical()`— vérifier l'égalité exacte de deux objets R | 6.5 |07/05/2026 | 08/05/2026 | 14/05/2026 | 04/06/2026 | À jour |
 | 25 | `ggplot()`, `aes()`, `geom_*()` — logique des trois couches obligatoires | 7.1 | 08/05/2026 | 09/05/2026 | 15/05/2026 |07/06/2026 | À jour |
+| 26 |geom_col() vs geom_bar() : bar chart à partir de données pré-agrégées | 7.2 | 08/05/2026 |09/05/2026 |15/05/2026 |07/06/2026 |À jour|
+| 27 | geom_text() + hjust + ylim() : étiquettes de valeurs et ajustement d'échelle | 7.2 | 08/05/2026 |09/05/2026 |15/05/2026 |07/06/2026| À jour|
 
 ---
 ## SUIVI HEBDOMADAIRE
@@ -612,13 +614,31 @@ complétée
 - **Ce qui reste flou** : néant
 - **Prochaine étape** : Session 7.2 — Bar charts
 
-#### Session 7.2 — Bar charts
-- **Date et durée** :
-- **Ce qui était prévu** : Bar charts pour comparer des FS
-- **Ce qui a été fait** :
-- **Ce qui est acquis** :
-- **Ce qui reste flou** :
-- **Prochaine étape** :
+#### Session 7.2 — Bar charts pour comparer des FS
+
+**Date** : 08/05/2026  **Durée** : __ min  **Horaire** : 20h45 — __h__
+
+**Prévu** : produire un bar chart professionnel comparant les FS sur la couverture CPN4.
+
+**Fait** :
+- Distinction `geom_bar()` (compte les occurrences) vs `geom_col()` (utilise une valeur déjà calculée). Application au cas des indicateurs agrégés en santé publique.
+- Bar chart complet (40 CSPS) avec tri par `reorder()`, `coord_flip()`, ligne de seuil à 80% (`geom_hline()`).
+- Bar chart filtré FS en alerte (< 50% sur CPN4) : 20 CSPS sur 40, soit la moitié du district.
+- Approfondissement de `geom_text()` (label calculé avec `round()`, `hjust = -0.2` pour décalage à droite) et `ylim()` (couche d'échelle avec piège de suppression silencieuse).
+- Erreur d'inattention rattrapée : `rename()` qui pointait initialement sur la colonne accouchement et non CPN4 → leçon : vérifier la valeur source avant tout rename sur des noms longs.
+
+**Acquis** :
+- Logique en couches de ggplot2 : géométriques (`geom_*`), d'échelle (`ylim`), d'habillage (`labs`), de transformation (`coord_flip`). La relation `data → aes() → geom_*()` est la base.
+- Le choix du graphique dépend du destinataire et de la décision : 40 barres pour une présentation aux ICP, top 10 pour la planification des supervisions, FS en alerte pour un rapport DRS.
+- `hjust` est un alignement (proportion du texte à gauche du point d'ancrage), pas un déplacement du point lui-même.
+
+**Flou** :
+- Mécanique exacte de `hjust` avec `coord_flip()` — j'ai retenu la règle pratique mais la justification théorique reste partiellement abstraite.
+- Quand préférer `coord_cartesian(ylim = ...)` à `ylim(...)` en dehors du cas "étiquettes coupées" ?
+
+**Prochaine étape** : session 7.3 — line chart pour le suivi temporel d'un indicateur.
+
+**Indicateur métier observé** : 20 CSPS sur 40 du DS-BMG sont sous 50% de couverture CPN4 en 2025 — problème district, pas problème de quelques FS isolées.
 
 #### Session 7.3 — Line charts
 - **Date et durée** :
