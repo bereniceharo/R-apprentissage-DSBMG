@@ -89,6 +89,9 @@ Tu n'utilises que ces 5 valeurs fixes pour remplir la table :
 | 25 | `ggplot()`, `aes()`, `geom_*()` — logique des trois couches obligatoires | 7.1 | 08/05/2026 | 09/05/2026 | 15/05/2026 |07/06/2026 | À jour |
 | 26 |geom_col() vs geom_bar() : bar chart à partir de données pré-agrégées | 7.2 | 08/05/2026 |09/05/2026 |15/05/2026 |07/06/2026 |À jour|
 | 27 | geom_text() + hjust + ylim() : étiquettes de valeurs et ajustement d'échelle | 7.2 | 08/05/2026 |09/05/2026 |15/05/2026 |07/06/2026| À jour|
+| 28 | `geom_line()` — courbe pour série temporelle | 7.3 | 09/05/2026 | 10/05/2026 | 16/05/2026 | 08/06/2026 | À jour |
+| 29 | `group = 1` dans `aes()` — connecter les points quand x est un facteur | 7.3 | 09/05/2026 | 10/05/2026 | 16/05/2026 | 08/06/2026 | À jour |
+| 30 | Détection d'une ligne fantôme (cumul/total) dans un fichier SNIS | 7.3 | 09/05/2026 | 10/05/2026 | 16/05/2026 | 08/06/2026 | À jour |
 
 ---
 ## SUIVI HEBDOMADAIRE
@@ -641,12 +644,26 @@ complétée
 **Indicateur métier observé** : 20 CSPS sur 40 du DS-BMG sont sous 50% de couverture CPN4 en 2025 — problème district, pas problème de quelques FS isolées.
 
 #### Session 7.3 — Line charts
-- **Date et durée** :
+- **Date et durée** : 09/05/2026, ~1h30
 - **Ce qui était prévu** : Line charts pour suivre des indicateurs dans le temps
 - **Ce qui a été fait** :
+  geom_line() sur données réelles TLOH 2026 (paludisme simple, 18 semaines) ;
+  piège du facteur sur l'axe x — chaque niveau forme un groupe à 1 point,
+  donc geom_line() ne trace rien sans group = 1 dans aes() ;
+  piège des niveaux orphelins après filter() — fct_drop() pour les supprimer
+  (introduit comme outil mais pas inscrit en rappel pour l'instant) ;
+  détection d'une ligne fantôme dans le fichier source (cumul annuel
+  61 829 cas avec semaine = NA) — filtre sur !is.na(semaine) requis ;
+  habillage labs() complet (titre, sous-titre district, caption source)
 - **Ce qui est acquis** :
-- **Ce qui reste flou** :
-- **Prochaine étape** :
+  geom_line() relie des points dans l'ordre de x ;
+  group = 1 obligatoire quand x est un facteur ;
+  filter() agit sur les lignes mais pas sur les niveaux du facteur ;
+  réflexe MCD : vérifier la cohérence d'une courbe avec son expertise terrain
+  avant de la partager
+- **Ce qui reste flou** : pic précoce à S6 — hypothèses étiologiques à creuser
+  en session surveillance (mois 5)
+- **Prochaine étape** : Session 7.4 — Heatmaps
 
 #### Session 7.4 — Heatmaps
 - **Date et durée** :
