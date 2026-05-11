@@ -73,46 +73,63 @@ révise J+1 d'abord, même si J+7 est calendairement passé.
 | **Dû J+30** | J+7 a été révisé, J+30 prévu est passé, "Révisé J+30 le" est vide. |
 | **Consolidé** | "Révisé J+30 le" est rempli. Le concept sort du cycle actif. Peut y revenir s'il défaille lors d'une session future. |
 
+### Colonne de synthèse "Dernière révision effective"
+
+Pour faciliter la lecture de la table, une colonne synthétique
+"Dernière révision effective" est ajoutée. Elle indique le
+dernier jalon de révision effectivement réalisé pour chaque
+concept, sous la forme : "J+1 le DD/MM/YYYY", "J+7 le
+DD/MM/YYYY", "J+30 le DD/MM/YYYY" ou "Aucune" si rien n'a
+encore été fait.
+
+Cette colonne est redondante avec les colonnes "Révisé J+X le"
+qui restent la source de vérité. Elle sert uniquement
+d'instrument de lecture rapide pour le calcul de statut. En
+cas de doute, c'est toujours la source de vérité (les colonnes
+détaillées) qui prime.
+
 ### TABLE DE RAPPEL
 
-| \# | Concept | Source/sessions | Date d'introduction | J+1 prévu | Révisé J+1 le | J+7 prévu | Révisé J+7 le | J+30 prévu | Révisé J+30 le | Statut |
-|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
-| 0 | Concepts fondamentaux R : assignation `<-`, opérateurs `=` vs `==`, fonctions et arguments | session 1.1, 1.2 | 19/04/2026 | 20/04/2026 | 10/05/2026 | 26/04/2026 | 10/05/2026 | 19/05/2026 |  | À jour |
-| 1 | Principaux types données, coercition, NA | session 1.3 | 22/04/2026 | 23/04/2026 | 10/05/2026 | 29/04/2026 | 10/05/2026 | 22/05/2026 |  | À jour |
-| 2 | Vecteurs, indexation | session 1.4 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 |  | À jour |
-| 3 | Les fonctions du groupe which() | session 1.5 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 |  | À jour |
-| 4 | Liste, indexation d'une liste | session 2.1 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 |  | À jour |
-| 5 | Structures data frames et manipulations, facteurs | 2.2, 2.3 | 24/04/2026 | 25/04/2026 | 10/05/2026 | 01/05/2026 | 10/05/2026 | 24/05/2026 |  | À jour |
-| 6 | GitHub, commits et push, versioning | 2.4 | 24/04/2026 | 25/04/2026 | 10/05/2026 | 01/05/2026 | 10/05/2026 | 24/05/2026 |  | À jour |
-| 7 | Indexation, filtrage, `is.na()`, coercition logique sur un data frame réel | 2.5 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 |  | À jour |
-| 8a | Lecture de fichiers : `read.csv2()`, `read_excel`, piège francophone | session 3.1, 3.2, 3.5 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 |  | À jour |
-| 8b | Sauvegarde fichier : `write.csv2()`, `write_xlsx`, `saveRDS` | 3.3 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 |  | À jour |
-| 8c | Organisation de projet | 3.4 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 |  | À jour |
-| 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 10/05/2026 | 04/05/2026 | 10/05/2026 | 27/05/2026 |  | À jour |
-| 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 10/05/2026 | 05/05/2026 | 10/05/2026 | 28/05/2026 |  | À jour |
-| 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 10/05/2026 | 06/05/2026 | 10/05/2026 | 29/05/2026 |  | À jour |
-| 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | À jour |
-| 13 | Arguments par défaut, stop(), any(), early return | 4.5 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | À jour |
-| 14 | `df[[colonne]]` vs `df$colonne` — accès dynamique à une colonne | mini-projet mois 1 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | À jour |
-| 15 | `filter()`, `select()`, `arrange()`, `mutate()`, pipe `\|>` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 |  | À jour |
-| 16 | `grepl()` — détection de pattern dans un vecteur character, `table()`, `unique()` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 |  | À jour |
-| 17 | `group_by()` + `summarise()` — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 |  | 04/06/2026 |  | À jour |
-| 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 |  | 04/06/2026 |  | À jour |
-| 19 | `pivot_longer()` / `pivot_wider()` — format large vs long | 6.1 | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 |  | 05/06/2026 |  | À jour |
-| 20 | Import structuré multi-niveaux : `col_names = FALSE`, `unlist()`, forward fill, `colnames()` | 6.1 rappels | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 |  | 05/06/2026 |  | À jour |
-| 21 | `str_to_upper/lower()`, `str_squish()`, `str_replace()` — normalisation de chaînes de caractères | 6.4 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 |  | 04/06/2026 |  | À jour |
-| 22 | `separate()` et `unite()` — découpage et fusion de colonnes | 6.2 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 |  | 04/06/2026 |  | À jour |
-| 23 | `complete.cases()`, `replace_na()` — gestion des NA dans un pipeline | 6.3 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 |  | 04/06/2026 |  | À jour |
-| 24 | `identical()` — vérifier l'égalité exacte de deux objets R | 6.5 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 |  | 04/06/2026 |  | À jour |
-| 25 | `ggplot()`, `aes()`, `geom_*()` — logique des trois couches obligatoires | 7.1 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 |  | 07/06/2026 |  | À jour |
-| 26 | `geom_col()` vs `geom_bar()` : bar chart à partir de données pré-agrégées | 7.2 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 |  | 07/06/2026 |  | À jour |
-| 27 | `geom_text()` + hjust + ylim() : étiquettes de valeurs et ajustement d'échelle | 7.2 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 |  | 07/06/2026 |  | À jour |
-| 28 | `geom_line()` — courbe pour série temporelle | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | À jour |
-| 29 | `group = 1` dans `aes()` — connecter les points quand x est un facteur | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | À jour |
-| 30 | Détection d'une ligne fantôme (cumul/total) dans un fichier SNIS | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | À jour |
-| 31 | `geom_tile()` — heatmap avec `x`, `y`, `fill` dans `aes()` | 7.4 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | À jour |
-| 32 | `theme()` + `element_text()` — modifier les éléments non-données d'un graphique | 7.4 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | À jour |
-
+| \# | Concept | Source/sessions | Date d'introduction | J+1 prévu | Révisé J+1 le | J+7 prévu | Révisé J+7 le | J+30 prévu | Révisé J+30 le | Dernière révision effective | Statut |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 0 | Concepts fondamentaux R : assignation `<-`, opérateurs `=` vs `==`, fonctions et arguments | session 1.1, 1.2 | 19/04/2026 | 20/04/2026 | 10/05/2026 | 26/04/2026 | 10/05/2026 | 19/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 1 | Principaux types données, coercition, NA | session 1.3 | 22/04/2026 | 23/04/2026 | 10/05/2026 | 29/04/2026 | 10/05/2026 | 22/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 2 | Vecteurs, indexation | session 1.4 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 3 | Les fonctions du groupe which() | session 1.5 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 4 | Liste, indexation d'une liste | session 2.1 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 5 | Structures data frames et manipulations, facteurs | 2.2, 2.3 | 24/04/2026 | 25/04/2026 | 10/05/2026 | 01/05/2026 | 10/05/2026 | 24/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 6 | GitHub, commits et push, versioning | 2.4 | 24/04/2026 | 25/04/2026 | 10/05/2026 | 01/05/2026 | 10/05/2026 | 24/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 7 | Indexation, filtrage, `is.na()`, coercition logique sur un data frame réel | 2.5 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 8a | Lecture de fichiers : `read.csv2()`, `read_excel`, piège francophone | session 3.1, 3.2, 3.5 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 8b | Sauvegarde fichier : `write.csv2()`, `write_xlsx`, `saveRDS` | 3.3 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 8c | Organisation de projet | 3.4 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 10/05/2026 | 04/05/2026 | 10/05/2026 | 27/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 10/05/2026 | 05/05/2026 | 10/05/2026 | 28/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 10/05/2026 | 06/05/2026 | 10/05/2026 | 29/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | J+7 le 10/05/2026 | À jour |
+| 13 | Arguments par défaut, stop(), any(), early return | 4.5 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | J+7 le 10/05/2026 | À jour |
+| 14 | `df[[colonne]]` vs `df$colonne` — accès dynamique à une colonne | mini-projet mois 1 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | J+7 le 10/05/2026 | À jour |
+| 15 | `filter()`, `select()`, `arrange()`, `mutate()`, pipe `\|>` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 |  | J+7 le 10/05/2026 | À jour |
+| 16 | `grepl()` — détection de pattern dans un vecteur character, `table()`, `unique()` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 |  | J+7 le 10/05/2026 | À jour |
+| 17 | `group_by()` + `summarise()` — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 |  | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 |  | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 19 | `pivot_longer()` / `pivot_wider()` — format large vs long | 6.1 | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 |  | 05/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 20 | Import structuré multi-niveaux : `col_names = FALSE`, `unlist()`, forward fill, `colnames()` | 6.1 rappels | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 |  | 05/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 21 | `str_to_upper/lower()`, `str_squish()`, `str_replace()` — normalisation de chaînes de caractères | 6.4 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 |  | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 22 | `separate()` et `unite()` — découpage et fusion de colonnes | 6.2 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 |  | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 23 | `complete.cases()`, `replace_na()` — gestion des NA dans un pipeline | 6.3 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 |  | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 24 | `identical()` — vérifier l'égalité exacte de deux objets R | 6.5 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 |  | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 25 | `ggplot()`, `aes()`, `geom_*()` — logique des trois couches obligatoires | 7.1 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 |  | 07/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 26 | `geom_col()` vs `geom_bar()` : bar chart à partir de données pré-agrégées | 7.2 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 |  | 07/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 27 | `geom_text()` + hjust + ylim() : étiquettes de valeurs et ajustement d'échelle | 7.2 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 |  | 07/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 28 | `geom_line()` — courbe pour série temporelle | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 29 | `group = 1` dans `aes()` — connecter les points quand x est un facteur | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 30 | Détection d'une ligne fantôme (cumul/total) dans un fichier SNIS | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 31 | `geom_tile()` — heatmap avec `x`, `y`, `fill` dans `aes()` | 7.4 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 32 | `theme()` + `element_text()` — modifier les éléments non-données d'un graphique | 7.4 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 33 | `theme_minimal()` (et famille `theme_*()`) — thèmes pré-construits et règle d'ordre : la dernière couche `theme` écrite l'emporte sur les propriétés communes | 7.5 | 11/05/2026 | 12/05/2026 |  | 18/05/2026 |  | 10/06/2026 |  | Aucune | À jour |
+| 34 | `scale_fill_distiller()` + argument `direction` — palette ColorBrewer continue, sens d'application à vérifier par lecture de la légende | 7.5 | 11/05/2026 | 12/05/2026 |  | 18/05/2026 |  | 10/06/2026 |  | Aucune | À jour |
+| 35 | `ggsave()` — export reproductible PNG/PDF avec `width`, `height`, `units`, `dpi`, `bg` explicites | 7.5 | 11/05/2026 | 12/05/2026 |  | 18/05/2026 |  | 10/06/2026 |  | Aucune | À jour |
 ---
 editor_options: 
   markdown: 
@@ -778,32 +795,57 @@ FS isolées.
     ; NA conservé = cellule grise sur heatmap = information utile ; une
     heatmap révèle en un coup d'œil ce qu'un tableau de 552 chiffres
     cache
--   **Ce qui reste flou** : calcul du cumul annualisé depuis taux
-    mensuels — reporté à la prochaine session
--   **Prochaine étape** : Session 7.4 suite — cumul annualisé dans R
-    -   heatmap RR2, puis session 7.5 personnalisation et export
+-   **Ce qui reste flou** : 
+    
+-   **Prochaine étape** : 7.5 personnalisation et export
 
 #### Session 7.5 — Personnalisation et export
 
--   **Date et durée** :
+-   **Date et durée** : 11/05/2026, ~2h
 -   **Ce qui était prévu** : Personnalisation : titres, légendes,
     thèmes, couleurs, export PNG/PDF
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+-   **Ce qui a été fait** : Trois blocs structurés. Bloc A : thèmes
+    pré-construits (theme_minimal()) et règle d'ordre des couches
+    theme — la dernière écrite gagne sur les propriétés communes.
+    Bloc B : palettes professionnelles ; distinction viridis
+    (perceptuellement linéaire, daltonien-compatible) vs
+    ColorBrewer (signalétique culturelle pour pilotage
+    opérationnel) ; scale_fill_distiller(palette = "RdYlGn") ;
+    diagnostic empirique du comportement de direction par lecture
+    de la légende — direction = 1 met rouge en bas (alerte) pour
+    RdYlGn. Bloc C : ggsave() en PNG (300 dpi, bg = "white") et
+    PDF ; convention de projet adoptée — éviter les caractères
+    typographiques exotiques (cadratin, guillemets français)
+    dans les titres pour ne pas dépendre du moteur cairo_pdf.
+-   **Ce qui est acquis** : Ordre canonique des couches ggplot :
+    geom_* puis scale_* puis labs() puis theme_pré-construit puis
+    theme() d'ajustement ; le choix de palette se fait selon
+    l'audience et la décision, pas selon le type R de la variable
+    ; lire la légende est la seule discipline fiable pour
+    vérifier le sens d'application d'une palette ; ggsave avec
+    width/height/units/dpi/bg explicites produit un livrable
+    reproductible ; PNG pour Word et email, PDF pour impression
+    DRS ; un warning R n'est jamais à ignorer.
+-   **Ce qui reste flou** : Le mécanisme exact qui fait que
+    direction = -1 produit le même résultat que pas d'argument
+    pour RdYlGn — à creuser si re-rencontré, pas prioritaire.
+-   **Prochaine étape** : Semaine 8 — lubridate et qualité des
+    données.
 
 #### Récapitulatif semaine 7
 
 | Compétence attendue                         | Auto-éval (1-5) | Commentaire |
 |---------------------------------------------|-----------------|-------------|
-| Comprendre la grammaire `data + aes + geom` |                 |             |
-| Produire un bar chart comparatif de FS      |                 |             |
-| Produire un line chart temporel             |                 |             |
-| Produire une heatmap FS × mois              |                 |             |
-| Exporter un graphique en PNG/PDF            |                 |             |
+| Comprendre la grammaire `data + aes + geom` | 4               | Acquise et appliquée sur plusieurs cas (point, bar, line, tile) ; non testée sans aide |
+| Produire un bar chart comparatif de FS      | 4               | Avec reorder(), coord_flip(), geom_text(), ylim() ; non refaite seul depuis |
+| Produire un line chart temporel             | 4               | Piège group = 1 et ligne fantôme cumul intégrés ; non refait seul depuis |
+| Produire une heatmap FS × mois              | 4               | Pivot long, facteur ordonné, palette RdYlGn, NA gris ; non refaite seul depuis |
+| Exporter un graphique en PNG/PDF            | 4               | ggsave maîtrisé en PNG et PDF avec dimensions, dpi, fond blanc explicites |
 
-**Décision** : **Points à réviser** :
+**Décision** : passer à la semaine 8
+**Points à réviser** : direction dans scale_fill_distiller (lire la
+légende systématiquement), convention de caractères ASCII dans les
+titres pour éviter les warnings PDF.
 
 ------------------------------------------------------------------------
 
@@ -2123,5 +2165,26 @@ mauvaise application de table() à des noms uniques au lieu de types de FS (Q2) 
 méconnaissance du tri alphabétique sur les semaines "S1"..."S19" (Q4) ;
 justification incomplète du recours à element_text() (Q7).
 
-Décision méthodologique : report de la session 7.4-suite (cumul annualisé + heatmap RR2) à demain. Application explicite du dispositif 1 (cadence) et du dispositif 7 (symétrie du contrat) — protection de la qualité de la révision contre l'accumulation.
-Prochaine session : objectif inchangé — cumul annualisé CPN4 dans R, heatmap RR2, puis session 7.5 (personnalisation et export).
+#11 mai 2026 — Renforcement procédural après erreur de lecture.
+
+Incident : Claude a identifié à tort 9 concepts (#19 à #27) comme
+"Dû J+1" alors qu'ils avaient été révisés le 10/05/2026. Cause
+racine : lecture transversale du tableau (filtrage mental sur la
+seule colonne "J+1 prévu") sans vérification de la colonne
+complémentaire "Révisé J+1 le".
+
+Correctifs intégrés :
+- Dispositif 5 : ajout d'une étape 4 bis imposant la lecture
+  verticale ligne par ligne et l'annonce structurée par compte
+  total.
+- Dispositif 2 : Emmanuel vérifie au moins un verdict par
+  échantillonnage avant validation.
+- Carnet : ajout d'une colonne de synthèse "Dernière révision
+  effective" pour faciliter la lecture rapide.
+
+Leçon générale : un dispositif anti-erreur n'est valide que si la
+procédure rend l'erreur visible. Une condition logique composée
+(A ET B) cachée dans deux colonnes éloignées est un piège
+structurel.
+
+
