@@ -4,6 +4,57 @@
 **Cible de fin** : \_\_\_\_\_ 18 octobre 2026
 
 ------------------------------------------------------------------------
+## TABLE DES MATIÈRES
+
+- [Mode d'emploi](#mode-demploi-de-ce-carnet)
+- [Table de rappel par espacement](#table-de-rappel-par-espacement)
+
+**MOIS 1 — Fondations R**
+- [Semaine 1 — Installation et logique R](#semaine-1--installation-et-logique-r)
+- [Semaine 2 — Structures de données + Git](#semaine-2--structures-de-données--git)
+- [Semaine 3 — Lire et écrire des fichiers](#semaine-3--lire-et-écrire-des-fichiers)
+- [Semaine 4 — Conditions, boucles, fonctions](#semaine-4--conditions-boucles-fonctions)
+- [Bilan Mois 1](#bilan-mois-1)
+
+**MOIS 2 — Tidyverse, qualité des données et visualisation**
+- [Semaine 5 — dplyr : manipulation professionnelle](#semaine-5--dplyr--manipulation-professionnelle)
+- [Semaine 6 — tidyr et nettoyage](#semaine-6--tidyr-et-nettoyage)
+- [Semaine 7 — ggplot2 : visualiser](#semaine-7--ggplot2--visualiser)
+- [Semaine 8 — lubridate et qualité des données](#semaine-8--lubridate-et-qualité-des-données)
+- [Bilan Mois 2](#bilan-mois-2)
+
+**MOIS 3 — Statistique descriptive et inférentielle**
+- [Semaine 9 — Statistique descriptive professionnelle](#semaine-9--statistique-descriptive-professionnelle)
+- [Semaine 10 — Tests d'hypothèses](#semaine-10--tests-dhypothèses)
+- [Semaine 11 — Intervalles de confiance et taux standardisés](#semaine-11--intervalles-de-confiance-et-taux-standardisés)
+- [Semaine 12 — Régression linéaire et logistique](#semaine-12--régression-linéaire-et-logistique)
+- [Bilan Mois 3](#bilan-mois-3)
+
+**MOIS 4 — API ENDOS-BF et automatisation**
+- [Semaine 13 — Introduction aux API REST](#semaine-13--introduction-aux-api-rest)
+- [Semaine 14 — API DHIS2 / ENDOS-BF (1) : métadonnées](#semaine-14--api-dhis2--endos-bf-1--métadonnées)
+- [Semaine 15 — API DHIS2 / ENDOS-BF (2) : données analytiques](#semaine-15--api-dhis2--endos-bf-2--données-analytiques)
+- [Semaine 16 — Automatisation et robustesse](#semaine-16--automatisation-et-robustesse)
+- [Bilan Mois 4](#bilan-mois-4)
+
+**MOIS 5 — Surveillance épidémiologique et cartographie**
+- [Semaine 17 — Surveillance épidémiologique](#semaine-17--surveillance-épidémiologique)
+- [Semaine 18 — Analyse de mortalité](#semaine-18--analyse-de-mortalité)
+- [Semaine 19 — Cartographie (1) : fondations spatiales](#semaine-19--cartographie-1--fondations-spatiales)
+- [Semaine 20 — Cartographie (2) : cartes professionnelles](#semaine-20--cartographie-2--cartes-professionnelles)
+- [Bilan Mois 5](#bilan-mois-5)
+
+**MOIS 6 — Reporting professionnel et projet de synthèse**
+- [Semaine 21 — Quarto : fondations](#semaine-21--quarto--fondations)
+- [Semaine 22 — Quarto avancé : rapports institutionnels](#semaine-22--quarto-avancé--rapports-institutionnels)
+- [Semaine 23 — Tableaux de bord](#semaine-23--tableaux-de-bord)
+- [Semaine 24 — Projet final](#semaine-24--projet-final)
+- [Bilan Mois 6 / Final](#bilan-mois-6--final)
+
+- [Notes libres](#notes-libres)
+
+------------------------------------------------------------------------
+
 
 ## Mode d'emploi de ce carnet
 
@@ -130,6 +181,12 @@ détaillées) qui prime.
 | 33 | `theme_minimal()` (et famille `theme_*()`) — thèmes pré-construits et règle d'ordre : la dernière couche `theme` écrite l'emporte sur les propriétés communes | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 |  | 10/06/2026 |  | J+1 le 12/05/2026 | À jour |
 | 34 | `scale_fill_distiller()` + argument `direction` — palette ColorBrewer continue, sens d'application à vérifier par lecture de la légende | 7.5 | 11/05/2026 | 12/05/2026 |12/05/2026  | 18/05/2026 |  | 10/06/2026 |  | J+1 le 12/05/2026 | À jour |
 | 35 | `ggsave()` — export reproductible PNG/PDF avec `width`, `height`, `units`, `dpi`, `bg` explicites | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 |  | 10/06/2026 |  | J+1 le 12/05/2026 | À jour |
+| 36 | `parse_date_time()` + `as.Date()` — parsing de formats hétérogènes, argument `orders` | 8.1 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 37 | `epiweek()` — numéro de semaine épidémiologique à partir d'une `Date` | 8.1 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 38 | Soustraction de deux `Date` + `as.numeric()` — calcul de délai en jours | 8.1 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 39 | `str_remove()` + regex — suppression de pattern variable dans une chaîne | 8.2 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 40 | `str_trunc()` — tronquer une chaîne à une largeur maximale | 8.2 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 41 | `str_detect()` + `regex(ignore_case = TRUE)` — détecter un pattern sans contrainte de casse | 8.2 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
 ---
 editor_options: 
   markdown: 
@@ -878,15 +935,24 @@ investies** : \_\_\_ h
 - **Prochaine étape** : session 8.2 — stringr avancé : regex pour
   normaliser des noms
 
-#### Session 8.2 — `stringr` avancé : regex
+#### Session 8.2 — `stringr` avancé : regex pour normaliser des noms
 
--   **Date et durée** :
--   **Ce qui était prévu** : `stringr` avancé : regex pour normaliser
-    des noms
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+- **Date et durée** : 12/05/2026, ~1h
+- **Ce qui était prévu** : stringr avancé : regex pour normaliser des noms
+- **Ce qui a été fait** : construction progressive des regex (^, [A-Z]+,
+  \\s, (de )?) ; str_remove() pour supprimer les préfixes variables
+  (CSPS, CMA de) en une seule regex ; str_trunc() pour tronquer les
+  noms trop longs ; str_detect() + regex(ignore_case = TRUE) pour
+  détecter les variantes d'orthographe indépendamment de la casse ;
+  application sur line liste méningite DS-BMG
+- **Ce qui est acquis** : ^ ancre en début de chaîne ; [A-Z]+ = une
+  ou plusieurs majuscules ; \\s = espace ; (...)? = groupe optionnel ;
+  str_trunc() avec width et ellipsis ; str_detect() retourne un
+  vecteur logique utilisable directement dans filter() ;
+  regex(ignore_case = TRUE) pour ignorer la casse
+- **Ce qui reste flou** : construction de regex complexes — les briques
+  de base sont acquises, la combinaison reste à pratiquer
+- **Prochaine étape**
 
 #### Session 8.3 — Concepts qualité des données
 
