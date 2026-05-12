@@ -1,0 +1,348 @@
+id_cas,formation_sanitaire,commune,sexe,age,date_debut_symptomes,date_consultation,date_hospitalisation,temperature,raideur_nuque,etat_conscience_altere,issue_cas
+MEN-2026-001,CSPS Tampouy,Sig-Noghin,M,36,12/01/2026,12/01/2026,2026/01/14,38.1,Oui,Oui,Hospitalisé
+MEN-2026-002,CSPS Tampouy,Baskuy,M,72,06 February 2026,"February 10, 2026",2026-02-10,40.7,Oui,Non,Décédé
+MEN-2026-003,CSPS Cissin 17,Boulmiougou,F,44,22/01/2026,23.01.2026,23.01.2026,40.1,Oui,Non,Guéri
+MEN-2026-004,CSPS Nonghin,Nongr-Massom,M,38,29/01/2026,2026-01-29,31-Jan-2026,40.7,Oui,Oui,Guéri
+MEN-2026-005,CSPS Boassa,Nongr-Massom,F,47,29-Jan-2026,"January 31, 2026",01/02/2026,40.1,Oui,Oui,Hospitalisé
+MEN-2026-006,CSPS Tampouy,Nongr-Massom,M,72,03-Feb-2026,2026-02-06,07.02.2026,39.4,Oui,Oui,Décédé
+MEN-2026-007,CSPS Boassa,Nongr-Massom,M,59,18-Jan-2026,"January 21, 2026",2026/01/22,41.1,Non,Non,Hospitalisé
+MEN-2026-008,CMA de Pissy,Boulmiougou,M,12,01-13-2026,2026/01/17,18/01/2026,39.3,Non,Non,Guéri
+MEN-2026-009,CSPS Cissin 17,Nongr-Massom,F,44,01-12-2026,16 January 2026,2026-01-17,41.3,Non,Oui,Guéri
+MEN-2026-010,CSPS Boassa,Nongr-Massom,M,26,2026-01-24,28.01.2026,30 January 2026,38.1,Non,Non,Hospitalisé
+MEN-2026-011,CSPS Cissin 17,Baskuy,M,11,01-08-2026,01-09-2026,11 January 2026,41.3,Oui,Non,Référé
+MEN-2026-012,CSPS Nioko 2,Nongr-Massom,F,26,18.01.2026,22 January 2026,24 January 2026,38.4,Oui,Oui,Décédé
+MEN-2026-013,CSPS Bonheur Ville,Sig-Noghin,M,30,06/01/2026,2026-01-10,12-Jan-2026,38.2,Oui,Non,Guéri
+MEN-2026-014,CSPS Tampouy,Sig-Noghin,F,63,06-Feb-2026,07 February 2026,2026/02/08,38.7,Oui,Non,Décédé
+MEN-2026-015,CSPS Nonghin,Boulmiougou,M,7,2026/02/01,04.02.2026,05/02/2026,38.9,Oui,Non,Hospitalisé
+MEN-2026-016,CSPS Tampouy,Boulmiougou,F,60,01/02/2026,2026-02-02,2026-02-03,41.4,Oui,Oui,Référé
+MEN-2026-017,CMA de Pissy,Sig-Noghin,F,52,2026-02-05,2026/02/08,"February 08, 2026",41.2,Non,Non,Référé
+MEN-2026-018,CSPS Larlé,Sig-Noghin,M,25,2026-02-09,12.02.2026,2026-02-12,38.2,Non,Oui,Guéri
+MEN-2026-019,CSPS Bonheur Ville,Boulmiougou,M,9,2026/02/06,06/02/2026,06-Feb-2026,40.0,Oui,Oui,Référé
+MEN-2026-020,CSPS Larlé,Sig-Noghin,F,41,11-Feb-2026,"February 15, 2026",2026/02/17,38.5,Non,Non,Décédé
+MEN-2026-021,CSPS Cissin 17,Sig-Noghin,F,13,01-09-2026,09.01.2026,10/01/2026,41.1,Non,Non,Hospitalisé
+MEN-2026-022,CSPS Bonheur Ville,Boulmiougou,F,39,02/02/2026,02-06-2026,"February 08, 2026",38.4,Oui,Oui,Décédé
+MEN-2026-023,CSPS Tampouy,Nongr-Massom,F,44,"January 23, 2026",2026-01-27,27/01/2026,40.2,Non,Oui,Guéri
+MEN-2026-024,CSPS Boassa,Baskuy,F,34,2026-01-26,27/01/2026,29/01/2026,41.3,Oui,Oui,Décédé
+MEN-2026-025,CSPS Boassa,Boulmiougou,F,56,11.02.2026,2026-02-15,15.02.2026,38.7,Oui,Oui,Décédé
+MEN-2026-026,CSPS Tampouy,Sig-Noghin,M,20,2026/02/09,2026-02-12,02-14-2026,40.6,Non,Non,Hospitalisé
+MEN-2026-027,CSPS Nagrin,Boulmiougou,F,14,22-Jan-2026,23-Jan-2026,25 January 2026,39.2,Oui,Oui,Guéri
+MEN-2026-028,CSPS Cissin 17,Nongr-Massom,F,36,2026/01/17,20.01.2026,2026-01-21,38.4,Non,Oui,Décédé
+MEN-2026-029,CSPS Tanghin,Nongr-Massom,F,56,07/01/2026,2026/01/07,09-Jan-2026,38.9,Non,Oui,Hospitalisé
+MEN-2026-030,CSPS Bonheur Ville,Nongr-Massom,M,43,"January 28, 2026","January 31, 2026",2026/01/31,39.1,Non,Oui,Hospitalisé
+MEN-2026-031,CSPS Bonheur Ville,Nongr-Massom,F,23,2026-01-31,"February 03, 2026","February 05, 2026",38.7,Non,Non,Référé
+MEN-2026-032,CSPS Nioko 2,Sig-Noghin,M,61,"February 02, 2026",03.02.2026,05/02/2026,40.9,Oui,Non,Hospitalisé
+MEN-2026-033,CSPS Tampouy,Baskuy,M,6,17 January 2026,2026/01/18,18-Jan-2026,40.5,Non,Non,Référé
+MEN-2026-034,CSPS Cissin 17,Baskuy,M,1,01-20-2026,21 January 2026,2026-01-23,40.0,Oui,Non,Hospitalisé
+MEN-2026-035,CSPS Kossodo,Baskuy,F,41,02-03-2026,07 February 2026,09 February 2026,38.9,Oui,Non,Référé
+MEN-2026-036,CSPS Nioko 2,Nongr-Massom,M,10,"January 20, 2026",22.01.2026,23.01.2026,41.1,Oui,Oui,Hospitalisé
+MEN-2026-037,CSPS Nioko 2,Sig-Noghin,M,20,2026/01/19,2026/01/22,24.01.2026,39.9,Non,Oui,Hospitalisé
+MEN-2026-038,CSPS Bonheur Ville,Baskuy,F,3,2026-01-31,03.02.2026,"February 05, 2026",40.6,Non,Oui,Référé
+MEN-2026-039,CMA de Pissy,Baskuy,F,63,2026/01/19,01-21-2026,22 January 2026,41.2,Oui,Non,Guéri
+MEN-2026-040,CSPS Boassa,Boulmiougou,F,60,2026/01/10,13.01.2026,13-Jan-2026,39.6,Non,Non,Décédé
+MEN-2026-041,CMA de Pissy,Boulmiougou,F,61,31-Jan-2026,02/02/2026,2026-02-02,40.6,Oui,Oui,Guéri
+MEN-2026-042,CSPS Nonghin,Boulmiougou,M,61,14 January 2026,"January 15, 2026",15.01.2026,38.6,Oui,Oui,Décédé
+MEN-2026-043,CSPS Bonheur Ville,Baskuy,F,40,11-Jan-2026,15/01/2026,15-Jan-2026,38.4,Non,Oui,Guéri
+MEN-2026-044,CSPS Cissin 17,Nongr-Massom,M,48,2026/01/27,31 January 2026,01/02/2026,39.5,Non,Non,Hospitalisé
+MEN-2026-045,CSPS Nonghin,Nongr-Massom,F,67,01 February 2026,2026/02/02,"February 04, 2026",39.1,Oui,Oui,Décédé
+MEN-2026-046,CSPS Tanghin,Boulmiougou,F,49,02.02.2026,02-03-2026,04 February 2026,38.7,Non,Non,Décédé
+MEN-2026-047,CSPS Rimkieta,Sig-Noghin,M,2,12-Feb-2026,2026/02/14,16 February 2026,39.9,Oui,Non,Référé
+MEN-2026-048,CSPS Tampouy,Baskuy,M,38,"February 02, 2026",02.02.2026,02 February 2026,39.9,Non,Non,Décédé
+MEN-2026-049,CSPS Larlé,Sig-Noghin,M,40,27-Jan-2026,30.01.2026,31/01/2026,40.6,Oui,Oui,Hospitalisé
+MEN-2026-050,CSPS Bonheur Ville,Nongr-Massom,M,68,04-Feb-2026,"February 06, 2026",08-Feb-2026,39.3,Non,Oui,Hospitalisé
+MEN-2026-051,CSPS Larlé,Sig-Noghin,F,71,22/01/2026,2026-01-22,"January 22, 2026",39.6,Non,Non,Hospitalisé
+MEN-2026-052,CSPS Cissin 17,Baskuy,F,15,08/01/2026,2026-01-10,01-11-2026,38.5,Non,Oui,Hospitalisé
+MEN-2026-053,CSPS Rimkieta,Baskuy,F,29,12 January 2026,"January 16, 2026",2026/01/17,39.1,Oui,Oui,Hospitalisé
+MEN-2026-054,CSPS Boassa,Sig-Noghin,M,11,18/01/2026,01-20-2026,2026-01-22,39.4,Non,Non,Guéri
+MEN-2026-055,CSPS Nioko 2,Baskuy,M,37,19-Jan-2026,"January 21, 2026",23-Jan-2026,39.5,Oui,Oui,Décédé
+MEN-2026-056,CSPS Larlé,Nongr-Massom,F,22,14/01/2026,14 January 2026,"January 14, 2026",40.4,Non,Non,Référé
+MEN-2026-057,CSPS Nioko 2,Nongr-Massom,F,56,2026-01-10,14/01/2026,14-Jan-2026,41.4,Oui,Non,Guéri
+MEN-2026-058,CSPS Larlé,Sig-Noghin,F,57,16 January 2026,19/01/2026,21 January 2026,39.2,Non,Non,Guéri
+MEN-2026-059,CSPS Larlé,Baskuy,M,64,15 January 2026,17/01/2026,18.01.2026,38.9,Oui,Non,Guéri
+MEN-2026-060,CSPS Tampouy,Nongr-Massom,F,7,08 February 2026,2026-02-11,12-Feb-2026,38.9,Oui,Non,Référé
+MEN-2026-061,CSPS Nioko 2,Sig-Noghin,F,31,2026-02-05,2026/02/05,05/02/2026,38.8,Oui,Non,Guéri
+MEN-2026-062,CSPS Rimkieta,Nongr-Massom,F,38,14 January 2026,17 January 2026,19-Jan-2026,39.6,Oui,Non,Hospitalisé
+MEN-2026-063,CSPS Cissin 17,Nongr-Massom,F,18,12.02.2026,"February 16, 2026",2026-02-18,39.0,Non,Non,Hospitalisé
+MEN-2026-064,CSPS Tanghin,Baskuy,F,45,02.02.2026,06-Feb-2026,07-Feb-2026,40.0,Oui,Non,Guéri
+MEN-2026-065,CSPS Nagrin,Sig-Noghin,F,49,2026-01-25,01-28-2026,30.01.2026,41.0,Non,Oui,Référé
+MEN-2026-066,CSPS Cissin 17,Baskuy,F,20,05.01.2026,2026/01/06,07/01/2026,41.0,Non,Non,Référé
+MEN-2026-067,CSPS Tampouy,Nongr-Massom,M,9,08/02/2026,2026/02/08,10/02/2026,40.7,Oui,Non,Hospitalisé
+MEN-2026-068,CMA de Pissy,Nongr-Massom,F,42,24.01.2026,2026/01/24,01-24-2026,38.9,Non,Oui,Hospitalisé
+MEN-2026-069,CSPS Bonheur Ville,Sig-Noghin,F,49,01-16-2026,16-Jan-2026,18 January 2026,40.2,Non,Non,Guéri
+MEN-2026-070,CSPS Boassa,Boulmiougou,F,70,03.02.2026,"February 05, 2026",2026/02/07,40.4,Non,Non,Hospitalisé
+MEN-2026-071,CSPS Nagrin,Nongr-Massom,F,31,"January 29, 2026",2026-02-01,2026/02/01,39.0,Oui,Non,Décédé
+MEN-2026-072,CSPS Nonghin,Sig-Noghin,F,29,01-19-2026,23/01/2026,2026-01-24,39.1,Non,Oui,Décédé
+MEN-2026-073,CSPS Nioko 2,Baskuy,M,42,13-Jan-2026,01-13-2026,14.01.2026,39.9,Non,Oui,Décédé
+MEN-2026-074,CSPS Cissin 17,Baskuy,M,44,02-04-2026,06-Feb-2026,2026/02/08,41.4,Non,Oui,Référé
+MEN-2026-075,CSPS Kossodo,Nongr-Massom,F,16,2026/01/05,07.01.2026,09/01/2026,40.4,Non,Oui,Décédé
+MEN-2026-076,CSPS Nioko 2,Nongr-Massom,F,60,19/01/2026,01-19-2026,2026-01-21,41.3,Non,Non,Guéri
+MEN-2026-077,CSPS Nagrin,Baskuy,F,18,2026/01/11,01-12-2026,2026/01/14,40.3,Non,Non,Décédé
+MEN-2026-078,CSPS Kossodo,Sig-Noghin,F,57,07/01/2026,09.01.2026,09.01.2026,38.2,Non,Oui,Guéri
+MEN-2026-079,CSPS Nonghin,Boulmiougou,M,28,03.02.2026,03-Feb-2026,02-05-2026,40.8,Oui,Oui,Hospitalisé
+MEN-2026-080,CSPS Boassa,Boulmiougou,F,43,02-11-2026,02-12-2026,"February 12, 2026",40.8,Oui,Oui,Hospitalisé
+MEN-2026-081,CMA de Pissy,Sig-Noghin,F,42,2026-01-05,01-07-2026,2026/01/07,39.8,Oui,Non,Référé
+MEN-2026-082,CSPS Kossodo,Sig-Noghin,M,14,"January 28, 2026",01 February 2026,2026-02-03,38.2,Non,Non,Référé
+MEN-2026-083,CSPS Cissin 17,Boulmiougou,F,57,01-11-2026,14/01/2026,01-16-2026,39.0,Non,Non,Décédé
+MEN-2026-084,CSPS Cissin 17,Boulmiougou,M,56,2026/02/03,07 February 2026,09-Feb-2026,39.4,Non,Non,Référé
+MEN-2026-085,CSPS Nonghin,Nongr-Massom,F,41,01-11-2026,13 January 2026,14/01/2026,38.3,Oui,Oui,Référé
+MEN-2026-086,CMA de Pissy,Nongr-Massom,M,72,2026/01/11,13.01.2026,2026/01/13,41.0,Oui,Non,Décédé
+MEN-2026-087,CSPS Tampouy,Sig-Noghin,F,65,27-Jan-2026,27/01/2026,29.01.2026,41.0,Non,Oui,Décédé
+MEN-2026-088,CSPS Bonheur Ville,Boulmiougou,F,72,2026-02-10,02-11-2026,"February 12, 2026",40.5,Non,Non,Décédé
+MEN-2026-089,CSPS Cissin 17,Sig-Noghin,M,52,05/01/2026,06-Jan-2026,2026/01/06,39.5,Non,Oui,Décédé
+MEN-2026-090,CMA de Pissy,Sig-Noghin,M,11,2026-01-24,26/01/2026,"January 28, 2026",39.6,Non,Non,Référé
+MEN-2026-091,CSPS Cissin 17,Nongr-Massom,F,66,31/01/2026,"February 02, 2026",02 February 2026,39.8,Non,Oui,Hospitalisé
+MEN-2026-092,CSPS Tampouy,Nongr-Massom,M,1,01-30-2026,"February 03, 2026","February 03, 2026",39.1,Oui,Non,Référé
+MEN-2026-093,CSPS Nioko 2,Sig-Noghin,F,69,16/01/2026,2026/01/17,2026-01-18,39.5,Non,Oui,Décédé
+MEN-2026-094,CSPS Nioko 2,Baskuy,F,52,10/02/2026,2026/02/13,2026-02-15,41.4,Oui,Non,Décédé
+MEN-2026-095,CSPS Nagrin,Baskuy,M,32,2026/01/10,"January 13, 2026",13.01.2026,38.8,Oui,Oui,Guéri
+MEN-2026-096,CSPS Tanghin,Sig-Noghin,M,45,07/02/2026,02-11-2026,"February 11, 2026",38.7,Oui,Oui,Hospitalisé
+MEN-2026-097,CSPS Nonghin,Nongr-Massom,F,58,02-05-2026,08 February 2026,10/02/2026,39.6,Non,Non,Guéri
+MEN-2026-098,CSPS Kossodo,Baskuy,M,40,2026-01-27,31.01.2026,"January 31, 2026",38.3,Oui,Non,Référé
+MEN-2026-099,CSPS Kossodo,Sig-Noghin,F,6,11 February 2026,02-15-2026,2026-02-17,39.6,Non,Oui,Hospitalisé
+MEN-2026-100,CSPS Kossodo,Sig-Noghin,F,57,07.01.2026,"January 08, 2026",2026/01/10,39.4,Non,Oui,Décédé
+MEN-2026-101,CSPS Nonghin,Baskuy,F,72,"January 09, 2026",01-11-2026,11.01.2026,38.3,Oui,Non,Décédé
+MEN-2026-102,CSPS Larlé,Baskuy,F,11,01-30-2026,31/01/2026,2026/02/02,39.8,Oui,Non,Décédé
+MEN-2026-103,CSPS Tampouy,Sig-Noghin,M,63,01-16-2026,17/01/2026,"January 18, 2026",41.0,Oui,Oui,Décédé
+MEN-2026-104,CSPS Boassa,Sig-Noghin,M,20,13 January 2026,2026-01-17,2026/01/18,39.3,Oui,Non,Décédé
+MEN-2026-105,CSPS Larlé,Baskuy,M,31,02.02.2026,03 February 2026,05 February 2026,40.7,Non,Non,Hospitalisé
+MEN-2026-106,CMA de Pissy,Baskuy,F,33,17/01/2026,21/01/2026,"January 21, 2026",38.3,Oui,Non,Référé
+MEN-2026-107,CSPS Tampouy,Baskuy,F,12,2026-02-06,2026/02/07,2026-02-08,39.4,Non,Oui,Référé
+MEN-2026-108,CSPS Tanghin,Boulmiougou,F,4,01-10-2026,01-12-2026,2026-01-12,39.0,Non,Oui,Référé
+MEN-2026-109,CMA de Pissy,Nongr-Massom,M,11,02-02-2026,2026/02/06,06/02/2026,40.7,Oui,Non,Guéri
+MEN-2026-110,CSPS Cissin 17,Boulmiougou,F,59,2026-01-08,09-Jan-2026,01-10-2026,39.0,Oui,Non,Hospitalisé
+MEN-2026-111,CSPS Rimkieta,Nongr-Massom,M,11,2026-02-10,2026/02/13,13 February 2026,38.2,Non,Non,Décédé
+MEN-2026-112,CSPS Tampouy,Boulmiougou,F,45,01-06-2026,2026-01-08,08.01.2026,39.9,Oui,Non,Référé
+MEN-2026-113,CMA de Pissy,Nongr-Massom,M,59,2026-01-16,17-Jan-2026,2026-01-17,39.1,Non,Non,Référé
+MEN-2026-114,CSPS Larlé,Nongr-Massom,M,25,21.01.2026,"January 21, 2026",23/01/2026,40.8,Non,Non,Référé
+MEN-2026-115,CSPS Nioko 2,Baskuy,F,64,"January 29, 2026",31/01/2026,2026/01/31,38.3,Oui,Non,Décédé
+MEN-2026-116,CSPS Larlé,Baskuy,F,38,01-11-2026,11 January 2026,12.01.2026,39.6,Non,Non,Décédé
+MEN-2026-117,CSPS Tanghin,Sig-Noghin,M,52,01-08-2026,08 January 2026,2026-01-10,38.4,Oui,Non,Décédé
+MEN-2026-118,CSPS Nonghin,Baskuy,F,20,29.01.2026,02 February 2026,02/02/2026,40.0,Non,Non,Décédé
+MEN-2026-119,CSPS Nioko 2,Sig-Noghin,F,4,2026/01/22,23/01/2026,"January 23, 2026",40.7,Non,Oui,Décédé
+MEN-2026-120,CSPS Cissin 17,Baskuy,M,18,05 February 2026,06/02/2026,06.02.2026,40.3,Oui,Non,Décédé
+MEN-2026-121,CSPS Tampouy,Boulmiougou,M,66,01-15-2026,16-Jan-2026,17 January 2026,38.1,Non,Non,Hospitalisé
+MEN-2026-122,CSPS Nioko 2,Baskuy,F,51,2026/01/10,10/01/2026,01-11-2026,41.4,Oui,Non,Référé
+MEN-2026-123,CSPS Nonghin,Sig-Noghin,M,71,2026/02/07,2026-02-09,09/02/2026,39.8,Non,Oui,Hospitalisé
+MEN-2026-124,CSPS Larlé,Boulmiougou,F,67,25-Jan-2026,"January 26, 2026",01-27-2026,40.2,Oui,Oui,Hospitalisé
+MEN-2026-125,CSPS Bonheur Ville,Boulmiougou,M,44,15/01/2026,2026-01-19,"January 21, 2026",40.3,Non,Oui,Référé
+MEN-2026-126,CSPS Kossodo,Sig-Noghin,F,39,"February 08, 2026",10 February 2026,12/02/2026,40.4,Oui,Non,Référé
+MEN-2026-127,CSPS Bonheur Ville,Sig-Noghin,F,44,04.02.2026,07.02.2026,2026/02/07,38.5,Non,Oui,Décédé
+MEN-2026-128,CSPS Kossodo,Sig-Noghin,M,35,20/01/2026,2026-01-23,"January 23, 2026",41.3,Non,Oui,Hospitalisé
+MEN-2026-129,CSPS Tampouy,Sig-Noghin,F,41,25 January 2026,29 January 2026,"January 31, 2026",39.7,Oui,Non,Référé
+MEN-2026-130,CMA de Pissy,Boulmiougou,F,46,20 January 2026,21 January 2026,"January 23, 2026",39.9,Oui,Non,Hospitalisé
+MEN-2026-131,CMA de Pissy,Baskuy,M,47,21-Jan-2026,23.01.2026,"January 24, 2026",38.3,Non,Non,Guéri
+MEN-2026-132,CSPS Tanghin,Nongr-Massom,M,48,13-Jan-2026,2026/01/13,2026-01-14,38.2,Oui,Non,Référé
+MEN-2026-133,CSPS Boassa,Nongr-Massom,F,66,02-07-2026,2026/02/10,"February 10, 2026",40.1,Non,Non,Référé
+MEN-2026-134,CSPS Nagrin,Nongr-Massom,M,15,06 January 2026,"January 08, 2026",09-Jan-2026,40.5,Non,Oui,Référé
+MEN-2026-135,CSPS Tampouy,Boulmiougou,F,15,14.01.2026,2026/01/15,01-15-2026,39.4,Oui,Non,Référé
+MEN-2026-136,CSPS Rimkieta,Nongr-Massom,F,27,2026/01/08,09.01.2026,01-11-2026,39.6,Non,Non,Décédé
+MEN-2026-137,CSPS Rimkieta,Nongr-Massom,M,36,"February 04, 2026","February 05, 2026",05-Feb-2026,40.4,Non,Non,Référé
+MEN-2026-138,CSPS Larlé,Boulmiougou,F,36,2026/01/27,31.01.2026,02-02-2026,39.0,Non,Oui,Décédé
+MEN-2026-139,CSPS Tampouy,Sig-Noghin,F,62,"February 02, 2026",02-04-2026,06/02/2026,40.2,Oui,Oui,Guéri
+MEN-2026-140,CMA de Pissy,Boulmiougou,F,30,07.02.2026,08 February 2026,10/02/2026,40.4,Oui,Oui,Hospitalisé
+MEN-2026-141,CSPS Larlé,Nongr-Massom,F,26,2026-01-31,03/02/2026,04-Feb-2026,39.9,Oui,Oui,Référé
+MEN-2026-142,CSPS Boassa,Nongr-Massom,M,64,2026-01-16,"January 16, 2026",17/01/2026,41.2,Non,Non,Référé
+MEN-2026-143,CSPS Rimkieta,Baskuy,F,18,08-Feb-2026,12/02/2026,13.02.2026,38.6,Non,Non,Hospitalisé
+MEN-2026-144,CSPS Boassa,Baskuy,F,25,05.01.2026,07/01/2026,2026/01/08,40.3,Oui,Oui,Référé
+MEN-2026-145,CSPS Nagrin,Sig-Noghin,F,34,"January 25, 2026",26.01.2026,"January 26, 2026",40.0,Oui,Non,Décédé
+MEN-2026-146,CSPS Kossodo,Nongr-Massom,M,16,2026/01/20,"January 20, 2026",22/01/2026,40.2,Non,Non,Hospitalisé
+MEN-2026-147,CSPS Kossodo,Nongr-Massom,F,20,19 January 2026,20-Jan-2026,21-Jan-2026,40.4,Oui,Non,Décédé
+MEN-2026-148,CSPS Rimkieta,Sig-Noghin,M,8,01-09-2026,13.01.2026,13 January 2026,38.4,Oui,Non,Guéri
+MEN-2026-149,CSPS Boassa,Baskuy,F,59,2026-02-06,09 February 2026,"February 09, 2026",40.5,Non,Non,Guéri
+MEN-2026-150,CSPS Nagrin,Nongr-Massom,M,6,2026-01-18,22/01/2026,22 January 2026,38.1,Non,Oui,Hospitalisé
+MEN-2026-151,CSPS Nagrin,Baskuy,M,58,01-31-2026,02.02.2026,03/02/2026,38.6,Non,Oui,Hospitalisé
+MEN-2026-152,CSPS Nonghin,Baskuy,F,60,05-Jan-2026,05-Jan-2026,06 January 2026,39.2,Non,Oui,Guéri
+MEN-2026-153,CSPS Tampouy,Sig-Noghin,M,3,07/01/2026,2026-01-10,12 January 2026,40.1,Oui,Oui,Guéri
+MEN-2026-154,CSPS Tampouy,Boulmiougou,M,70,"January 30, 2026",02-Feb-2026,02.02.2026,40.0,Non,Oui,Décédé
+MEN-2026-155,CSPS Larlé,Nongr-Massom,M,53,01-14-2026,2026/01/18,18 January 2026,38.2,Non,Non,Décédé
+MEN-2026-156,CSPS Nagrin,Sig-Noghin,F,39,31-Jan-2026,03-Feb-2026,"February 03, 2026",41.0,Oui,Non,Guéri
+MEN-2026-157,CSPS Rimkieta,Sig-Noghin,F,72,09-Feb-2026,"February 12, 2026",13-Feb-2026,39.2,Oui,Non,Décédé
+MEN-2026-158,CMA de Pissy,Nongr-Massom,F,25,2026-01-10,14/01/2026,16-Jan-2026,40.8,Oui,Non,Hospitalisé
+MEN-2026-159,CSPS Tampouy,Boulmiougou,F,28,26-Jan-2026,28-Jan-2026,2026/01/28,41.2,Non,Non,Référé
+MEN-2026-160,CSPS Larlé,Nongr-Massom,F,46,03 February 2026,07 February 2026,09/02/2026,40.8,Non,Non,Hospitalisé
+MEN-2026-161,CSPS Bonheur Ville,Sig-Noghin,M,6,2026-01-28,"January 30, 2026",2026/01/31,39.0,Oui,Non,Hospitalisé
+MEN-2026-162,CSPS Rimkieta,Nongr-Massom,F,64,29 January 2026,02 February 2026,02 February 2026,38.6,Non,Oui,Hospitalisé
+MEN-2026-163,CSPS Nonghin,Boulmiougou,M,70,08/02/2026,2026-02-11,2026-02-11,39.4,Oui,Oui,Hospitalisé
+MEN-2026-164,CSPS Tanghin,Boulmiougou,F,59,05 January 2026,2026-01-06,2026-01-08,39.9,Non,Oui,Guéri
+MEN-2026-165,CMA de Pissy,Baskuy,M,37,07/02/2026,09/02/2026,02-11-2026,38.8,Non,Non,Décédé
+MEN-2026-166,CSPS Kossodo,Sig-Noghin,M,52,"January 30, 2026",30/01/2026,2026-01-31,38.3,Non,Non,Référé
+MEN-2026-167,CSPS Cissin 17,Baskuy,F,22,08.01.2026,08/01/2026,2026-01-10,38.8,Non,Non,Guéri
+MEN-2026-168,CSPS Boassa,Nongr-Massom,M,5,09-Jan-2026,01-11-2026,2026/01/13,41.3,Non,Oui,Hospitalisé
+MEN-2026-169,CSPS Tanghin,Baskuy,M,70,10/02/2026,13.02.2026,2026-02-15,38.3,Oui,Oui,Décédé
+MEN-2026-170,CSPS Tanghin,Boulmiougou,F,51,12 February 2026,16 February 2026,18-Feb-2026,39.2,Non,Non,Hospitalisé
+MEN-2026-171,CSPS Tampouy,Boulmiougou,M,38,"February 11, 2026",02-14-2026,2026/02/14,40.5,Oui,Non,Décédé
+MEN-2026-172,CSPS Larlé,Baskuy,F,1,"January 28, 2026",28/01/2026,01-28-2026,38.3,Non,Non,Référé
+MEN-2026-173,CSPS Rimkieta,Boulmiougou,F,46,2026/01/11,2026-01-11,"January 11, 2026",39.4,Oui,Oui,Hospitalisé
+MEN-2026-174,CSPS Larlé,Nongr-Massom,F,35,01-29-2026,30/01/2026,01-30-2026,39.5,Non,Non,Référé
+MEN-2026-175,CSPS Nioko 2,Baskuy,M,32,09 January 2026,11/01/2026,01-12-2026,39.1,Non,Non,Référé
+MEN-2026-176,CSPS Nonghin,Sig-Noghin,F,56,26.01.2026,29-Jan-2026,30 January 2026,39.1,Non,Non,Décédé
+MEN-2026-177,CSPS Nagrin,Nongr-Massom,F,42,05.02.2026,09/02/2026,09-Feb-2026,40.1,Oui,Oui,Référé
+MEN-2026-178,CSPS Nagrin,Baskuy,M,9,"January 18, 2026",21-Jan-2026,"January 22, 2026",40.3,Non,Non,Guéri
+MEN-2026-179,CSPS Rimkieta,Baskuy,M,52,02.02.2026,06/02/2026,07/02/2026,40.7,Non,Oui,Guéri
+MEN-2026-180,CSPS Cissin 17,Boulmiougou,M,56,"February 10, 2026",13-Feb-2026,14-Feb-2026,39.6,Non,Non,Hospitalisé
+MEN-2026-181,CSPS Larlé,Baskuy,M,14,27/01/2026,01-27-2026,28.01.2026,39.1,Non,Oui,Référé
+MEN-2026-182,CSPS Nioko 2,Baskuy,F,57,27/01/2026,"January 30, 2026",2026-01-30,40.8,Oui,Oui,Décédé
+MEN-2026-183,CSPS Rimkieta,Sig-Noghin,M,32,11.01.2026,2026/01/12,14 January 2026,38.8,Non,Oui,Hospitalisé
+MEN-2026-184,CSPS Kossodo,Baskuy,F,26,2026-02-01,04-Feb-2026,04-Feb-2026,39.0,Oui,Oui,Hospitalisé
+MEN-2026-185,CSPS Cissin 17,Nongr-Massom,F,59,28.01.2026,2026/01/30,2026/01/30,40.1,Non,Non,Référé
+MEN-2026-186,CSPS Nonghin,Sig-Noghin,F,11,16/01/2026,18-Jan-2026,"January 20, 2026",38.4,Non,Oui,Référé
+MEN-2026-187,CSPS Nagrin,Sig-Noghin,F,50,01-31-2026,02-04-2026,04 February 2026,39.0,Oui,Non,Référé
+MEN-2026-188,CSPS Boassa,Sig-Noghin,F,63,08 January 2026,2026/01/10,10 January 2026,39.5,Non,Non,Hospitalisé
+MEN-2026-189,CSPS Larlé,Boulmiougou,F,29,10-Jan-2026,"January 14, 2026",01-14-2026,40.7,Non,Oui,Guéri
+MEN-2026-190,CMA de Pissy,Baskuy,M,70,2026/01/22,26/01/2026,27-Jan-2026,39.0,Oui,Non,Décédé
+MEN-2026-191,CSPS Tampouy,Sig-Noghin,F,16,2026/01/27,01-27-2026,01-28-2026,40.7,Oui,Oui,Décédé
+MEN-2026-192,CSPS Boassa,Nongr-Massom,F,69,"February 08, 2026","February 10, 2026",12/02/2026,38.5,Non,Oui,Décédé
+MEN-2026-193,CSPS Nioko 2,Nongr-Massom,M,19,2026/01/13,14 January 2026,01-14-2026,40.0,Non,Non,Référé
+MEN-2026-194,CSPS Nagrin,Nongr-Massom,F,12,02 February 2026,02 February 2026,04.02.2026,40.0,Oui,Non,Décédé
+MEN-2026-195,CSPS Nagrin,Sig-Noghin,F,28,"January 09, 2026",13.01.2026,"January 14, 2026",39.2,Oui,Non,Décédé
+MEN-2026-196,CMA de Pissy,Boulmiougou,M,59,08 January 2026,08 January 2026,2026-01-08,41.5,Non,Oui,Hospitalisé
+MEN-2026-197,CSPS Nonghin,Nongr-Massom,F,12,24/01/2026,25.01.2026,01-26-2026,38.2,Non,Oui,Référé
+MEN-2026-198,CSPS Kossodo,Boulmiougou,M,28,10-Jan-2026,10 January 2026,2026-01-10,38.0,Non,Oui,Référé
+MEN-2026-199,CSPS Nagrin,Boulmiougou,M,30,13/01/2026,16.01.2026,16.01.2026,41.1,Oui,Non,Hospitalisé
+MEN-2026-200,CSPS Bonheur Ville,Sig-Noghin,F,2,14.01.2026,14-Jan-2026,01-16-2026,41.2,Non,Oui,Guéri
+MEN-2026-201,CSPS Tanghin,Baskuy,F,50,01-11-2026,12-Jan-2026,"January 12, 2026",40.3,Oui,Non,Guéri
+MEN-2026-202,CSPS Tampouy,Baskuy,F,66,2026-01-24,25-Jan-2026,27 January 2026,39.4,Oui,Non,Guéri
+MEN-2026-203,CSPS Boassa,Baskuy,F,41,07.02.2026,02-07-2026,08 February 2026,41.3,Oui,Oui,Guéri
+MEN-2026-204,CMA de Pissy,Baskuy,F,6,2026/01/05,2026/01/07,2026/01/07,38.3,Oui,Non,Guéri
+MEN-2026-205,CSPS Boassa,Nongr-Massom,F,27,24/01/2026,"January 24, 2026",2026/01/26,40.6,Oui,Oui,Hospitalisé
+MEN-2026-206,CSPS Bonheur Ville,Boulmiougou,F,59,01-10-2026,13/01/2026,2026-01-13,40.5,Oui,Oui,Référé
+MEN-2026-207,CSPS Boassa,Nongr-Massom,M,34,"January 27, 2026",31/01/2026,2026-02-02,39.2,Non,Non,Guéri
+MEN-2026-208,CSPS Kossodo,Baskuy,F,10,2026-01-21,25 January 2026,01-27-2026,39.3,Non,Oui,Guéri
+MEN-2026-209,CMA de Pissy,Sig-Noghin,M,6,19 January 2026,23.01.2026,2026/01/23,41.2,Oui,Oui,Référé
+MEN-2026-210,CSPS Nioko 2,Nongr-Massom,F,54,19/01/2026,21.01.2026,21/01/2026,39.8,Oui,Oui,Hospitalisé
+MEN-2026-211,CSPS Kossodo,Nongr-Massom,F,9,07.02.2026,07/02/2026,08 February 2026,38.0,Oui,Non,Décédé
+MEN-2026-212,CSPS Tampouy,Sig-Noghin,M,64,2026-01-20,2026/01/23,2026-01-24,38.8,Non,Oui,Décédé
+MEN-2026-213,CSPS Cissin 17,Sig-Noghin,M,40,2026/01/05,08 January 2026,2026-01-10,41.4,Oui,Non,Guéri
+MEN-2026-214,CSPS Nioko 2,Nongr-Massom,F,53,07/01/2026,08/01/2026,01-10-2026,40.2,Non,Oui,Guéri
+MEN-2026-215,CSPS Larlé,Nongr-Massom,F,38,01.02.2026,02.02.2026,02 February 2026,39.0,Oui,Oui,Hospitalisé
+MEN-2026-216,CSPS Boassa,Baskuy,F,14,11.02.2026,2026/02/11,11/02/2026,39.9,Oui,Non,Décédé
+MEN-2026-217,CSPS Boassa,Nongr-Massom,M,12,03-Feb-2026,05.02.2026,02-05-2026,38.3,Oui,Non,Référé
+MEN-2026-218,CSPS Larlé,Sig-Noghin,M,39,2026/02/06,06 February 2026,08-Feb-2026,38.3,Oui,Oui,Guéri
+MEN-2026-219,CSPS Tampouy,Baskuy,F,17,05/01/2026,"January 05, 2026",05/01/2026,38.1,Oui,Oui,Référé
+MEN-2026-220,CMA de Pissy,Baskuy,M,16,01-13-2026,2026/01/13,2026/01/14,39.7,Non,Non,Hospitalisé
+MEN-2026-221,CSPS Larlé,Baskuy,M,36,2026-01-27,28-Jan-2026,"January 28, 2026",39.7,Non,Oui,Guéri
+MEN-2026-222,CSPS Tampouy,Sig-Noghin,M,54,2026/01/22,25.01.2026,25 January 2026,39.9,Non,Non,Décédé
+MEN-2026-223,CSPS Tanghin,Sig-Noghin,M,4,"January 29, 2026",2026-01-31,31 January 2026,39.9,Oui,Oui,Guéri
+MEN-2026-224,CSPS Nioko 2,Boulmiougou,M,69,2026/01/20,21.01.2026,01-22-2026,38.6,Non,Non,Guéri
+MEN-2026-225,CSPS Bonheur Ville,Sig-Noghin,F,19,"January 27, 2026",01-31-2026,02 February 2026,38.1,Oui,Oui,Hospitalisé
+MEN-2026-226,CSPS Tanghin,Sig-Noghin,M,1,06.01.2026,01-10-2026,11.01.2026,38.2,Oui,Oui,Guéri
+MEN-2026-227,CSPS Nioko 2,Baskuy,M,48,07.02.2026,"February 09, 2026",09.02.2026,38.5,Oui,Non,Référé
+MEN-2026-228,CSPS Nioko 2,Nongr-Massom,M,72,01-25-2026,2026/01/26,"January 28, 2026",40.6,Non,Oui,Hospitalisé
+MEN-2026-229,CSPS Boassa,Nongr-Massom,M,5,05/01/2026,09 January 2026,01-10-2026,39.2,Oui,Oui,Décédé
+MEN-2026-230,CSPS Nioko 2,Nongr-Massom,F,12,2026-01-25,"January 26, 2026",28-Jan-2026,38.9,Oui,Non,Décédé
+MEN-2026-231,CSPS Kossodo,Baskuy,M,50,2026/01/11,11 January 2026,2026/01/11,39.2,Non,Oui,Référé
+MEN-2026-232,CSPS Cissin 17,Boulmiougou,F,58,2026-02-10,11.02.2026,"February 11, 2026",41.3,Oui,Non,Hospitalisé
+MEN-2026-233,CSPS Rimkieta,Boulmiougou,F,10,29 January 2026,2026-01-30,2026/02/01,41.3,Oui,Non,Hospitalisé
+MEN-2026-234,CSPS Tampouy,Baskuy,F,27,"January 08, 2026","January 08, 2026",09-Jan-2026,38.3,Non,Non,Hospitalisé
+MEN-2026-235,CSPS Cissin 17,Nongr-Massom,F,55,08-Jan-2026,10/01/2026,2026-01-10,38.7,Non,Oui,Référé
+MEN-2026-236,CSPS Kossodo,Nongr-Massom,M,61,2026/01/12,01-14-2026,15.01.2026,41.1,Non,Oui,Référé
+MEN-2026-237,CSPS Larlé,Sig-Noghin,F,60,2026-01-07,01-09-2026,10/01/2026,38.3,Non,Non,Hospitalisé
+MEN-2026-238,CSPS Nagrin,Baskuy,M,67,09 February 2026,"February 09, 2026",10/02/2026,39.4,Oui,Oui,Guéri
+MEN-2026-239,CSPS Tampouy,Sig-Noghin,M,28,2026/02/02,03/02/2026,2026/02/03,38.7,Oui,Non,Décédé
+MEN-2026-240,CSPS Nagrin,Nongr-Massom,F,72,09 January 2026,2026-01-09,2026/01/10,38.4,Oui,Oui,Guéri
+MEN-2026-241,CSPS Rimkieta,Nongr-Massom,F,37,"January 11, 2026",2026/01/15,15 January 2026,40.0,Non,Oui,Hospitalisé
+MEN-2026-242,CMA de Pissy,Baskuy,F,52,22-Jan-2026,2026-01-25,25 January 2026,41.2,Non,Oui,Décédé
+MEN-2026-243,CSPS Nioko 2,Boulmiougou,M,63,01-24-2026,"January 26, 2026",27 January 2026,40.7,Non,Non,Référé
+MEN-2026-244,CSPS Tampouy,Baskuy,F,57,12.02.2026,2026-02-12,02-12-2026,38.2,Non,Oui,Guéri
+MEN-2026-245,CSPS Tampouy,Boulmiougou,F,8,2026-01-16,17.01.2026,17-Jan-2026,39.0,Non,Non,Guéri
+MEN-2026-246,CSPS Bonheur Ville,Baskuy,M,63,06 January 2026,07.01.2026,08.01.2026,38.6,Non,Oui,Décédé
+MEN-2026-247,CSPS Bonheur Ville,Sig-Noghin,M,21,06-Jan-2026,09-Jan-2026,"January 09, 2026",40.3,Oui,Oui,Référé
+MEN-2026-248,CSPS Tampouy,Nongr-Massom,F,2,"January 13, 2026",2026/01/14,2026/01/16,41.0,Non,Non,Hospitalisé
+MEN-2026-249,CSPS Bonheur Ville,Baskuy,M,67,2026-02-03,05.02.2026,"February 07, 2026",39.0,Oui,Non,Guéri
+MEN-2026-250,CSPS Larlé,Nongr-Massom,F,42,26-Jan-2026,01-28-2026,30-Jan-2026,41.1,Non,Non,Hospitalisé
+MEN-2026-251,CSPS Nagrin,Baskuy,F,34,2026-01-06,09-Jan-2026,10.01.2026,40.5,Oui,Non,Décédé
+MEN-2026-252,CSPS Boassa,Nongr-Massom,M,72,06 February 2026,02-08-2026,"February 08, 2026",40.5,Oui,Non,Guéri
+MEN-2026-253,CSPS Nagrin,Nongr-Massom,F,40,"January 19, 2026","January 21, 2026",21 January 2026,41.0,Non,Oui,Guéri
+MEN-2026-254,CSPS Nonghin,Baskuy,F,16,2026/02/04,2026-02-05,02-07-2026,38.5,Oui,Non,Référé
+MEN-2026-255,CSPS Nioko 2,Sig-Noghin,M,41,10 February 2026,13.02.2026,02-13-2026,39.1,Oui,Oui,Référé
+MEN-2026-256,CSPS Kossodo,Boulmiougou,M,21,2026/01/22,2026/01/23,2026/01/23,39.5,Non,Non,Guéri
+MEN-2026-257,CMA de Pissy,Nongr-Massom,M,48,2026-01-07,2026-01-11,11-Jan-2026,38.8,Non,Non,Hospitalisé
+MEN-2026-258,CSPS Boassa,Boulmiougou,M,40,"January 11, 2026","January 14, 2026",16 January 2026,40.5,Non,Non,Hospitalisé
+MEN-2026-259,CSPS Boassa,Baskuy,M,25,26-Jan-2026,29-Jan-2026,01-30-2026,38.7,Oui,Oui,Guéri
+MEN-2026-260,CSPS Rimkieta,Boulmiougou,M,33,28/01/2026,2026-01-28,2026-01-29,40.4,Non,Non,Référé
+MEN-2026-261,CSPS Nioko 2,Sig-Noghin,M,61,2026-01-12,"January 16, 2026",2026/01/17,40.3,Non,Oui,Référé
+MEN-2026-262,CSPS Larlé,Boulmiougou,M,16,11 January 2026,15-Jan-2026,17-Jan-2026,40.7,Oui,Non,Référé
+MEN-2026-263,CSPS Kossodo,Sig-Noghin,F,71,23.01.2026,24-Jan-2026,2026-01-24,38.0,Oui,Oui,Référé
+MEN-2026-264,CSPS Nioko 2,Boulmiougou,F,10,14-Jan-2026,14 January 2026,"January 16, 2026",38.9,Oui,Oui,Hospitalisé
+MEN-2026-265,CSPS Nagrin,Boulmiougou,M,41,2026-01-07,2026-01-09,01-10-2026,40.3,Oui,Non,Décédé
+MEN-2026-266,CSPS Tanghin,Nongr-Massom,M,12,02/02/2026,2026/02/06,2026/02/07,41.4,Non,Non,Référé
+MEN-2026-267,CSPS Nioko 2,Boulmiougou,M,17,31/01/2026,2026/02/01,01 February 2026,40.8,Non,Oui,Référé
+MEN-2026-268,CSPS Kossodo,Baskuy,M,17,2026/01/27,31 January 2026,2026-01-31,38.2,Non,Oui,Hospitalisé
+MEN-2026-269,CSPS Nagrin,Sig-Noghin,F,13,26.01.2026,2026/01/30,02-01-2026,40.9,Oui,Oui,Hospitalisé
+MEN-2026-270,CSPS Cissin 17,Baskuy,F,22,06-Feb-2026,09.02.2026,"February 10, 2026",38.2,Oui,Non,Référé
+MEN-2026-271,CSPS Bonheur Ville,Baskuy,M,57,20 January 2026,20 January 2026,21.01.2026,38.4,Non,Oui,Guéri
+MEN-2026-272,CSPS Rimkieta,Boulmiougou,M,72,"January 30, 2026",02-Feb-2026,02 February 2026,41.3,Non,Oui,Hospitalisé
+MEN-2026-273,CSPS Nioko 2,Nongr-Massom,F,61,03/02/2026,05/02/2026,07-Feb-2026,38.0,Non,Non,Décédé
+MEN-2026-274,CSPS Boassa,Baskuy,M,64,"January 11, 2026",11-Jan-2026,11-Jan-2026,38.4,Non,Oui,Référé
+MEN-2026-275,CMA de Pissy,Boulmiougou,F,54,17 January 2026,01-19-2026,19 January 2026,38.0,Oui,Non,Référé
+MEN-2026-276,CSPS Nioko 2,Sig-Noghin,M,23,2026/02/06,07.02.2026,2026/02/09,39.5,Oui,Non,Référé
+MEN-2026-277,CSPS Boassa,Baskuy,F,18,26.01.2026,28-Jan-2026,29-Jan-2026,38.7,Non,Non,Hospitalisé
+MEN-2026-278,CSPS Nioko 2,Boulmiougou,F,42,16 January 2026,2026/01/20,"January 22, 2026",41.1,Non,Oui,Guéri
+MEN-2026-279,CSPS Nonghin,Boulmiougou,M,7,"January 06, 2026",01-09-2026,"January 09, 2026",40.4,Oui,Oui,Décédé
+MEN-2026-280,CSPS Kossodo,Boulmiougou,M,46,2026/01/18,22-Jan-2026,"January 22, 2026",40.4,Oui,Non,Référé
+MEN-2026-281,CMA de Pissy,Nongr-Massom,M,7,31 January 2026,02-Feb-2026,04.02.2026,40.6,Oui,Oui,Décédé
+MEN-2026-282,CSPS Boassa,Sig-Noghin,M,10,2026/02/02,2026-02-03,2026/02/05,39.0,Non,Oui,Hospitalisé
+MEN-2026-283,CSPS Kossodo,Sig-Noghin,M,43,02-11-2026,13.02.2026,2026-02-13,40.7,Non,Non,Décédé
+MEN-2026-284,CSPS Boassa,Boulmiougou,M,29,2026/01/09,2026/01/11,13/01/2026,39.2,Oui,Non,Décédé
+MEN-2026-285,CSPS Kossodo,Boulmiougou,M,68,28.01.2026,30 January 2026,30-Jan-2026,41.2,Oui,Oui,Décédé
+MEN-2026-286,CSPS Rimkieta,Nongr-Massom,M,33,29.01.2026,29 January 2026,30 January 2026,38.2,Oui,Non,Guéri
+MEN-2026-287,CMA de Pissy,Boulmiougou,M,69,11-Jan-2026,2026/01/12,14/01/2026,38.7,Non,Oui,Hospitalisé
+MEN-2026-288,CMA de Pissy,Boulmiougou,M,43,2026-01-06,01-09-2026,"January 11, 2026",40.0,Oui,Non,Référé
+MEN-2026-289,CSPS Nagrin,Nongr-Massom,M,52,2026/01/29,01/02/2026,2026-02-03,40.2,Oui,Oui,Guéri
+MEN-2026-290,CSPS Nonghin,Nongr-Massom,M,38,"January 27, 2026",31 January 2026,2026/01/31,39.4,Oui,Non,Hospitalisé
+MEN-2026-291,CSPS Rimkieta,Nongr-Massom,M,51,"February 08, 2026",09.02.2026,2026-02-09,39.9,Oui,Oui,Guéri
+MEN-2026-292,CSPS Rimkieta,Boulmiougou,F,51,05-Jan-2026,09.01.2026,11-Jan-2026,39.4,Oui,Oui,Hospitalisé
+MEN-2026-293,CSPS Cissin 17,Sig-Noghin,M,25,19 January 2026,23/01/2026,"January 24, 2026",40.4,Non,Oui,Hospitalisé
+MEN-2026-294,CSPS Boassa,Sig-Noghin,M,46,"February 11, 2026",14/02/2026,15-Feb-2026,39.1,Non,Non,Décédé
+MEN-2026-295,CSPS Tanghin,Baskuy,M,47,2026-02-11,12.02.2026,14-Feb-2026,40.7,Non,Non,Décédé
+MEN-2026-296,CSPS Kossodo,Nongr-Massom,F,60,13 January 2026,15/01/2026,01-16-2026,40.3,Oui,Non,Hospitalisé
+MEN-2026-297,CSPS Nioko 2,Boulmiougou,M,10,2026-02-08,2026/02/09,10-Feb-2026,41.2,Non,Non,Hospitalisé
+MEN-2026-298,CSPS Boassa,Baskuy,M,38,2026/01/28,31.01.2026,2026-01-31,40.3,Oui,Oui,Référé
+MEN-2026-299,CSPS Nioko 2,Baskuy,F,19,2026-01-15,16-Jan-2026,18 January 2026,38.8,Non,Non,Hospitalisé
+MEN-2026-300,CSPS Nagrin,Baskuy,F,47,2026-01-07,2026-01-08,10.01.2026,38.4,Non,Non,Hospitalisé
+MEN-2026-301,CSPS Rimkieta,Nongr-Massom,F,10,29-Jan-2026,2026/02/01,02.02.2026,40.9,Non,Non,Référé
+MEN-2026-302,CSPS Kossodo,Sig-Noghin,M,18,12/02/2026,"February 12, 2026",14-Feb-2026,38.5,Oui,Non,Guéri
+MEN-2026-303,CSPS Kossodo,Baskuy,F,15,19-Jan-2026,01-22-2026,2026/01/23,38.1,Oui,Oui,Hospitalisé
+MEN-2026-304,CMA de Pissy,Sig-Noghin,F,19,01-13-2026,2026/01/17,2026-01-17,41.1,Non,Oui,Hospitalisé
+MEN-2026-305,CSPS Boassa,Sig-Noghin,F,62,02-02-2026,02-06-2026,"February 07, 2026",38.6,Non,Non,Guéri
+MEN-2026-306,CSPS Cissin 17,Boulmiougou,M,17,2026/01/19,01-22-2026,23/01/2026,38.6,Oui,Oui,Guéri
+MEN-2026-307,CMA de Pissy,Baskuy,F,70,04.02.2026,2026-02-05,2026/02/07,38.8,Non,Non,Décédé
+MEN-2026-308,CSPS Boassa,Nongr-Massom,F,55,11-Feb-2026,15/02/2026,"February 15, 2026",40.1,Non,Non,Hospitalisé
+MEN-2026-309,CSPS Cissin 17,Boulmiougou,F,67,05-Jan-2026,05.01.2026,2026/01/07,39.3,Oui,Non,Décédé
+MEN-2026-310,CSPS Bonheur Ville,Nongr-Massom,F,47,21-Jan-2026,2026/01/25,26 January 2026,38.6,Non,Non,Décédé
+MEN-2026-311,CSPS Nioko 2,Sig-Noghin,M,51,10-Feb-2026,12 February 2026,02-14-2026,38.4,Non,Non,Guéri
+MEN-2026-312,CSPS Cissin 17,Sig-Noghin,F,1,2026/01/15,18/01/2026,20/01/2026,38.9,Non,Oui,Guéri
+MEN-2026-313,CSPS Larlé,Boulmiougou,M,67,29 January 2026,01 February 2026,2026-02-03,38.7,Non,Oui,Guéri
+MEN-2026-314,CSPS Bonheur Ville,Sig-Noghin,M,30,12.02.2026,16-Feb-2026,2026-02-18,41.4,Oui,Non,Référé
+MEN-2026-315,CSPS Rimkieta,Boulmiougou,M,26,27/01/2026,"January 30, 2026",31.01.2026,39.2,Non,Oui,Hospitalisé
+MEN-2026-316,CSPS Larlé,Sig-Noghin,F,1,03/02/2026,06/02/2026,"February 08, 2026",39.2,Oui,Non,Décédé
+MEN-2026-317,CSPS Tampouy,Nongr-Massom,F,62,02 February 2026,2026-02-05,07 February 2026,38.4,Oui,Non,Hospitalisé
+MEN-2026-318,CSPS Rimkieta,Boulmiougou,F,46,19-Jan-2026,"January 21, 2026",22/01/2026,39.4,Non,Oui,Hospitalisé
+MEN-2026-319,CSPS Bonheur Ville,Nongr-Massom,M,28,04-Feb-2026,06 February 2026,07-Feb-2026,38.8,Oui,Non,Hospitalisé
+MEN-2026-320,CSPS Boassa,Boulmiougou,M,46,19/01/2026,20 January 2026,2026-01-20,40.7,Oui,Non,Décédé
+MEN-2026-321,CSPS Kossodo,Sig-Noghin,F,36,2026/01/25,28-Jan-2026,01-30-2026,38.2,Non,Non,Guéri
+MEN-2026-322,CSPS Kossodo,Boulmiougou,F,23,06.02.2026,2026-02-08,2026-02-09,40.4,Non,Oui,Décédé
+MEN-2026-323,CSPS Rimkieta,Nongr-Massom,M,24,"January 28, 2026",01 February 2026,02.02.2026,39.3,Non,Non,Hospitalisé
+MEN-2026-324,CSPS Larlé,Baskuy,M,52,01-31-2026,02-Feb-2026,03/02/2026,40.5,Oui,Non,Référé
+MEN-2026-325,CSPS Kossodo,Boulmiougou,M,20,2026/01/17,18 January 2026,01-20-2026,41.5,Non,Non,Décédé
+MEN-2026-326,CSPS Nagrin,Boulmiougou,M,7,2026-01-21,25-Jan-2026,"January 27, 2026",39.7,Oui,Non,Décédé
+MEN-2026-327,CSPS Rimkieta,Nongr-Massom,F,72,2026-01-21,2026/01/23,24/01/2026,39.2,Oui,Oui,Décédé
+MEN-2026-328,CSPS Kossodo,Baskuy,M,66,2026/01/27,"January 29, 2026",31 January 2026,40.2,Oui,Oui,Décédé
+MEN-2026-329,CSPS Cissin 17,Boulmiougou,M,52,31.01.2026,04-Feb-2026,06.02.2026,39.1,Non,Non,Référé
+MEN-2026-330,CSPS Kossodo,Baskuy,M,67,01-22-2026,2026-01-25,01-26-2026,40.5,Non,Oui,Hospitalisé
+MEN-2026-331,CSPS Cissin 17,Baskuy,M,13,2026-01-15,2026/01/18,18/01/2026,38.4,Oui,Oui,Référé
+MEN-2026-332,CSPS Kossodo,Sig-Noghin,M,37,01-24-2026,2026-01-25,2026-01-25,40.3,Non,Non,Référé
+MEN-2026-333,CSPS Boassa,Sig-Noghin,F,57,2026/02/08,"February 10, 2026",12.02.2026,39.7,Oui,Oui,Référé
+MEN-2026-334,CSPS Boassa,Nongr-Massom,M,34,2026-01-24,01-26-2026,27.01.2026,39.0,Oui,Non,Référé
+MEN-2026-335,CSPS Bonheur Ville,Sig-Noghin,M,38,24.01.2026,24-Jan-2026,2026/01/25,41.1,Non,Non,Hospitalisé
+MEN-2026-336,CSPS Larlé,Boulmiougou,F,29,15-Jan-2026,"January 18, 2026","January 19, 2026",40.3,Non,Non,Hospitalisé
+MEN-2026-337,CSPS Cissin 17,Baskuy,F,38,"January 09, 2026",10 January 2026,10-Jan-2026,39.1,Oui,Oui,Guéri
+MEN-2026-338,CSPS Boassa,Baskuy,M,35,16-Jan-2026,16/01/2026,01-17-2026,38.1,Oui,Non,Référé
+MEN-2026-339,CSPS Nioko 2,Boulmiougou,F,60,24/01/2026,01-27-2026,2026-01-28,38.9,Non,Oui,Référé
+MEN-2026-340,CMA de Pissy,Boulmiougou,M,49,2026/01/16,17 January 2026,18-Jan-2026,40.6,Oui,Oui,Référé
+MEN-2026-341,CSPS Kossodo,Baskuy,F,27,11.01.2026,01-15-2026,2026-01-17,40.6,Oui,Non,Référé
+MEN-2026-342,CSPS Nonghin,Sig-Noghin,M,7,24-Jan-2026,2026/01/25,26.01.2026,38.1,Non,Oui,Référé
+MEN-2026-343,CSPS Nioko 2,Sig-Noghin,F,61,20/01/2026,20-Jan-2026,01-20-2026,39.7,Non,Oui,Guéri
+MEN-2026-344,CSPS Cissin 17,Sig-Noghin,F,69,27-Jan-2026,28.01.2026,30.01.2026,40.8,Non,Oui,Guéri
+MEN-2026-345,CSPS Larlé,Boulmiougou,F,18,29 January 2026,"January 31, 2026",02 February 2026,38.7,Oui,Non,Décédé
+MEN-2026-346,CSPS Boassa,Boulmiougou,M,71,03 February 2026,"February 05, 2026","February 07, 2026",39.9,Non,Oui,Référé
+MEN-2026-347,CSPS Bonheur Ville,Sig-Noghin,F,47,16/01/2026,2026/01/16,18-Jan-2026,39.8,Non,Oui,Décédé

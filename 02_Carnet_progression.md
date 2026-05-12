@@ -111,8 +111,8 @@ détaillées) qui prime.
 | 14 | `df[[colonne]]` vs `df$colonne` — accès dynamique à une colonne | mini-projet mois 1 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | J+7 le 10/05/2026 | À jour |
 | 15 | `filter()`, `select()`, `arrange()`, `mutate()`, pipe `\|>` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 |  | J+7 le 10/05/2026 | À jour |
 | 16 | `grepl()` — détection de pattern dans un vecteur character, `table()`, `unique()` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 |  | J+7 le 10/05/2026 | À jour |
-| 17 | `group_by()` + `summarise()` — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 |  | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 |  | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 17 | `group_by()` + `summarise()` — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 | 12/05/2026 | 04/06/2026 |  | J+7 le 12/05/2026 | À jour |
+| 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 | 12/05/2026 | 04/06/2026 |  | J+7 le 12/05/2026 | À jour |
 | 19 | `pivot_longer()` / `pivot_wider()` — format large vs long | 6.1 | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 |  | 05/06/2026 |  | J+1 le 10/05/2026 | À jour |
 | 20 | Import structuré multi-niveaux : `col_names = FALSE`, `unlist()`, forward fill, `colnames()` | 6.1 rappels | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 |  | 05/06/2026 |  | J+1 le 10/05/2026 | À jour |
 | 21 | `str_to_upper/lower()`, `str_squish()`, `str_replace()` — normalisation de chaînes de caractères | 6.4 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 |  | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
@@ -127,9 +127,9 @@ détaillées) qui prime.
 | 30 | Détection d'une ligne fantôme (cumul/total) dans un fichier SNIS | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
 | 31 | `geom_tile()` — heatmap avec `x`, `y`, `fill` dans `aes()` | 7.4 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
 | 32 | `theme()` + `element_text()` — modifier les éléments non-données d'un graphique | 7.4 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 33 | `theme_minimal()` (et famille `theme_*()`) — thèmes pré-construits et règle d'ordre : la dernière couche `theme` écrite l'emporte sur les propriétés communes | 7.5 | 11/05/2026 | 12/05/2026 |  | 18/05/2026 |  | 10/06/2026 |  | Aucune | À jour |
-| 34 | `scale_fill_distiller()` + argument `direction` — palette ColorBrewer continue, sens d'application à vérifier par lecture de la légende | 7.5 | 11/05/2026 | 12/05/2026 |  | 18/05/2026 |  | 10/06/2026 |  | Aucune | À jour |
-| 35 | `ggsave()` — export reproductible PNG/PDF avec `width`, `height`, `units`, `dpi`, `bg` explicites | 7.5 | 11/05/2026 | 12/05/2026 |  | 18/05/2026 |  | 10/06/2026 |  | Aucune | À jour |
+| 33 | `theme_minimal()` (et famille `theme_*()`) — thèmes pré-construits et règle d'ordre : la dernière couche `theme` écrite l'emporte sur les propriétés communes | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 |  | 10/06/2026 |  | J+1 le 12/05/2026 | À jour |
+| 34 | `scale_fill_distiller()` + argument `direction` — palette ColorBrewer continue, sens d'application à vérifier par lecture de la légende | 7.5 | 11/05/2026 | 12/05/2026 |12/05/2026  | 18/05/2026 |  | 10/06/2026 |  | J+1 le 12/05/2026 | À jour |
+| 35 | `ggsave()` — export reproductible PNG/PDF avec `width`, `height`, `units`, `dpi`, `bg` explicites | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 |  | 10/06/2026 |  | J+1 le 12/05/2026 | À jour |
 ---
 editor_options: 
   markdown: 
@@ -856,13 +856,27 @@ investies** : \_\_\_ h
 
 #### Session 8.1 — `lubridate` : dates françaises
 
--   **Date et durée** :
--   **Ce qui était prévu** : `lubridate` : parsing de dates françaises,
-    extraction (mois, année), différences
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+- **Date et durée** : 12/05/2026, ~1h30
+- **Ce qui était prévu** : lubridate : parsing de dates françaises,
+  extraction (mois, année), différences
+- **Ce qui a été fait** : parse_date_time() avec orders multiples sur
+  line liste méningite DS-BMG (347 cas, formats hétérogènes) ;
+  epiweek() pour semaines épidémiologiques ; calcul de délai
+  onset-to-consultation avec soustraction de dates + as.numeric() ;
+  détection d'une erreur de parsing silencieuse (délai max 324 jours
+  sur "01-12-2026" ambigu dmy/mdy) ; gestion des mois en français
+  avec locale = "fr_FR" ou str_replace() comme alternative portable
+- **Ce qui est acquis** : parse_date_time() + as.Date() pour parser
+  des formats multiples ; orders = formats réellement présents
+  uniquement ; epiweek() pour numéro de semaine épidémiologique ;
+  soustraction de deux Date → as.numeric() pour délai en jours ;
+  sum() sur vecteur logique pour compter les cas dépassant un seuil ;
+  which.max() pour isoler la ligne aberrante ; locale pour les mois
+  texte non anglais
+- **Ce qui reste flou** : formats ambigus (dmy vs mdy sur "01-12-2026")
+  — pas de solution technique fiable, solution à la source
+- **Prochaine étape** : session 8.2 — stringr avancé : regex pour
+  normaliser des noms
 
 #### Session 8.2 — `stringr` avancé : regex
 
