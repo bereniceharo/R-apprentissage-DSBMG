@@ -187,6 +187,12 @@ détaillées) qui prime.
 | 39 | `str_remove()` + regex — suppression de pattern variable dans une chaîne | 8.2 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
 | 40 | `str_trunc()` — tronquer une chaîne à une largeur maximale | 8.2 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
 | 41 | `str_detect()` + `regex(ignore_case = TRUE)` — détecter un pattern sans contrainte de casse | 8.2 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 42 | `sample()` + `set.seed()` — simulation aléatoire reproductible | 8.3 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 43 | `across()` + `where()` — opérer sur plusieurs colonnes par type dans summarise() et select() | 8.3 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 44 | Complétude = sum(!is.na()) / valeurs attendues × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 45 | Promptitude = sum(date <= délai) / total × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 46 | `quantile()` + `probs` — calcul de percentiles (Q1, Q3) sur un vecteur numérique | 8.4 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 47 | Méthode Tukey : bornes = Q1 - 1.5×IQR et Q3 + 1.5×IQR — détection aberrants robuste | 8.4 | 12/05/2026 | 12/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
 ---
 editor_options: 
   markdown: 
@@ -956,23 +962,43 @@ investies** : \_\_\_ h
 
 #### Session 8.3 — Concepts qualité des données
 
--   **Date et durée** :
--   **Ce qui était prévu** : Concepts qualité des données : complétude,
-    promptitude, cohérence interne
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+- **Date et durée** : 12/05/2026, ~1h
+- **Ce qui était prévu** : Concepts qualité des données : complétude,
+  promptitude, cohérence interne
+- **Ce qui a été fait** : calcul complétude globale (96.8%) et par FS
+  avec across() + where() ; simulation dates transmission avec
+  sample() + set.seed() + seq() ; calcul promptitude janvier 2025
+  (70%) ; détection cohérence interne — valeurs impossibles (CPN4
+  > 100%) sur données réelles DS-BMG
+- **Ce qui est acquis** : across() + where(is.numeric) pour opérer
+  sur toutes les colonnes numériques ; set.seed() pour
+  reproductibilité ; sample() + seq() pour simuler des données ;
+  complétude = sum(!is.na()) / valeurs attendues × 100 ;
+  promptitude = sum(date <= délai) / total × 100 ; cohérence
+  interne = filter() sur seuils impossibles
+- **Ce qui reste flou** : seuils nationaux officiels à vérifier dans
+  les outils de supervision DRS
+- **Prochaine étape** : session 8.4 — détection des valeurs
+  aberrantes : règle des 3 écarts-types, IQR, méthode de Tukey
 
 #### Session 8.4 — Détection des valeurs aberrantes
 
--   **Date et durée** :
--   **Ce qui était prévu** : Détection des valeurs aberrantes : règle
-    des 3 écarts-types, IQR, méthode de Tukey
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+- **Date et durée** : 12/05/2026, ~45min
+- **Ce qui était prévu** : Détection des valeurs aberrantes :
+  règle des 3 écarts-types, IQR, méthode de Tukey
+- **Ce qui a été fait** : comparaison méthode 3 ET vs Tukey ;
+  calcul Q1, Q3, IQR avec quantile() et IQR() ;
+  calcul bornes Tukey (Q1 - 1.5×IQR, Q3 + 1.5×IQR) ;
+  détection 4 FS aberrantes sur CPN4 (borne sup = 128.7%) ;
+  comparaison avec cohérence logique (6 FS > 100%) — les deux
+  méthodes sont complémentaires
+- **Ce qui est acquis** : quantile() avec probs pour Q1/Q3 ;
+  IQR() pour l'écart interquartile ; bornes Tukey calculées
+  depuis Q1/Q3/IQR ; filter() avec bornes calculées ;
+  différence entre aberrant logique et aberrant statistique
+- **Ce qui reste flou** : argument type = 7 dans IQR() —
+  non exploré
+- **Prochaine étape** : session 8.5 — score de qualité par FS
 
 #### Session 8.5 — Score de qualité par FS
 
