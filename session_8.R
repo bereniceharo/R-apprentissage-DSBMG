@@ -12,7 +12,7 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 library(readxl)
-
+library(ggplot2)
 
 # 1---Importation du data set ----
 meningite_list <- read.csv("line_liste_meningite_boulmiougou.csv")
@@ -207,6 +207,10 @@ csps_2025 |>
 # library(writexl)
 # write_xlsx(csps_2025, "csps_2025.xlsx")
 
-
+csps_2025 |> 
+  ggplot(aes(x = organisationunitname,
+         y =`CibleFS-Couverture en CPN4 2025 FS Public`))+
+  geom_col()+
+  geom_text(aes())
 
 

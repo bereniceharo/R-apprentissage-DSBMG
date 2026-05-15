@@ -164,15 +164,15 @@ détaillées) qui prime.
 | 16 | `grepl()` — détection de pattern dans un vecteur character, `table()`, `unique()` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 |  | J+7 le 10/05/2026 | À jour |
 | 17 | `group_by()` + `summarise()` — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 | 12/05/2026 | 04/06/2026 |  | J+7 le 12/05/2026 | À jour |
 | 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 | 12/05/2026 | 04/06/2026 |  | J+7 le 12/05/2026 | À jour |
-| 19 | `pivot_longer()` / `pivot_wider()` — format large vs long | 6.1 | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 |  | 05/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 20 | Import structuré multi-niveaux : `col_names = FALSE`, `unlist()`, forward fill, `colnames()` | 6.1 rappels | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 |  | 05/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 21 | `str_to_upper/lower()`, `str_squish()`, `str_replace()` — normalisation de chaînes de caractères | 6.4 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 |  | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 22 | `separate()` et `unite()` — découpage et fusion de colonnes | 6.2 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 |  | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 23 | `complete.cases()`, `replace_na()` — gestion des NA dans un pipeline | 6.3 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 |  | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 24 | `identical()` — vérifier l'égalité exacte de deux objets R | 6.5 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 |  | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 25 | `ggplot()`, `aes()`, `geom_*()` — logique des trois couches obligatoires | 7.1 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 |  | 07/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 26 | `geom_col()` vs `geom_bar()` : bar chart à partir de données pré-agrégées | 7.2 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 |  | 07/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 27 | `geom_text()` + hjust + ylim() : étiquettes de valeurs et ajustement d'échelle | 7.2 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 |  | 07/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 19 | `pivot_longer()` / `pivot_wider()` — format large vs long | 6.1 | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 | 15/05/2026 | 05/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 20 | Import structuré multi-niveaux : `col_names = FALSE`, `unlist()`, forward fill, `colnames()` | 6.1 rappels | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 | 15/05/2026 | 05/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 21 | `str_to_upper/lower()`, `str_squish()`, `str_replace()` — normalisation de chaînes de caractères | 6.4 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 | 15/05/2026 | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 22 | `separate()` et `unite()` — découpage et fusion de colonnes | 6.2 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 | 15/05/2026 | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 23 | `complete.cases()`, `replace_na()` — gestion des NA dans un pipeline | 6.3 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 | 15/05/2026 | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 24 | `identical()` — vérifier l'égalité exacte de deux objets R | 6.5 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 | 15/05/2026 | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 25 | `ggplot()`, `aes()`, `geom_*()` — logique des trois couches obligatoires | 7.1 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 | 15/05/2026 | 07/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 26 | `geom_col()` vs `geom_bar()` : bar chart à partir de données pré-agrégées | 7.2 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 | 15/05/2026 | 07/06/2026 |  | J+1 le 10/05/2026 | À jour |
+| 27 | `geom_text()` + hjust + ylim() : étiquettes de valeurs et ajustement d'échelle | 7.2 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 | 15/05/2026 | 07/06/2026 |  | J+1 le 10/05/2026 | À jour |
 | 28 | `geom_line()` — courbe pour série temporelle | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
 | 29 | `group = 1` dans `aes()` — connecter les points quand x est un facteur | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
 | 30 | Détection d'une ligne fantôme (cumul/total) dans un fichier SNIS | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
@@ -181,18 +181,18 @@ détaillées) qui prime.
 | 33 | `theme_minimal()` (et famille `theme_*()`) — thèmes pré-construits et règle d'ordre : la dernière couche `theme` écrite l'emporte sur les propriétés communes | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 |  | 10/06/2026 |  | J+1 le 12/05/2026 | À jour |
 | 34 | `scale_fill_distiller()` + argument `direction` — palette ColorBrewer continue, sens d'application à vérifier par lecture de la légende | 7.5 | 11/05/2026 | 12/05/2026 |12/05/2026  | 18/05/2026 |  | 10/06/2026 |  | J+1 le 12/05/2026 | À jour |
 | 35 | `ggsave()` — export reproductible PNG/PDF avec `width`, `height`, `units`, `dpi`, `bg` explicites | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 |  | 10/06/2026 |  | J+1 le 12/05/2026 | À jour |
-| 36 | `parse_date_time()` + `as.Date()` — parsing de formats hétérogènes, argument `orders` | 8.1 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 37 | `epiweek()` — numéro de semaine épidémiologique à partir d'une `Date` | 8.1 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 38 | Soustraction de deux `Date` + `as.numeric()` — calcul de délai en jours | 8.1 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 39 | `str_remove()` + regex — suppression de pattern variable dans une chaîne | 8.2 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 40 | `str_trunc()` — tronquer une chaîne à une largeur maximale | 8.2 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 41 | `str_detect()` + `regex(ignore_case = TRUE)` — détecter un pattern sans contrainte de casse | 8.2 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 42 | `sample()` + `set.seed()` — simulation aléatoire reproductible | 8.3 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 43 | `across()` + `where()` — opérer sur plusieurs colonnes par type dans summarise() et select() | 8.3 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 44 | Complétude = sum(!is.na()) / valeurs attendues × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 45 | Promptitude = sum(date <= délai) / total × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 46 | `quantile()` + `probs` — calcul de percentiles (Q1, Q3) sur un vecteur numérique | 8.4 | 12/05/2026 | 13/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 47 | Méthode Tukey : bornes = Q1 - 1.5×IQR et Q3 + 1.5×IQR — détection aberrants robuste | 8.4 | 12/05/2026 | 12/05/2026 | | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 36 | `parse_date_time()` + `as.Date()` — parsing de formats hétérogènes, argument `orders` | 8.1 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 37 | `epiweek()` — numéro de semaine épidémiologique à partir d'une `Date` | 8.1 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 38 | Soustraction de deux `Date` + `as.numeric()` — calcul de délai en jours | 8.1 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 39 | `str_remove()` + regex — suppression de pattern variable dans une chaîne | 8.2 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 40 | `str_trunc()` — tronquer une chaîne à une largeur maximale | 8.2 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 41 | `str_detect()` + `regex(ignore_case = TRUE)` — détecter un pattern sans contrainte de casse | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026| 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 42 | `sample()` + `set.seed()` — simulation aléatoire reproductible | 8.3 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 43 | `across()` + `where()` — opérer sur plusieurs colonnes par type dans summarise() et select() | 8.3 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 44 | Complétude = sum(!is.na()) / valeurs attendues × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 45 | Promptitude = sum(date <= délai) / total × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 46 | `quantile()` + `probs` — calcul de percentiles (Q1, Q3) sur un vecteur numérique | 8.4 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 47 | Méthode Tukey : bornes = Q1 - 1.5×IQR et Q3 + 1.5×IQR — détection aberrants robuste | 8.4 | 12/05/2026 | 12/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
 ---
 editor_options: 
   markdown: 
