@@ -3,18 +3,15 @@
 # 15 mai 2026
 # ==============================================================================
 
-library(readxl)
-library(ggplot2)
-library(stringr)
-library(dplyr)
-library(tidyr)
-
 # --- Importer le fichier excel-------------------------------------------------
 library(readxl)
 library(dplyr)
 library(ggplot2)
 library(scales)
 library(forcats)
+library(stringr)
+library(ggtext)
+
 # 1. Lecture des données triées --------------------------------------------
 hpv <- read_excel("CV HPV_janv_Avril26.xlsx", sheet ="CV HPV_Janv_Avril26")
 names(hpv)
@@ -27,7 +24,11 @@ hpv_final <- hpv |>
     ) |> 
 # 2. netoyage des noms de valeurs de la colonne fs
   mutate(fs_propre = str_remove(fs, "^(CSPS|CMU|CM|Dispensaire de)\\s+")) |> 
-  mutate(fs_propre = recode(fs_propre, "Ds Boulmiougou" = "Total District"),
+  mutate(fs_propre = recode(fs_propre, 
+                            "Ds Boulmiougou" = "Total District",
+                            "Secteur 29 Ouagadougou" = "Secteur 29",
+                            "Secteur 14 Ouagadougou" = "Secteur 14",
+                            "Secteur 12 Ouagadougou" ="Secteur 12"),
          performance = cv_annuelle >= 33.3) |> 
 # 3. trier les fs_propre en ordre decroissant
   arrange(desc(cv_annuelle)) |> 
@@ -52,15 +53,21 @@ loli <- hpv_final |>
   geom_point(aes(colour = performance), size = 2.3)+
   geom_text(aes(label = sprintf("%.1f%%", cv_annuelle), colour = performance), 
             size = 3, hjust = -0.3, show.legend = FALSE)+
-  geom_vline(xintercept = 33.3, color = "yellow", linewidth = 0.8,
+  geom_vline(xintercept = 33.3, color = "grey40", linewidth = 0.8,
              linetype = "dashed")+
+  annotate(
+    geom = "text", x = cible, y = 4, label = "Cible : 33.3%", 
+    color = "gray30", size = 3, angle = 90, vjust = -0.5, fontface = "italic"
+  )+
   scale_color_manual(
     values = c(`TRUE` = colour_ok, `FALSE` = couleur_ko),
     labels = c("Objectif atteint", "Objectif non atteint"),
     name   = NULL)+
   scale_x_continuous(
     labels = label_percent(scale = 1),
-    expand = expansion(mult = c(0.01, 0.15)))+
+    breaks = seq(0,500, by = 50),
+    limits = c(0,500),
+    expand = expansion(mult = c(0.01, 0.10)))+
   labs(
     x = "Taux de couverture annuelle",
     y = "Formations sanitaires",
@@ -70,7 +77,9 @@ loli <- hpv_final |>
   theme_minimal(base_size = 8)+
   theme(
     plot.title = element_text(face = "bold", size = 14),
-    axis.text.y = element_text(size = 8)
+    axis.text.y = element_text(
+      face = ifelse(levels(hpv_final$fs_propre)== "Total District", "bold", "plain")),
+    legend.position = "bottom"
   )
 
 ggsave(

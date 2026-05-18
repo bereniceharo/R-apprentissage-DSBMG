@@ -3,60 +3,19 @@
 **Apprenant** : Dr Emmanuel **Démarrage** : \_\_\_\_\_ 19 avril 2026
 **Cible de fin** : \_\_\_\_\_ 18 octobre 2026
 
-------------------------------------------------------------------------
-## TABLE DES MATIÈRES
+|  |
+|:-----------------------------------------------------------------------|
+| \## TABLE DES MATIÈRES |
+| \- [Mode d'emploi](#mode-demploi-de-ce-carnet) - [Table de rappel par espacement](#table-de-rappel-par-espacement) |
+| **MOIS 1 — Fondations R** - [Semaine 1 — Installation et logique R](#semaine-1--installation-et-logique-r) - [Semaine 2 — Structures de données + Git](#semaine-2--structures-de-données--git) - [Semaine 3 — Lire et écrire des fichiers](#semaine-3--lire-et-écrire-des-fichiers) - [Semaine 4 — Conditions, boucles, fonctions](#semaine-4--conditions-boucles-fonctions) - [Bilan Mois 1](#bilan-mois-1) |
+| **MOIS 2 — Tidyverse, qualité des données et visualisation** - [Semaine 5 — dplyr : manipulation professionnelle](#semaine-5--dplyr--manipulation-professionnelle) - [Semaine 6 — tidyr et nettoyage](#semaine-6--tidyr-et-nettoyage) - [Semaine 7 — ggplot2 : visualiser](#semaine-7--ggplot2--visualiser) - [Semaine 8 — lubridate et qualité des données](#semaine-8--lubridate-et-qualité-des-données) - [Bilan Mois 2](#bilan-mois-2) |
+| **MOIS 3 — Statistique descriptive et inférentielle** - [Semaine 9 — Statistique descriptive professionnelle](#semaine-9--statistique-descriptive-professionnelle) - [Semaine 10 — Tests d'hypothèses](#semaine-10--tests-dhypothèses) - [Semaine 11 — Intervalles de confiance et taux standardisés](#semaine-11--intervalles-de-confiance-et-taux-standardisés) - [Semaine 12 — Régression linéaire et logistique](#semaine-12--régression-linéaire-et-logistique) - [Bilan Mois 3](#bilan-mois-3) |
+| **MOIS 4 — API ENDOS-BF et automatisation** - [Semaine 13 — Introduction aux API REST](#semaine-13--introduction-aux-api-rest) - [Semaine 14 — API DHIS2 / ENDOS-BF (1) : métadonnées](#semaine-14--api-dhis2--endos-bf-1--métadonnées) - [Semaine 15 — API DHIS2 / ENDOS-BF (2) : données analytiques](#semaine-15--api-dhis2--endos-bf-2--données-analytiques) - [Semaine 16 — Automatisation et robustesse](#semaine-16--automatisation-et-robustesse) - [Bilan Mois 4](#bilan-mois-4) |
+| **MOIS 5 — Surveillance épidémiologique et cartographie** - [Semaine 17 — Surveillance épidémiologique](#semaine-17--surveillance-épidémiologique) - [Semaine 18 — Analyse de mortalité](#semaine-18--analyse-de-mortalité) - [Semaine 19 — Cartographie (1) : fondations spatiales](#semaine-19--cartographie-1--fondations-spatiales) - [Semaine 20 — Cartographie (2) : cartes professionnelles](#semaine-20--cartographie-2--cartes-professionnelles) - [Bilan Mois 5](#bilan-mois-5) |
+| **MOIS 6 — Reporting professionnel et projet de synthèse** - [Semaine 21 — Quarto : fondations](#semaine-21--quarto--fondations) - [Semaine 22 — Quarto avancé : rapports institutionnels](#semaine-22--quarto-avancé--rapports-institutionnels) - [Semaine 23 — Tableaux de bord](#semaine-23--tableaux-de-bord) - [Semaine 24 — Projet final](#semaine-24--projet-final) - [Bilan Mois 6 / Final](#bilan-mois-6--final) |
+| \- [Notes libres](#notes-libres) |
 
-- [Mode d'emploi](#mode-demploi-de-ce-carnet)
-- [Table de rappel par espacement](#table-de-rappel-par-espacement)
-
-**MOIS 1 — Fondations R**
-- [Semaine 1 — Installation et logique R](#semaine-1--installation-et-logique-r)
-- [Semaine 2 — Structures de données + Git](#semaine-2--structures-de-données--git)
-- [Semaine 3 — Lire et écrire des fichiers](#semaine-3--lire-et-écrire-des-fichiers)
-- [Semaine 4 — Conditions, boucles, fonctions](#semaine-4--conditions-boucles-fonctions)
-- [Bilan Mois 1](#bilan-mois-1)
-
-**MOIS 2 — Tidyverse, qualité des données et visualisation**
-- [Semaine 5 — dplyr : manipulation professionnelle](#semaine-5--dplyr--manipulation-professionnelle)
-- [Semaine 6 — tidyr et nettoyage](#semaine-6--tidyr-et-nettoyage)
-- [Semaine 7 — ggplot2 : visualiser](#semaine-7--ggplot2--visualiser)
-- [Semaine 8 — lubridate et qualité des données](#semaine-8--lubridate-et-qualité-des-données)
-- [Bilan Mois 2](#bilan-mois-2)
-
-**MOIS 3 — Statistique descriptive et inférentielle**
-- [Semaine 9 — Statistique descriptive professionnelle](#semaine-9--statistique-descriptive-professionnelle)
-- [Semaine 10 — Tests d'hypothèses](#semaine-10--tests-dhypothèses)
-- [Semaine 11 — Intervalles de confiance et taux standardisés](#semaine-11--intervalles-de-confiance-et-taux-standardisés)
-- [Semaine 12 — Régression linéaire et logistique](#semaine-12--régression-linéaire-et-logistique)
-- [Bilan Mois 3](#bilan-mois-3)
-
-**MOIS 4 — API ENDOS-BF et automatisation**
-- [Semaine 13 — Introduction aux API REST](#semaine-13--introduction-aux-api-rest)
-- [Semaine 14 — API DHIS2 / ENDOS-BF (1) : métadonnées](#semaine-14--api-dhis2--endos-bf-1--métadonnées)
-- [Semaine 15 — API DHIS2 / ENDOS-BF (2) : données analytiques](#semaine-15--api-dhis2--endos-bf-2--données-analytiques)
-- [Semaine 16 — Automatisation et robustesse](#semaine-16--automatisation-et-robustesse)
-- [Bilan Mois 4](#bilan-mois-4)
-
-**MOIS 5 — Surveillance épidémiologique et cartographie**
-- [Semaine 17 — Surveillance épidémiologique](#semaine-17--surveillance-épidémiologique)
-- [Semaine 18 — Analyse de mortalité](#semaine-18--analyse-de-mortalité)
-- [Semaine 19 — Cartographie (1) : fondations spatiales](#semaine-19--cartographie-1--fondations-spatiales)
-- [Semaine 20 — Cartographie (2) : cartes professionnelles](#semaine-20--cartographie-2--cartes-professionnelles)
-- [Bilan Mois 5](#bilan-mois-5)
-
-**MOIS 6 — Reporting professionnel et projet de synthèse**
-- [Semaine 21 — Quarto : fondations](#semaine-21--quarto--fondations)
-- [Semaine 22 — Quarto avancé : rapports institutionnels](#semaine-22--quarto-avancé--rapports-institutionnels)
-- [Semaine 23 — Tableaux de bord](#semaine-23--tableaux-de-bord)
-- [Semaine 24 — Projet final](#semaine-24--projet-final)
-- [Bilan Mois 6 / Final](#bilan-mois-6--final)
-
-- [Notes libres](#notes-libres)
-
-------------------------------------------------------------------------
-
-
-## Mode d'emploi de ce carnet
+## Mode d'emploi de ce carnet {#mode-demploi-de-ce-carnet}
 
 À mettre à jour **à la fin de chaque session** (5-10 minutes maximum).
 C'est un journal de bord, pas un mémoire — la valeur vient de la
@@ -74,7 +33,7 @@ indicateurs de progression).
 
 ------------------------------------------------------------------------
 
-## TABLE DE RAPPEL PAR ESPACEMENT
+## TABLE DE RAPPEL PAR ESPACEMENT {#table-de-rappel-par-espacement}
 
 Cette table matérialise les révisions effectives selon le calendrier
 J+1, J+7, J+30. Elle distingue désormais le **calendaire** (date
@@ -126,23 +85,21 @@ révise J+1 d'abord, même si J+7 est calendairement passé.
 
 ### Colonne de synthèse "Dernière révision effective"
 
-Pour faciliter la lecture de la table, une colonne synthétique
-"Dernière révision effective" est ajoutée. Elle indique le
-dernier jalon de révision effectivement réalisé pour chaque
-concept, sous la forme : "J+1 le DD/MM/YYYY", "J+7 le
-DD/MM/YYYY", "J+30 le DD/MM/YYYY" ou "Aucune" si rien n'a
-encore été fait.
+Pour faciliter la lecture de la table, une colonne synthétique "Dernière
+révision effective" est ajoutée. Elle indique le dernier jalon de
+révision effectivement réalisé pour chaque concept, sous la forme : "J+1
+le DD/MM/YYYY", "J+7 le DD/MM/YYYY", "J+30 le DD/MM/YYYY" ou "Aucune" si
+rien n'a encore été fait.
 
-Cette colonne est redondante avec les colonnes "Révisé J+X le"
-qui restent la source de vérité. Elle sert uniquement
-d'instrument de lecture rapide pour le calcul de statut. En
-cas de doute, c'est toujours la source de vérité (les colonnes
-détaillées) qui prime.
+Cette colonne est redondante avec les colonnes "Révisé J+X le" qui
+restent la source de vérité. Elle sert uniquement d'instrument de
+lecture rapide pour le calcul de statut. En cas de doute, c'est toujours
+la source de vérité (les colonnes détaillées) qui prime.
 
 ### TABLE DE RAPPEL
 
 | \# | Concept | Source/sessions | Date d'introduction | J+1 prévu | Révisé J+1 le | J+7 prévu | Révisé J+7 le | J+30 prévu | Révisé J+30 le | Dernière révision effective | Statut |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+|------|------|------|------|------|------|------|------|------|------|------|------|
 | 0 | Concepts fondamentaux R : assignation `<-`, opérateurs `=` vs `==`, fonctions et arguments | session 1.1, 1.2 | 19/04/2026 | 20/04/2026 | 10/05/2026 | 26/04/2026 | 10/05/2026 | 19/05/2026 |  | J+7 le 10/05/2026 | À jour |
 | 1 | Principaux types données, coercition, NA | session 1.3 | 22/04/2026 | 23/04/2026 | 10/05/2026 | 29/04/2026 | 10/05/2026 | 22/05/2026 |  | J+7 le 10/05/2026 | À jour |
 | 2 | Vecteurs, indexation | session 1.4 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 |  | J+7 le 10/05/2026 | À jour |
@@ -164,35 +121,37 @@ détaillées) qui prime.
 | 16 | `grepl()` — détection de pattern dans un vecteur character, `table()`, `unique()` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 |  | J+7 le 10/05/2026 | À jour |
 | 17 | `group_by()` + `summarise()` — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 | 12/05/2026 | 04/06/2026 |  | J+7 le 12/05/2026 | À jour |
 | 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 | 12/05/2026 | 04/06/2026 |  | J+7 le 12/05/2026 | À jour |
-| 19 | `pivot_longer()` / `pivot_wider()` — format large vs long | 6.1 | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 | 15/05/2026 | 05/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 20 | Import structuré multi-niveaux : `col_names = FALSE`, `unlist()`, forward fill, `colnames()` | 6.1 rappels | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 | 15/05/2026 | 05/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 21 | `str_to_upper/lower()`, `str_squish()`, `str_replace()` — normalisation de chaînes de caractères | 6.4 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 | 15/05/2026 | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 22 | `separate()` et `unite()` — découpage et fusion de colonnes | 6.2 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 | 15/05/2026 | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 23 | `complete.cases()`, `replace_na()` — gestion des NA dans un pipeline | 6.3 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 | 15/05/2026 | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 24 | `identical()` — vérifier l'égalité exacte de deux objets R | 6.5 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 | 15/05/2026 | 04/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 25 | `ggplot()`, `aes()`, `geom_*()` — logique des trois couches obligatoires | 7.1 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 | 15/05/2026 | 07/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 26 | `geom_col()` vs `geom_bar()` : bar chart à partir de données pré-agrégées | 7.2 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 | 15/05/2026 | 07/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 27 | `geom_text()` + hjust + ylim() : étiquettes de valeurs et ajustement d'échelle | 7.2 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 | 15/05/2026 | 07/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 28 | `geom_line()` — courbe pour série temporelle | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 29 | `group = 1` dans `aes()` — connecter les points quand x est un facteur | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 30 | Détection d'une ligne fantôme (cumul/total) dans un fichier SNIS | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 31 | `geom_tile()` — heatmap avec `x`, `y`, `fill` dans `aes()` | 7.4 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 32 | `theme()` + `element_text()` — modifier les éléments non-données d'un graphique | 7.4 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 |  | 08/06/2026 |  | J+1 le 10/05/2026 | À jour |
-| 33 | `theme_minimal()` (et famille `theme_*()`) — thèmes pré-construits et règle d'ordre : la dernière couche `theme` écrite l'emporte sur les propriétés communes | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 |  | 10/06/2026 |  | J+1 le 12/05/2026 | À jour |
-| 34 | `scale_fill_distiller()` + argument `direction` — palette ColorBrewer continue, sens d'application à vérifier par lecture de la légende | 7.5 | 11/05/2026 | 12/05/2026 |12/05/2026  | 18/05/2026 |  | 10/06/2026 |  | J+1 le 12/05/2026 | À jour |
-| 35 | `ggsave()` — export reproductible PNG/PDF avec `width`, `height`, `units`, `dpi`, `bg` explicites | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 |  | 10/06/2026 |  | J+1 le 12/05/2026 | À jour |
-| 36 | `parse_date_time()` + `as.Date()` — parsing de formats hétérogènes, argument `orders` | 8.1 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 37 | `epiweek()` — numéro de semaine épidémiologique à partir d'une `Date` | 8.1 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 38 | Soustraction de deux `Date` + `as.numeric()` — calcul de délai en jours | 8.1 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 39 | `str_remove()` + regex — suppression de pattern variable dans une chaîne | 8.2 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 40 | `str_trunc()` — tronquer une chaîne à une largeur maximale | 8.2 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 41 | `str_detect()` + `regex(ignore_case = TRUE)` — détecter un pattern sans contrainte de casse | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026| 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 42 | `sample()` + `set.seed()` — simulation aléatoire reproductible | 8.3 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 43 | `across()` + `where()` — opérer sur plusieurs colonnes par type dans summarise() et select() | 8.3 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 44 | Complétude = sum(!is.na()) / valeurs attendues × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 45 | Promptitude = sum(date <= délai) / total × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 46 | `quantile()` + `probs` — calcul de percentiles (Q1, Q3) sur un vecteur numérique | 8.4 | 12/05/2026 | 13/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
-| 47 | Méthode Tukey : bornes = Q1 - 1.5×IQR et Q3 + 1.5×IQR — détection aberrants robuste | 8.4 | 12/05/2026 | 12/05/2026 |15/05/2026 | 19/05/2026 | | 11/06/2026 | | Aucune | À jour |
+| 19 | `pivot_longer()` / `pivot_wider()` — format large vs long | 6.1 | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 | 15/05/2026 | 05/06/2026 |  | J+7 le 15/05/2026 | À jour |
+| 20 | Import structuré multi-niveaux : `col_names = FALSE`, `unlist()`, forward fill, `colnames()` | 6.1 rappels | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 | 15/05/2026 | 05/06/2026 |  | J+7 le 15/05/2026 | À jour |
+| 21 | `str_to_upper/lower()`, `str_squish()`, `str_replace()` — normalisation de chaînes de caractères | 6.4 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 | 15/05/2026 | 04/06/2026 |  | J+7 le 15/05/2026 | À jour |
+| 22 | `separate()` et `unite()` — découpage et fusion de colonnes | 6.2 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 | 15/05/2026 | 04/06/2026 |  | J+7 le 15/05/2026 | À jour |
+| 23 | `complete.cases()`, `replace_na()` — gestion des NA dans un pipeline | 6.3 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 | 15/05/2026 | 04/06/2026 |  | J+7 le 15/05/2026 | À jour |
+| 24 | `identical()` — vérifier l'égalité exacte de deux objets R | 6.5 | 07/05/2026 | 08/05/2026 | 10/05/2026 | 14/05/2026 | 15/05/2026 | 04/06/2026 |  | J+7 le 15/05/2026 | À jour |
+| 25 | `ggplot()`, `aes()`, `geom_*()` — logique des trois couches obligatoires | 7.1 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 | 15/05/2026 | 07/06/2026 |  | J+7 le 15/05/2026 | À jour |
+| 26 | `geom_col()` vs `geom_bar()` : bar chart à partir de données pré-agrégées | 7.2 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 | 15/05/2026 | 07/06/2026 |  | J+7 le 15/05/2026 | À jour |
+| 27 | `geom_text()` + hjust + ylim() : étiquettes de valeurs et ajustement d'échelle | 7.2 | 08/05/2026 | 09/05/2026 | 10/05/2026 | 15/05/2026 | 15/05/2026 | 07/06/2026 |  | J+7 le 15/05/2026 | À jour |
+| 28 | `geom_line()` — courbe pour série temporelle | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 | 17/05/2026 | 08/06/2026 |  | J+7 le 17/05/2026 | À jour |
+| 29 | `group = 1` dans `aes()` — connecter les points quand x est un facteur | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 | 17/05/2026 | 08/06/2026 |  | J+7 le 17/05/2026 | À jour |
+| 30 | Détection d'une ligne fantôme (cumul/total) dans un fichier SNIS | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 | 17/05/2026 | 08/06/2026 |  | J+7 le 17/05/2026 | À jour |
+| 31 | `geom_tile()` — heatmap avec `x`, `y`, `fill` dans `aes()` | 7.4 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 | 17/05/2026 | 08/06/2026 |  | J+7 le 17/05/2026 | À jour |
+| 32 | `theme()` + `element_text()` — modifier les éléments non-données d'un graphique | 7.4 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 | 17/05/2026 | 08/06/2026 |  | J+7 le 17/05/2026 | À jour |
+| 33 | `theme_minimal()` (et famille `theme_*()`) — thèmes pré-construits et règle d'ordre : la dernière couche `theme` écrite l'emporte sur les propriétés communes | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 |  | J+7 le 18/05/2026 | À jour |
+| 34 | `scale_fill_distiller()` + argument `direction` — palette ColorBrewer continue, sens d'application à vérifier par lecture de la légende | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 |  | J+7 le 18/05/2026 | À jour |
+| 35 | `ggsave()` — export reproductible PNG/PDF avec `width`, `height`, `units`, `dpi`, `bg` explicites | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 |  | J+7 le 18/05/2026 | À jour |
+| 36 | `parse_date_time()` + `as.Date()` — parsing de formats hétérogènes, argument `orders` | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
+| 37 | `epiweek()` — numéro de semaine épidémiologique à partir d'une `Date` | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
+| 38 | Soustraction de deux `Date` + `as.numeric()` — calcul de délai en jours | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
+| 39 | `str_remove()` + regex — suppression de pattern variable dans une chaîne | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
+| 40 | `str_trunc()` — tronquer une chaîne à une largeur maximale | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
+| 41 | `str_detect()` + `regex(ignore_case = TRUE)` — détecter un pattern sans contrainte de casse | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
+| 42 | `sample()` + `set.seed()` — simulation aléatoire reproductible | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
+| 43 | `across()` + `where()` — opérer sur plusieurs colonnes par type dans summarise() et select() | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
+| 44 | Complétude = sum(!is.na()) / valeurs attendues × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
+| 45 | Promptitude = sum(date \<= délai) / total × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
+| 46 | `quantile()` + `probs` — calcul de percentiles (Q1, Q3) sur un vecteur numérique | 8.4 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
+| 47 | Méthode Tukey : bornes = Q1 - 1.5×IQR et Q3 + 1.5×IQR — détection aberrants robuste | 8.4 | 12/05/2026 | 12/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
+| 48 | `case_when()` — alternative à ifelse() | session 8.5 | 18/05/2026 | 19/05/2026 |  | 25/05/2026 |  | 17/06/2026 |  | Aucune | À jour |
+
 ---
 editor_options: 
   markdown: 
@@ -496,7 +455,7 @@ explorée - **Prochaine étape**: semaine 5
 
 ------------------------------------------------------------------------
 
-### BILAN MOIS 1
+### BILAN MOIS 1 {#bilan-mois-1}
 
 **Période réelle** : du \_19_04_20\\26\_\_ au \_03_05_20\\26\_\_
 **Heures totales investies** : \_\_\_ h **Heures prévues** : 20-28 h
@@ -843,7 +802,9 @@ FS isolées.
 #### Session 7.4 — Heatmaps
 
 -   **Date et durée** : 09/05/2026, \~2h
+
 -   **Ce qui était prévu** : Heatmaps (tableaux FS × mois)
+
 -   **Ce qui a été fait** : Import données CPN4 mensuelles ENDOS-BF (46
     FS × 12 mois 2025) ; pivot_longer() format large → long (552 lignes)
     ; facteur ordonné sur colonne mois (piège alphabétique) ;
@@ -852,63 +813,61 @@ FS isolées.
     angle des axes ; détection et traitement raisonné du NA CSPS Kalzi
     juin 2025 ; détection outlier CM Tanghin Dassouri septembre (40.93%)
     ; lecture opérationnelle MCD produite
+
 -   **Ce qui est acquis** : geom_tile() reçoit trois dimensions dans
     aes() : x, y, fill ; scale_fill_gradient() remplace la palette par
     défaut ; theme(element = element_type(propriété)) — logique générale
     ; NA conservé = cellule grise sur heatmap = information utile ; une
     heatmap révèle en un coup d'œil ce qu'un tableau de 552 chiffres
     cache
--   **Ce qui reste flou** : 
-    
+
+-   **Ce qui reste flou** :
+
 -   **Prochaine étape** : 7.5 personnalisation et export
 
 #### Session 7.5 — Personnalisation et export
 
--   **Date et durée** : 11/05/2026, ~2h
+-   **Date et durée** : 11/05/2026, \~2h
 -   **Ce qui était prévu** : Personnalisation : titres, légendes,
     thèmes, couleurs, export PNG/PDF
 -   **Ce qui a été fait** : Trois blocs structurés. Bloc A : thèmes
-    pré-construits (theme_minimal()) et règle d'ordre des couches
-    theme — la dernière écrite gagne sur les propriétés communes.
-    Bloc B : palettes professionnelles ; distinction viridis
-    (perceptuellement linéaire, daltonien-compatible) vs
-    ColorBrewer (signalétique culturelle pour pilotage
-    opérationnel) ; scale_fill_distiller(palette = "RdYlGn") ;
-    diagnostic empirique du comportement de direction par lecture
-    de la légende — direction = 1 met rouge en bas (alerte) pour
-    RdYlGn. Bloc C : ggsave() en PNG (300 dpi, bg = "white") et
-    PDF ; convention de projet adoptée — éviter les caractères
-    typographiques exotiques (cadratin, guillemets français)
-    dans les titres pour ne pas dépendre du moteur cairo_pdf.
+    pré-construits (theme_minimal()) et règle d'ordre des couches theme
+    — la dernière écrite gagne sur les propriétés communes. Bloc B :
+    palettes professionnelles ; distinction viridis (perceptuellement
+    linéaire, daltonien-compatible) vs ColorBrewer (signalétique
+    culturelle pour pilotage opérationnel) ;
+    scale_fill_distiller(palette = "RdYlGn") ; diagnostic empirique du
+    comportement de direction par lecture de la légende — direction = 1
+    met rouge en bas (alerte) pour RdYlGn. Bloc C : ggsave() en PNG (300
+    dpi, bg = "white") et PDF ; convention de projet adoptée — éviter
+    les caractères typographiques exotiques (cadratin, guillemets
+    français) dans les titres pour ne pas dépendre du moteur cairo_pdf.
 -   **Ce qui est acquis** : Ordre canonique des couches ggplot :
-    geom_* puis scale_* puis labs() puis theme_pré-construit puis
-    theme() d'ajustement ; le choix de palette se fait selon
-    l'audience et la décision, pas selon le type R de la variable
-    ; lire la légende est la seule discipline fiable pour
-    vérifier le sens d'application d'une palette ; ggsave avec
-    width/height/units/dpi/bg explicites produit un livrable
-    reproductible ; PNG pour Word et email, PDF pour impression
-    DRS ; un warning R n'est jamais à ignorer.
--   **Ce qui reste flou** : Le mécanisme exact qui fait que
-    direction = -1 produit le même résultat que pas d'argument
-    pour RdYlGn — à creuser si re-rencontré, pas prioritaire.
--   **Prochaine étape** : Semaine 8 — lubridate et qualité des
-    données.
+    geom\_\* puis scale\_\* puis labs() puis theme_pré-construit puis
+    theme() d'ajustement ; le choix de palette se fait selon l'audience
+    et la décision, pas selon le type R de la variable ; lire la légende
+    est la seule discipline fiable pour vérifier le sens d'application
+    d'une palette ; ggsave avec width/height/units/dpi/bg explicites
+    produit un livrable reproductible ; PNG pour Word et email, PDF pour
+    impression DRS ; un warning R n'est jamais à ignorer.
+-   **Ce qui reste flou** : Le mécanisme exact qui fait que direction =
+    -1 produit le même résultat que pas d'argument pour RdYlGn — à
+    creuser si re-rencontré, pas prioritaire.
+-   **Prochaine étape** : Semaine 8 — lubridate et qualité des données.
 
 #### Récapitulatif semaine 7
 
-| Compétence attendue                         | Auto-éval (1-5) | Commentaire |
-|---------------------------------------------|-----------------|-------------|
-| Comprendre la grammaire `data + aes + geom` | 4               | Acquise et appliquée sur plusieurs cas (point, bar, line, tile) ; non testée sans aide |
-| Produire un bar chart comparatif de FS      | 4               | Avec reorder(), coord_flip(), geom_text(), ylim() ; non refaite seul depuis |
-| Produire un line chart temporel             | 4               | Piège group = 1 et ligne fantôme cumul intégrés ; non refait seul depuis |
-| Produire une heatmap FS × mois              | 4               | Pivot long, facteur ordonné, palette RdYlGn, NA gris ; non refaite seul depuis |
-| Exporter un graphique en PNG/PDF            | 4               | ggsave maîtrisé en PNG et PDF avec dimensions, dpi, fond blanc explicites |
+| Compétence attendue | Auto-éval (1-5) | Commentaire |
+|----------------------------------------|----------------|----------------|
+| Comprendre la grammaire `data + aes + geom` | 4 | Acquise et appliquée sur plusieurs cas (point, bar, line, tile) ; non testée sans aide |
+| Produire un bar chart comparatif de FS | 4 | Avec reorder(), coord_flip(), geom_text(), ylim() ; non refaite seul depuis |
+| Produire un line chart temporel | 4 | Piège group = 1 et ligne fantôme cumul intégrés ; non refait seul depuis |
+| Produire une heatmap FS × mois | 4 | Pivot long, facteur ordonné, palette RdYlGn, NA gris ; non refaite seul depuis |
+| Exporter un graphique en PNG/PDF | 4 | ggsave maîtrisé en PNG et PDF avec dimensions, dpi, fond blanc explicites |
 
-**Décision** : passer à la semaine 8
-**Points à réviser** : direction dans scale_fill_distiller (lire la
-légende systématiquement), convention de caractères ASCII dans les
-titres pour éviter les warnings PDF.
+**Décision** : passer à la semaine 8 **Points à réviser** : direction
+dans scale_fill_distiller (lire la légende systématiquement), convention
+de caractères ASCII dans les titres pour éviter les warnings PDF.
 
 ------------------------------------------------------------------------
 
@@ -919,111 +878,110 @@ investies** : \_\_\_ h
 
 #### Session 8.1 — `lubridate` : dates françaises
 
-- **Date et durée** : 12/05/2026, ~1h30
-- **Ce qui était prévu** : lubridate : parsing de dates françaises,
-  extraction (mois, année), différences
-- **Ce qui a été fait** : parse_date_time() avec orders multiples sur
-  line liste méningite DS-BMG (347 cas, formats hétérogènes) ;
-  epiweek() pour semaines épidémiologiques ; calcul de délai
-  onset-to-consultation avec soustraction de dates + as.numeric() ;
-  détection d'une erreur de parsing silencieuse (délai max 324 jours
-  sur "01-12-2026" ambigu dmy/mdy) ; gestion des mois en français
-  avec locale = "fr_FR" ou str_replace() comme alternative portable
-- **Ce qui est acquis** : parse_date_time() + as.Date() pour parser
-  des formats multiples ; orders = formats réellement présents
-  uniquement ; epiweek() pour numéro de semaine épidémiologique ;
-  soustraction de deux Date → as.numeric() pour délai en jours ;
-  sum() sur vecteur logique pour compter les cas dépassant un seuil ;
-  which.max() pour isoler la ligne aberrante ; locale pour les mois
-  texte non anglais
-- **Ce qui reste flou** : formats ambigus (dmy vs mdy sur "01-12-2026")
-  — pas de solution technique fiable, solution à la source
-- **Prochaine étape** : session 8.2 — stringr avancé : regex pour
-  normaliser des noms
+-   **Date et durée** : 12/05/2026, \~1h30
+-   **Ce qui était prévu** : lubridate : parsing de dates françaises,
+    extraction (mois, année), différences
+-   **Ce qui a été fait** : parse_date_time() avec orders multiples sur
+    line liste méningite DS-BMG (347 cas, formats hétérogènes) ;
+    epiweek() pour semaines épidémiologiques ; calcul de délai
+    onset-to-consultation avec soustraction de dates + as.numeric() ;
+    détection d'une erreur de parsing silencieuse (délai max 324 jours
+    sur "01-12-2026" ambigu dmy/mdy) ; gestion des mois en français avec
+    locale = "fr_FR" ou str_replace() comme alternative portable
+-   **Ce qui est acquis** : parse_date_time() + as.Date() pour parser
+    des formats multiples ; orders = formats réellement présents
+    uniquement ; epiweek() pour numéro de semaine épidémiologique ;
+    soustraction de deux Date → as.numeric() pour délai en jours ; sum()
+    sur vecteur logique pour compter les cas dépassant un seuil ;
+    which.max() pour isoler la ligne aberrante ; locale pour les mois
+    texte non anglais
+-   **Ce qui reste flou** : formats ambigus (dmy vs mdy sur
+    "01-12-2026") — pas de solution technique fiable, solution à la
+    source
+-   **Prochaine étape** : session 8.2 — stringr avancé : regex pour
+    normaliser des noms
 
 #### Session 8.2 — `stringr` avancé : regex pour normaliser des noms
 
-- **Date et durée** : 12/05/2026, ~1h
-- **Ce qui était prévu** : stringr avancé : regex pour normaliser des noms
-- **Ce qui a été fait** : construction progressive des regex (^, [A-Z]+,
-  \\s, (de )?) ; str_remove() pour supprimer les préfixes variables
-  (CSPS, CMA de) en une seule regex ; str_trunc() pour tronquer les
-  noms trop longs ; str_detect() + regex(ignore_case = TRUE) pour
-  détecter les variantes d'orthographe indépendamment de la casse ;
-  application sur line liste méningite DS-BMG
-- **Ce qui est acquis** : ^ ancre en début de chaîne ; [A-Z]+ = une
-  ou plusieurs majuscules ; \\s = espace ; (...)? = groupe optionnel ;
-  str_trunc() avec width et ellipsis ; str_detect() retourne un
-  vecteur logique utilisable directement dans filter() ;
-  regex(ignore_case = TRUE) pour ignorer la casse
-- **Ce qui reste flou** : construction de regex complexes — les briques
-  de base sont acquises, la combinaison reste à pratiquer
-- **Prochaine étape**
+-   **Date et durée** : 12/05/2026, \~1h
+-   **Ce qui était prévu** : stringr avancé : regex pour normaliser des
+    noms
+-   **Ce qui a été fait** : construction progressive des regex (\^,
+    [A-Z]+, \\s, (de )?) ; str_remove() pour supprimer les préfixes
+    variables (CSPS, CMA de) en une seule regex ; str_trunc() pour
+    tronquer les noms trop longs ; str_detect() + regex(ignore_case =
+    TRUE) pour détecter les variantes d'orthographe indépendamment de la
+    casse ; application sur line liste méningite DS-BMG
+-   **Ce qui est acquis** : \^ ancre en début de chaîne ; [A-Z]+ = une
+    ou plusieurs majuscules ; \\s = espace ; (...)? = groupe optionnel ;
+    str_trunc() avec width et ellipsis ; str_detect() retourne un
+    vecteur logique utilisable directement dans filter() ;
+    regex(ignore_case = TRUE) pour ignorer la casse
+-   **Ce qui reste flou** : construction de regex complexes — les
+    briques de base sont acquises, la combinaison reste à pratiquer
+-   **Prochaine étape**
 
 #### Session 8.3 — Concepts qualité des données
 
-- **Date et durée** : 12/05/2026, ~1h
-- **Ce qui était prévu** : Concepts qualité des données : complétude,
-  promptitude, cohérence interne
-- **Ce qui a été fait** : calcul complétude globale (96.8%) et par FS
-  avec across() + where() ; simulation dates transmission avec
-  sample() + set.seed() + seq() ; calcul promptitude janvier 2025
-  (70%) ; détection cohérence interne — valeurs impossibles (CPN4
-  > 100%) sur données réelles DS-BMG
-- **Ce qui est acquis** : across() + where(is.numeric) pour opérer
-  sur toutes les colonnes numériques ; set.seed() pour
-  reproductibilité ; sample() + seq() pour simuler des données ;
-  complétude = sum(!is.na()) / valeurs attendues × 100 ;
-  promptitude = sum(date <= délai) / total × 100 ; cohérence
-  interne = filter() sur seuils impossibles
-- **Ce qui reste flou** : seuils nationaux officiels à vérifier dans
-  les outils de supervision DRS
-- **Prochaine étape** : session 8.4 — détection des valeurs
-  aberrantes : règle des 3 écarts-types, IQR, méthode de Tukey
+-   **Date et durée** : 12/05/2026, \~1h
+-   **Ce qui était prévu** : Concepts qualité des données : complétude,
+    promptitude, cohérence interne
+-   **Ce qui a été fait** : calcul complétude globale (96.8%) et par FS
+    avec across() + where() ; simulation dates transmission avec
+    sample() + set.seed() + seq() ; calcul promptitude janvier 2025
+    (70%) ; détection cohérence interne — valeurs impossibles (CPN4 \>
+    100%) sur données réelles DS-BMG
+-   **Ce qui est acquis** : across() + where(is.numeric) pour opérer sur
+    toutes les colonnes numériques ; set.seed() pour reproductibilité ;
+    sample() + seq() pour simuler des données ; complétude =
+    sum(!is.na()) / valeurs attendues × 100 ; promptitude = sum(date \<=
+    délai) / total × 100 ; cohérence interne = filter() sur seuils
+    impossibles
+-   **Ce qui reste flou** : seuils nationaux officiels à vérifier dans
+    les outils de supervision DRS
+-   **Prochaine étape** : session 8.4 — détection des valeurs aberrantes
+    : règle des 3 écarts-types, IQR, méthode de Tukey
 
 #### Session 8.4 — Détection des valeurs aberrantes
 
-- **Date et durée** : 12/05/2026, ~45min
-- **Ce qui était prévu** : Détection des valeurs aberrantes :
-  règle des 3 écarts-types, IQR, méthode de Tukey
-- **Ce qui a été fait** : comparaison méthode 3 ET vs Tukey ;
-  calcul Q1, Q3, IQR avec quantile() et IQR() ;
-  calcul bornes Tukey (Q1 - 1.5×IQR, Q3 + 1.5×IQR) ;
-  détection 4 FS aberrantes sur CPN4 (borne sup = 128.7%) ;
-  comparaison avec cohérence logique (6 FS > 100%) — les deux
-  méthodes sont complémentaires
-- **Ce qui est acquis** : quantile() avec probs pour Q1/Q3 ;
-  IQR() pour l'écart interquartile ; bornes Tukey calculées
-  depuis Q1/Q3/IQR ; filter() avec bornes calculées ;
-  différence entre aberrant logique et aberrant statistique
-- **Ce qui reste flou** : argument type = 7 dans IQR() —
-  non exploré
-- **Prochaine étape** : session 8.5 — score de qualité par FS
+-   **Date et durée** : 12/05/2026, \~45min
+-   **Ce qui était prévu** : Détection des valeurs aberrantes : règle
+    des 3 écarts-types, IQR, méthode de Tukey
+-   **Ce qui a été fait** : comparaison méthode 3 ET vs Tukey ; calcul
+    Q1, Q3, IQR avec quantile() et IQR() ; calcul bornes Tukey (Q1 -
+    1.5×IQR, Q3 + 1.5×IQR) ; détection 4 FS aberrantes sur CPN4 (borne
+    sup = 128.7%) ; comparaison avec cohérence logique (6 FS \> 100%) —
+    les deux méthodes sont complémentaires
+-   **Ce qui est acquis** : quantile() avec probs pour Q1/Q3 ; IQR()
+    pour l'écart interquartile ; bornes Tukey calculées depuis Q1/Q3/IQR
+    ; filter() avec bornes calculées ; différence entre aberrant logique
+    et aberrant statistique
+-   **Ce qui reste flou** : argument type = 7 dans IQR() — non exploré
+-   **Prochaine étape** : session 8.5 — score de qualité par FS
 
 #### Session 8.5 — Score de qualité par FS
-
--   **Date et durée** :
--   **Ce qui était prévu** : Construction d'un score de qualité par FS
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+-   **Date et durée** 18/05/2026, ~1h30
+-   **Ce qui était prévu** Construction d'un score de qualité par FS
+-   **Ce qui a été fait** : Introduction formelle de case_when() (entrée/sortie, exemple métier, piège des NA, catch-all TRUE ~ ...) ; mini-exercice de classification de la promptitude (vecteur delais de 5 FS, 5 catégories incluant NA) ; construction d'un score composite par FS pondéré 40/30/30 (complétude/promptitude/cohérence) sur 10 FS fictives plausibles ; arrondi à 1 décimale avec round() ; tri décroissant ; classification qualitative en 4 catégories (Critique / Moyen / Bon / Excellent) ; conversion en facteur ordonné avec levels (initiative personnelle), introduction de l'argument ordered = TRUE
+-   **Ce qui est acquis** : case_when() avec syntaxe condition ~ valeur ; ordre des conditions du plus restrictif au moins restrictif ; gestion des NA en premier ; catch-all TRUE ~ ... ; construction d'un score composite pondéré ; classification multi-niveaux d'un indicateur continu
+-   **Ce qui reste flou**  : décalage de seuils ≤ vs >= sur les valeurs limites (84.5 par exemple) — bug silencieux à surveiller en données réelles ; distinction factor(levels = ...) vs factor(levels = ..., ordered = TRUE) à raffermir
+-   **Prochaine étape** Bilan mois 2 et mini-projet de fin de mois (rapport visuel CPN4 49 FS)
 
 #### Récapitulatif semaine 8
 
 | Compétence attendue                            | Auto-éval (1-5) | Commentaire |
-|------------------------------------------------|-----------------|-------------|
-| Parser et manipuler des dates avec `lubridate` |                 |             |
-| Utiliser des regex simples avec `stringr`      |                 |             |
-| Calculer un indicateur de complétude           |                 |             |
-| Détecter des valeurs aberrantes (IQR, 3 ET)    |                 |             |
-| Construire un score de qualité par FS          |                 |             |
+|-----------------------------------------|----------------|----------------|
+| Parser et manipuler des dates avec `lubridate` |      4           |             |
+| Utiliser des regex simples avec `stringr`      |    4          |             |
+| Calculer un indicateur de complétude           |      4         |             |
+| Détecter des valeurs aberrantes (IQR, 3 ET)    |    4            |             |
+| Construire un score de qualité par FS          |    4           |             |
 
 **Décision** : **Points à réviser** :
 
 ------------------------------------------------------------------------
 
-### BILAN MOIS 2
+### BILAN MOIS 2 {#bilan-mois-2}
 
 **Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales
 investies** : \_\_\_ h **Heures prévues** : 20-28 h
@@ -1328,7 +1286,7 @@ investies** : \_\_\_ h
 
 ------------------------------------------------------------------------
 
-### BILAN MOIS 3
+### BILAN MOIS 3 {#bilan-mois-3}
 
 **Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales
 investies** : \_\_\_ h **Heures prévues** : 20-28 h
@@ -1642,7 +1600,7 @@ investies** : \_\_\_ h
 
 ------------------------------------------------------------------------
 
-### BILAN MOIS 4
+### BILAN MOIS 4 {#bilan-mois-4}
 
 **Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales
 investies** : \_\_\_ h **Heures prévues** : 20-28 h
@@ -1800,7 +1758,7 @@ investies** : \_\_\_ h
 #### Récapitulatif semaine 18
 
 | Compétence attendue                          | Auto-éval (1-5) | Commentaire |
-|----------------------------------------------|-----------------|-------------|
+|----------------------------------------|----------------|----------------|
 | Calculer létalité, mortalité proportionnelle |                 |             |
 | Produire une pyramide des âges               |                 |             |
 | Calculer OR et RR avec IC avec `epitools`    |                 |             |
@@ -1933,7 +1891,7 @@ investies** : \_\_\_ h
 #### Récapitulatif semaine 20
 
 | Compétence attendue                           | Auto-éval (1-5) | Commentaire |
-|-----------------------------------------------|-----------------|-------------|
+|----------------------------------------|----------------|----------------|
 | Produire une carte thématique avec `tmap`     |                 |             |
 | Choisir une discrétisation (Jenks, quantiles) |                 |             |
 | Produire une carte interactive avec `leaflet` |                 |             |
@@ -1943,7 +1901,7 @@ investies** : \_\_\_ h
 
 ------------------------------------------------------------------------
 
-### BILAN MOIS 5
+### BILAN MOIS 5 {#bilan-mois-5}
 
 **Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales
 investies** : \_\_\_ h **Heures prévues** : 20-28 h
@@ -2036,7 +1994,7 @@ investies** : \_\_\_ h
 #### Récapitulatif semaine 21
 
 | Compétence attendue                          | Auto-éval (1-5) | Commentaire |
-|----------------------------------------------|-----------------|-------------|
+|----------------------------------------|----------------|----------------|
 | Créer un document `.qmd` fonctionnel         |                 |             |
 | Maîtriser le YAML et les options de blocs    |                 |             |
 | Intégrer un tableau formaté dans un document |                 |             |
@@ -2229,12 +2187,16 @@ investies** : \_\_\_ h **Heures prévues** : 20-28 h
 #### Décision pour la suite
 
 -   [ ] Programme avancé (Mois 7-9 : Shiny, modélisation, recherche)
--   [ ] Consolidation par projets concrets seulement
--   [ ] Formation d'autres MCD à R
--   [ ] Autre : \|\>
-    ------------------------------------------------------------------------
 
-## NOTES LIBRES
+-   [ ] Consolidation par projets concrets seulement
+
+-   [ ] Formation d'autres MCD à R
+
+-   
+
+    ## [ ] Autre : \|\>
+
+## NOTES LIBRES {#notes-libres}
 
 (Espace pour réflexions, idées, questions à poser plus tard, ressources
 à explorer, etc.)
@@ -2259,38 +2221,37 @@ opérationnelle.
 
 #10 mai 2026 — Refonte de la TABLE DE RAPPEL PAR ESPACEMENT.
 
-#10 mai 2026 (suite) — Session de révision pure (1h environ)
-Application complète du dispositif 5 (espacement opérationnalisé). Recalcul dynamique des statuts à la date du jour : 2 concepts en Dû J+7, 5 concepts en Dû J+1.
-Retrieval practice : 7 questions au total (3 dans la première phase, 4 dans la seconde après décision de reporter la session 7.4-suite).
-Concepts consolidés à J+7 le 10/05/2026 : #15 (verbes dplyr + pipe), #16 (grepl/table/unique).
-Concepts consolidés à J+1 le 10/05/2026 : #28 (geom_line série temporelle), #29 (group = 1), #30 (ligne fantôme cumul), #31 (geom_tile), #32 (theme + element_text).
+#10 mai 2026 (suite) — Session de révision pure (1h environ) Application
+complète du dispositif 5 (espacement opérationnalisé). Recalcul
+dynamique des statuts à la date du jour : 2 concepts en Dû J+7, 5
+concepts en Dû J+1. Retrieval practice : 7 questions au total (3 dans la
+première phase, 4 dans la seconde après décision de reporter la session
+7.4-suite). Concepts consolidés à J+7 le 10/05/2026 : #15 (verbes
+dplyr + pipe), #16 (grepl/table/unique). Concepts consolidés à J+1 le
+10/05/2026 : #28 (geom_line série temporelle), #29 (group = 1), #30
+(ligne fantôme cumul), #31 (geom_tile), #32 (theme + element_text).
 Erreurs corrigées en cours de session :
 
 confusion efficacité/correction sur l'ordre filter→select (Q1) ;
-mauvaise application de table() à des noms uniques au lieu de types de FS (Q2) ;
-méconnaissance du tri alphabétique sur les semaines "S1"..."S19" (Q4) ;
-justification incomplète du recours à element_text() (Q7).
+mauvaise application de table() à des noms uniques au lieu de types de
+FS (Q2) ; méconnaissance du tri alphabétique sur les semaines
+"S1"..."S19" (Q4) ; justification incomplète du recours à element_text()
+(Q7).
 
 #11 mai 2026 — Renforcement procédural après erreur de lecture.
 
-Incident : Claude a identifié à tort 9 concepts (#19 à #27) comme
-"Dû J+1" alors qu'ils avaient été révisés le 10/05/2026. Cause
-racine : lecture transversale du tableau (filtrage mental sur la
-seule colonne "J+1 prévu") sans vérification de la colonne
-complémentaire "Révisé J+1 le".
+Incident : Claude a identifié à tort 9 concepts (#19 à #27) comme "Dû
+J+1" alors qu'ils avaient été révisés le 10/05/2026. Cause racine :
+lecture transversale du tableau (filtrage mental sur la seule colonne
+"J+1 prévu") sans vérification de la colonne complémentaire "Révisé J+1
+le".
 
-Correctifs intégrés :
-- Dispositif 5 : ajout d'une étape 4 bis imposant la lecture
-  verticale ligne par ligne et l'annonce structurée par compte
-  total.
-- Dispositif 2 : Emmanuel vérifie au moins un verdict par
-  échantillonnage avant validation.
-- Carnet : ajout d'une colonne de synthèse "Dernière révision
-  effective" pour faciliter la lecture rapide.
+Correctifs intégrés : - Dispositif 5 : ajout d'une étape 4 bis imposant
+la lecture verticale ligne par ligne et l'annonce structurée par compte
+total. - Dispositif 2 : Emmanuel vérifie au moins un verdict par
+échantillonnage avant validation. - Carnet : ajout d'une colonne de
+synthèse "Dernière révision effective" pour faciliter la lecture rapide.
 
 Leçon générale : un dispositif anti-erreur n'est valide que si la
-procédure rend l'erreur visible. Une condition logique composée
-(A ET B) cachée dans deux colonnes éloignées est un piège
-structurel.
-
-
+procédure rend l'erreur visible. Une condition logique composée (A ET B)
+cachée dans deux colonnes éloignées est un piège structurel.
