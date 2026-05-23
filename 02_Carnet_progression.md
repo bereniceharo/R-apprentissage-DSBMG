@@ -100,11 +100,11 @@ la source de vérité (les colonnes détaillées) qui prime.
 
 | \# | Concept | Source/sessions | Date d'introduction | J+1 prévu | Révisé J+1 le | J+7 prévu | Révisé J+7 le | J+30 prévu | Révisé J+30 le | Dernière révision effective | Statut |
 |------|------|------|------|------|------|------|------|------|------|------|------|
-| 0 | Concepts fondamentaux R : assignation `<-`, opérateurs `=` vs `==`, fonctions et arguments | session 1.1, 1.2 | 19/04/2026 | 20/04/2026 | 10/05/2026 | 26/04/2026 | 10/05/2026 | 19/05/2026 |  | J+7 le 10/05/2026 | À jour |
-| 1 | Principaux types données, coercition, NA | session 1.3 | 22/04/2026 | 23/04/2026 | 10/05/2026 | 29/04/2026 | 10/05/2026 | 22/05/2026 |  | J+7 le 10/05/2026 | À jour |
-| 2 | Vecteurs, indexation | session 1.4 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 |  | J+7 le 10/05/2026 | À jour |
-| 3 | Les fonctions du groupe which() | session 1.5 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 |  | J+7 le 10/05/2026 | À jour |
-| 4 | Liste, indexation d'une liste | session 2.1 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 0 | Concepts fondamentaux R : assignation `<-`, opérateurs `=` vs `==`, fonctions et arguments | session 1.1, 1.2 | 19/04/2026 | 20/04/2026 | 10/05/2026 | 26/04/2026 | 10/05/2026 | 19/05/2026 | J+30 le 23/05 | J+30 le 23/05  | À jour |
+| 1 | Principaux types données, coercition, NA | session 1.3 | 22/04/2026 | 23/04/2026 | 10/05/2026 | 29/04/2026 | 10/05/2026 | 22/05/2026 | le 22/05  | le 22/05  | À jour |
+| 2 | Vecteurs, indexation | session 1.4 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 | J+30 le 23/05  | J+30 le 23/05  | À jour |
+| 3 | Les fonctions du groupe which() | session 1.5 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 | J+30 le 23/05  | J+30 le 23/05  | À jour |
+| 4 | Liste, indexation d'une liste | session 2.1 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 | J+30 le 23/05  | J+30 le 23/05 | À jour |
 | 5 | Structures data frames et manipulations, facteurs | 2.2, 2.3 | 24/04/2026 | 25/04/2026 | 10/05/2026 | 01/05/2026 | 10/05/2026 | 24/05/2026 |  | J+7 le 10/05/2026 | À jour |
 | 6 | GitHub, commits et push, versioning | 2.4 | 24/04/2026 | 25/04/2026 | 10/05/2026 | 01/05/2026 | 10/05/2026 | 24/05/2026 |  | J+7 le 10/05/2026 | À jour |
 | 7 | Indexation, filtrage, `is.na()`, coercition logique sur un data frame réel | 2.5 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 |  | J+7 le 10/05/2026 | À jour |
@@ -138,20 +138,23 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 33 | `theme_minimal()` (et famille `theme_*()`) — thèmes pré-construits et règle d'ordre : la dernière couche `theme` écrite l'emporte sur les propriétés communes | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 |  | J+7 le 18/05/2026 | À jour |
 | 34 | `scale_fill_distiller()` + argument `direction` — palette ColorBrewer continue, sens d'application à vérifier par lecture de la légende | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 |  | J+7 le 18/05/2026 | À jour |
 | 35 | `ggsave()` — export reproductible PNG/PDF avec `width`, `height`, `units`, `dpi`, `bg` explicites | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 |  | J+7 le 18/05/2026 | À jour |
-| 36 | `parse_date_time()` + `as.Date()` — parsing de formats hétérogènes, argument `orders` | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
-| 37 | `epiweek()` — numéro de semaine épidémiologique à partir d'une `Date` | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
-| 38 | Soustraction de deux `Date` + `as.numeric()` — calcul de délai en jours | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
-| 39 | `str_remove()` + regex — suppression de pattern variable dans une chaîne | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
-| 40 | `str_trunc()` — tronquer une chaîne à une largeur maximale | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
-| 41 | `str_detect()` + `regex(ignore_case = TRUE)` — détecter un pattern sans contrainte de casse | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
-| 42 | `sample()` + `set.seed()` — simulation aléatoire reproductible | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
-| 43 | `across()` + `where()` — opérer sur plusieurs colonnes par type dans summarise() et select() | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
-| 44 | Complétude = sum(!is.na()) / valeurs attendues × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
-| 45 | Promptitude = sum(date \<= délai) / total × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
-| 46 | `quantile()` + `probs` — calcul de percentiles (Q1, Q3) sur un vecteur numérique | 8.4 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
-| 47 | Méthode Tukey : bornes = Q1 - 1.5×IQR et Q3 + 1.5×IQR — détection aberrants robuste | 8.4 | 12/05/2026 | 12/05/2026 | 15/05/2026 | 19/05/2026 |  | 11/06/2026 |  | J+1 le 15/05/2026 | À jour |
-| 48 | `case_when()` — alternative à ifelse() | session 8.5 | 18/05/2026 | 19/05/2026 |  | 25/05/2026 |  | 17/06/2026 |  | Aucune | À jour |
-
+| 36 | `parse_date_time()` + `as.Date()` — parsing de formats hétérogènes, argument `orders` | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
+| 37 | `epiweek()` — numéro de semaine épidémiologique à partir d'une `Date` | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05  | À jour |
+| 38 | Soustraction de deux `Date` + `as.numeric()` — calcul de délai en jours | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
+| 39 | `str_remove()` + regex — suppression de pattern variable dans une chaîne | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 |le 22/05  | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
+| 40 | `str_trunc()` — tronquer une chaîne à une largeur maximale | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |   | Révisé J+7 le 22/05  | À jour |
+| 41 | `str_detect()` + `regex(ignore_case = TRUE)` — détecter un pattern sans contrainte de casse | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | Révisé J+7 le 22/05  | 11/06/2026 |  | Révisé J+7 le 22/05  | À jour |
+| 42 | `sample()` + `set.seed()` — simulation aléatoire reproductible | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | Révisé J+7 le 22/05  | 11/06/2026 |  | Révisé J+7 le 22/05  | À jour |
+| 43 | `across()` + `where()` — opérer sur plusieurs colonnes par type dans summarise() et select() | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05  | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
+| 44 | Complétude = sum(!is.na()) / valeurs attendues × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | Révisé J+7 le 22/05  | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
+| 45 | Promptitude = sum(date \<= délai) / total × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | Révisé J+7 le 22/05  | 11/06/2026 |  | J+7 le 22/05 | À jour |
+| 46 | `quantile()` + `probs` — calcul de percentiles (Q1, Q3) sur un vecteur numérique | 8.4 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | J+7 le 22/05  | À jour |
+| 47 | Méthode Tukey : bornes = Q1 - 1.5×IQR et Q3 + 1.5×IQR — détection aberrants robuste | 8.4 | 12/05/2026 | 12/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | J+7 le 22/05  | À jour |
+| 48 | `case_when()` — alternative à ifelse() | session 8.5 | 18/05/2026 | 19/05/2026 | Révisé J+1 le 23/05  | 25/05/2026 |  | 17/06/2026 |  | Révisé J+1 le 23/05 | À jour |
+| 49 | `scale_fill_gradient2()` — dégradé bidirectionnel avec `low`, `mid`, `high` et `midpoint` ; `na.value` pour distinguer les NA | mini-projet mois 2 | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
+| 50 | `fct_recode()` — renommer les niveaux d'un factor avec paires `"nouveau" = "ancien"` ; ordre des niveaux préservé | mini-projet mois 2 | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
+| 51 | `fct_reorder()` — réordonner les niveaux d'un factor selon une variable numérique et une fonction résumé (`mean`, `median`) | mini-projet mois 2 | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
+| 52 | `scale_x_discrete(expand = c(m, a))` — contrôle des marges autour d'un axe discret : m = multiplicateur proportionnel, a = ajout absolu | mini-projet mois 2 | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
 ---
 editor_options: 
   markdown: 
@@ -983,36 +986,40 @@ investies** : \_\_\_ h
 
 ### BILAN MOIS 2 {#bilan-mois-2}
 
-**Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales
-investies** : \_\_\_ h **Heures prévues** : 20-28 h
+**Période réelle** : du 04/05/2026 au 23/05/2026  
+**Heures totales investies** : ~21 h  
+**Heures prévues** : 20-28 h
 
 #### Validation des indicateurs de progression du mois 2
 
 | Indicateur | Validé (Oui/Partiel/Non) | Commentaire |
 |----|----|----|
-| Manipuler un dataset avec `dplyr` sans copier-coller |  |  |
-| Produire 5 types de graphiques différents |  |  |
-| Pivoter des données entre format long et large |  |  |
-| Détecter les valeurs aberrantes d'une série |  |  |
+| Manipuler un dataset avec `dplyr` sans copier-coller | Oui | filter, select, arrange, mutate, group_by, summarise, rename, pivot_longer appliqués sur données réelles DS-BMG |
+| Produire 5 types de graphiques différents | Oui | geom_point, geom_col, geom_line, geom_tile, scale_fill_gradient2 — tous sur données réelles |
+| Pivoter des données entre format long et large | Oui | pivot_longer appliqué sur fichier DHIS2 export (wide → long) sur données accouchements Jan-Avr 2026 |
+| Détecter les valeurs aberrantes d'une série | Oui | Méthode Tukey (Q1-1.5×IQR, Q3+1.5×IQR) et cohérence logique (>100%) appliquées sur indicateurs CPN4 DS-BMG |
 
-#### Mini-projet de fin de mois (rapport visuel CPN4 49 FS)
+#### Mini-projet de fin de mois (rapport visuel accouchements 47 FS)
 
--   **Statut** :
--   **Lien GitHub** :
--   **Difficultés rencontrées** :
--   **Améliorations possibles** :
+- **Statut** : Complété le 23/05/2026
+- **Adaptation** : mini-projet recentré sur les accouchements Jan-Avr 2026 (données mensuelles DHIS2 disponibles) au lieu de CPN4 annuel
+- **Lien GitHub** :
+- **Difficultés rencontrées** : gestion des mois en ordre alphabétique à l'export DHIS2 (piège factor) ; distinction `[ ]` vs `[[ ]]` ; erreur d'inattention `fosa = factor(mois, ...)` au lieu de `mois = factor(mois, ...)` — erreur critique silencieuse
+- **Améliorations possibles** : ajouter vérification chiffrée automatique des FS sous seuil (calculer 30/47 par code plutôt que visuellement) ; ajouter coefficients saisonniers 2024-2025 comme référence ajustée
 
 #### Réflexion personnelle
 
--   **Ce qui a marché dans ma méthode** :
--   **Ce qui n'a pas marché** :
--   **Ajustements pour le mois 3** :
+- **Ce qui a marché dans ma méthode** :
+- **Ce qui n'a pas marché** :
+- **Ajustements pour le mois 3** :
 
 #### Décision
 
--   [ ] Passer au mois 3
--   [ ] Consolider avant de continuer (préciser quoi : \_\_\_)
--   [ ] Étaler le rythme (préciser : \_\_\_)
+- [] Passer au mois 3
+- [x] Consolider avant de continuer (préciser quoi : Completer la visualisation avec les deux autres options de graphiques,
+  Option B — Bar chart cumulatif : taux cumulé Jan–Avr par FS, comparé au seuil cumulé attendu (30% si linéaire, ou ajusté si tu as les données 2025). Idéal pour une réunion de coordination.
+  Option C — Line chart district + FS : évolution mensuelle du taux moyen du district avec courbe de référence. Permet de voir si le district rattrape ou décroche.___)
+- [ ] Étaler le rythme (préciser : ___)
 
 ------------------------------------------------------------------------
 
