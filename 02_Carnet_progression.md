@@ -155,6 +155,13 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 50 | `fct_recode()` — renommer les niveaux d'un factor avec paires `"nouveau" = "ancien"` ; ordre des niveaux préservé | mini-projet mois 2 | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
 | 51 | `fct_reorder()` — réordonner les niveaux d'un factor selon une variable numérique et une fonction résumé (`mean`, `median`) | mini-projet mois 2 | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
 | 52 | `scale_x_discrete(expand = c(m, a))` — contrôle des marges autour d'un axe discret : m = multiplicateur proportionnel, a = ajout absolu | mini-projet mois 2 | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
+| 49 | `scale_fill_gradient2()` — dégradé bidirectionnel `low/mid/high/midpoint` ; `na.value` pour les NA | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
+| 50 | `fct_recode()` — renommer les niveaux d'un factor avec paires `"nouveau" = "ancien"` ; ordre préservé | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
+| 51 | `fct_reorder()` — réordonner les niveaux d'un factor selon une variable numérique + fonction résumé | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
+| 52 | `scale_x_discrete(expand = c(m, a))` — contrôle des marges autour d'un axe discret | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
+| 53 | `case_match()` — remplacement de valeurs exactes ; syntaxe `valeur ~ résultat` ; variante simplifiée de `case_when()` pour correspondances exactes | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
+| 54 | `geom_label()` — valeurs dans un encadré rectangulaire ; variante de `geom_text()` avec argument `fill` pour le fond | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
+| 55 | `add_row()` — ajouter une ligne manuellement à un dataframe ; piège d'auto-référence si l'objet n'existe pas encore | 23/05/2026 | 24/05/2026 |  | 30/05/2026 |  | 22/06/2026 |  | Aucune | À jour |
 ---
 editor_options: 
   markdown: 
