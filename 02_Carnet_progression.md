@@ -1003,7 +1003,8 @@ investies** : \_\_\_ h
 
 - **Statut** : Complété le 23/05/2026
 - **Adaptation** : mini-projet recentré sur les accouchements Jan-Avr 2026 (données mensuelles DHIS2 disponibles) au lieu de CPN4 annuel
-- **Lien GitHub** :
+- **Lien GitHub** :To https://github.com/bereniceharo/R-apprentissage-DSBMG.git
+   da53864..9407420  main -> main
 - **Difficultés rencontrées** : gestion des mois en ordre alphabétique à l'export DHIS2 (piège factor) ; distinction `[ ]` vs `[[ ]]` ; erreur d'inattention `fosa = factor(mois, ...)` au lieu de `mois = factor(mois, ...)` — erreur critique silencieuse
 - **Améliorations possibles** : ajouter vérification chiffrée automatique des FS sous seuil (calculer 30/47 par code plutôt que visuellement) ; ajouter coefficients saisonniers 2024-2025 comme référence ajustée
 

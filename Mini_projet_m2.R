@@ -60,8 +60,7 @@ heatmap_acc <- delivery_q1 |>
     )+
   theme_minimal()+
   labs(
-    title = "Taux de couverture mensuelle des accouchements réalisées par
-    formation sanitaire",
+    title = "Taux de couverture mensuelle des accouchements réalisées par formation sanitaire",
     subtitle = "District sanitaire de Boulmiougou, Janvier à avril 2026",
     caption = "DHIS2-BF mai-2026",
     y = "Formations sanitaires",
@@ -69,7 +68,7 @@ heatmap_acc <- delivery_q1 |>
     fill = "Taux d'accouchement"
   )+
   theme(
-    axis.text.y = element_text(size = 7),
+    axis.text.y = element_text(size = 9, face = "bold"),
     legend.position = "bottom",
     panel.background = element_rect(fill = "white"),
     )+
@@ -78,9 +77,10 @@ heatmap_acc <- delivery_q1 |>
 ggsave(
   filename ="heatmap_acc.png",
   plot = heatmap_acc,
-  width = 20,
+  width = 25,
   height = 35,
-  dpi = 300,
+  units = "cm",
+  dpi = 400,
   bg = "white"
   )  
   heatmap_acc
