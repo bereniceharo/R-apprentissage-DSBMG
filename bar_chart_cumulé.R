@@ -87,12 +87,12 @@ accouch_cum <- delivery_cum |>
   scale_x_continuous(expand = c(0, 0.3))
   
 ggsave(
-  filename = "accouchement_Q1.png",
+  filename = "accouchement_Q1_pptx.png",
   plot = accouch_cum,
   dpi = 300,
-  width = 20,
-  height = 35,
-  units ="cm",
+  width = 19.05,
+  height = 33.87,
+  units = "cm",
   bg = "white"
 )
 
