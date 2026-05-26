@@ -155,6 +155,12 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 50 | `fct_recode()` — renommer les niveaux d'un factor avec paires `"nouveau" = "ancien"` ; ordre des niveaux préservé | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
 | 51 | `fct_reorder()` — réordonner les niveaux d'un factor selon une variable numérique et une fonction résumé (`mean`, `median`) | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
 | 52 | `scale_x_discrete(expand = c(m, a))` — contrôle des marges autour d'un axe discret : m = multiplicateur proportionnel, a = ajout absolu | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
+| 53 | `clean_names()` — normalise noms de colonnes en snake_case : espaces→_, majuscules→minuscules, caractères spéciaux supprimés (package `janitor`) | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 |  | 24/06/2026 |  | J+1 le 26/05/2026 | À jour |
+| 54 | Règle distribution → résumé : asymétrique → médiane + IQR ; symétrique → moyenne + SD | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 |  | 24/06/2026 |  | J+1 le 26/05/2026 | À jour |
+| 55 | `geom_histogram()` — visualiser la distribution d'une variable continue par intervalles de valeurs ; argument clé : `bins` ou `binwidth` | 9.2 | 26/05/2026 | 27/05/2026 |  | 02/06/2026 |  | 25/06/2026 |  | Dû J+1 |
+| 56 | `geom_boxplot()` — comparer la distribution d'une variable continue entre groupes : médiane, IQR, moustaches (valeurs non aberrantes), points aberrants | 9.2 | 26/05/2026 | 27/05/2026 |  | 02/06/2026 |  | 25/06/2026 |  | Dû J+1 |
+| 57 | `geom_density()` — comparer la forme de la distribution d'une variable continue entre groupes via courbe lissée ; axe y = densité de probabilité, aire totale sous la courbe = 1 | 9.2 | 26/05/2026 | 27/05/2026 |  | 02/06/2026 |  | 25/06/2026 |  | Dû J+1 |
+| 58 | `stat_qq()` + `stat_qq_line()` — évaluer si une distribution s'approche d'une loi normale théorique ; utilise `aes(sample = variable)` et non `aes(x = )` | 9.2 | 26/05/2026 | 27/05/2026 |  | 02/06/2026 |  | 25/06/2026 |  | Dû J+1 |
 
 ---
 editor_options: 
@@ -1031,23 +1037,20 @@ investies** : \_\_\_ h
 
 #### Session 9.1 — Tendance centrale et dispersion
 
--   **Date et durée** :
--   **Ce qui était prévu** : Tendance centrale et dispersion : choisir
-    le bon résumé selon la distribution
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** : session 9.1 en cours, exercice calcul délai onset-to-consultation à compléter.
-
+-   **Date et durée** : 25/05/2026, ~2h
+-   **Ce qui était prévu** : Tendance centrale et dispersion : choisir le bon résumé selon la distribution
+-   **Ce qui a été fait** : Import et nettoyage de `linelist_raw.xlsx` (Epi R Handbook, épidémie Ebola fictive) ; `clean_names()` pour normaliser les noms de colonnes ; suppression colonnes inutiles (`merged_header`, `...28`) ; conversion `age` chr → numeric, `date_onset` chr → Date, `hosp_date` dttm → Date ; calcul de `delai_hospit` en jours (as.numeric + soustraction de deux Date) ; `summary()` sur `age` et `delai_hospit` ; tableau de synthèse avec `summarise()` : n, manquants, min, max, médiane, Q1, Q3
+-   **Ce qui est acquis** : `clean_names()` normalise les noms en snake_case en une ligne (package `janitor`) ; distribution asymétrique → médiane + IQR ; distribution symétrique → moyenne + SD ; la moyenne est contaminée par les valeurs extrêmes, la médiane ne l'est pas ; `summarise()` avec calcul multi-indicateurs en un pipeline
+-   **Ce qui reste flou** : néant (démontré : choix médiane + IQR justifié sur délais hospitalisation méningite)
+-   **Prochaine étape** : Session 9.2 — Distribution : histogramme, boxplot, densité, QQ-plot
 #### Session 9.2 — Distribution : histogramme, boxplot, densité, QQ-plot
 
--   **Date et durée** :
--   **Ce qui était prévu** : Distribution : histogramme, boxplot,
-    densité, QQ-plot
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+-   **Date et durée** : 26/05/2026, ~2h
+-   **Ce qui était prévu** : Distribution : histogramme, boxplot, densité, QQ-plot
+-   **Ce qui a été fait** : `geom_histogram()` sur `age` (bins = 30) ; `geom_boxplot()` de `age` par `outcome` (3 groupes : Death, Recover, NA) ; `geom_density()` avec `color = outcome` (3 courbes superposées) ; `stat_qq()` + `stat_qq_line()` sur `age` — lecture asymétrie droite + accumulation de zéros à age = 0 ; `table(var, useNA = "always")` pour explorer les modalités avant prédiction
+-   **Ce qui est acquis** : histogramme = fréquence par intervalle de valeurs ; boxplot = médiane, IQR, moustaches, aberrants + comparaison entre groupes ; densité = courbe lissée, axe y = densité de probabilité (aire totale = 1), comparaison de formes entre groupes ; QQ-plot = comparaison quantiles réels vs distribution normale théorique via `aes(sample = ...)` ; lecture directe de la non-normalité sur QQ-plot (écart à la droite = asymétrie, segment plat = accumulation)
+-   **Ce qui reste flou** : QQ-plot 
+-   **Prochaine étape** : Session 9.3 — Tableaux 1 publiables avec `gtsummary`
 
 #### Session 9.3 — Tableaux 1 publiables avec `gtsummary`
 
