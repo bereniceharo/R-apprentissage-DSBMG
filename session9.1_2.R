@@ -107,8 +107,8 @@ linelist_norm |>
   stat_qq()+
   stat_qq_line()
   
-
-
+qqnorm(linelist_norm$age)
+qqline(linelist_norm$age)
 
 #===============================================================================
 #Questions: 

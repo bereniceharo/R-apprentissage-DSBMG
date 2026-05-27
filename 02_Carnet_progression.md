@@ -107,11 +107,11 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 4 | Liste, indexation d'une liste | session 2.1 | 23/04/2026 | 24/04/2026 | 10/05/2026 | 30/04/2026 | 10/05/2026 | 23/05/2026 | J+30 le 23/05 | J+30 le 23/05 | Consolidé |
 | 5 | Structures data frames et manipulations, facteurs | 2.2, 2.3 | 24/04/2026 | 25/04/2026 | 10/05/2026 | 01/05/2026 | 10/05/2026 | 24/05/2026 | 25/05/2026 | J+30 le 25/05/2026 | Consolidé |
 | 6 | GitHub, commits et push, versioning | 2.4 | 24/04/2026 | 25/04/2026 | 10/05/2026 | 01/05/2026 | 10/05/2026 | 24/05/2026 | 25/05/2026 | J+30 le 25/05/2026 | Consolidé |
-| 7 | Indexation, filtrage, `is.na()`, coercition logique sur un data frame réel | 2.5 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 |  | J+7 le 10/05/2026 | À jour |
-| 8a | Lecture de fichiers : `read.csv2()`, `read_excel`, piège francophone | session 3.1, 3.2, 3.5 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 |  | J+7 le 10/05/2026 | À jour |
-| 8b | Sauvegarde fichier : `write.csv2()`, `write_xlsx`, `saveRDS` | 3.3 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 |  | J+7 le 10/05/2026 | À jour |
-| 8c | Organisation de projet | 3.4 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 |  | J+7 le 10/05/2026 | À jour |
-| 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 10/05/2026 | 04/05/2026 | 10/05/2026 | 27/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 7 | Indexation, filtrage, `is.na()`, coercition logique sur un data frame réel | 2.5 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 | 27/05/2026 | J+30 le 27/05/2026 | Consolidé |
+| 8a | Lecture de fichiers : `read.csv2()`, `read_excel`, piège francophone | session 3.1, 3.2, 3.5 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 | 27/05/2026 | J+30 le 27/05/2026 | Consolidé |
+| 8b | Sauvegarde fichier : `write.csv2()`, `write_xlsx`, `saveRDS` | 3.3 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 | 27/05/2026 | J+30 le 27/05/2026 | Consolidé |
+| 8c | Organisation de projet | 3.4 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 | 27/05/2026 | J+30 le 27/05/2026 | Consolidé |
+| 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 10/05/2026 | 04/05/2026 | 10/05/2026 | 27/05/2026 | 27/05/2026 | J+30 le 27/05/2026 | Consolidé |
 | 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 10/05/2026 | 05/05/2026 | 10/05/2026 | 28/05/2026 |  | J+7 le 10/05/2026 | À jour |
 | 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 10/05/2026 | 06/05/2026 | 10/05/2026 | 29/05/2026 |  | J+7 le 10/05/2026 | À jour |
 | 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | J+7 le 10/05/2026 | À jour |
@@ -147,21 +147,23 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 42 | `sample()` + `set.seed()` — simulation aléatoire reproductible | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | Révisé J+7 le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
 | 43 | `across()` + `where()` — opérer sur plusieurs colonnes par type dans summarise() et select() | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
 | 44 | Complétude = sum(!is.na()) / valeurs attendues × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | Révisé J+7 le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
-| 45 | Promptitude = sum(date \<= délai) / total × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | Révisé J+7 le 22/05 | 11/06/2026 |  | J+7 le 22/05 | À jour |
+| 45 | Promptitude = sum(date <= délai) / total × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | Révisé J+7 le 22/05 | 11/06/2026 |  | J+7 le 22/05 | À jour |
 | 46 | `quantile()` + `probs` — calcul de percentiles (Q1, Q3) sur un vecteur numérique | 8.4 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | J+7 le 22/05 | À jour |
 | 47 | Méthode Tukey : bornes = Q1 - 1.5×IQR et Q3 + 1.5×IQR — détection aberrants robuste | 8.4 | 12/05/2026 | 12/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | J+7 le 22/05 | À jour |
-| 48 | `case_when()` — alternative à ifelse() | session 8.5 | 18/05/2026 | 19/05/2026 | Révisé J+1 le 23/05 | 25/05/2026 | J+7 le 25/05/2026 | 17/06/2026 |  | Révisé J+7 le 25/05/2026 | À jour|
+| 48 | `case_when()` — alternative à ifelse() | session 8.5 | 18/05/2026 | 19/05/2026 | Révisé J+1 le 23/05 | 25/05/2026 | J+7 le 25/05/2026 | 17/06/2026 |  | Révisé J+7 le 25/05/2026 | À jour |
 | 49 | `scale_fill_gradient2()` — dégradé bidirectionnel avec `low`, `mid`, `high` et `midpoint` ; `na.value` pour distinguer les NA | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
 | 50 | `fct_recode()` — renommer les niveaux d'un factor avec paires `"nouveau" = "ancien"` ; ordre des niveaux préservé | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
 | 51 | `fct_reorder()` — réordonner les niveaux d'un factor selon une variable numérique et une fonction résumé (`mean`, `median`) | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
 | 52 | `scale_x_discrete(expand = c(m, a))` — contrôle des marges autour d'un axe discret : m = multiplicateur proportionnel, a = ajout absolu | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
 | 53 | `clean_names()` — normalise noms de colonnes en snake_case : espaces→_, majuscules→minuscules, caractères spéciaux supprimés (package `janitor`) | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 |  | 24/06/2026 |  | J+1 le 26/05/2026 | À jour |
 | 54 | Règle distribution → résumé : asymétrique → médiane + IQR ; symétrique → moyenne + SD | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 |  | 24/06/2026 |  | J+1 le 26/05/2026 | À jour |
-| 55 | `geom_histogram()` — visualiser la distribution d'une variable continue par intervalles de valeurs ; argument clé : `bins` ou `binwidth` | 9.2 | 26/05/2026 | 27/05/2026 |  | 02/06/2026 |  | 25/06/2026 |  | Dû J+1 |
-| 56 | `geom_boxplot()` — comparer la distribution d'une variable continue entre groupes : médiane, IQR, moustaches (valeurs non aberrantes), points aberrants | 9.2 | 26/05/2026 | 27/05/2026 |  | 02/06/2026 |  | 25/06/2026 |  | Dû J+1 |
-| 57 | `geom_density()` — comparer la forme de la distribution d'une variable continue entre groupes via courbe lissée ; axe y = densité de probabilité, aire totale sous la courbe = 1 | 9.2 | 26/05/2026 | 27/05/2026 |  | 02/06/2026 |  | 25/06/2026 |  | Dû J+1 |
-| 58 | `stat_qq()` + `stat_qq_line()` — évaluer si une distribution s'approche d'une loi normale théorique ; utilise `aes(sample = variable)` et non `aes(x = )` | 9.2 | 26/05/2026 | 27/05/2026 |  | 02/06/2026 |  | 25/06/2026 |  | Dû J+1 |
-
+| 55 | `geom_histogram()` — visualiser la distribution d'une variable continue par intervalles de valeurs ; argument clé : `bins` ou `binwidth` | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
+| 56 | `geom_boxplot()` — comparer la distribution d'une variable continue entre groupes : médiane, IQR, moustaches (valeurs non aberrantes), points aberrants | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
+| 57 | `geom_density()` — comparer la forme de la distribution d'une variable continue entre groupes via courbe lissée ; axe y = densité de probabilité, aire totale sous la courbe = 1 | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
+| 58 | `stat_qq()` + `stat_qq_line()` — évaluer si une distribution s'approche d'une loi normale théorique ; utilise `aes(sample = variable)` et non `aes(x = )` | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
+| 59 | `shapiro.test()` — tester la normalité : H0 = distribution normale ; p < 0.05 → rejeter H0 ; W proche de 1 = proche de la normale ; limité à 5000 observations | 9.3 | 27/05/2026 | 28/05/2026 |  | 03/06/2026 |  | 26/06/2026 |  | Dû J+1 |
+| 60 | `tbl_summary()` — tableau 1 publiable : résumé automatique médiane/IQR pour continu, n/% pour catégoriel ; arguments clés : `label`, `missing_text` | 9.3 | 27/05/2026 | 28/05/2026 |  | 03/06/2026 |  | 26/06/2026 |  | Dû J+1 |
+| 61 | `modify_header()` — modifier les en-têtes d'un objet `tbl_summary` ; colonne des variables s'appelle `label` en interne ; markdown `**texte**` pour le gras | 9.3 | 27/05/2026 | 28/05/2026 |  | 03/06/2026 |  | 26/06/2026 |  | Dû J+1 |
 ---
 editor_options: 
   markdown: 
@@ -1050,16 +1052,25 @@ investies** : \_\_\_ h
 -   **Ce qui a été fait** : `geom_histogram()` sur `age` (bins = 30) ; `geom_boxplot()` de `age` par `outcome` (3 groupes : Death, Recover, NA) ; `geom_density()` avec `color = outcome` (3 courbes superposées) ; `stat_qq()` + `stat_qq_line()` sur `age` — lecture asymétrie droite + accumulation de zéros à age = 0 ; `table(var, useNA = "always")` pour explorer les modalités avant prédiction
 -   **Ce qui est acquis** : histogramme = fréquence par intervalle de valeurs ; boxplot = médiane, IQR, moustaches, aberrants + comparaison entre groupes ; densité = courbe lissée, axe y = densité de probabilité (aire totale = 1), comparaison de formes entre groupes ; QQ-plot = comparaison quantiles réels vs distribution normale théorique via `aes(sample = ...)` ; lecture directe de la non-normalité sur QQ-plot (écart à la droite = asymétrie, segment plat = accumulation)
 -   **Ce qui reste flou** : QQ-plot 
--   **Prochaine étape** : Session 9.3 — Tableaux 1 publiables avec `gtsummary`
+-   **Prochaine étape** : Session 9.2.bis — Fondamentaux du test de normalité et `shapiro.test()`
+
+#### Session 9.2.bis — Fondamentaux du test de normalité et `shapiro.test()`
+
+- **Date et durée** : 27/05/2026
+- **Ce qui était prévu** : Tests de normalité et statistique descriptive groupée
+- **Ce qui a été fait** : Session spéciale fondamentaux — raisonnement hypothèse nulle/alternative, signification exacte de la p-valeur, application `shapiro.test()` sur données simulées (normales vs asymétriques) et sur linelist Epi R Handbook (variable age, n=500)
+- **Ce qui est acquis** : La p-valeur n'est pas la probabilité que les données soient non normales — c'est la probabilité d'observer un écart aussi grand si H0 était vraie. Raisonnement H0/H1. Règle de décision p < 0.05 → rejeter H0. W proche de 1 = proche de la normale. Limite 5000 observations pour shapiro.test(). Sur grand échantillon : visualisation + différence moyenne/médiane + jugement métier.
+- **Ce qui reste flou** : néant
+- **Prochaine étape** : Session 9.3 — Tableaux 1 publiables avec `gtsummary`
 
 #### Session 9.3 — Tableaux 1 publiables avec `gtsummary`
 
--   **Date et durée** :
--   **Ce qui était prévu** : Tableaux 1 publiables avec `gtsummary`
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+- **Date et durée** : 27/05/2026
+- **Ce qui était prévu** : Tableaux 1 publiables avec `gtsummary`
+- **Ce qui a été fait** : Introduction de `tbl_summary()` — tableau de caractéristiques de population publiable ; personnalisation avec `label`, `missing_text`, `modify_header()` ; recodage des modalités avec `fct_recode()` avant passage dans `tbl_summary()` ; correction de l'erreur de sélection de colonne interne (`label` et non `Characteristic`)
+- **Ce qui est acquis** : Produire un tableau 1 en français avec labels personnalisés, valeurs manquantes renommées, en-têtes modifiés, modalités recodées. Distinction `gtsummary` (package) vs `tbl_summary()` (fonction). Syntaxe `variable ~ "label"` dans `label = list()`. Markdown `**texte**` pour le gras dans `modify_header()`.
+- **Ce qui reste flou** : néant
+- **Prochaine étape** : Session 9.4 — Mise en forme avec `flextable` pour export Word
 
 #### Session 9.4 — Mise en forme avec `flextable`
 
