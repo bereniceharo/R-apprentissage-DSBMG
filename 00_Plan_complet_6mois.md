@@ -58,16 +58,21 @@ Les 9 familles de compétences couvertes :
 
 ---
 
-## Vue d'ensemble des 6 mois
+## Vue d'ensemble — séquencement révisé
 
-| Mois | Bloc thématique | Compétence métier débloquée |
-|---|---|---|
-| **M1** | Fondations R + Git | Autonomie technique de base |
-| **M2** | Tidyverse + qualité + visualisation | Analyse de couverture, qualité des données |
-| **M3** | Statistique descriptive et inférentielle | Comparaisons rigoureuses, IC, tests |
-| **M4** | API ENDOS-BF + automatisation | Pipeline data direct depuis le SNIS |
-| **M5** | Surveillance épidémiologique + cartographie | Détection d'épidémies, cartes thématiques |
-| **M6** | Reporting Quarto + projet de synthèse | Rapports automatisés, dashboard MCD |
+> **Révision du 27/05/2026** : sur décision d'Emmanuel, le bloc API/automatisation est avancé immédiatement après la semaine 9 (statistique descriptive). La statistique inférentielle (tests, IC, régression) est reportée après le bloc API, où elle sera appliquée sur des données ENDOS-BF réelles — ce qui la rendra plus concrète et motivante. Le bloc API est étendu à **6 semaines par défaut**, avec clause d'extension à 8 semaines si l'accès à l'API ENDOS-BF pose problème ou si le pipeline n'est pas satisfaisant.
+
+| Bloc | Thématique | Semaines | Compétence métier débloquée |
+|---|---|---|---|
+| **M1** | Fondations R + Git | S1–4 | Autonomie technique de base |
+| **M2** | Tidyverse + qualité + visualisation | S5–8 | Analyse de couverture, qualité des données |
+| **M3-partiel** | Statistique descriptive (semaine 9 seulement) | S9 | Tableaux 1 publiables, distributions |
+| **M4-étendu** | API ENDOS-BF + automatisation (`httr2` → `{khisr}`) | S10–15 (extensible S16) | Pipeline data direct depuis le SNIS, automatisation mensuelle |
+| **M3-suite** | Statistique inférentielle (tests, IC, régression) | S16–18 | Comparaisons rigoureuses sur données ENDOS-BF réelles |
+| **M5** | Surveillance épidémiologique + cartographie | S19–22 | Détection d'épidémies, cartes thématiques |
+| **M6** | Reporting Quarto + projet de synthèse | S23–26 | Rapports automatisés, dashboard MCD |
+
+**Durée nominale révisée** : 26 semaines. Calendaire réaliste : 8–10 mois.
 
 ---
 
@@ -216,9 +221,11 @@ La versionner sur GitHub avec un README.
 
 ---
 
-## MOIS 3 — Statistique descriptive et inférentielle
+## MOIS 3 (PARTIEL) — Statistique descriptive
 
-**Objectif** : produire des analyses statistiques rigoureuses adaptées à la santé publique. C'est ce qui distinguera tes rapports.
+**Objectif** : maîtriser la description rigoureuse des données de santé et la production de tableaux publiables.
+
+> **Note de séquencement** : seule la semaine 9 (statistique descriptive) est traitée ici. Les semaines 10–12 (tests d'hypothèses, IC, régression) sont volontairement reportées au bloc **M3-suite**, après le bloc API ENDOS-BF. Ce report est pédagogiquement motivé : les tests statistiques seront appliqués directement sur des données ENDOS-BF réelles récupérées par API, ce qui les rendra immédiatement opérationnels.
 
 ### Semaine 9 — Statistique descriptive professionnelle
 
@@ -230,100 +237,167 @@ La versionner sur GitHub avec un README.
 | 9.4 | Mise en forme avec `flextable` pour Word |
 | 9.5 | Cas pratique : tableau 1 d'une cohorte hypothétique de 200 patients |
 
-### Semaine 10 — Tests d'hypothèses
+> **Semaines 10–12 reportées** : tests d'hypothèses, intervalles de confiance, régression — voir bloc **M3-suite** après le bloc API.
 
-| Session | Contenu |
-|---|---|
-| 10.1 | Logique d'un test : H0/H1, p-value, erreur de type I et II |
-| 10.2 | Comparaison de moyennes : t-test (Student, Welch), Mann-Whitney |
-| 10.3 | Comparaison de proportions : chi², Fisher exact |
-| 10.4 | ANOVA et alternatives non paramétriques |
-| 10.5 | Arbre de décision : quel test pour quelle question |
-
-### Semaine 11 — Intervalles de confiance et taux standardisés
-
-| Session | Contenu |
-|---|---|
-| 11.1 | Intervalles de confiance : interprétation correcte, calcul pour proportions et moyennes |
-| 11.2 | Pourquoi standardiser : effet d'âge, effet de structure |
-| 11.3 | Standardisation directe et indirecte |
-| 11.4 | Taux pour 1 000 / 100 000 — calculs et présentation |
-| 11.5 | Cas pratique : taux de mortalité maternelle standardisé par âge |
-
-### Semaine 12 — Régression linéaire et logistique
-
-| Session | Contenu |
-|---|---|
-| 12.1 | Régression linéaire simple : équation, interprétation, hypothèses |
-| 12.2 | Régression linéaire multiple : variables catégorielles, interactions |
-| 12.3 | Régression logistique : odds ratio, interprétation |
-| 12.4 | Diagnostics de modèle : résidus, leverage, ajustement |
-| 12.5 | `gtsummary::tbl_regression` pour publier des tableaux de résultats |
-
-**Mini-projet de fin de mois 3** : reproduire intégralement en R une analyse que tu as faite en Stata (ou que tu prévois de faire) pour ton étude UMC. Comparer les résultats et documenter les différences éventuelles.
-
-**Indicateurs fin de mois 3** :
-- [ ] Choisir et exécuter le bon test selon la question
+**Indicateurs fin M3-partiel** :
 - [ ] Produire un tableau 1 propre exportable en Word
-- [ ] Faire et interpréter une régression linéaire et logistique
-- [ ] Calculer un IC 95 % et un taux standardisé
+- [ ] Choisir le bon résumé statistique selon la distribution (médiane vs moyenne)
+- [ ] Lire et interpréter un QQ-plot et un boxplot
 
 ---
 
-## MOIS 4 — API ENDOS-BF et automatisation
+## MOIS 4 (ÉTENDU) — API ENDOS-BF et automatisation
 
-**Objectif** : ne plus jamais télécharger manuellement depuis ENDOS-BF.
+**Objectif** : construire un pipeline de bout en bout — connexion à ENDOS-BF, récupération des données, transformation, validation, export automatique — qui tourne sans intervention humaine chaque mois.
 
-### Semaine 13 — Introduction aux API REST
+**Durée** : 6 semaines par défaut (S10–S15). Extension à 8 semaines (S10–S17) si l'accès API ENDOS-BF pose des obstacles techniques ou si le pipeline n'est pas satisfaisant à 6 semaines.
 
-| Session | Contenu |
-|---|---|
-| 13.1 | Concepts : client/serveur, verbes HTTP (GET, POST), codes de statut |
-| 13.2 | Le format JSON : structure, parsing avec `jsonlite` |
-| 13.3 | `httr2` : premier appel à une API publique (météo, REST Countries) |
-| 13.4 | Authentification : basique vs token |
-| 13.5 | Sécurité : `.Renviron`, ne jamais commiter ses identifiants |
+**Philosophie** : `httr2` en premier, pour maîtriser le protocole HTTP et l'architecture DHIS2 depuis le bas. `{khisr}` introduit en semaine 6 comme accélérateur, une fois les fondations solides — exactement comme on a appris base R avant dplyr.
 
-### Semaine 14 — API DHIS2 / ENDOS-BF (1)
+**Packages clés** : `httr2`, `jsonlite`, `{renv}`, `cronR`, puis `{khisr}` (installable depuis GitHub : `devtools::install_github("damurka/khisr")` — retiré du CRAN en mars 2026 pour raisons formelles, mais maintenu et fonctionnel).
+
+---
+
+### Semaine 10 — Introduction aux API REST et à `httr2`
 
 | Session | Contenu |
 |---|---|
-| 14.1 | Architecture DHIS2 : endpoints clés (`/me`, `/indicators`, `/dataElements`, `/organisationUnits`, `/analytics`) |
-| 14.2 | Récupérer la liste des indicateurs avec leurs métadonnées |
-| 14.3 | Récupérer la hiérarchie des unités d'organisation |
-| 14.4 | Résoudre les UID (identifiants) en noms lisibles |
-| 14.5 | Construire ton dictionnaire d'indicateurs ENDOS-BF en Excel |
+| 10.1 | Concepts fondamentaux : client/serveur, verbes HTTP (GET, POST, PUT), codes de statut (200, 401, 404, 500) |
+| 10.2 | Le format JSON : structure (objets, tableaux, scalaires), parsing avec `jsonlite::fromJSON()` |
+| 10.3 | `httr2` : anatomie d'une requête — `request()`, `req_url_query()`, `req_perform()`, `resp_body_json()` |
+| 10.4 | Authentification : basic auth (`req_auth_basic()`) vs token (`req_auth_bearer_token()`) |
+| 10.5 | Sécurité : stocker ses identifiants dans `.Renviron`, `.gitignore` obligatoire, ne jamais commiter un mot de passe |
 
-### Semaine 15 — API DHIS2 / ENDOS-BF (2) : les vraies données
+**Exercice** : appel authentifié à l'API publique de démonstration DHIS2 (`play.dhis2.org`) — récupérer `/api/me` et afficher son propre profil utilisateur.
 
-| Session | Contenu |
-|---|---|
-| 15.1 | L'API Analytics : structure de la requête (dx, pe, ou) |
-| 15.2 | Récupérer les valeurs d'un indicateur sur une période, pour une liste de FS |
-| 15.3 | Transformer la réponse JSON en data frame exploitable |
-| 15.4 | Pagination, gestion des grandes requêtes |
-| 15.5 | Cas pratique : couverture CPN4 mensuelle de tes 49 FS sur 24 mois |
+---
 
-### Semaine 16 — Automatisation et robustesse
+### Semaine 11 — Architecture DHIS2 / ENDOS-BF : métadonnées
 
 | Session | Contenu |
 |---|---|
-| 16.1 | Refactoring : transformer un script en fonctions réutilisables |
-| 16.2 | Paramétrage : un script qui prend en entrée la période, la FS, l'indicateur |
-| 16.3 | Gestion d'erreurs : `tryCatch`, retry automatique en cas de timeout |
-| 16.4 | Logs : tracer l'exécution dans un fichier daté |
-| 16.5 | Cache : éviter de re-télécharger ce qui a déjà été demandé |
+| 11.1 | Architecture DHIS2 : les 5 endpoints fondamentaux (`/me`, `/indicators`, `/dataElements`, `/organisationUnits`, `/analytics`) et leur rôle |
+| 11.2 | Récupérer la liste des indicateurs avec leurs UIDs et métadonnées |
+| 11.3 | Navigation hiérarchique des unités d'organisation : paramètres `level` et `ouMode=DESCENDANTS` — requêter toutes les FS du DS-BMG sans liste hardcodée |
+| 11.4 | Résoudre les UIDs en noms lisibles : jointure entre la réponse API et le dictionnaire local |
+| 11.5 | Construire et sauvegarder le dictionnaire d'indicateurs ENDOS-BF : UID ↔ nom ↔ groupe ↔ unité |
 
-**Mini-projet de fin de mois 4** : un **pipeline reproductible** qui, à chaque exécution :
-1. Se connecte à ENDOS-BF
-2. Télécharge les 10 indicateurs prioritaires de ton district sur les 12 derniers mois
-3. Produit un fichier Excel formaté avec mise en forme conditionnelle
-4. Logue l'exécution
+**Livrable** : fichier `dictionnaire_endos_bf.xlsx` versionné sur GitHub.
 
-**Indicateurs fin de mois 4** :
-- [ ] Faire un appel API authentifié sans regarder de tutoriel
-- [ ] Récupérer une donnée ENDOS-BF et la transformer en data frame
-- [ ] Construire un pipeline rejouable mensuellement
+---
+
+### Semaine 12 — API Analytics : récupérer les vraies données
+
+| Session | Contenu |
+|---|---|
+| 12.1 | L'endpoint Analytics : structure de la requête — dimensions `dx` (indicateur), `pe` (période), `ou` (unité d'organisation) |
+| 12.2 | Construire et exécuter une requête complète avec `httr2` pour un indicateur sur les 49 FS |
+| 12.3 | Transformer la réponse JSON brute en data frame exploitable avec `dplyr` + `tidyr` |
+| 12.4 | Pagination : gérer les réponses volumineuses (`pager`, `pageSize`, boucle sur les pages) |
+| 12.5 | Cas pratique : couverture CPN4 mensuelle des 49 FS sur 24 mois — pipeline complet de la requête au data frame propre |
+
+---
+
+### Semaine 13 — Transformation, jointure et validation sémantique
+
+| Session | Contenu |
+|---|---|
+| 13.1 | Pipeline de transformation : API → renommage des colonnes → types corrects → jointure avec la liste des 49 FS |
+| 13.2 | Validation sémantique post-réception : vérifier que toutes les FS sont présentes, toutes les périodes couvertes, aucune valeur impossible |
+| 13.3 | Intégration des alertes qualité : FS manquante = warning, valeur > seuil Tukey = flag, taux > 120 % = erreur |
+| 13.4 | Cas pratique : pipeline CPN4 avec rapport de qualité automatique en sortie |
+| 13.5 | `{renv}` : figer l'environnement de packages — `renv::init()`, `renv::snapshot()`, `renv::restore()` — garantir que le pipeline fonctionne dans 18 mois |
+
+---
+
+### Semaine 14 — Refactoring et robustesse
+
+| Session | Contenu |
+|---|---|
+| 14.1 | Refactoring : transformer le script monolithique en fonctions paramétrées (`get_indicateur()`, `valider_donnees()`, `exporter_excel()`) |
+| 14.2 | Paramétrage : un script qui prend en entrée la période, la liste des indicateurs, le niveau de l'unité d'organisation |
+| 14.3 | Gestion d'erreurs techniques : `tryCatch()`, retry automatique en cas de timeout, message d'erreur informatif |
+| 14.4 | Logs : tracer chaque exécution dans un fichier daté (`log_YYYYMMDD.txt`) — ce qui a été téléchargé, combien de lignes, les warnings détectés |
+| 14.5 | Cache : éviter de re-télécharger les données déjà présentes localement — comparaison date locale vs dernière mise à jour DHIS2 |
+
+---
+
+### Semaine 15 — Automatisation et introduction à `{khisr}`
+
+| Session | Contenu |
+|---|---|
+| 15.1 | Scheduling avec `cronR` (Mac/Linux) : `cron_add()` — le pipeline tourne seul le 1er de chaque mois sans intervention humaine |
+| 15.2 | Introduction à `{khisr}` : ce qu'il fait vs ce que `httr2` fait en dessous — `khis_cred()`, `get_analytics()`, `get_analytics_by_level()`, `get_organisation_units()` |
+| 15.3 | Comparaison httr2 vs khisr sur le même pipeline CPN4 : comprendre l'abstraction, identifier les cas où httr2 reste nécessaire |
+| 15.4 | Refactoriser le pipeline avec `{khisr}` là où il simplifie, conserver `httr2` pour les endpoints non couverts |
+| 15.5 | Cas optionnel (si temps disponible) : GitHub Actions pour scheduling cloud — le pipeline tourne sur les serveurs GitHub et t'envoie le rapport par email |
+
+---
+
+**Mini-projet de fin de M4-étendu** : un **système de suivi mensuel automatisé** qui, en une seule commande :
+1. Se connecte à ENDOS-BF (via `httr2` ou `{khisr}`)
+2. Télécharge les 10 indicateurs prioritaires des 49 FS sur les 12 derniers mois
+3. Valide les données : FS manquantes, valeurs aberrantes, périodes incomplètes
+4. Produit un fichier Excel formaté avec mise en forme conditionnelle
+5. Logue l'exécution avec horodatage
+6. Tourne automatiquement le 1er de chaque mois via `cronR`
+7. Environnement figé avec `{renv}` pour reproductibilité dans le temps
+
+Versionné sur GitHub avec `renv.lock`, `README` de lancement, et au moins 4 commits documentés.
+
+**Indicateurs fin M4-étendu** :
+- [ ] Faire un appel API authentifié avec `httr2` sans regarder de tutoriel
+- [ ] Récupérer les données de toutes les FS du DS-BMG via navigation hiérarchique (sans liste hardcodée)
+- [ ] Détecter automatiquement les anomalies sémantiques dans les données reçues
+- [ ] Construire un pipeline rejouable mensuellement sans intervention manuelle
+- [ ] Expliquer la différence entre `httr2` et `{khisr}` et choisir selon le contexte
+- [ ] Restaurer l'environnement exact avec `renv::restore()` sur une machine vierge
+
+---
+
+## BLOC M3-SUITE — Statistique inférentielle (reportée)
+
+**Objectif** : produire des analyses comparatives rigoureuses, directement appliquées aux données ENDOS-BF récupérées par API.
+
+> Ce bloc reprend les semaines 10–12 du plan initial, déplacées ici intentionnellement. Avantage concret : tu feras tes tests statistiques sur des données réelles de ton district, pas sur des jeux fictifs. Un t-test sur la couverture CPN4 entre deux zones sanitaires a une tout autre résonance quand les données viennent d'un appel API que tu as construit toi-même.
+
+### Semaine 16 — Tests d'hypothèses
+
+| Session | Contenu |
+|---|---|
+| 16.1 | Logique d'un test : H0/H1, p-value, erreur de type I et II — interprétation correcte (pas "probabilité que H0 soit vraie") |
+| 16.2 | Comparaison de moyennes : t-test (Student, Welch), Mann-Whitney — quand utiliser lequel |
+| 16.3 | Comparaison de proportions : chi², Fisher exact |
+| 16.4 | ANOVA et alternatives non paramétriques (Kruskal-Wallis) |
+| 16.5 | Arbre de décision : quel test pour quelle question — appliqué aux indicateurs ENDOS-BF |
+
+### Semaine 17 — Intervalles de confiance et taux standardisés
+
+| Session | Contenu |
+|---|---|
+| 17.1 | Intervalles de confiance : interprétation correcte, calcul pour proportions et moyennes |
+| 17.2 | Pourquoi standardiser : effet d'âge, effet de structure de population |
+| 17.3 | Standardisation directe et indirecte |
+| 17.4 | Taux pour 1 000 / 100 000 — calculs et présentation |
+| 17.5 | Cas pratique : taux de mortalité maternelle standardisé par âge, données DS-BMG |
+
+### Semaine 18 — Régression linéaire et logistique
+
+| Session | Contenu |
+|---|---|
+| 18.1 | Régression linéaire simple : équation, interprétation, hypothèses |
+| 18.2 | Régression linéaire multiple : variables catégorielles, interactions |
+| 18.3 | Régression logistique : odds ratio, interprétation dans le contexte santé publique |
+| 18.4 | Diagnostics de modèle : résidus, leverage, ajustement |
+| 18.5 | `gtsummary::tbl_regression` pour publier des tableaux de résultats |
+
+**Mini-projet M3-suite** : reproduire intégralement en R une analyse que tu as faite en Stata pour l'étude UMC. Données récupérées via API si disponibles sur ENDOS-BF. Comparer les résultats et documenter les différences.
+
+**Indicateurs fin M3-suite** :
+- [ ] Choisir et exécuter le bon test selon la question sans aide
+- [ ] Calculer un IC 95 % et l'interpréter correctement (pas comme une probabilité)
+- [ ] Faire et interpréter une régression logistique — OR avec IC 95 %
+- [ ] Calculer un taux standardisé et expliquer pourquoi la standardisation était nécessaire
 
 ---
 
@@ -480,10 +554,11 @@ La versionner sur GitHub avec un README.
 |---|---|
 | Mois 1 | Importer un Excel, le filtrer, le résumer, l'exporter ; écrire une fonction |
 | Mois 2 | Produire 5 graphiques différents adaptés à 5 questions analytiques |
-| Mois 3 | Faire un tableau 1 publiable + un test statistique justifié + IC 95 % |
-| Mois 4 | Récupérer une donnée ENDOS-BF par API et la transformer en livrable |
-| Mois 5 | Produire une carte choroplèthe + une courbe épidémique avec seuil d'alerte |
-| Mois 6 | Générer un rapport Quarto paramétré qui se met à jour mensuellement |
+| M3-partiel | Produire un tableau 1 publiable ; choisir médiane vs moyenne selon la distribution |
+| M4-étendu | Appel API authentifié + pipeline ENDOS-BF automatisé qui tourne seul chaque mois |
+| M3-suite | Test statistique justifié + IC 95 % + régression logistique sur données réelles |
+| Mois 5 | Carte choroplèthe + courbe épidémique avec seuil d'alerte automatique |
+| Mois 6 | Rapport Quarto paramétré qui se met à jour mensuellement en une commande |
 
 **Règle absolue** : si à la fin d'un mois les indicateurs ne sont pas validés, **consolider avant d'avancer**. Pas d'accumulation sans maîtrise.
 
