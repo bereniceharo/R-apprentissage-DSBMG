@@ -164,6 +164,9 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 59 | `shapiro.test()` — tester la normalité : H0 = distribution normale ; p < 0.05 → rejeter H0 ; W proche de 1 = proche de la normale ; limité à 5000 observations | 9.3 | 27/05/2026 | 28/05/2026 |  | 03/06/2026 |  | 26/06/2026 |  | Dû J+1 |
 | 60 | `tbl_summary()` — tableau 1 publiable : résumé automatique médiane/IQR pour continu, n/% pour catégoriel ; arguments clés : `label`, `missing_text` | 9.3 | 27/05/2026 | 28/05/2026 |  | 03/06/2026 |  | 26/06/2026 |  | Dû J+1 |
 | 61 | `modify_header()` — modifier les en-têtes d'un objet `tbl_summary` ; colonne des variables s'appelle `label` en interne ; markdown `**texte**` pour le gras | 9.3 | 27/05/2026 | 28/05/2026 |  | 03/06/2026 |  | 26/06/2026 |  | Dû J+1 |
+| 62 | `as_flex_table()` — convertir un objet `gtsummary` en objet `flextable` exportable ; fonction de `gtsummary`, pas de `flextable` | 9.4 | 27/05/2026 | 28/05/2026 |  | 03/06/2026 |  | 26/06/2026 |  | Dû J+1 |
+| 63 | `save_as_docx()` — exporter un objet `flextable` en fichier Word ; argument `path` = chemin du fichier `.docx` à créer | 9.4 | 27/05/2026 | 28/05/2026 |  | 03/06/2026 |  | 26/06/2026 |  | Dû J+1 |
+
 ---
 editor_options: 
   markdown: 
@@ -1072,24 +1075,26 @@ investies** : \_\_\_ h
 - **Ce qui reste flou** : néant
 - **Prochaine étape** : Session 9.4 — Mise en forme avec `flextable` pour export Word
 
-#### Session 9.4 — Mise en forme avec `flextable`
+#### Session 9.4 — Mise en forme avec `flextable` pour export Word
 
--   **Date et durée** :
--   **Ce qui était prévu** : Mise en forme avec `flextable` pour Word
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+- **Date et durée** : 27/05/2026
+- **Ce qui était prévu** : Mise en forme avec `flextable` pour Word
+- **Ce qui a été fait** : Export du tableau `gtsummary` en Word avec `as_flex_table()` + `save_as_docx()` ; distinction `as_flex_table()` (gtsummary) vs `as_flextable()` (flextable) ; pipeline complet de la sélection des variables jusqu'au fichier `.docx`
+- **Ce qui est acquis** : `as_flex_table()` vient de `gtsummary` et préserve la mise en forme ; `save_as_docx()` vient de `flextable` avec argument `path` ; pipeline complet tbl_summary → as_flex_table → save_as_docx
+- **Ce qui reste flou** : néant
+- **Prochaine étape** : Session 9.5 — Cas pratique : tableau 1 d'une cohorte hypothétique de 200 patients
 
-#### Session 9.5 — Cas pratique : tableau 1 d'une cohorte
+#### Session 9.5 — Tableau 1 sur linelist ebola
 
--   **Date et durée** :
--   **Ce qui était prévu** : Cas pratique : tableau 1 d'une cohorte
-    hypothétique de 200 patients
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+- **Date et durée** : 27/05/2026 — [durée à compléter]
+- **Ce qui était prévu** : Tableau 1 sur cohorte hypothétique
+- **Ce qui a été fait** : Tableau 1 publiable sur linelist_raw.xlsx 
+  (6611 cas) stratifié par outcome (Décès/Guéris) — nettoyage 
+  (age_unit, fct_recode), tbl_summary(), modify_header(), 
+  as_flex_table(), save_as_docx()
+- **Ce qui est acquis** : gt_summary, tbl_summary, as_flex_table, save_as_docx, fct_recode
+- **Ce qui reste flou** : néant
+- **Prochaine étape** : Session 10.1 — Introduction aux API REST
 
 #### Récapitulatif semaine 9
 
