@@ -1105,9 +1105,321 @@ investies** : \_\_\_ h
 | Construire un tableau 1 avec `gtsummary` |  |  |
 | Mettre en forme un tableau pour Word avec `flextable` |  |  |
 
-**Décision** : **Points à réviser** :
+**Décision** : passer au bloc M4-étendu (API ENDOS-BF) — semaines 10–12 reportées en M3-suite après le bloc API. **Points à réviser** :
 
 ------------------------------------------------------------------------
+
+> **⚠ RESTRUCTURATION DU PLAN — 27/05/2026**
+> Les semaines 10–12 (tests d'hypothèses, IC, régression) sont reportées après le bloc API ENDOS-BF. Elles forment le bloc **M3-suite** (semaines 16–18 du plan révisé). La prochaine session est la **10.1 du plan révisé — Introduction aux API REST**.
+> Voir `00_Plan_complet_6mois.md` pour le séquencement complet.
+
+------------------------------------------------------------------------
+
+## BLOC M4-ÉTENDU — API ENDOS-BF et automatisation
+
+**Période réelle** : début 27/05/2026 — fin à déterminer (6 semaines nominales, extensible à 8)
+
+### Semaine 10 (révisée) — Introduction aux API REST et à `httr2`
+
+**Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales investies** : \_\_\_ h
+
+#### Session 10.1 — Concepts HTTP et premier appel `httr2`
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Concepts HTTP (GET/POST, codes de statut), JSON, `httr2` : `request()`, `req_url_query()`, `req_perform()`, `resp_body_json()`
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 10.2 — Format JSON et `jsonlite`
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Structure JSON (objets, tableaux, scalaires), parsing avec `jsonlite::fromJSON()`
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 10.3 — Authentification et sécurité
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Basic auth vs token, `.Renviron`, `.gitignore`, ne jamais commiter ses identifiants
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+------------------------------------------------------------------------
+
+### Semaine 11 (révisée) — Architecture DHIS2 / ENDOS-BF : métadonnées
+
+**Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales investies** : \_\_\_ h
+
+#### Session 11.1 — Endpoints DHIS2 fondamentaux
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : `/me`, `/indicators`, `/dataElements`, `/organisationUnits`, `/analytics`
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 11.2 — Récupérer les métadonnées et indicateurs
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Liste des indicateurs avec UIDs et métadonnées
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 11.3 — Navigation hiérarchique des unités d'organisation
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Paramètres `level` et `ouMode=DESCENDANTS` — toutes les FS du DS-BMG sans liste hardcodée
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 11.4 — Résoudre les UIDs en noms lisibles
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Jointure entre la réponse API et le dictionnaire local — UID → nom lisible
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 11.5 — Construire le dictionnaire ENDOS-BF
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Construire et sauvegarder `dictionnaire_endos_bf.xlsx` : UID ↔ nom ↔ groupe ↔ unité
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+------------------------------------------------------------------------
+
+### Semaine 12 (révisée) — API Analytics : données réelles
+
+**Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales investies** : \_\_\_ h
+
+#### Session 12.1 — L'endpoint Analytics : structure dx/pe/ou
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Structure de la requête Analytics — dimensions `dx` (indicateur), `pe` (période), `ou` (unité d'organisation)
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 12.2 — Construire et exécuter une requête complète
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Requête `httr2` complète pour un indicateur sur les 49 FS du DS-BMG
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 12.3 — Transformer JSON en data frame
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Transformation de la réponse JSON brute en data frame exploitable avec `dplyr` + `tidyr`
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 12.4 — Pagination et grandes requêtes
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Gérer les réponses volumineuses : `pager`, `pageSize`, boucle sur les pages
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 12.5 — Cas pratique : CPN4 mensuelle 49 FS sur 24 mois
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Pipeline complet de la requête au data frame propre — couverture CPN4 des 49 FS sur 24 mois
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+------------------------------------------------------------------------
+
+### Semaine 13 (révisée) — Transformation, validation sémantique, `{renv}`
+
+**Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales investies** : \_\_\_ h
+
+#### Session 13.1 — Pipeline de transformation API → data frame
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : API → renommage des colonnes → types corrects → jointure avec la liste des 49 FS
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 13.2 — Validation sémantique post-réception
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Vérifier que toutes les FS sont présentes, toutes les périodes couvertes, aucune valeur impossible
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 13.3 — Alertes qualité intégrées
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : FS manquante = warning, valeur > seuil Tukey = flag, taux > 120 % = erreur
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 13.4 — Cas pratique : pipeline CPN4 avec rapport qualité
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Pipeline CPN4 complet avec rapport de qualité automatique en sortie
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 13.5 — `{renv}` : figer l'environnement
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : `renv::init()`, `renv::snapshot()`, `renv::restore()` — garantir la reproductibilité dans le temps
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+------------------------------------------------------------------------
+
+### Semaine 14 (révisée) — Refactoring et robustesse
+
+**Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales investies** : \_\_\_ h
+
+#### Session 14.1 — Refactoring en fonctions paramétrées
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Transformer le script monolithique en fonctions réutilisables : `get_indicateur()`, `valider_donnees()`, `exporter_excel()`
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 14.2 — Paramétrage du pipeline
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Script paramétré : période, liste d'indicateurs, niveau d'unité d'organisation en entrée
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 14.3 — Gestion d'erreurs avec `tryCatch()`
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : `tryCatch()`, retry automatique en cas de timeout, message d'erreur informatif
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 14.4 — Logs horodatés
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Tracer chaque exécution dans un fichier `log_YYYYMMDD.txt` — données téléchargées, nombre de lignes, warnings
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 14.5 — Cache local
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Éviter de re-télécharger les données déjà présentes — comparaison date locale vs dernière mise à jour DHIS2
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+------------------------------------------------------------------------
+
+### Semaine 15 (révisée) — Automatisation et `{khisr}`
+
+**Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales investies** : \_\_\_ h
+
+#### Session 15.1 — Scheduling avec `cronR`
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : `cron_add()` — le pipeline tourne seul le 1er de chaque mois sans intervention humaine
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 15.2 — Introduction à `{khisr}`
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Ce que `{khisr}` fait vs ce que `httr2` fait en dessous — `khis_cred()`, `get_analytics()`, `get_analytics_by_level()`, `get_organisation_units()`
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 15.3 — Comparaison httr2 vs `{khisr}`
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Même pipeline CPN4 avec les deux approches — comprendre l'abstraction, identifier les cas où `httr2` reste nécessaire
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 15.4 — Refactorisation avec `{khisr}`
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Refactoriser le pipeline avec `{khisr}` là où il simplifie, conserver `httr2` pour les endpoints non couverts
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Session 15.5 — GitHub Actions (optionnel)
+
+-   **Date et durée** :
+-   **Ce qui était prévu** : Scheduling cloud — pipeline qui tourne sur les serveurs GitHub et envoie le rapport par email (si temps disponible)
+-   **Ce qui a été fait** :
+-   **Ce qui est acquis** :
+-   **Ce qui reste flou** :
+-   **Prochaine étape** :
+
+#### Bilan M4-étendu
+
+| Indicateur | Validé (Oui/Partiel/Non) | Commentaire |
+|---|---|---|
+| Appel API authentifié avec `httr2` sans tutoriel |  |  |
+| Navigation hiérarchique orgUnit sans liste hardcodée |  |  |
+| Détection automatique des anomalies sémantiques |  |  |
+| Pipeline mensuel automatisé sans intervention |  |  |
+| Différence httr2 / `{khisr}` expliquée et appliquée |  |  |
+| `renv::restore()` sur machine vierge |  |  |
+
+------------------------------------------------------------------------
+
+> **M3-SUITE — Statistique inférentielle (reportée)**
+> Les sessions ci-dessous (semaines 10–12 du plan initial) sont conservées dans le carnet mais seront traitées après le bloc M4-étendu, sous le nom **M3-suite**. Ne pas remplir avant d'avoir validé le bilan M4-étendu.
 
 ### Semaine 10 — Tests d'hypothèses
 
