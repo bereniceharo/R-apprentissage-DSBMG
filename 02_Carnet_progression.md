@@ -112,7 +112,7 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 8b | Sauvegarde fichier : `write.csv2()`, `write_xlsx`, `saveRDS` | 3.3 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 | 27/05/2026 | J+30 le 27/05/2026 | Consolidé |
 | 8c | Organisation de projet | 3.4 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 | 27/05/2026 | J+30 le 27/05/2026 | Consolidé |
 | 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 10/05/2026 | 04/05/2026 | 10/05/2026 | 27/05/2026 | 27/05/2026 | J+30 le 27/05/2026 | Consolidé |
-| 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 10/05/2026 | 05/05/2026 | 10/05/2026 | 28/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 10/05/2026 | 05/05/2026 | 10/05/2026 | 28/05/2026 | 28/05/2026 | J+30 le 28/05/2026 | Consolidé |
 | 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 10/05/2026 | 06/05/2026 | 10/05/2026 | 29/05/2026 |  | J+7 le 10/05/2026 | À jour |
 | 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | J+7 le 10/05/2026 | À jour |
 | 13 | Arguments par défaut, stop(), any(), early return | 4.5 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | J+7 le 10/05/2026 | À jour |
@@ -138,19 +138,19 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 33 | `theme_minimal()` (et famille `theme_*()`) — thèmes pré-construits et règle d'ordre : la dernière couche `theme` écrite l'emporte sur les propriétés communes | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 |  | J+7 le 18/05/2026 | À jour |
 | 34 | `scale_fill_distiller()` + argument `direction` — palette ColorBrewer continue, sens d'application à vérifier par lecture de la légende | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 |  | J+7 le 18/05/2026 | À jour |
 | 35 | `ggsave()` — export reproductible PNG/PDF avec `width`, `height`, `units`, `dpi`, `bg` explicites | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 |  | J+7 le 18/05/2026 | À jour |
-| 36 | `parse_date_time()` + `as.Date()` — parsing de formats hétérogènes, argument `orders` | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
-| 37 | `epiweek()` — numéro de semaine épidémiologique à partir d'une `Date` | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
-| 38 | Soustraction de deux `Date` + `as.numeric()` — calcul de délai en jours | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
-| 39 | `str_remove()` + regex — suppression de pattern variable dans une chaîne | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
-| 40 | `str_trunc()` — tronquer une chaîne à une largeur maximale | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
-| 41 | `str_detect()` + `regex(ignore_case = TRUE)` — détecter un pattern sans contrainte de casse | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | Révisé J+7 le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
-| 42 | `sample()` + `set.seed()` — simulation aléatoire reproductible | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | Révisé J+7 le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
-| 43 | `across()` + `where()` — opérer sur plusieurs colonnes par type dans summarise() et select() | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
-| 44 | Complétude = sum(!is.na()) / valeurs attendues × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | Révisé J+7 le 22/05 | 11/06/2026 |  | Révisé J+7 le 22/05 | À jour |
-| 45 | Promptitude = sum(date <= délai) / total × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | Révisé J+7 le 22/05 | 11/06/2026 |  | J+7 le 22/05 | À jour |
-| 46 | `quantile()` + `probs` — calcul de percentiles (Q1, Q3) sur un vecteur numérique | 8.4 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | J+7 le 22/05 | À jour |
-| 47 | Méthode Tukey : bornes = Q1 - 1.5×IQR et Q3 + 1.5×IQR — détection aberrants robuste | 8.4 | 12/05/2026 | 12/05/2026 | 15/05/2026 | 19/05/2026 | le 22/05 | 11/06/2026 |  | J+7 le 22/05 | À jour |
-| 48 | `case_when()` — alternative à ifelse() | session 8.5 | 18/05/2026 | 19/05/2026 | Révisé J+1 le 23/05 | 25/05/2026 | J+7 le 25/05/2026 | 17/06/2026 |  | Révisé J+7 le 25/05/2026 | À jour |
+| 36 | `parse_date_time()` + `as.Date()` — parsing de formats hétérogènes, argument `orders` | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
+| 37 | `epiweek()` — numéro de semaine épidémiologique à partir d'une `Date` | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
+| 38 | Soustraction de deux `Date` + `as.numeric()` — calcul de délai en jours | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
+| 39 | `str_remove()` + regex — suppression de pattern variable dans une chaîne | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
+| 40 | `str_trunc()` — tronquer une chaîne à une largeur maximale | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
+| 41 | `str_detect()` + `regex(ignore_case = TRUE)` — détecter un pattern sans contrainte de casse | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
+| 42 | `sample()` + `set.seed()` — simulation aléatoire reproductible | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
+| 43 | `across()` + `where()` — opérer sur plusieurs colonnes par type dans summarise() et select() | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
+| 44 | Complétude = sum(!is.na()) / valeurs attendues × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
+| 45 | Promptitude = sum(date <= délai) / total × 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
+| 46 | `quantile()` + `probs` — calcul de percentiles (Q1, Q3) sur un vecteur numérique | 8.4 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
+| 47 | Méthode Tukey : bornes = Q1 - 1.5×IQR et Q3 + 1.5×IQR — détection aberrants robuste | 8.4 | 12/05/2026 | 12/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
+| 48 | `case_when()` — alternative à ifelse() | session 8.5 | 18/05/2026 | 19/05/2026 | 23/05/2026 | 25/05/2026 | 25/05/2026 | 17/06/2026 |  | J+7 le 25/05/2026 | À jour |
 | 49 | `scale_fill_gradient2()` — dégradé bidirectionnel avec `low`, `mid`, `high` et `midpoint` ; `na.value` pour distinguer les NA | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
 | 50 | `fct_recode()` — renommer les niveaux d'un factor avec paires `"nouveau" = "ancien"` ; ordre des niveaux préservé | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
 | 51 | `fct_reorder()` — réordonner les niveaux d'un factor selon une variable numérique et une fonction résumé (`mean`, `median`) | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
@@ -161,12 +161,11 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 56 | `geom_boxplot()` — comparer la distribution d'une variable continue entre groupes : médiane, IQR, moustaches (valeurs non aberrantes), points aberrants | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
 | 57 | `geom_density()` — comparer la forme de la distribution d'une variable continue entre groupes via courbe lissée ; axe y = densité de probabilité, aire totale sous la courbe = 1 | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
 | 58 | `stat_qq()` + `stat_qq_line()` — évaluer si une distribution s'approche d'une loi normale théorique ; utilise `aes(sample = variable)` et non `aes(x = )` | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
-| 59 | `shapiro.test()` — tester la normalité : H0 = distribution normale ; p < 0.05 → rejeter H0 ; W proche de 1 = proche de la normale ; limité à 5000 observations | 9.3 | 27/05/2026 | 28/05/2026 |  | 03/06/2026 |  | 26/06/2026 |  | Dû J+1 |
-| 60 | `tbl_summary()` — tableau 1 publiable : résumé automatique médiane/IQR pour continu, n/% pour catégoriel ; arguments clés : `label`, `missing_text` | 9.3 | 27/05/2026 | 28/05/2026 |  | 03/06/2026 |  | 26/06/2026 |  | Dû J+1 |
-| 61 | `modify_header()` — modifier les en-têtes d'un objet `tbl_summary` ; colonne des variables s'appelle `label` en interne ; markdown `**texte**` pour le gras | 9.3 | 27/05/2026 | 28/05/2026 |  | 03/06/2026 |  | 26/06/2026 |  | Dû J+1 |
-| 62 | `as_flex_table()` — convertir un objet `gtsummary` en objet `flextable` exportable ; fonction de `gtsummary`, pas de `flextable` | 9.4 | 27/05/2026 | 28/05/2026 |  | 03/06/2026 |  | 26/06/2026 |  | Dû J+1 |
-| 63 | `save_as_docx()` — exporter un objet `flextable` en fichier Word ; argument `path` = chemin du fichier `.docx` à créer | 9.4 | 27/05/2026 | 28/05/2026 |  | 03/06/2026 |  | 26/06/2026 |  | Dû J+1 |
-
+| 59 | `shapiro.test()` — tester la normalité : H0 = distribution normale ; p < 0.05 → rejeter H0 ; W proche de 1 = proche de la normale ; limité à 5000 observations | 9.3 | 27/05/2026 | 28/05/2026 | 28/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 28/05/2026 | À jour |
+| 60 | `tbl_summary()` — tableau 1 publiable : résumé automatique médiane/IQR pour continu, n/% pour catégoriel ; arguments clés : `label`, `missing_text` | 9.3 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
+| 61 | `modify_header()` — modifier les en-têtes d'un objet `tbl_summary` ; colonne des variables s'appelle `label` en interne ; markdown `**texte**` pour le gras | 9.3 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
+| 62 | `as_flex_table()` — convertir un objet `gtsummary` en objet `flextable` exportable ; fonction de `gtsummary`, pas de `flextable` | 9.4 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
+| 63 | `save_as_docx()` — exporter un objet `flextable` en fichier Word ; argument `path` = chemin du fichier `.docx` à créer | 9.4 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
 ---
 editor_options: 
   markdown: 
@@ -1100,10 +1099,10 @@ investies** : \_\_\_ h
 
 | Compétence attendue | Auto-éval (1-5) | Commentaire |
 |----|----|----|
-| Choisir le bon résumé selon la distribution |  |  |
-| Produire histogramme, boxplot, QQ-plot |  |  |
-| Construire un tableau 1 avec `gtsummary` |  |  |
-| Mettre en forme un tableau pour Word avec `flextable` |  |  |
+| Choisir le bon résumé selon la distribution | 4 |  |
+| Produire histogramme, boxplot, QQ-plot | 3.5 |  |
+| Construire un tableau 1 avec `gtsummary` | 4 |  |
+| Mettre en forme un tableau pour Word avec `flextable` | 4 |  |
 
 **Décision** : passer au bloc M4-étendu (API ENDOS-BF) — semaines 10–12 reportées en M3-suite après le bloc API. **Points à réviser** :
 
@@ -1125,12 +1124,12 @@ investies** : \_\_\_ h
 
 #### Session 10.1 — Concepts HTTP et premier appel `httr2`
 
--   **Date et durée** :
+-   **Date et durée** : 28/05/2026, ~1h
 -   **Ce qui était prévu** : Concepts HTTP (GET/POST, codes de statut), JSON, `httr2` : `request()`, `req_url_query()`, `req_perform()`, `resp_body_json()`
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+-   **Ce qui a été fait** : Sens littéral des termes techniques (HTTP, HTTPS, URL, API, JSON, httr2, query string, header, code de statut) ; mécanisme d'une requête HTTP (méthode, URL, headers, body, code de statut) ; pipeline complet `request() |> req_url_query() |> req_perform() |> resp_body_json()` sur `httpbin.org` ; premier appel sans paramètres (statut 200, body 325 bytes, headers automatiques `httr2`) ; deuxième appel avec paramètres `district = "Boulmiougou"`, `annee = 2025` — query string construite automatiquement ; observation d'une liste imbriquée dans la réponse JSON (`$args$annee`)
+-   **Ce qui est acquis** : `request()` construit l'objet requête avec l'URL de base ; `req_url_query()` ajoute les paramètres et construit la query string automatiquement ; `req_perform()` envoie la requête et récupère la réponse brute (bytes) ; `resp_body_json()` décode le body JSON en liste R ; code statut 200 = succès ; `$args$annee` = navigation dans une liste imbriquée à deux niveaux
+-   **Ce qui reste flou** : néant
+-   **Prochaine étape** : Session 10.2 — Format JSON et `jsonlite` : structure JSON (objets, tableaux, scalaires), parsing avec `jsonlite::fromJSON()`, navigation dans listes imbriquées profondes
 
 #### Session 10.2 — Format JSON et `jsonlite`
 
