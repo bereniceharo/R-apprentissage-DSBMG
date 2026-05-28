@@ -1140,12 +1140,12 @@ investies** : \_\_\_ h
 
 #### Session 10.2 — Format JSON et `jsonlite`
 
--   **Date et durée** :
+-   **Date et durée** : 28/05/2026, ~1h
 -   **Ce qui était prévu** : Structure JSON (objets, tableaux, scalaires), parsing avec `jsonlite::fromJSON()`
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+-   **Ce qui a été fait** : Sens littéral de JSON (JavaScript Object Notation) ; trois briques — scalaire, objet, tableau ; `fromJSON()` sur un objet JSON simple (liste 3 éléments, piège integer vs numeric) ; `fromJSON()` sur un tableau d'objets homogènes → data frame automatique 3×3 ; `fromJSON()` sur un JSON imbriqué à trois éléments (`headers`, `rows`, `height`) → liste contenant data frame + matrice + integer ; pipeline complet matrice → data frame exploitable : `as.data.frame()` + `colnames()` + `as.numeric()` ; distinction `resp_body_json()` (httr2, réponse API) vs `fromJSON()` (jsonlite, texte JSON brut)
+-   **Ce qui est acquis** : `fromJSON()` convertit tableau homogène → data frame automatiquement, tableau hétérogène → liste ; les valeurs numériques entre guillemets JSON arrivent en chr — conversion `as.numeric()` obligatoire ; `as.data.frame()` convertit une matrice en data frame ; `colnames(df) <- vecteur` assigne les noms de colonnes ; navigation dans liste imbriquée via `$element$sous_element`
+-   **Ce qui reste flou** : néant
+-   **Prochaine étape** : Session 10.3 — Authentification : Basic auth vs token, `.Renviron`, `.gitignore`
 
 #### Session 10.3 — Authentification et sécurité
 
