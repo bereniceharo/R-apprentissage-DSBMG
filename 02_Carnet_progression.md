@@ -166,6 +166,13 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 61 | `modify_header()` — modifier les en-têtes d'un objet `tbl_summary` ; colonne des variables s'appelle `label` en interne ; markdown `**texte**` pour le gras | 9.3 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
 | 62 | `as_flex_table()` — convertir un objet `gtsummary` en objet `flextable` exportable ; fonction de `gtsummary`, pas de `flextable` | 9.4 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
 | 63 | `save_as_docx()` — exporter un objet `flextable` en fichier Word ; argument `path` = chemin du fichier `.docx` à créer | 9.4 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
+| 64 | `request()` — construit un objet `httr2_request` avec l'URL de base du serveur ; point de départ de tout pipeline `httr2` | 10.1 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
+| 65 | `req_url_query()` — ajoute des paramètres nommés à l'URL d'un objet `httr2_request` ; construit la query string automatiquement (`?clé=valeur&clé=valeur`) | 10.1 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
+| 66 | `req_perform()` — envoie la requête au serveur et retourne un objet `httr2_response` contenant le code de statut, les headers et le body brut (bytes) | 10.1 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
+| 67 | `resp_body_json()` — décode le body JSON d'un objet `httr2_response` en liste R imbriquée | 10.1 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
+| 68 | `fromJSON()` — parse une chaîne JSON en objet R ; tableau homogène → data frame automatique ; tableau hétérogène → liste ; piège : valeurs numériques entre guillemets arrivent en chr | 10.2 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
+| 69 | `colnames(df) <- vecteur` — assigne les noms des colonnes d'un data frame à partir d'un vecteur character | 10.2 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
+| 70 | `as.data.frame()` — convertit une matrice, liste ou vecteur en data frame ; noms de colonnes génériques (V1, V2...) si non assignés | 10.2 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
 ---
 editor_options: 
   markdown: 
