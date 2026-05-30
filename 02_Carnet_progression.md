@@ -166,13 +166,18 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 61 | `modify_header()` — modifier les en-têtes d'un objet `tbl_summary` ; colonne des variables s'appelle `label` en interne ; markdown `**texte**` pour le gras | 9.3 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
 | 62 | `as_flex_table()` — convertir un objet `gtsummary` en objet `flextable` exportable ; fonction de `gtsummary`, pas de `flextable` | 9.4 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
 | 63 | `save_as_docx()` — exporter un objet `flextable` en fichier Word ; argument `path` = chemin du fichier `.docx` à créer | 9.4 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
-| 64 | `request()` — construit un objet `httr2_request` avec l'URL de base du serveur ; point de départ de tout pipeline `httr2` | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | A jour |
-| 65 | `req_url_query()` — ajoute des paramètres nommés à l'URL d'un objet `httr2_request` ; construit la query string automatiquement (`?clé=valeur&clé=valeur`) | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 |A jour |
-| 66 | `req_perform()` — envoie la requête au serveur et retourne un objet `httr2_response` contenant le code de statut, les headers et le body brut (bytes) | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | A jour|
-| 67 | `resp_body_json()` — décode le body JSON d'un objet `httr2_response` en liste R imbriquée | 10.1 | 28/05/2026 | 29/05/2026 |30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026| A jour|
+| 64 | `request()` — construit un objet `httr2_request` avec l'URL de base du serveur ; point de départ de tout pipeline `httr2` | 10.3 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | A jour |
+| 65 | `req_url_query()` — ajoute des paramètres nommés à l'URL d'un objet `httr2_request` ; construit la query string automatiquement (`?clé=valeur&clé=valeur`) | 10.3 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 |A jour |
+| 66 | `req_perform()` — envoie la requête au serveur et retourne un objet `httr2_response` contenant le code de statut, les headers et le body brut (bytes) | 10.3 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | A jour|
+| 67 | `resp_body_json()` — décode le body JSON d'un objet `httr2_response` en liste R imbriquée | 10.3 | 28/05/2026 | 29/05/2026 |30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026| A jour|
 | 68 | `fromJSON()` — parse une chaîne JSON en objet R ; tableau homogène → data frame automatique ; tableau hétérogène → liste ; piège : valeurs numériques entre guillemets arrivent en chr | 10.2 | 28/05/2026 | 29/05/2026 |le 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | A jour |
 | 69 | `colnames(df) <- vecteur` — assigne les noms des colonnes d'un data frame à partir d'un vecteur character | 10.2 | 28/05/2026 | 29/05/2026 |30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | A jour|
 | 70 | `as.data.frame()` — convertit une matrice, liste ou vecteur en data frame ; noms de colonnes génériques (V1, V2...) si non assignés | 10.2 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026| A jour |
+| 71 | `req_url_path_append()` — ajoute un segment de chemin à un `httr2_request` (gère le `/` automatiquement) ; entrée : requête + segment(s) ; sortie : requête au chemin allongé | 10.3 | 30/05/2026 | 31/05/2026 |  | 06/06/2026 |  | 29/06/2026 |  | Aucune | À jour |
+| 72 | `req_auth_basic(req, username, password)` — ajoute l'authentification HTTP basique (header Authorization) ; s'insère avant `req_perform()` ; l'auth est un sens unique, le mot de passe n'est jamais retourné | 10.4 | 30/05/2026 | 31/05/2026 |  | 06/06/2026 |  | 29/06/2026 |  | Aucune | À jour |
+| 73 | Verbes HTTP : `GET` (lire/récupérer une ressource) et `POST` (créer/envoyer des données) ; pour ENDOS-BF, usage quasi exclusif de GET (extraction), jamais de POST (pas d'écriture dans le SNIS depuis R) | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | À jour |
+| 74 | Codes de statut HTTP : 200 (succès), 401 (non authentifié), 404 (introuvable), 500 (erreur serveur) — vérifier le statut avant de décoder le body | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | À jour |
+
 ---
 editor_options: 
   markdown: 
@@ -1129,35 +1134,45 @@ investies** : \_\_\_ h
 
 **Période réelle** : du \_\_\_\_\_ au \_\_\_\_\_ **Heures totales investies** : \_\_\_ h
 
-#### Session 10.1 — Concepts HTTP et premier appel `httr2`
-
--   **Date et durée** : 28/05/2026, ~1h
--   **Ce qui était prévu** : Concepts HTTP (GET/POST, codes de statut), JSON, `httr2` : `request()`, `req_url_query()`, `req_perform()`, `resp_body_json()`
--   **Ce qui a été fait** : Sens littéral des termes techniques (HTTP, HTTPS, URL, API, JSON, httr2, query string, header, code de statut) ; mécanisme d'une requête HTTP (méthode, URL, headers, body, code de statut) ; pipeline complet `request() |> req_url_query() |> req_perform() |> resp_body_json()` sur `httpbin.org` ; premier appel sans paramètres (statut 200, body 325 bytes, headers automatiques `httr2`) ; deuxième appel avec paramètres `district = "Boulmiougou"`, `annee = 2025` — query string construite automatiquement ; observation d'une liste imbriquée dans la réponse JSON (`$args$annee`)
--   **Ce qui est acquis** : `request()` construit l'objet requête avec l'URL de base ; `req_url_query()` ajoute les paramètres et construit la query string automatiquement ; `req_perform()` envoie la requête et récupère la réponse brute (bytes) ; `resp_body_json()` décode le body JSON en liste R ; code statut 200 = succès ; `$args$annee` = navigation dans une liste imbriquée à deux niveaux
--   **Ce qui reste flou** : néant
--   **Prochaine étape** : Session 10.2 — Format JSON et `jsonlite` : structure JSON (objets, tableaux, scalaires), parsing avec `jsonlite::fromJSON()`, navigation dans listes imbriquées profondes
+#### Session 10.1 — Concepts fondamentaux HTTP
+-   **Date et durée** : 28/05/2026, ~0,5h (incluse dans la séance du 28/05)
+-   **Ce qui était prévu** : Client/serveur, verbes HTTP (GET, POST, PUT), codes de statut (200, 401, 404, 500)
+-   **Ce qui a été fait** : Sens littéral des termes techniques (HTTP, HTTPS, URL, API, query string, header, code de statut) ; mécanisme d'une requête HTTP (méthode, URL, headers, body, code de statut) ; verbes GET (lire) et POST (créer/envoyer) — distinction lire/écrire ; codes de statut 200 (succès), et notion des familles 4xx (client) / 5xx (serveur)
+-   **Ce qui est acquis** : une requête HTTP = méthode + URL + headers + body ; GET sert à récupérer une ressource, POST à en envoyer une ; pour ENDOS-BF, usage quasi exclusif de GET (extraction), jamais de POST (pas d'écriture dans le SNIS depuis R) ; code 200 = succès ; le code de statut se vérifie avant de décoder le body
+-   **Ce qui reste flou** : sens précis des codes 401 vs 404 (vus en théorie, pas encore rencontrés en pratique)
+-   **Prochaine étape** : Session 10.2 — Format JSON et parsing avec jsonlite
 
 #### Session 10.2 — Format JSON et `jsonlite`
-
 -   **Date et durée** : 28/05/2026, ~1h
 -   **Ce qui était prévu** : Structure JSON (objets, tableaux, scalaires), parsing avec `jsonlite::fromJSON()`
--   **Ce qui a été fait** : Sens littéral de JSON (JavaScript Object Notation) ; trois briques — scalaire, objet, tableau ; `fromJSON()` sur un objet JSON simple (liste 3 éléments, piège integer vs numeric) ; `fromJSON()` sur un tableau d'objets homogènes → data frame automatique 3×3 ; `fromJSON()` sur un JSON imbriqué à trois éléments (`headers`, `rows`, `height`) → liste contenant data frame + matrice + integer ; pipeline complet matrice → data frame exploitable : `as.data.frame()` + `colnames()` + `as.numeric()` ; distinction `resp_body_json()` (httr2, réponse API) vs `fromJSON()` (jsonlite, texte JSON brut)
+-   **Ce qui a été fait** : Sens littéral de JSON (JavaScript Object Notation) ; trois briques — scalaire, objet, tableau ; `fromJSON()` sur un objet JSON simple (liste 3 éléments, piège integer vs numeric) ; `fromJSON()` sur un tableau d'objets homogènes → data frame automatique 3×3 ; `fromJSON()` sur un JSON imbriqué à trois éléments (`headers`, `rows`, `height`) → liste contenant data frame + matrice + integer ; pipeline complet matrice → data frame exploitable : `as.data.frame()` + `colnames()` + `as.numeric()`
 -   **Ce qui est acquis** : `fromJSON()` convertit tableau homogène → data frame automatiquement, tableau hétérogène → liste ; les valeurs numériques entre guillemets JSON arrivent en chr — conversion `as.numeric()` obligatoire ; `as.data.frame()` convertit une matrice en data frame ; `colnames(df) <- vecteur` assigne les noms de colonnes ; navigation dans liste imbriquée via `$element$sous_element`
--   **Ce qui reste flou** : néant
--   **Prochaine étape** : Session 10.3 — Authentification : Basic auth vs token, `.Renviron`, `.gitignore`
+-   **Ce qui reste flou** : néant (concept mobilisé activement le 28/05 et reconsolidé le 30/05)
+-   **Prochaine étape** : Session 10.3 — Anatomie d'une requête httr2
 
-#### Session 10.3 — Authentification et sécurité
+#### Session 10.3 — `httr2` : anatomie d'une requête
+-   **Date et durée** : 28/05/2026 (~0,5h, pipeline) + 30/05/2026 (~1h, premier appel API réel)
+-   **Ce qui était prévu** : `request()`, `req_url_query()`, `req_perform()`, `resp_body_json()` ; anatomie complète d'une requête httr2
+-   **Ce qui a été fait** : pipeline complet `request() |> req_url_query() |> req_perform() |> resp_body_json()` sur `httpbin.org` (28/05) — premier appel sans paramètres (statut 200, body 325 bytes, headers automatiques httr2), deuxième appel avec paramètres `district = "Boulmiougou"`, `annee = 2025` (query string construite automatiquement), observation d'une liste imbriquée (`$args$annee`) ; le 30/05 : premier appel API réel sur `play.im.dhis2.org` (DHIS2 2.43), endpoint `/me`, construction en deux temps avec `req_url_path_append("me")`, inspection de la réponse décodée (39 champs à la racine), extraction de `$id` (UID 11 caractères) et `$username`
+-   **Ce qui est acquis** : `request()` construit l'objet `httr2_request` avec l'URL de base ; `req_url_query()` ajoute des paramètres (query string `?clé=valeur`) ; `req_url_path_append()` ajoute un segment de chemin (gère le `/`) ; `req_perform()` envoie et retourne un `httr2_response` (statut + headers + body brut) ; `resp_body_json()` décode le body en liste R ; distinction objet structuré (httr2_request/response) vs chaîne (URL/JSON) ; le body décodé ≠ les headers ; un UID DHIS2 = 11 caractères alphanumériques
+-   **Ce qui reste flou** : distinction httr2_request/httr2_response et chemins resp_body_json (liste) vs fromJSON (data frame) pas encore automatique — à revérifier au J+7 (04/06) et J+30
+-   **Prochaine étape** : Session 10.4 — Authentification basic auth vs token
 
+#### Session 10.4 — Authentification : basic auth vs token
+-   **Date et durée** : amorcée le 30/05/2026 (usage de `req_auth_basic()` pour l'appel `/me`) ; à compléter (token)
+-   **Ce qui était prévu** : basic auth (`req_auth_basic()`) vs token (`req_auth_bearer_token()`)
+-   **Ce qui a été fait** : `req_auth_basic(req, username, password)` utilisé pour l'appel authentifié à `/me` (admin/district) — header Authorization posé avant `req_perform()` ; constat que l'authentification est un sens unique (le mot de passe n'est jamais retourné dans la réponse). Token bearer : non encore vu
+-   **Ce qui est acquis** : `req_auth_basic()` ajoute l'authentification HTTP basique ; s'insère avant `req_perform()` ; le mot de passe est envoyé, jamais retourné
+-   **Ce qui reste flou** : `req_auth_bearer_token()` et le cas d'usage token vs basic — non encore abordé
+-   **Prochaine étape** : compléter 10.4 (token) puis Session 10.5 — Sécurité des identifiants
+
+#### Session 10.5 — Sécurité : stockage des identifiants
 -   **Date et durée** :
--   **Ce qui était prévu** : Basic auth vs token, `.Renviron`, `.gitignore`, ne jamais commiter ses identifiants
+-   **Ce qui était prévu** : stocker ses identifiants dans `.Renviron`, `.gitignore` obligatoire, ne jamais commiter un mot de passe
 -   **Ce qui a été fait** :
 -   **Ce qui est acquis** :
--   **Ce qui reste flou** : - confusion fct_reorder vs factor(levels=) sur l'argument d'entrée — à revérifier au J+30,
-                            - confusion initiale httr2_request/httr2_response et "URL"/"JSON" — distinction objet structuré vs chaîne pas encore automatique
-                            - distinction resp_body_json (liste, écosystème httr2) vs fromJSON (data frame, jsonlite) pas encore automatique — ce sont deux chemins alternatifs, pas deux étapes successives
+-   **Ce qui reste flou** :
 -   **Prochaine étape** :
-
 ------------------------------------------------------------------------
 
 ### Semaine 11 (révisée) — Architecture DHIS2 / ENDOS-BF : métadonnées
@@ -2602,3 +2617,12 @@ synthèse "Dernière révision effective" pour faciliter la lecture rapide.
 Leçon générale : un dispositif anti-erreur n'est valide que si la
 procédure rend l'erreur visible. Une condition logique composée (A ET B)
 cachée dans deux colonnes éloignées est un piège structurel.
+
+#30 mai 2026 — Réconciliation plan/carnet sur la numérotation des
+sessions 10.x. Concepts httr2 (#64-67) réétiquetés 10.1→10.3 pour
+suivre le plan. Ajout des concepts HTTP théoriques manquants : #73
+(verbes), #74 (codes de statut), vus en 10.1 le 28/05 mais non
+inscrits. Concepts du jour : #71 (req_url_path_append), #72
+(req_auth_basic). Numérotation en option B (numéros à la suite,
+ordre porté par date+session, pas par le numéro) pour ne casser
+aucune référence existante.
