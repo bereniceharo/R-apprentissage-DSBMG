@@ -113,7 +113,7 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 8c | Organisation de projet | 3.4 | 26/04/2026 | 27/04/2026 | 10/05/2026 | 03/05/2026 | 10/05/2026 | 26/05/2026 | 27/05/2026 | J+30 le 27/05/2026 | Consolidé |
 | 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 10/05/2026 | 04/05/2026 | 10/05/2026 | 27/05/2026 | 27/05/2026 | J+30 le 27/05/2026 | Consolidé |
 | 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 10/05/2026 | 05/05/2026 | 10/05/2026 | 28/05/2026 | 28/05/2026 | J+30 le 28/05/2026 | Consolidé |
-| 11 | Fonctions de la famille `apply` | 4.3 | 29/04/2026 | 30/04/2026 | 10/05/2026 | 06/05/2026 | 10/05/2026 | 29/05/2026 |  | J+7 le 10/05/2026 | À jour |
+| 11 | lapply() et sapply() — appliquer une fonction aux éléments d'une liste ou aux colonnes d'un data frame ; lapply retourne toujours une liste, sapply simplifie quand il peut | 4.3 | 29/04/2026 | 30/04/2026 | 10/05/2026 | 06/05/2026 | 10/05/2026 | 29/05/2026 |  30/05/2026|J+30 le 30/05/2026 | Consolidé |
 | 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | J+7 le 10/05/2026 | À jour |
 | 13 | Arguments par défaut, stop(), any(), early return | 4.5 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | J+7 le 10/05/2026 | À jour |
 | 14 | `df[[colonne]]` vs `df$colonne` — accès dynamique à une colonne | mini-projet mois 1 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | J+7 le 10/05/2026 | À jour |
@@ -152,8 +152,8 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 47 | Méthode Tukey : bornes = Q1 - 1.5×IQR et Q3 + 1.5×IQR — détection aberrants robuste | 8.4 | 12/05/2026 | 12/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
 | 48 | `case_when()` — alternative à ifelse() | session 8.5 | 18/05/2026 | 19/05/2026 | 23/05/2026 | 25/05/2026 | 25/05/2026 | 17/06/2026 |  | J+7 le 25/05/2026 | À jour |
 | 49 | `scale_fill_gradient2()` — dégradé bidirectionnel avec `low`, `mid`, `high` et `midpoint` ; `na.value` pour distinguer les NA | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
-| 50 | `fct_recode()` — renommer les niveaux d'un factor avec paires `"nouveau" = "ancien"` ; ordre des niveaux préservé | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
-| 51 | `fct_reorder()` — réordonner les niveaux d'un factor selon une variable numérique et une fonction résumé (`mean`, `median`) | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
+| 50 | `fct_recode()` — renommer les niveaux d'un factor avec paires `"nouveau" = "ancien"` ; ordre des niveaux préservé | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 | J+7 le 30/05/2026 | 22/06/2026 |  | J+7 le 30/05/2026| À jour |
+| 51 | `fct_reorder()` — réordonner les niveaux d'un factor selon une variable numérique et une fonction résumé (`mean`, `median`) | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 | 30/05/2026  | 22/06/2026 |  | J+7 le 30/05/2026  | À jour |
 | 52 | `scale_x_discrete(expand = c(m, a))` — contrôle des marges autour d'un axe discret : m = multiplicateur proportionnel, a = ajout absolu | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
 | 53 | `clean_names()` — normalise noms de colonnes en snake_case : espaces→_, majuscules→minuscules, caractères spéciaux supprimés (package `janitor`) | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 |  | 24/06/2026 |  | J+1 le 26/05/2026 | À jour |
 | 54 | Règle distribution → résumé : asymétrique → médiane + IQR ; symétrique → moyenne + SD | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 |  | 24/06/2026 |  | J+1 le 26/05/2026 | À jour |
@@ -166,13 +166,13 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 61 | `modify_header()` — modifier les en-têtes d'un objet `tbl_summary` ; colonne des variables s'appelle `label` en interne ; markdown `**texte**` pour le gras | 9.3 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
 | 62 | `as_flex_table()` — convertir un objet `gtsummary` en objet `flextable` exportable ; fonction de `gtsummary`, pas de `flextable` | 9.4 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
 | 63 | `save_as_docx()` — exporter un objet `flextable` en fichier Word ; argument `path` = chemin du fichier `.docx` à créer | 9.4 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
-| 64 | `request()` — construit un objet `httr2_request` avec l'URL de base du serveur ; point de départ de tout pipeline `httr2` | 10.1 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
-| 65 | `req_url_query()` — ajoute des paramètres nommés à l'URL d'un objet `httr2_request` ; construit la query string automatiquement (`?clé=valeur&clé=valeur`) | 10.1 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
-| 66 | `req_perform()` — envoie la requête au serveur et retourne un objet `httr2_response` contenant le code de statut, les headers et le body brut (bytes) | 10.1 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
-| 67 | `resp_body_json()` — décode le body JSON d'un objet `httr2_response` en liste R imbriquée | 10.1 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
-| 68 | `fromJSON()` — parse une chaîne JSON en objet R ; tableau homogène → data frame automatique ; tableau hétérogène → liste ; piège : valeurs numériques entre guillemets arrivent en chr | 10.2 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
-| 69 | `colnames(df) <- vecteur` — assigne les noms des colonnes d'un data frame à partir d'un vecteur character | 10.2 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
-| 70 | `as.data.frame()` — convertit une matrice, liste ou vecteur en data frame ; noms de colonnes génériques (V1, V2...) si non assignés | 10.2 | 28/05/2026 | 29/05/2026 |  | 04/06/2026 |  | 27/06/2026 |  | Aucune | Dû J+1 |
+| 64 | `request()` — construit un objet `httr2_request` avec l'URL de base du serveur ; point de départ de tout pipeline `httr2` | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | A jour |
+| 65 | `req_url_query()` — ajoute des paramètres nommés à l'URL d'un objet `httr2_request` ; construit la query string automatiquement (`?clé=valeur&clé=valeur`) | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 |A jour |
+| 66 | `req_perform()` — envoie la requête au serveur et retourne un objet `httr2_response` contenant le code de statut, les headers et le body brut (bytes) | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | A jour|
+| 67 | `resp_body_json()` — décode le body JSON d'un objet `httr2_response` en liste R imbriquée | 10.1 | 28/05/2026 | 29/05/2026 |30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026| A jour|
+| 68 | `fromJSON()` — parse une chaîne JSON en objet R ; tableau homogène → data frame automatique ; tableau hétérogène → liste ; piège : valeurs numériques entre guillemets arrivent en chr | 10.2 | 28/05/2026 | 29/05/2026 |le 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | A jour |
+| 69 | `colnames(df) <- vecteur` — assigne les noms des colonnes d'un data frame à partir d'un vecteur character | 10.2 | 28/05/2026 | 29/05/2026 |30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | A jour|
+| 70 | `as.data.frame()` — convertit une matrice, liste ou vecteur en data frame ; noms de colonnes génériques (V1, V2...) si non assignés | 10.2 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026| A jour |
 ---
 editor_options: 
   markdown: 
@@ -1153,7 +1153,8 @@ investies** : \_\_\_ h
 -   **Ce qui était prévu** : Basic auth vs token, `.Renviron`, `.gitignore`, ne jamais commiter ses identifiants
 -   **Ce qui a été fait** :
 -   **Ce qui est acquis** :
--   **Ce qui reste flou** :
+-   **Ce qui reste flou** : - confusion fct_reorder vs factor(levels=) sur l'argument d'entrée — à revérifier au J+30,
+                            - confusion initiale httr2_request/httr2_response et "URL"/"JSON" — distinction objet structuré vs chaîne pas encore automatique 
 -   **Prochaine étape** :
 
 ------------------------------------------------------------------------
@@ -2543,6 +2544,8 @@ investies** : \_\_\_ h **Heures prévues** : 20-28 h
 
 (Espace pour réflexions, idées, questions à poser plus tard, ressources
 à explorer, etc.)
+##Liste de concepts à introduire
+apply() (version matricielle, argument MARGIN) 
 
 #1er mai 2026 — Première application du cadre renforcé (7 dispositifs).
 Retrieval practice de 3 questions. 6 concepts consolidés à J+30.
