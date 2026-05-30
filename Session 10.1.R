@@ -89,10 +89,10 @@ df_fs <- df_fs |>
 df_fs
 glimpse(df_fs)
 
-Session 10.3 — Authentification et sécurité
-L'objectif : comprendre comment prouver ton identité à un serveur API sans jamais écrire ton mot de passe dans ton script — et comprendre pourquoi c'est critique.
+#Session 10.3 — Authentification et sécurité
+#L'objectif : comprendre comment prouver ton identité à un serveur API sans jamais écrire ton mot de passe dans ton script — et comprendre pourquoi c'est critique.
 
-
+fct_recode()
 
 
 

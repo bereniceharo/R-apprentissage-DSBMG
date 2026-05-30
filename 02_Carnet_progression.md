@@ -1154,7 +1154,8 @@ investies** : \_\_\_ h
 -   **Ce qui a été fait** :
 -   **Ce qui est acquis** :
 -   **Ce qui reste flou** : - confusion fct_reorder vs factor(levels=) sur l'argument d'entrée — à revérifier au J+30,
-                            - confusion initiale httr2_request/httr2_response et "URL"/"JSON" — distinction objet structuré vs chaîne pas encore automatique 
+                            - confusion initiale httr2_request/httr2_response et "URL"/"JSON" — distinction objet structuré vs chaîne pas encore automatique
+                            - distinction resp_body_json (liste, écosystème httr2) vs fromJSON (data frame, jsonlite) pas encore automatique — ce sont deux chemins alternatifs, pas deux étapes successives
 -   **Prochaine étape** :
 
 ------------------------------------------------------------------------
