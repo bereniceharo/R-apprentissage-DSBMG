@@ -177,6 +177,9 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 72 | `req_auth_basic(req, username, password)` — ajoute l'authentification HTTP basique (header Authorization) ; s'insère avant `req_perform()` ; l'auth est un sens unique, le mot de passe n'est jamais retourné | 10.4 | 30/05/2026 | 31/05/2026 | 31/05/2026 | 06/06/2026 |  | 29/06/2026 |  | J+1 le31/05/2026 | À jour |
 | 73 | Verbes HTTP : `GET` (lire/récupérer une ressource) et `POST` (créer/envoyer des données) ; pour ENDOS-BF, usage quasi exclusif de GET (extraction), jamais de POST (pas d'écriture dans le SNIS depuis R) | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | À jour |
 | 74 | Codes de statut HTTP : 200 (succès), 401 (non authentifié), 404 (introuvable), 500 (erreur serveur) — vérifier le statut avant de décoder le body | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | À jour |
+| 75 | `usethis::edit_r_environ()` — ouvre (et crée si absent) le fichier `~/.Renviron` dans RStudio ; redémarrage R obligatoire après modification | 10.5 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
+| 76 | `Sys.getenv("NOM")` — récupère la valeur d'une variable d'environnement définie dans `.Renviron` ; retourne `""` si la variable n'existe pas | 10.5 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
+| 77 | `pageSize` — paramètre de pagination DHIS2 : nombre de résultats retournés par page ; par défaut 50 ; augmenter pour récupérer tous les résultats en une requête ; `$pager$total` indique le nombre total de résultats disponibles | 11.1 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
 
 ---
 editor_options: 
@@ -1185,13 +1188,12 @@ Principe : le script ne contient jamais de secret, seulement le nom de la variab
 
 #### Session 11.1 — Endpoints DHIS2 fondamentaux
 
--   **Date et durée** :
+-   **Date et durée** : 31/05/2026 — [durée à compléter]
 -   **Ce qui était prévu** : `/me`, `/indicators`, `/dataElements`, `/organisationUnits`, `/analytics`
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
-
+-   **Ce qui a été fait** : Carte des 5 endpoints fondamentaux DHIS2 (me, indicators, dataElements, organisationUnits, analytics) ; distinction métadonnées vs données ; rôle des UIDs ; pipeline complet vers `/indicators` avec résolution de la pagination (`pageSize = 150`) ; extraction de `df_indicators` (77 lignes, 2 colonnes) via `sapply()` direct sur liste ; mécanique de `sapply()` clarifiée — itération sur éléments, pas sur indices
+-   **Ce qui est acquis** : les 5 endpoints et leur rôle ; `pageSize` pour contourner la pagination ; `sapply(liste, function(x) x$champ)` sans `seq_along()` ; `$pager$total` pour connaître le nombre réel de résultats
+-   **Ce qui reste flou** : néant
+-   **Prochaine étape** : Session 11.2 — `/organisationUnits` : récupérer la hiérarchie des unités d'organisation du DS-BMG
 #### Session 11.2 — Récupérer les métadonnées et indicateurs
 
 -   **Date et durée** :
