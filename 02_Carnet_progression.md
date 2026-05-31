@@ -151,10 +151,10 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 46 | `quantile()` + `probs` — calcul de percentiles (Q1, Q3) sur un vecteur numérique | 8.4 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
 | 47 | Méthode Tukey : bornes = Q1 - 1.5×IQR et Q3 + 1.5×IQR — détection aberrants robuste | 8.4 | 12/05/2026 | 12/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
 | 48 | `case_when()` — alternative à ifelse() | session 8.5 | 18/05/2026 | 19/05/2026 | 23/05/2026 | 25/05/2026 | 25/05/2026 | 17/06/2026 |  | J+7 le 25/05/2026 | À jour |
-| 49 | `scale_fill_gradient2()` — dégradé bidirectionnel avec `low`, `mid`, `high` et `midpoint` ; `na.value` pour distinguer les NA | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
+| 49 | `scale_fill_gradient2()` — dégradé bidirectionnel avec `low`, `mid`, `high` et `midpoint` ; `na.value` pour distinguer les NA | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 | 30/05/2026 | 22/06/2026 |  | J+7 le 30/05/2026 | À jour |
 | 50 | `fct_recode()` — renommer les niveaux d'un factor avec paires `"nouveau" = "ancien"` ; ordre des niveaux préservé | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 | J+7 le 30/05/2026 | 22/06/2026 |  | J+7 le 30/05/2026| À jour |
 | 51 | `fct_reorder()` — réordonner les niveaux d'un factor selon une variable numérique et une fonction résumé (`mean`, `median`) | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 | 30/05/2026  | 22/06/2026 |  | J+7 le 30/05/2026  | À jour |
-| 52 | `scale_x_discrete(expand = c(m, a))` — contrôle des marges autour d'un axe discret : m = multiplicateur proportionnel, a = ajout absolu | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |  | 22/06/2026 |  | J+1 le 25/05/2026 | À jour |
+| 52 | `scale_x_discrete(expand = c(m, a))` — contrôle des marges autour d'un axe discret : m = multiplicateur proportionnel, a = ajout absolu | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |30/05/2026  | 22/06/2026 |  | J+7 le 30/05/2026 | À jour |
 | 53 | `clean_names()` — normalise noms de colonnes en snake_case : espaces→_, majuscules→minuscules, caractères spéciaux supprimés (package `janitor`) | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 |  | 24/06/2026 |  | J+1 le 26/05/2026 | À jour |
 | 54 | Règle distribution → résumé : asymétrique → médiane + IQR ; symétrique → moyenne + SD | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 |  | 24/06/2026 |  | J+1 le 26/05/2026 | À jour |
 | 55 | `geom_histogram()` — visualiser la distribution d'une variable continue par intervalles de valeurs ; argument clé : `bins` ou `binwidth` | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
@@ -173,8 +173,8 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 68 | `fromJSON()` — parse une chaîne JSON en objet R ; tableau homogène → data frame automatique ; tableau hétérogène → liste ; piège : valeurs numériques entre guillemets arrivent en chr | 10.2 | 28/05/2026 | 29/05/2026 |le 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | A jour |
 | 69 | `colnames(df) <- vecteur` — assigne les noms des colonnes d'un data frame à partir d'un vecteur character | 10.2 | 28/05/2026 | 29/05/2026 |30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | A jour|
 | 70 | `as.data.frame()` — convertit une matrice, liste ou vecteur en data frame ; noms de colonnes génériques (V1, V2...) si non assignés | 10.2 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026| A jour |
-| 71 | `req_url_path_append()` — ajoute un segment de chemin à un `httr2_request` (gère le `/` automatiquement) ; entrée : requête + segment(s) ; sortie : requête au chemin allongé | 10.3 | 30/05/2026 | 31/05/2026 |  | 06/06/2026 |  | 29/06/2026 |  | Aucune | À jour |
-| 72 | `req_auth_basic(req, username, password)` — ajoute l'authentification HTTP basique (header Authorization) ; s'insère avant `req_perform()` ; l'auth est un sens unique, le mot de passe n'est jamais retourné | 10.4 | 30/05/2026 | 31/05/2026 |  | 06/06/2026 |  | 29/06/2026 |  | Aucune | À jour |
+| 71 | `req_url_path_append()` — ajoute un segment de chemin à un `httr2_request` (gère le `/` automatiquement) ; entrée : requête + segment(s) ; sortie : requête au chemin allongé | 10.3 | 30/05/2026 | 31/05/2026 | 31/05/2026 | 06/06/2026 |  | 29/06/2026 |  |J+1 le 31/05/2026 | À jour |
+| 72 | `req_auth_basic(req, username, password)` — ajoute l'authentification HTTP basique (header Authorization) ; s'insère avant `req_perform()` ; l'auth est un sens unique, le mot de passe n'est jamais retourné | 10.4 | 30/05/2026 | 31/05/2026 | 31/05/2026 | 06/06/2026 |  | 29/06/2026 |  | J+1 le31/05/2026 | À jour |
 | 73 | Verbes HTTP : `GET` (lire/récupérer une ressource) et `POST` (créer/envoyer des données) ; pour ENDOS-BF, usage quasi exclusif de GET (extraction), jamais de POST (pas d'écriture dans le SNIS depuis R) | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | À jour |
 | 74 | Codes de statut HTTP : 200 (succès), 401 (non authentifié), 404 (introuvable), 500 (erreur serveur) — vérifier le statut avant de décoder le body | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | À jour |
 
@@ -1163,16 +1163,20 @@ investies** : \_\_\_ h
 -   **Ce qui était prévu** : basic auth (`req_auth_basic()`) vs token (`req_auth_bearer_token()`)
 -   **Ce qui a été fait** : `req_auth_basic(req, username, password)` utilisé pour l'appel authentifié à `/me` (admin/district) — header Authorization posé avant `req_perform()` ; constat que l'authentification est un sens unique (le mot de passe n'est jamais retourné dans la réponse). Token bearer : non encore vu
 -   **Ce qui est acquis** : `req_auth_basic()` ajoute l'authentification HTTP basique ; s'insère avant `req_perform()` ; le mot de passe est envoyé, jamais retourné
--   **Ce qui reste flou** : `req_auth_bearer_token()` et le cas d'usage token vs basic — non encore abordé
--   **Prochaine étape** : compléter 10.4 (token) puis Session 10.5 — Sécurité des identifiants
+-   **Ce qui reste flou** : néant
+-   **Prochaine étape** :  Session 10.5 — Sécurité des identifiants
 
 #### Session 10.5 — Sécurité : stockage des identifiants
--   **Date et durée** :
+-   **Date et durée** :1h
 -   **Ce qui était prévu** : stocker ses identifiants dans `.Renviron`, `.gitignore` obligatoire, ne jamais commiter un mot de passe
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+-   **Ce qui a été fait** :stocker ses identifiants dans `.Renviron`, `.gitignore`
+-   **Ce qui est acquis** :req_auth_bearer_token() — token généré par le serveur, passé comme bearer
+Distinction basic auth (username/password) vs token (badge révocable)
+.Renviron — fichier caché dans ~, lu automatiquement par R au démarrage
+Sys.getenv() — récupérer une variable d'environnement dans un script
+Principe : le script ne contient jamais de secret, seulement le nom de la variable
+-   **Ce qui reste flou** :néant
+-   **Prochaine étape** :`/me`, `/indicators`, `/dataElements`, `/organisationUnits`, `/analytics`
 ------------------------------------------------------------------------
 
 ### Semaine 11 (révisée) — Architecture DHIS2 / ENDOS-BF : métadonnées

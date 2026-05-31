@@ -17,10 +17,8 @@ my_profile <- request("https://play.im.dhis2.org/stable-2-43-0/api") |>
   req_perform() |> 
   resp_body_json()
   
-my_profile$id
-length(my_profile$username)
-
-
-
-
+my_profile
+insta
+library(usethis)
+edit_r_environ()
 
