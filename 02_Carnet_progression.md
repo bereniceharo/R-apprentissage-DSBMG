@@ -180,6 +180,13 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 75 | `usethis::edit_r_environ()` — ouvre (et crée si absent) le fichier `~/.Renviron` dans RStudio ; redémarrage R obligatoire après modification | 10.5 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
 | 76 | `Sys.getenv("NOM")` — récupère la valeur d'une variable d'environnement définie dans `.Renviron` ; retourne `""` si la variable n'existe pas | 10.5 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
 | 77 | `pageSize` — paramètre de pagination DHIS2 : nombre de résultats retournés par page ; par défaut 50 ; augmenter pour récupérer tous les résultats en une requête ; `$pager$total` indique le nombre total de résultats disponibles | 11.1 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
+| 78 | `req_url_query(fields = "id,displayName,level")` — paramètre DHIS2 spécifiant les champs retournés dans la réponse ; sans lui, DHIS2 retourne le minimum (`id` + `displayName`) ; entrée : une chaîne de noms de champs séparés par des virgules | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
+| 79 | champ `path` d'une unité d'organisation DHIS2 — chaîne hiérarchique complète sous la forme `/uid_national/uid_region/.../uid_unite` ; permet de situer une unité dans l'arbre et de filtrer toutes les unités sous une branche | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
+| 80 | `filter = "path:like:UID"` + `level = N` — isoler toutes les unités d'un niveau hiérarchique précis sous une branche donnée ; `parent` ne retourne que les enfants directs, `path:like` capture tous les descendants | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
+| 81 | `like` vs `ilike` dans un filtre DHIS2 — `like` sensible à la casse, `ilike` insensible ; recherche de sous-chaîne dans les deux cas ; pour un `path` (UID à casse fixe) les deux sont équivalents | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
+| 82 | endpoint `/organisationUnitGroups` + filtre `organisationUnitGroups.id:eq:UID` — catégorisation transversale des unités (public/privé) indépendante de la hiérarchie géographique ; vérifier l'index du groupe avant de l'utiliser (plusieurs groupes peuvent matcher un nom) | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
+| 83 | `.multi = "explode"` dans `req_url_query()` — sérialise un vecteur de plusieurs valeurs pour un même paramètre en répétant la clé dans l'URL (`filter=A&filter=B`) ; nécessaire pour cumuler plusieurs filtres DHIS2 | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
+
 
 ---
 editor_options: 
@@ -1194,6 +1201,7 @@ Principe : le script ne contient jamais de secret, seulement le nom de la variab
 -   **Ce qui est acquis** : les 5 endpoints et leur rôle ; `pageSize` pour contourner la pagination ; `sapply(liste, function(x) x$champ)` sans `seq_along()` ; `$pager$total` pour connaître le nombre réel de résultats
 -   **Ce qui reste flou** : néant
 -   **Prochaine étape** : Session 11.2 — `/organisationUnits` : récupérer la hiérarchie des unités d'organisation du DS-BMG
+
 #### Session 11.2 — Récupérer les métadonnées et indicateurs
 
 -   **Date et durée** :

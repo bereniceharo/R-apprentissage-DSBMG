@@ -30,9 +30,27 @@ df_indicators <- data.frame(id, displayName)
 
 tail(df_indicators)
 
-indicators_demo$indicators$id
+
+#==============================================================================
+
+#À la prochaine session : 11.2 — récupérer les métadonnées des unités d'organisation
+#(/organisationUnits)
+
+#==============================================================================
+# prédit : Un objet R de type liste, fourchette estimée: 45
+orgUnit_demo <- request("https://play.im.dhis2.org/stable-2-43-0/api")|>
+  req_url_path_append("organisationUnits")|>
+  req_url_query(pageSize = 50, filter = "name:ilike:Boulmiougou")|>
+  req_auth_basic("admin", "district")|> 
+  req_perform()|>
+  resp_body_json()
+
+length(orgUnit_demo)
+names(orgUnit_demo)
+orgUnit_demo$pager
 
 
-indicators_demo$indicators[[3]]
-class(indicators_demo$indicators[[2]])
-indicators_demo$indicators[2]$id
+
+
+
+
