@@ -155,8 +155,8 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 50 | `fct_recode()` — renommer les niveaux d'un factor avec paires `"nouveau" = "ancien"` ; ordre des niveaux préservé | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 | J+7 le 30/05/2026 | 22/06/2026 |  | J+7 le 30/05/2026| À jour |
 | 51 | `fct_reorder()` — réordonner les niveaux d'un factor selon une variable numérique et une fonction résumé (`mean`, `median`) | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 | 30/05/2026  | 22/06/2026 |  | J+7 le 30/05/2026  | À jour |
 | 52 | `scale_x_discrete(expand = c(m, a))` — contrôle des marges autour d'un axe discret : m = multiplicateur proportionnel, a = ajout absolu | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |30/05/2026  | 22/06/2026 |  | J+7 le 30/05/2026 | À jour |
-| 53 | `clean_names()` — normalise noms de colonnes en snake_case : espaces→_, majuscules→minuscules, caractères spéciaux supprimés (package `janitor`) | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 |  | 24/06/2026 |  | J+1 le 26/05/2026 | À jour |
-| 54 | Règle distribution → résumé : asymétrique → médiane + IQR ; symétrique → moyenne + SD | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 |  | 24/06/2026 |  | J+1 le 26/05/2026 | À jour |
+| 53 | `clean_names()` — normalise noms de colonnes en snake_case : espaces→_, majuscules→minuscules, caractères spéciaux supprimés (package `janitor`) | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 |J+7 le 01/06/2026  | 24/06/2026 |  | J+7 le 01/06/2026 | À jour |
+| 54 | Règle distribution → résumé : asymétrique → médiane + IQR ; symétrique → moyenne + SD | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 | J+7 le 01/06/2026 | 24/06/2026 |  | J+7 le 01/06/2026/2026 | À jour |
 | 55 | `geom_histogram()` — visualiser la distribution d'une variable continue par intervalles de valeurs ; argument clé : `bins` ou `binwidth` | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
 | 56 | `geom_boxplot()` — comparer la distribution d'une variable continue entre groupes : médiane, IQR, moustaches (valeurs non aberrantes), points aberrants | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
 | 57 | `geom_density()` — comparer la forme de la distribution d'une variable continue entre groupes via courbe lissée ; axe y = densité de probabilité, aire totale sous la courbe = 1 | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
@@ -177,15 +177,15 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 72 | `req_auth_basic(req, username, password)` — ajoute l'authentification HTTP basique (header Authorization) ; s'insère avant `req_perform()` ; l'auth est un sens unique, le mot de passe n'est jamais retourné | 10.4 | 30/05/2026 | 31/05/2026 | 31/05/2026 | 06/06/2026 |  | 29/06/2026 |  | J+1 le31/05/2026 | À jour |
 | 73 | Verbes HTTP : `GET` (lire/récupérer une ressource) et `POST` (créer/envoyer des données) ; pour ENDOS-BF, usage quasi exclusif de GET (extraction), jamais de POST (pas d'écriture dans le SNIS depuis R) | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | À jour |
 | 74 | Codes de statut HTTP : 200 (succès), 401 (non authentifié), 404 (introuvable), 500 (erreur serveur) — vérifier le statut avant de décoder le body | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | À jour |
-| 75 | `usethis::edit_r_environ()` — ouvre (et crée si absent) le fichier `~/.Renviron` dans RStudio ; redémarrage R obligatoire après modification | 10.5 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
-| 76 | `Sys.getenv("NOM")` — récupère la valeur d'une variable d'environnement définie dans `.Renviron` ; retourne `""` si la variable n'existe pas | 10.5 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
-| 77 | `pageSize` — paramètre de pagination DHIS2 : nombre de résultats retournés par page ; par défaut 50 ; augmenter pour récupérer tous les résultats en une requête ; `$pager$total` indique le nombre total de résultats disponibles | 11.1 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
-| 78 | `req_url_query(fields = "id,displayName,level")` — paramètre DHIS2 spécifiant les champs retournés dans la réponse ; sans lui, DHIS2 retourne le minimum (`id` + `displayName`) ; entrée : une chaîne de noms de champs séparés par des virgules | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
-| 79 | champ `path` d'une unité d'organisation DHIS2 — chaîne hiérarchique complète sous la forme `/uid_national/uid_region/.../uid_unite` ; permet de situer une unité dans l'arbre et de filtrer toutes les unités sous une branche | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
-| 80 | `filter = "path:like:UID"` + `level = N` — isoler toutes les unités d'un niveau hiérarchique précis sous une branche donnée ; `parent` ne retourne que les enfants directs, `path:like` capture tous les descendants | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
-| 81 | `like` vs `ilike` dans un filtre DHIS2 — `like` sensible à la casse, `ilike` insensible ; recherche de sous-chaîne dans les deux cas ; pour un `path` (UID à casse fixe) les deux sont équivalents | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
-| 82 | endpoint `/organisationUnitGroups` + filtre `organisationUnitGroups.id:eq:UID` — catégorisation transversale des unités (public/privé) indépendante de la hiérarchie géographique ; vérifier l'index du groupe avant de l'utiliser (plusieurs groupes peuvent matcher un nom) | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
-| 83 | `.multi = "explode"` dans `req_url_query()` — sérialise un vecteur de plusieurs valeurs pour un même paramètre en répétant la clé dans l'URL (`filter=A&filter=B`) ; nécessaire pour cumuler plusieurs filtres DHIS2 | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
+| 75 | `usethis::edit_r_environ()` — ouvre (et crée si absent) le fichier `~/.Renviron` dans RStudio ; redémarrage R obligatoire après modification | 10.5 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
+| 76 | `Sys.getenv("NOM")` — récupère la valeur d'une variable d'environnement définie dans `.Renviron` ; retourne `""` si la variable n'existe pas | 10.5 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
+| 77 | `pageSize` — paramètre de pagination DHIS2 : nombre de résultats retournés par page ; par défaut 50 ; augmenter pour récupérer tous les résultats en une requête ; `$pager$total` indique le nombre total de résultats disponibles | 11.1 | 31/05/2026 | 01/06/2026 |J+1 le 01/06/2026  | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
+| 78 | `req_url_query(fields = "id,displayName,level")` — paramètre DHIS2 spécifiant les champs retournés dans la réponse ; sans lui, DHIS2 retourne le minimum (`id` + `displayName`) ; entrée : une chaîne de noms de champs séparés par des virgules | 11.2 | 31/05/2026 | 01/06/2026 |J+1 le 01/06/2026  | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
+| 79 | champ `path` d'une unité d'organisation DHIS2 — chaîne hiérarchique complète sous la forme `/uid_national/uid_region/.../uid_unite` ; permet de situer une unité dans l'arbre et de filtrer toutes les unités sous une branche | 11.2 | 31/05/2026 | 01/06/2026 | J+1 le 01/06/2026 | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
+| 80 | `filter = "path:like:UID"` + `level = N` — isoler toutes les unités d'un niveau hiérarchique précis sous une branche donnée ; `parent` ne retourne que les enfants directs, `path:like` capture tous les descendants | 11.2 | 31/05/2026 | 01/06/2026 |J+1 le 01/06/2026  | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
+| 81 | `like` vs `ilike` dans un filtre DHIS2 — `like` sensible à la casse, `ilike` insensible ; recherche de sous-chaîne dans les deux cas ; pour un `path` (UID à casse fixe) les deux sont équivalents | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | J+1 le 01/06/2026 | 30/06/2026 | | Aucune | À jour |
+| 82 | endpoint `/organisationUnitGroups` + filtre `organisationUnitGroups.id:eq:UID` — catégorisation transversale des unités (public/privé) indépendante de la hiérarchie géographique ; vérifier l'index du groupe avant de l'utiliser (plusieurs groupes peuvent matcher un nom) | 11.2 | 31/05/2026 | 01/06/2026 | J+1 le 01/06/2026 | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
+| 83 | `.multi = "explode"` dans `req_url_query()` — sérialise un vecteur de plusieurs valeurs pour un même paramètre en répétant la clé dans l'URL (`filter=A&filter=B`) ; nécessaire pour cumuler plusieurs filtres DHIS2 | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | J+1 le 01/06/2026 | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
 
 
 ---
@@ -1204,21 +1204,21 @@ Principe : le script ne contient jamais de secret, seulement le nom de la variab
 
 #### Session 11.2 — Récupérer les métadonnées et indicateurs
 
--   **Date et durée** :
+-   **Date et durée** : 31/05/2026 — [durée à compléter]
 -   **Ce qui était prévu** : Liste des indicateurs avec UIDs et métadonnées
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+-   **Ce qui a été fait** : Récupération des 77 indicateurs du serveur de démo via `/indicators` ; résolution de la pagination (`pageSize`) après constat que la réponse par défaut tronque à 50 résultats (`$pager$total` vs `length()`) ; extraction de `df_indicators` (77 lignes × 2 colonnes : id, displayName) via `sapply(liste, \(x) x$champ)` directement sur les éléments de la liste (sans `seq_along()`). NB : la session a débordé sur le contenu prévu en 11.3 (navigation hiérarchique des unités) — voir entrée 11.3.
+-   **Ce qui est acquis** : distinction métadonnées (ce qui existe) vs données analytics (les valeurs chiffrées) ; flux de travail metadata → analytics ; `$pager$total` donne le nombre réel de résultats, à comparer systématiquement avec `length()` ; `pageSize` pour récupérer tout en une page ; `sapply()` itère sur les éléments d'une liste, pas sur les indices ; un UID est stable/unique/opaque (le nom est pour les humains, l'UID pour les machines)
+-   **Ce qui reste flou** : néant
+-   **Prochaine étape** : Session 11.3 (suite) — fin de la navigation hiérarchique, puis 11.4 (résolution UID → noms par jointure) et 11.5 (dictionnaire ENDOS-BF 4 colonnes)
 
 #### Session 11.3 — Navigation hiérarchique des unités d'organisation
 
--   **Date et durée** :
+-   **Date et durée** : 01/06/2026 — [durée à compléter]
 -   **Ce qui était prévu** : Paramètres `level` et `ouMode=DESCENDANTS` — toutes les FS du DS-BMG sans liste hardcodée
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+-   **Ce qui a été fait** : Revue critique du script `hors_session_11_2.R` (première connexion réelle à ENDOS-BF production) ; identification et correction de la fragilité des index hardcodés (`[[2]]`, `[[1]]`) → remplacement par pattern `sapply()` + `which()` pour recherche dynamique par nom ; décision métier documentée : pipeline FS publiques uniquement (les 227 FS privées exclues — rapportage irrégulier, hors supervision directe) ; confirmation comportement par défaut endpoint `/organisationUnits` (retourne `id` + `displayName` sans `fields`) ; constat que `ouMode=DESCENDANTS` n'est pas nécessaire — approche `path:like:uid_ds` + `level = 6` déjà implémentée et validée sur données réelles (75 FS publiques)
+-   **Ce qui est acquis** : `which()` pour recherche dynamique d'index dans un vecteur ; pattern robuste `sapply()` → `which()` → `[[index_dynamique]]$id` ; les 75 FS publiques du DS-BMG sont extraites et exportées avec leurs UIDs
+-   **Ce qui reste flou** : néant
+-   **Prochaine étape** : Session 11.4 — jointure UID → noms lisibles dans le pipeline analytics
 
 #### Session 11.4 — Résoudre les UIDs en noms lisibles
 

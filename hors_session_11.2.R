@@ -38,14 +38,23 @@ ds_bmg_uid <- request("https://endos.minsante.bf/api") |>
   req_perform() |> 
   resp_body_json()
 
-UID_group_FS$organisationUnitGroups #verifier l'index de FS publique
-uid_public <- UID_group_FS$organisationUnitGroups[[2]]$id
+#UID_group_FS$organisationUnitGroups #verifier l'index de FS publique
+vect_pb <- sapply(UID_group_FS$organisationUnitGroups, \(x) x$displayName)
+index_pb <- which(vect_pb == "FS Public")
+uid_public <- UID_group_FS$organisationUnitGroups[[index_pb]]$id
 
-UID_FS_Privee$organisationUnitGroups #verifier l'index de FS privee
-uid_privee <- UID_FS_Privee$organisationUnitGroups[[1]]$id
+#UID_FS_Privee$organisationUnitGroups #verifier l'index de FS privee
+vect_pv <- sapply(UID_FS_Privee$organisationUnitGroups, \(x) x$displayName)
+index_pv <- which(vect_pv == "FS Privee")
+uid_privee <- UID_FS_Privee$organisationUnitGroups[[index_pv]]$id
 
-ds_bmg_uid$organisationUnits #verifier l'index de DS Boulmiougou
-uid_ds <- ds_bmg_uid$organisationUnits[[1]]$id
+
+
+#ds_bmg_uid$organisationUnits #verifier l'index de DS Boulmiougou
+vect_ds <- sapply(ds_bmg_uid$organisationUnits, \(x) x$displayName)
+index_ds <- which(vect_ds == "DS Boulmiougou")
+uid_ds <- ds_bmg_uid$organisationUnits[[index_ds]]$id
+
 
 # _____________________________________________________________________________
 # Ramener uniquement les FS publiques
