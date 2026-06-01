@@ -3,3 +3,5 @@
 .RData
 .Ruserdata
 02_Carnet_progression1.md
+data/
+.DS_Store

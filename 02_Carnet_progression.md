@@ -187,7 +187,8 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 82 | endpoint `/organisationUnitGroups` + filtre `organisationUnitGroups.id:eq:UID` — catégorisation transversale des unités (public/privé) indépendante de la hiérarchie géographique ; vérifier l'index du groupe avant de l'utiliser (plusieurs groupes peuvent matcher un nom) | 11.2 | 31/05/2026 | 01/06/2026 | le 01/06/2026 | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
 | 83 | `.multi = "explode"` dans `req_url_query()` — sérialise un vecteur de plusieurs valeurs pour un même paramètre en répétant la clé dans l'URL (`filter=A&filter=B`) ; nécessaire pour cumuler plusieurs filtres DHIS2 | 11.2 | 31/05/2026 | 01/06/2026 |01/06/2026| 07/06/2026 |  | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
 | 84 | `left_join(x, y, by = c("col_x" = "col_y"))` — jointure gauche : toutes les lignes de x conservées, colonnes de y ajoutées avec NA si pas de correspondance ; colonne-clé de y supprimée, celle de x conservée ; x = table maître | 11.4 | 01/06/2026 | 02/06/2026 | | 08/06/2026 | | 01/07/2026 | | Aucune | À jour |
-
+| 85 | `%in%` — teste si chaque élément d'un vecteur appartient à un ensemble de valeurs de référence ; retourne un vecteur logique de même longueur que le vecteur testé ; combiné avec `which()` pour retrouver les index | 11.5 | 01/06/2026 | 02/06/2026 | | 08/06/2026 | | 01/07/2026 | | Aucune | À jour |
+| 86 | `rootJunction = "OR"` dans `req_url_query()` DHIS2 — inverse la logique de combinaison des filtres multiples : par défaut AND (tous les filtres vrais simultanément) → OR (au moins un filtre vrai) ; indispensable pour filtrer par appartenance à l'un de plusieurs groupes | 11.5 | 01/06/2026 | 02/06/2026 | | 08/06/2026 | | 01/07/2026 | | Aucune | À jour |
 ---
 editor_options: 
   markdown: 
@@ -1243,12 +1244,36 @@ Principe : le script ne contient jamais de secret, seulement le nom de la variab
 
 #### Session 11.5 — Construire le dictionnaire ENDOS-BF
 
--   **Date et durée** :
--   **Ce qui était prévu** : Construire et sauvegarder `dictionnaire_endos_bf.xlsx` : UID ↔ nom ↔ groupe ↔ unité
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+- **Date et durée** : 01/06/2026 — [durée à compléter]
+- **Ce qui était prévu** : Construire et sauvegarder
+  `dictionnaire_endos_bf.xlsx` : UID ↔ nom ↔ groupe ↔ unité
+- **Ce qui a été fait** : Exploration des 60 groupes d'indicateurs
+  ENDOS-BF via `/indicatorGroups` (`$pager$total` = 60, vérifié) ;
+  extraction des `displayName` avec `sapply()` ; sélection de 9
+  groupes pertinents pour le DS-BMG (ASBC, Couverture PEV,
+  Indicateurs Formations sanitaires, Morbidite et PCIME, Paludisme,
+  Planification familiale, Rapport de progrès District, Santé
+  maternelle et infantile, SIMR) ; extraction des 9 UIDs avec
+  `which()` + `%in%` + `sapply()` ; requête filtrée sur `/indicators`
+  avec `filter = paste0("indicatorGroups.id:eq:", uids_igroup)`,
+  `rootJunction = "OR"`, `.multi = "explode"`, `pageSize = 500` ;
+  résultat : 339 indicateurs (`$pager$total` = 339, pageCount = 1,
+  tout reçu en une page) ; construction de `df_dict_indicators`
+  (339×2, chr) via double `sapply()` ; export `write_xlsx()` vers
+  `data/dictionnaire_endos_bf.xlsx` ; configuration `.gitignore`
+  (`data/`, `.DS_Store`)
+- **Ce qui est acquis** : opérateur `%in%` — test d'appartenance à
+  un ensemble, retourne vecteur logique ; pattern `which(%in%)` pour
+  index multiples ; `rootJunction = "OR"` — inverser la logique AND
+  par défaut de DHIS2 pour les filtres multiples ; `.multi =
+  "explode"` — sérialiser un vecteur en clés répétées dans l'URL ;
+  constat : ENDOS-BF contient 3392 indicateurs au niveau national,
+  339 pertinents pour le DS-BMG ; `data/` exclu de Git via
+  `.gitignore` — les métadonnées production ne se commitent pas
+- **Ce qui reste flou** : néant
+- **Prochaine étape** : Session 11.4 (jointure) appliquée aux
+  données réelles ENDOS-BF — résoudre les UIDs analytics en noms
+  lisibles avec `df_dict_indicators`
 
 ------------------------------------------------------------------------
 
