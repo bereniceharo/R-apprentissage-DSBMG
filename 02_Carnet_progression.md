@@ -2677,3 +2677,14 @@ inscrits. Concepts du jour : #71 (req_url_path_append), #72
 (req_auth_basic). Numérotation en option B (numéros à la suite,
 ordre porté par date+session, pas par le numéro) pour ne casser
 aucune référence existante.
+
+#01 juin 2026 - Exercice de production anonyme à faire mercredi 3 juin
+Ce que je te préparerai pour mercredi 3 juin :
+Un exercice en plusieurs étapes couvrant l'intégralité du pipeline de la semaine 11 — authentification, navigation, pagination, filtrage, extraction, jointure, export — sur données ENDOS-BF production. Aucun nouveau concept. Tout ce que tu as fait aujourd'hui, mais sans filet.
+Je ne te le donne pas maintenant (01 juin 2026) — tu le découvriras à l'ouverture de la session mercredi 3 juin 2026.
+Avant de me solliciter, tu t'imposes trois étapes :
+Avant de me soliciter pour cet exercice, tu dois: 
+- Relire le message d'erreur et identifier la ligne fautive
+- Consulter tes notes de session (carnet + scripts)
+- Formuler une hypothèse sur la cause
+Si après ces trois étapes tu n'as pas de piste, tu m'appelles. Pas avant.
