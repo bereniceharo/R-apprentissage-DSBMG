@@ -177,16 +177,16 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 72 | `req_auth_basic(req, username, password)` — ajoute l'authentification HTTP basique (header Authorization) ; s'insère avant `req_perform()` ; l'auth est un sens unique, le mot de passe n'est jamais retourné | 10.4 | 30/05/2026 | 31/05/2026 | 31/05/2026 | 06/06/2026 |  | 29/06/2026 |  | J+1 le31/05/2026 | À jour |
 | 73 | Verbes HTTP : `GET` (lire/récupérer une ressource) et `POST` (créer/envoyer des données) ; pour ENDOS-BF, usage quasi exclusif de GET (extraction), jamais de POST (pas d'écriture dans le SNIS depuis R) | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | À jour |
 | 74 | Codes de statut HTTP : 200 (succès), 401 (non authentifié), 404 (introuvable), 500 (erreur serveur) — vérifier le statut avant de décoder le body | 10.1 | 28/05/2026 | 29/05/2026 | 30/05/2026 | 04/06/2026 |  | 27/06/2026 |  | J+1 le 30/05/2026 | À jour |
-| 75 | `usethis::edit_r_environ()` — ouvre (et crée si absent) le fichier `~/.Renviron` dans RStudio ; redémarrage R obligatoire après modification | 10.5 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
-| 76 | `Sys.getenv("NOM")` — récupère la valeur d'une variable d'environnement définie dans `.Renviron` ; retourne `""` si la variable n'existe pas | 10.5 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
+| 75 | `usethis::edit_r_environ()` — ouvre (et crée si absent) le fichier `~/.Renviron` dans RStudio ; redémarrage R obligatoire après modification | 10.5 | 31/05/2026 | 01/06/2026 |01/06/2026 | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
+| 76 | `Sys.getenv("NOM")` — récupère la valeur d'une variable d'environnement définie dans `.Renviron` ; retourne `""` si la variable n'existe pas | 10.5 | 31/05/2026 | 01/06/2026 |01/06/2026 | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
 | 77 | `pageSize` — paramètre de pagination DHIS2 : nombre de résultats retournés par page ; par défaut 50 ; augmenter pour récupérer tous les résultats en une requête ; `$pager$total` indique le nombre total de résultats disponibles | 11.1 | 31/05/2026 | 01/06/2026 |J+1 le 01/06/2026  | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
 | 78 | `req_url_query(fields = "id,displayName,level")` — paramètre DHIS2 spécifiant les champs retournés dans la réponse ; sans lui, DHIS2 retourne le minimum (`id` + `displayName`) ; entrée : une chaîne de noms de champs séparés par des virgules | 11.2 | 31/05/2026 | 01/06/2026 |J+1 le 01/06/2026  | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
 | 79 | champ `path` d'une unité d'organisation DHIS2 — chaîne hiérarchique complète sous la forme `/uid_national/uid_region/.../uid_unite` ; permet de situer une unité dans l'arbre et de filtrer toutes les unités sous une branche | 11.2 | 31/05/2026 | 01/06/2026 | J+1 le 01/06/2026 | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
 | 80 | `filter = "path:like:UID"` + `level = N` — isoler toutes les unités d'un niveau hiérarchique précis sous une branche donnée ; `parent` ne retourne que les enfants directs, `path:like` capture tous les descendants | 11.2 | 31/05/2026 | 01/06/2026 |J+1 le 01/06/2026  | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
-| 81 | `like` vs `ilike` dans un filtre DHIS2 — `like` sensible à la casse, `ilike` insensible ; recherche de sous-chaîne dans les deux cas ; pour un `path` (UID à casse fixe) les deux sont équivalents | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | J+1 le 01/06/2026 | 30/06/2026 | | Aucune | À jour |
-| 82 | endpoint `/organisationUnitGroups` + filtre `organisationUnitGroups.id:eq:UID` — catégorisation transversale des unités (public/privé) indépendante de la hiérarchie géographique ; vérifier l'index du groupe avant de l'utiliser (plusieurs groupes peuvent matcher un nom) | 11.2 | 31/05/2026 | 01/06/2026 | J+1 le 01/06/2026 | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
-| 83 | `.multi = "explode"` dans `req_url_query()` — sérialise un vecteur de plusieurs valeurs pour un même paramètre en répétant la clé dans l'URL (`filter=A&filter=B`) ; nécessaire pour cumuler plusieurs filtres DHIS2 | 11.2 | 31/05/2026 | 01/06/2026 | | 07/06/2026 | J+1 le 01/06/2026 | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
-
+| 81 | `like` vs `ilike` dans un filtre DHIS2 — `like` sensible à la casse, `ilike` insensible ; recherche de sous-chaîne dans les deux cas ; pour un `path` (UID à casse fixe) les deux sont équivalents | 11.2 | 31/05/2026 | 01/06/2026 | 01/06/2026| 07/06/2026 |  | 30/06/2026 | | J+1 le 01/06/2026 | À jour |
+| 82 | endpoint `/organisationUnitGroups` + filtre `organisationUnitGroups.id:eq:UID` — catégorisation transversale des unités (public/privé) indépendante de la hiérarchie géographique ; vérifier l'index du groupe avant de l'utiliser (plusieurs groupes peuvent matcher un nom) | 11.2 | 31/05/2026 | 01/06/2026 | le 01/06/2026 | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
+| 83 | `.multi = "explode"` dans `req_url_query()` — sérialise un vecteur de plusieurs valeurs pour un même paramètre en répétant la clé dans l'URL (`filter=A&filter=B`) ; nécessaire pour cumuler plusieurs filtres DHIS2 | 11.2 | 31/05/2026 | 01/06/2026 |01/06/2026| 07/06/2026 |  | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
+| 84 | `left_join(x, y, by = c("col_x" = "col_y"))` — jointure gauche : toutes les lignes de x conservées, colonnes de y ajoutées avec NA si pas de correspondance ; colonne-clé de y supprimée, celle de x conservée ; x = table maître | 11.4 | 01/06/2026 | 02/06/2026 | | 08/06/2026 | | 01/07/2026 | | Aucune | À jour |
 
 ---
 editor_options: 
@@ -1222,12 +1222,24 @@ Principe : le script ne contient jamais de secret, seulement le nom de la variab
 
 #### Session 11.4 — Résoudre les UIDs en noms lisibles
 
--   **Date et durée** :
--   **Ce qui était prévu** : Jointure entre la réponse API et le dictionnaire local — UID → nom lisible
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+- **Date et durée** : 01/06/2026 — [durée à compléter]
+- **Ce qui était prévu** : Jointure entre la réponse API et le
+  dictionnaire local — UID → nom lisible
+- **Ce qui a été fait** : Pipeline `left_join()` entre `dict_fs`
+  (75 FS, table maître) et `df_analytics` (73 FS déclarantes)
+  via clé `c("id" = "ou")` ; justification du choix `left_join`
+  — conserver les 75 lignes, NA pour les FS silencieuses ;
+  conversion `as.numeric(value)` — DHIS2 retourne les numériques
+  en chr ; tri `arrange(displayName)` ; identification des FS
+  silencieuses avec `filter(is.na(value))`
+- **Ce qui est acquis** : `left_join(x, y, by = c("col_x" =
+  "col_y"))` — table maître en x, clé de jointure avec noms
+  différents ; colonne-clé de y supprimée, celle de x conservée ;
+  NA ≠ zéro (absence de déclaration ≠ valeur nulle) ; pipeline
+  complet : jointure → as.numeric → arrange → filter(is.na)
+- **Ce qui reste flou** : néant
+- **Prochaine étape** : Session 11.5 — Construire et sauvegarder
+  `dictionnaire_endos_bf.xlsx` : UID ↔ nom ↔ groupe ↔ unité
 
 #### Session 11.5 — Construire le dictionnaire ENDOS-BF
 
