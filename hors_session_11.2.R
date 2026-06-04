@@ -9,7 +9,7 @@ library(jsonlite)
 library(usethis)
 library(writexl)
 
-# --1---Identifier les uid du DS et des groupe de FS (privee et public)----
+# --1---Identifier les uid du DS et des groupes de FS (privee et public)----
 
 #uid_public
 UID_group_FS <- request("https://endos.minsante.bf/api") |>

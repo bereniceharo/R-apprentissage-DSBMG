@@ -114,9 +114,9 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 9 | `if/else`, conditions vectorisées avec `ifelse()` | 4.1 | 27/04/2026 | 28/04/2026 | 10/05/2026 | 04/05/2026 | 10/05/2026 | 27/05/2026 | 27/05/2026 | J+30 le 27/05/2026 | Consolidé |
 | 10 | Boucle for | 4.2 | 28/04/2026 | 29/04/2026 | 10/05/2026 | 05/05/2026 | 10/05/2026 | 28/05/2026 | 28/05/2026 | J+30 le 28/05/2026 | Consolidé |
 | 11 | lapply() et sapply() — appliquer une fonction aux éléments d'une liste ou aux colonnes d'un data frame ; lapply retourne toujours une liste, sapply simplifie quand il peut | 4.3 | 29/04/2026 | 30/04/2026 | 10/05/2026 | 06/05/2026 | 10/05/2026 | 29/05/2026 |  30/05/2026|J+30 le 30/05/2026 | Consolidé |
-| 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | J+7 le 10/05/2026 | À jour |
-| 13 | Arguments par défaut, stop(), any(), early return | 4.5 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | J+7 le 10/05/2026 | À jour |
-| 14 | `df[[colonne]]` vs `df$colonne` — accès dynamique à une colonne | mini-projet mois 1 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 |  | J+7 le 10/05/2026 | À jour |
+| 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 | 02/06/2026 | J+30 le 02/06/2026 | Consolidé |
+| 13 | Arguments par défaut, stop(), any(), early return | 4.5 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 | 02/06/2026 | J+30 le 02/06/2026 | Consolidé |
+| 14 | `df[[colonne]]` vs `df$colonne` — accès dynamique à une colonne | mini-projet mois 1 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 | 02/06/2026 | J+30 le 02/06/2026 | Consolidé |
 | 15 | `filter()`, `select()`, `arrange()`, `mutate()`, pipe `\|>` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 |  | J+7 le 10/05/2026 | À jour |
 | 16 | `grepl()` — détection de pattern dans un vecteur character, `table()`, `unique()` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 |  | J+7 le 10/05/2026 | À jour |
 | 17 | `group_by()` + `summarise()` — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 | 12/05/2026 | 04/06/2026 |  | J+7 le 12/05/2026 | À jour |
@@ -157,10 +157,10 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 52 | `scale_x_discrete(expand = c(m, a))` — contrôle des marges autour d'un axe discret : m = multiplicateur proportionnel, a = ajout absolu | mini-projet mois 2 | 23/05/2026 | 24/05/2026 | 25/05/2026 | 30/05/2026 |30/05/2026  | 22/06/2026 |  | J+7 le 30/05/2026 | À jour |
 | 53 | `clean_names()` — normalise noms de colonnes en snake_case : espaces→_, majuscules→minuscules, caractères spéciaux supprimés (package `janitor`) | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 |J+7 le 01/06/2026  | 24/06/2026 |  | J+7 le 01/06/2026 | À jour |
 | 54 | Règle distribution → résumé : asymétrique → médiane + IQR ; symétrique → moyenne + SD | 9.1 | 25/05/2026 | 26/05/2026 | 26/05/2026 | 01/06/2026 | J+7 le 01/06/2026 | 24/06/2026 |  | J+7 le 01/06/2026/2026 | À jour |
-| 55 | `geom_histogram()` — visualiser la distribution d'une variable continue par intervalles de valeurs ; argument clé : `bins` ou `binwidth` | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
-| 56 | `geom_boxplot()` — comparer la distribution d'une variable continue entre groupes : médiane, IQR, moustaches (valeurs non aberrantes), points aberrants | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
-| 57 | `geom_density()` — comparer la forme de la distribution d'une variable continue entre groupes via courbe lissée ; axe y = densité de probabilité, aire totale sous la courbe = 1 | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
-| 58 | `stat_qq()` + `stat_qq_line()` — évaluer si une distribution s'approche d'une loi normale théorique ; utilise `aes(sample = variable)` et non `aes(x = )` | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 |  | 25/06/2026 |  | J+1 le 27/05/2026 | À jour |
+| 55 | `geom_histogram()` — visualiser la distribution d'une variable continue par intervalles de valeurs ; argument clé : `bins` ou `binwidth` | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 | 02/06/2026 | 25/06/2026 |  | J+7 le 02/06/2026 | À jour |
+| 56 | `geom_boxplot()` — comparer la distribution d'une variable continue entre groupes : médiane, IQR, moustaches (valeurs non aberrantes), points aberrants | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 | 02/06/2026 | 25/06/2026 |  | J+7 le 02/06/2026 | À jour |
+| 57 | `geom_density()` — comparer la forme de la distribution d'une variable continue entre groupes via courbe lissée ; axe y = densité de probabilité, aire totale sous la courbe = 1 | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 | 02/06/2026 | 25/06/2026 |  | J+7 le 02/06/2026 | À jour |
+| 58 | `stat_qq()` + `stat_qq_line()` — évaluer si une distribution s'approche d'une loi normale théorique ; utilise `aes(sample = variable)` et non `aes(x = )` | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 | 02/06/2026 | 25/06/2026 |  | J+7 le 02/06/2026 | À jour |
 | 59 | `shapiro.test()` — tester la normalité : H0 = distribution normale ; p < 0.05 → rejeter H0 ; W proche de 1 = proche de la normale ; limité à 5000 observations | 9.3 | 27/05/2026 | 28/05/2026 | 28/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 28/05/2026 | À jour |
 | 60 | `tbl_summary()` — tableau 1 publiable : résumé automatique médiane/IQR pour continu, n/% pour catégoriel ; arguments clés : `label`, `missing_text` | 9.3 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
 | 61 | `modify_header()` — modifier les en-têtes d'un objet `tbl_summary` ; colonne des variables s'appelle `label` en interne ; markdown `**texte**` pour le gras | 9.3 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
@@ -2688,3 +2688,17 @@ Avant de me soliciter pour cet exercice, tu dois:
 - Consulter tes notes de session (carnet + scripts)
 - Formuler une hypothèse sur la cause
 Si après ces trois étapes tu n'as pas de piste, tu m'appelles. Pas avant.
+
+#02 juin 2026 — Session retrieval practice. Concepts révisés : 
+#12 (fonctions personnalisées + early return pattern if/any/stop), 
+#13 (stop() mobilisé), #14 (df[[col]] dynamique) → J+30 Consolidés. 
+#55-58 (geoms distribution, stat_qq sample=) → J+7 révisés. 
+Erreur corrigée : stop() dans ifelse() vs if/any/stop() en tête de fonction. 
+#84-86 reportés à demain.
+
+#04 juin 2026
+ ENDOS-BF : maintenances fréquentes → prévoir gestion timeout + retry + log en semaine 14 (cronR) ». 
+
+
+
+
