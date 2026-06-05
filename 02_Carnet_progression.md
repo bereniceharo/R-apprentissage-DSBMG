@@ -117,7 +117,7 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 | 02/06/2026 | J+30 le 02/06/2026 | Consolidé |
 | 13 | Arguments par défaut, stop(), any(), early return | 4.5 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 | 02/06/2026 | J+30 le 02/06/2026 | Consolidé |
 | 14 | `df[[colonne]]` vs `df$colonne` — accès dynamique à une colonne | mini-projet mois 1 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 | 02/06/2026 | J+30 le 02/06/2026 | Consolidé |
-| 15 | `filter()`, `select()`, `arrange()`, `mutate()`, pipe `\|>` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 |  | J+7 le 10/05/2026 | À jour |
+| 15 | `filter()`, `select()`, `arrange()`, `mutate()`, pipe `\|>` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 | 03/06/2026 | J+30 le 03/06/2026 | À jour |
 | 16 | `grepl()` — détection de pattern dans un vecteur character, `table()`, `unique()` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 |  | J+7 le 10/05/2026 | À jour |
 | 17 | `group_by()` + `summarise()` — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 | 12/05/2026 | 04/06/2026 |  | J+7 le 12/05/2026 | À jour |
 | 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 | 12/05/2026 | 04/06/2026 |  | J+7 le 12/05/2026 | À jour |
@@ -184,11 +184,11 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 79 | champ `path` d'une unité d'organisation DHIS2 — chaîne hiérarchique complète sous la forme `/uid_national/uid_region/.../uid_unite` ; permet de situer une unité dans l'arbre et de filtrer toutes les unités sous une branche | 11.2 | 31/05/2026 | 01/06/2026 | J+1 le 01/06/2026 | 07/06/2026 | | 30/06/2026 | | Aucune | À jour |
 | 80 | `filter = "path:like:UID"` + `level = N` — isoler toutes les unités d'un niveau hiérarchique précis sous une branche donnée ; `parent` ne retourne que les enfants directs, `path:like` capture tous les descendants | 11.2 | 31/05/2026 | 01/06/2026 |J+1 le 01/06/2026  | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
 | 81 | `like` vs `ilike` dans un filtre DHIS2 — `like` sensible à la casse, `ilike` insensible ; recherche de sous-chaîne dans les deux cas ; pour un `path` (UID à casse fixe) les deux sont équivalents | 11.2 | 31/05/2026 | 01/06/2026 | 01/06/2026| 07/06/2026 |  | 30/06/2026 | | J+1 le 01/06/2026 | À jour |
-| 82 | endpoint `/organisationUnitGroups` + filtre `organisationUnitGroups.id:eq:UID` — catégorisation transversale des unités (public/privé) indépendante de la hiérarchie géographique ; vérifier l'index du groupe avant de l'utiliser (plusieurs groupes peuvent matcher un nom) | 11.2 | 31/05/2026 | 01/06/2026 | le 01/06/2026 | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
+| 82 | endpoint `/organisationUnitGroups` + filtre `organisationUnitGroups.id:eq:UID` — catégorisation transversale des unités (public/privé) indépendante de la hiérarchie géographique ; vérifier l'index du groupe avant de l'utiliser (plusieurs groupes peuvent matcher un nom) | 11.2 | 31/05/2026 | 01/06/2026 | 01/06/2026 | 07/06/2026 | | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
 | 83 | `.multi = "explode"` dans `req_url_query()` — sérialise un vecteur de plusieurs valeurs pour un même paramètre en répétant la clé dans l'URL (`filter=A&filter=B`) ; nécessaire pour cumuler plusieurs filtres DHIS2 | 11.2 | 31/05/2026 | 01/06/2026 |01/06/2026| 07/06/2026 |  | 30/06/2026 | | J+1 le 01/06/2026  | À jour |
-| 84 | `left_join(x, y, by = c("col_x" = "col_y"))` — jointure gauche : toutes les lignes de x conservées, colonnes de y ajoutées avec NA si pas de correspondance ; colonne-clé de y supprimée, celle de x conservée ; x = table maître | 11.4 | 01/06/2026 | 02/06/2026 | | 08/06/2026 | | 01/07/2026 | | Aucune | À jour |
-| 85 | `%in%` — teste si chaque élément d'un vecteur appartient à un ensemble de valeurs de référence ; retourne un vecteur logique de même longueur que le vecteur testé ; combiné avec `which()` pour retrouver les index | 11.5 | 01/06/2026 | 02/06/2026 | | 08/06/2026 | | 01/07/2026 | | Aucune | À jour |
-| 86 | `rootJunction = "OR"` dans `req_url_query()` DHIS2 — inverse la logique de combinaison des filtres multiples : par défaut AND (tous les filtres vrais simultanément) → OR (au moins un filtre vrai) ; indispensable pour filtrer par appartenance à l'un de plusieurs groupes | 11.5 | 01/06/2026 | 02/06/2026 | | 08/06/2026 | | 01/07/2026 | | Aucune | À jour |
+| 84 | `left_join(x, y, by = c("col_x" = "col_y"))` — jointure gauche : toutes les lignes de x conservées, colonnes de y ajoutées avec NA si pas de correspondance ; colonne-clé de y supprimée, celle de x conservée ; x = table maître | 11.4 | 01/06/2026 | 02/06/2026 | 02/06/2026 | 08/06/2026 | | 01/07/2026 | |J+1 02/06/2026| À jour |
+| 85 | `%in%` — teste si chaque élément d'un vecteur appartient à un ensemble de valeurs de référence ; retourne un vecteur logique de même longueur que le vecteur testé ; combiné avec `which()` pour retrouver les index | 11.5 | 01/06/2026 | 02/06/2026 | 02/06/2026 | 08/06/2026 | | 01/07/2026 | | J+1 02/06/2026 | À jour |
+| 86 | `rootJunction = "OR"` dans `req_url_query()` DHIS2 — inverse la logique de combinaison des filtres multiples : par défaut AND (tous les filtres vrais simultanément) → OR (au moins un filtre vrai) ; indispensable pour filtrer par appartenance à l'un de plusieurs groupes | 11.5 | 01/06/2026 | 02/06/2026 |02/06/2026 | 08/06/2026 | | 01/07/2026 | | J+1 02/06/2026 | À jour |
 ---
 editor_options: 
   markdown: 
@@ -2699,6 +2699,6 @@ Erreur corrigée : stop() dans ifelse() vs if/any/stop() en tête de fonction.
 #04 juin 2026
  ENDOS-BF : maintenances fréquentes → prévoir gestion timeout + retry + log en semaine 14 (cronR) ». 
 
-
+« ENDOS — CM Camp Lamizana tagué FS Public + groupe CM, aucun groupe distinctif → exclusion manuelle documentée. SST : aucun groupe trouvé. Signaler à ENDOS/DRS. Prévoir gestion timeout en S14 (serveur instable). »
 
 
