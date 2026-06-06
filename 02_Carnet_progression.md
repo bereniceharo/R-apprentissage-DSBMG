@@ -117,9 +117,9 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 12 | Fonctions personnalisées : structure, return(), vectorisation | 4.4 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 | 02/06/2026 | J+30 le 02/06/2026 | Consolidé |
 | 13 | Arguments par défaut, stop(), any(), early return | 4.5 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 | 02/06/2026 | J+30 le 02/06/2026 | Consolidé |
 | 14 | `df[[colonne]]` vs `df$colonne` — accès dynamique à une colonne | mini-projet mois 1 | 03/05/2026 | 04/05/2026 | 10/05/2026 | 10/05/2026 | 10/05/2026 | 02/06/2026 | 02/06/2026 | J+30 le 02/06/2026 | Consolidé |
-| 15 | `filter()`, `select()`, `arrange()`, `mutate()`, pipe `\|>` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 | 03/06/2026 | J+30 le 03/06/2026 | À jour |
+| 15 | `filter()`, `select()`, `arrange()`, `mutate()`, pipe `\|>` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 | 03/06/2026 | J+30 le 03/06/2026 | consolidé |
 | 16 | `grepl()` — détection de pattern dans un vecteur character, `table()`, `unique()` | 5.1, 5.3 | 04/05/2026 | 05/05/2026 | 10/05/2026 | 11/05/2026 | 10/05/2026 | 03/06/2026 |  | J+7 le 10/05/2026 | À jour |
-| 17 | `group_by()` + `summarise()` — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 | 12/05/2026 | 04/06/2026 |  | J+7 le 12/05/2026 | À jour |
+| 17 | `group_by()` + `summarise()` — regroupement et statistiques par groupe | 5.4 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 | 12/05/2026 | 04/06/2026 | 5/6/2026 | J+30 le 5/06/2026 | consolidé |
 | 18 | `sum()` sur vecteur logique — compter les lignes vérifiant une condition | 5.5 | 05/05/2026 | 06/05/2026 | 10/05/2026 | 12/05/2026 | 12/05/2026 | 04/06/2026 |  | J+7 le 12/05/2026 | À jour |
 | 19 | `pivot_longer()` / `pivot_wider()` — format large vs long | 6.1 | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 | 15/05/2026 | 05/06/2026 |  | J+7 le 15/05/2026 | À jour |
 | 20 | Import structuré multi-niveaux : `col_names = FALSE`, `unlist()`, forward fill, `colnames()` | 6.1 rappels | 06/05/2026 | 07/05/2026 | 10/05/2026 | 13/05/2026 | 15/05/2026 | 05/06/2026 |  | J+7 le 15/05/2026 | À jour |
@@ -162,7 +162,7 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 57 | `geom_density()` — comparer la forme de la distribution d'une variable continue entre groupes via courbe lissée ; axe y = densité de probabilité, aire totale sous la courbe = 1 | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 | 02/06/2026 | 25/06/2026 |  | J+7 le 02/06/2026 | À jour |
 | 58 | `stat_qq()` + `stat_qq_line()` — évaluer si une distribution s'approche d'une loi normale théorique ; utilise `aes(sample = variable)` et non `aes(x = )` | 9.2 | 26/05/2026 | 27/05/2026 | 27/05/2026 | 02/06/2026 | 02/06/2026 | 25/06/2026 |  | J+7 le 02/06/2026 | À jour |
 | 59 | `shapiro.test()` — tester la normalité : H0 = distribution normale ; p < 0.05 → rejeter H0 ; W proche de 1 = proche de la normale ; limité à 5000 observations | 9.3 | 27/05/2026 | 28/05/2026 | 28/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 28/05/2026 | À jour |
-| 60 | `tbl_summary()` — tableau 1 publiable : résumé automatique médiane/IQR pour continu, n/% pour catégoriel ; arguments clés : `label`, `missing_text` | 9.3 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
+| 60 | `tbl_summary()` — tableau 1 publiable : résumé automatique médiane/IQR pour continu, n/% pour catégoriel ; arguments clés : `label`, `missing_text` | 9.3 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 | 05/06/2026 | 26/06/2026 |  | Révisé J+7 le 05/06/2026 | À jour |
 | 61 | `modify_header()` — modifier les en-têtes d'un objet `tbl_summary` ; colonne des variables s'appelle `label` en interne ; markdown `**texte**` pour le gras | 9.3 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
 | 62 | `as_flex_table()` — convertir un objet `gtsummary` en objet `flextable` exportable ; fonction de `gtsummary`, pas de `flextable` | 9.4 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
 | 63 | `save_as_docx()` — exporter un objet `flextable` en fichier Word ; argument `path` = chemin du fichier `.docx` à créer | 9.4 | 27/05/2026 | 28/05/2026 | 27/05/2026 | 03/06/2026 |  | 26/06/2026 |  | J+1 le 27/05/2026 | À jour |
@@ -189,6 +189,15 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 84 | `left_join(x, y, by = c("col_x" = "col_y"))` — jointure gauche : toutes les lignes de x conservées, colonnes de y ajoutées avec NA si pas de correspondance ; colonne-clé de y supprimée, celle de x conservée ; x = table maître | 11.4 | 01/06/2026 | 02/06/2026 | 02/06/2026 | 08/06/2026 | | 01/07/2026 | |J+1 02/06/2026| À jour |
 | 85 | `%in%` — teste si chaque élément d'un vecteur appartient à un ensemble de valeurs de référence ; retourne un vecteur logique de même longueur que le vecteur testé ; combiné avec `which()` pour retrouver les index | 11.5 | 01/06/2026 | 02/06/2026 | 02/06/2026 | 08/06/2026 | | 01/07/2026 | | J+1 02/06/2026 | À jour |
 | 86 | `rootJunction = "OR"` dans `req_url_query()` DHIS2 — inverse la logique de combinaison des filtres multiples : par défaut AND (tous les filtres vrais simultanément) → OR (au moins un filtre vrai) ; indispensable pour filtrer par appartenance à l'un de plusieurs groupes | 11.5 | 01/06/2026 | 02/06/2026 |02/06/2026 | 08/06/2026 | | 01/07/2026 | | J+1 02/06/2026 | À jour |
+| 87 | endpoint `/api/analytics` — syntaxe canonique `dimension=dx:UID&dimension=pe:…&dimension=ou:…` sérialisée via `.multi = "explode"` ; ce serveur ENDOS-BF REFUSE les raccourcis `dx=/pe=/ou=` (erreur 409 / E7104) ; périodes absolues `YYYYMM` (jamais `LAST_12_MONTHS` en production) | 12.1 | 05/06/2026 | 06/06/2026 | | 12/06/2026 | | 05/07/2026 | | | À jour |
+| 88 | structure réponse analytics : `$rows` (liste de lignes), `$headers` (colonnes, `$name` = nom court : dx/pe/ou/value), `$metaData$items` (dictionnaire UID→nom), `$height` (nb lignes reçues) ; **toutes les valeurs sont en texte**, d'où `as.numeric()` obligatoire sur `value` | 12.1 | 05/06/2026 | 06/06/2026 | | 12/06/2026 | | 05/07/2026 | | | À jour |
+| 89 | `do.call(rbind, liste)` — applique `rbind` sur une liste de longueur inconnue en déballant ses éléments comme arguments séparés ; `do.call(f, args)` = `f(args[[1]], args[[2]], …)` | 12.1 | 05/06/2026 | 06/06/2026 | | 12/06/2026 | | 05/07/2026 | | | À jour |
+| 90 | `expand.grid()` — génère toutes les combinaisons possibles de vecteurs (grille de référence du « ce qui devrait exister ») ; nb lignes = produit des longueurs ; `stringsAsFactors = FALSE` obligatoire sinon colonnes en facteurs → conflit de types au `left_join` | 12.1 | 05/06/2026 | 06/06/2026 | | 12/06/2026 | | 05/07/2026 | | | À jour |
+| 91 | `unlist()` — aplatit une liste (même imbriquée) en un vecteur atomique unique ; supprime la structure de liste et concatène les éléments terminaux | 12.1 | 05/06/2026 | 06/06/2026 | | 12/06/2026 | | 05/07/2026 | | | À jour |
+| 92 | piège `do.call(rbind, liste_de_listes)` → colonnes de type `list` (et non `chr`), invisibles à `dim()`/`class(value)` mais révélées par `str()`, qui bloquent `left_join` ; corriger en aplatissant chaque ligne AVANT empilement : `lapply(rows, \(l) unlist(l))` | 12.1 | 05/06/2026 | 06/06/2026 | | 12/06/2026 | | 05/07/2026 | | | À jour |
+| 93 | `left_join` — complément #84 : peut AUGMENTER le nombre de lignes de la table de gauche si une clé y correspond à plusieurs lignes à droite (expansion par appariement, ≠ déduplication) ; le décompte final dépend de la multiplicité des correspondances à droite, pas du nb de lignes à gauche | 12.x | 05/06/2026 | 06/06/2026 | | 12/06/2026 | | 05/07/2026 | | | À jour |
+
+
 ---
 editor_options: 
   markdown: 
@@ -1261,7 +1270,8 @@ Principe : le script ne contient jamais de secret, seulement le nom de la variab
   tout reçu en une page) ; construction de `df_dict_indicators`
   (339×2, chr) via double `sapply()` ; export `write_xlsx()` vers
   `data/dictionnaire_endos_bf.xlsx` ; configuration `.gitignore`
-  (`data/`, `.DS_Store`)
+  (`data/`, `.DS_Store`), exercice de pipeline autonome, dictionaire de 48 formations
+  sanitaires publiques.
 - **Ce qui est acquis** : opérateur `%in%` — test d'appartenance à
   un ensemble, retourne vecteur logique ; pattern `which(%in%)` pour
   index multiples ; `rootJunction = "OR"` — inverser la logique AND
@@ -1271,9 +1281,7 @@ Principe : le script ne contient jamais de secret, seulement le nom de la variab
   339 pertinents pour le DS-BMG ; `data/` exclu de Git via
   `.gitignore` — les métadonnées production ne se commitent pas
 - **Ce qui reste flou** : néant
-- **Prochaine étape** : Session 11.4 (jointure) appliquée aux
-  données réelles ENDOS-BF — résoudre les UIDs analytics en noms
-  lisibles avec `df_dict_indicators`
+- **Prochaine étape** :  API Analytics : données réelles
 
 ------------------------------------------------------------------------
 
@@ -1283,30 +1291,30 @@ Principe : le script ne contient jamais de secret, seulement le nom de la variab
 
 #### Session 12.1 — L'endpoint Analytics : structure dx/pe/ou
 
--   **Date et durée** :
+-   **Date et durée** : 05/06/2026
 -   **Ce qui était prévu** : Structure de la requête Analytics — dimensions `dx` (indicateur), `pe` (période), `ou` (unité d'organisation)
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+-   **Ce qui a été fait** : Sessions 12.1→12.3 absorbées d'un bloc (option B). Pipeline analytics complet construit bloc par bloc sur ENDOS-BF production, indicateur réel CPN4 (`zmakCFoXPXN`, « CibleFS-Couverture en CPN4 »), périodes `202504;202505`, 48 CSPS publics. Premier appel échoué (409 / E7104). Diagnostic en plusieurs itérations : trois hypothèses successives sur l'encodage du `;` (httr2, puis curl, puis `I()`), toutes infirmées. Résolution par réduction au cas minimal (1 période × 1 FS, zéro `;`) → l'erreur persiste, ce qui DISCULPE le `;` et désigne le format des paramètres. Bascule vers la syntaxe canonique `dimension=…` + `.multi = "explode"` → statut 200, 1 ligne réelle (CM Komsilga, avril 2025, CPN4 = 11,31)
+-   **Ce qui est acquis** : ce serveur exige `dimension=dx:UID&dimension=pe:…&dimension=ou:…`, pas les raccourcis `dx=/pe=/ou=` ; structure de la réponse analytics (`$rows`, `$headers$name`, `$metaData$items`, `$height`) ; valeurs toutes en texte ; lecture du JSON d'erreur DHIS2 via `last_response() |> resp_body_json()` même après une erreur `req_perform()`
+-   **Ce qui reste flou** : —
+-   **Prochaine étape** : Session 12.4 — pagination (`pager`, `pageSize`) sur grandes requêtes
 
 #### Session 12.2 — Construire et exécuter une requête complète
 
--   **Date et durée** :
--   **Ce qui était prévu** : Requête `httr2` complète pour un indicateur sur les 49 FS du DS-BMG
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+-   **Date et durée** : 05/06/2026 (fusionnée avec 12.1)
+-   **Ce qui était prévu** : Requête `httr2` complète pour un indicateur sur les FS du DS-BMG
+-   **Ce qui a été fait** : Passage à l'échelle complète (2 périodes × 48 FS) après validation du test minimal ; les `;` réintroduits À L'INTÉRIEUR des valeurs `pe:` et `ou:` passent sans problème (confirmé par le test minimal). Inspection Bloc 2 : `body$height` = 94 et `length(body$rows)` = 94 (cohérents), contre 96 attendues → 2 trous prédits, conformes au phénomène des FS silencieuses
+-   **Ce qui est acquis** : prédiction explicite de l'attendu (96) avant exécution, puis confrontation au réel (94) ; `height` = `length(rows)` confirme l'intégrité de la réponse ; un écart au compte attendu n'est pas une erreur mais un signal de complétude à investiguer
+-   **Ce qui reste flou** : —
+-   **Prochaine étape** : voir 12.4
 
 #### Session 12.3 — Transformer JSON en data frame
 
--   **Date et durée** :
--   **Ce qui était prévu** : Transformation de la réponse JSON brute en data frame exploitable avec `dplyr` + `tidyr`
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+-   **Date et durée** : 05/06/2026 (fusionnée avec 12.1)
+-   **Ce qui était prévu** : Transformation de la réponse JSON brute en data frame exploitable
+-   **Ce qui a été fait** : Bloc 3 — `do.call(rbind, body$rows)` produit d'abord des colonnes-LISTES (piège révélé par `str()`, invisible à `dim()` et `class(value)`). Correction par aplatissement en amont : `lapply(body$rows, \(l) unlist(l))` avant `rbind` → colonnes `chr` propres. Noms via `sapply(body$headers, \(h) h$name)`, `as.numeric()` sur `value`. Bloc 4 — `expand.grid(ou, pe)` (grille 96) + `left_join` → 2 NA révélés. Jointure nominative avec `df_fs48` → trous identifiés : **CSPS Sandogo 2** (`ZRfRQ6kc5cE`), muet sur avril ET mai 2025
+-   **Ce qui est acquis** : piège `do.call(rbind, liste_de_listes)` et sa correction `lapply(x, unlist)` ; `expand.grid` comme grille de complétude ; `unlist()` ; `left_join` peut augmenter le nb de lignes (expansion par appariement) ; **le NA analytics est un point de départ d'investigation, pas un verdict** — 3 causes possibles (rapport non transmis / indicateur non renseigné / service non offert) aux conséquences managériales opposées
+-   **Ce qui reste flou** : nature réelle du trou Sandogo 2 — à vérifier HORS R (statut ENDOS, paquet de services, complétude mensuelle)
+-   **Prochaine étape** : Session 12.4 — pagination
 
 #### Session 12.4 — Pagination et grandes requêtes
 
@@ -2698,7 +2706,36 @@ Erreur corrigée : stop() dans ifelse() vs if/any/stop() en tête de fonction.
 
 #04 juin 2026
  ENDOS-BF : maintenances fréquentes → prévoir gestion timeout + retry + log en semaine 14 (cronR) ». 
+#05 juin 2026
+« ENDOS — CM Camp Lamizana tagué FS Public + groupe CM, aucun groupe 
+distinctif → exclusion manuelle documentée. Prévoir gestion timeout en S14 (serveur instable). »
+Exercice de pipeline autonone bouclé. Construction des dictionnaires de formations 
+sanitaires acquise. Il reste a aborder le endpoint analytics
 
-« ENDOS — CM Camp Lamizana tagué FS Public + groupe CM, aucun groupe distinctif → exclusion manuelle documentée. SST : aucun groupe trouvé. Signaler à ENDOS/DRS. Prévoir gestion timeout en S14 (serveur instable). »
+#05 juin 2026 —bis.  Premier pipeline analytics de bout en bout sur données chiffrées réelles (jalon).
+
+Pipeline CPN4 complet ENDOS-BF : authentification → requête analytics → transformation → complétude révélée. Sessions 12.1→12.3 traitées d'un bloc (option B).
+
+Déblocage du 409 / E7104 — leçon méthodologique centrale de la session :
+les trois premières hypothèses portaient toutes sur l'encodage du `;` (httr2, curl, `I()`) et ont échoué. Ce qui a tranché : RÉDUIRE AU CAS MINIMAL (1 indicateur × 1 période × 1 FS, donc zéro `;`). L'erreur a persisté → le `;` était hors de cause → la vraie cause était le format des paramètres. Règle à retenir : **quand une hypothèse échoue deux fois, on cesse de la raffiner ; on réduit au cas minimal et on teste une seule variable à la fois.**
+
+Cause racine du 409 : ENDOS-BF refuse les raccourcis `dx=/pe=/ou=`. Syntaxe exigée : `dimension=dx:UID&dimension=pe:…&dimension=ou:…` via `.multi = "explode"`.
+
+Résultat métier : sur 48 CSPS × 2 mois (avril–mai 2025), une seule FS silencieuse sur CPN4 → CSPS Sandogo 2, sur les deux mois. À investiguer hors R avant toute relance (ne pas confondre absence structurelle de service et manquement de saisie).
+
+Reste à faire : envelopper le pipeline dans `tryCatch()` + retry + log en Semaine 14 (cronR) — ENDOS-BF instable.
+
+#03–04 juin 2026 — Exercice pipeline autonome (semaine 11, sans filet).
+
+Reconstruction complète du pipeline de la semaine 11 sur données ENDOS-BF production, sans assistance préalable (les trois étapes imposées avant sollicitation : relire l'erreur, consulter le carnet, formuler une hypothèse).
+
+Réalisations :
+- 75 FS publiques DS-BMG extraites avec UIDs (`/organisationUnits`, `path:like:UID_ds`, `level = 6`)
+- CM Camp Lamizana : taguée FS Public + groupe CM mais sans groupe distinctif → exclusion manuelle documentée. SST : aucun groupe trouvé → à signaler à ENDOS/DRS
+- dictionnaire `df_dict_indicators` (339 indicateurs × 2 colonnes : id, displayName) exporté → `data/dictionnaire_endos_bf.xlsx`
+- liste finale de **48 CSPS publics** verrouillée (base du pipeline analytics du 05/06)
+- pipeline complet validé : authentification, navigation, pagination, filtrage, jointure, export
+
+Note opérationnelle : ENDOS-BF subit des maintenances fréquentes → prévoir `tryCatch()` + retry + log en Semaine 14.
 
 
