@@ -135,9 +135,9 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 30 | Détection d'une ligne fantôme (cumul/total) dans un fichier SNIS | 7.3 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 | 17/05/2026 | 08/06/2026 | 08/06/2026 | J+30 le 08/06/2026 | Consolidé |
 | 31 | `geom_tile()` — heatmap avec `x`, `y`, `fill` dans `aes()` | 7.4 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 | 17/05/2026 | 08/06/2026 | 08/06/2026 | J+30 le 08/06/2026 | Consolidé |
 | 32 | `theme()` + `element_text()` — modifier les éléments non-données d'un graphique | 7.4 | 09/05/2026 | 10/05/2026 | 10/05/2026 | 16/05/2026 | 17/05/2026 | 08/06/2026 | 08/06/2026 | J+30 le 08/06/2026 | Consolidé |
-| 33 | `theme_minimal()` (et famille `theme_*()`) — thèmes pré-construits et règle d'ordre : la dernière couche `theme` écrite l'emporte sur les propriétés communes | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 |  | J+7 le 18/05/2026 | À jour |
-| 34 | `scale_fill_distiller()` + argument `direction` — palette ColorBrewer continue, sens d'application à vérifier par lecture de la légende | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 |  | J+7 le 18/05/2026 | À jour |
-| 35 | `ggsave()` — export reproductible PNG/PDF avec `width`, `height`, `units`, `dpi`, `bg` explicites | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 |  | J+7 le 18/05/2026 | À jour |
+| 33 | `theme_minimal()` (et famille `theme_*()`) — thèmes pré-construits et règle d'ordre : la dernière couche `theme` écrite l'emporte sur les propriétés communes | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 | J+30 le 10/06/2026 | J+30 le 10/06/2026| Consolidé |
+| 34 | `scale_fill_distiller()` + argument `direction` — palette ColorBrewer continue, sens d'application à vérifier par lecture de la légende | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 | 10/06/2026 | J+30 le 10/06/2026 | Consolidé|
+| 35 | `ggsave()` — export reproductible PNG/PDF avec `width`, `height`, `units`, `dpi`, `bg` explicites | 7.5 | 11/05/2026 | 12/05/2026 | 12/05/2026 | 18/05/2026 | 18/05/2026 | 10/06/2026 |  10/06/2026 | J+30 le 10/06/2026 | Consolidé|
 | 36 | `parse_date_time()` + `as.Date()` — parsing de formats hétérogènes, argument `orders` | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
 | 37 | `epiweek()` — numéro de semaine épidémiologique à partir d'une `Date` | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
 | 38 | Soustraction de deux `Date` + `as.numeric()` — calcul de délai en jours | 8.1 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
@@ -197,6 +197,13 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 92 | piège `do.call(rbind, liste_de_listes)` -> colonnes de type `list` (et non `chr`), invisibles à `dim()`/`class(value)` mais révélées par `str()`, qui bloquent `left_join` ; corriger en aplatissant chaque ligne AVANT empilement : `lapply(rows, \(l) unlist(l))` | 12.1 | 05/06/2026 | 06/06/2026 | 07/06/2026 | 12/06/2026 |  | 05/07/2026 |  | J+1 le 07/06/2026 | À jour |
 | 93 | `left_join` — complément #84 : peut AUGMENTER le nombre de lignes de la table de gauche si une clé y correspond à plusieurs lignes à droite (expansion par appariement, différent de déduplication) | 12.x | 05/06/2026 | 06/06/2026 | 07/06/2026 | 12/06/2026 |  | 05/07/2026 |  | J+1 le 07/06/2026 | À jour |
 | 94 | `here()` (package here) — construit un chemin absolu depuis la racine du projet (.Rproj/.here) à partir de fragments en chaînes : `here("data","fichier.docx")` ; reproductible multi-OS et multi-poste, supérieur aux chemins relatifs et à setwd() | 12.x reporting | 07/06/2026 | 08/06/2026 | 08/06/2026 | 14/06/2026 |  | 07/07/2026 |  | J+1 le 08/06/2026 | À jour |
+| 95 | `bind_rows()` — empilement vertical de tibbles ; union des colonnes, NA si colonne absente d'un côté (sans avertissement) ; prérequis `identical(names())` ; opposé de `bind_cols()` | pipeline palu TLOH | 10/06/2026 | 11/06/2026 |  | 17/06/2026 |  | 10/07/2026 |  | J+0 le 10/06/2026 | À jour |
+| 96 | `coalesce(x, y)` — remplace les NA de x par y ; vectoriel et asymétrique ; ne touche pas `Inf` (mais oui `NaN`) ; idiomatique dans `across()` ; complément de `replace_na()` (#23) | pipeline palu TLOH | 10/06/2026 | 11/06/2026 |  | 17/06/2026 |  | 10/07/2026 |  | J+0 le 10/06/2026 | À jour |
+| 97 | `cat()` — affichage console sans guillemets ni `[1]` ; n'ajoute pas `\n` automatiquement (piège du prompt collé) ; retourne NULL invisible ; ≠ `message()` qui va vers stderr | pipeline palu TLOH | 10/06/2026 | 11/06/2026 |  | 17/06/2026 |  | 10/07/2026 |  | J+0 le 10/06/2026 | À jour |
+| 98 | `grep(pattern, x, value = TRUE)` — recherche de motif dans un vecteur character ; sans `value` retourne les indices, avec `value = TRUE` retourne les valeurs ; sensible à la casse (`ignore.case = TRUE` pour neutraliser) | pipeline palu TLOH | 10/06/2026 | 11/06/2026 |  | 17/06/2026 |  | 10/07/2026 |  | J+0 le 10/06/2026 | À jour |
+| 99 | `seq(from, to, by)` — vecteur numérique régulier (graduations d'axe) ; borne `to` incluse seulement si elle tombe juste sur le pas ; variante `length.out` | pipeline palu TLOH | 10/06/2026 | 11/06/2026 |  | 17/06/2026 |  | 10/07/2026 |  | J+0 le 10/06/2026 | À jour |
+| 100 | `.by = ` dans `summarise()` — groupement ponctuel (vs `group_by()` persistant qui exige `ungroup()`) ; ne laisse pas de groupement résiduel ; plus robuste en pipeline de production | pipeline palu TLOH | 10/06/2026 | 11/06/2026 |  | 17/06/2026 |  | 10/07/2026 |  | J+0 le 10/06/2026 | À jour |
+| 101 | Évaluation séquentielle dans `summarise()`/`mutate()` — une colonne créée peut être réutilisée par un argument suivant du même appel (ordre d'écriture = ordre d'exécution) | pipeline palu TLOH | 10/06/2026 | 11/06/2026 |  | 17/06/2026 |  | 10/07/2026 |  | J+0 le 10/06/2026 | À jour |
 ---
 editor_options: 
   markdown: 
@@ -2754,3 +2761,10 @@ Incident pédagogique enregistré : erreur d'instruction sur le type de `pe` apr
 Apprentissage methodologique séance : `na.rm = FALSE` pour conserver les NA visibles vs `replace_na(-Inf)` uniquement dans `fct_reorder()` pour le tri - les deux servent des objectifs distincts et ne sont pas interchangeables.
  
 CSPS Yimdi : meilleure performance nouveaux contacts cumul janv-avril 2026 (0.98). CSPS Dayoubsi : NA sur la période - à investiguer.
+
+#08 juin 2026 
+Et les points "Flou" à inscrire dans ta section dédiée (ce ne sont pas des fonctions à part entière mais des confusions vécues, à réviser) :
+
+color (trait) vs fill (surface) — confusion réelle aujourd'hui sur le mapping ggplot
+Ne jamais factoriser une variable temporelle pour geom_line() — bug du graphique vide
+as.numeric() sur un facteur → rend les codes internes, pas les valeurs ; passer par as.character() d'abord
