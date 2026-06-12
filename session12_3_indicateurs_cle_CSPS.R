@@ -14,14 +14,14 @@ library(writexl)
 # ==============================================================================
 # PARAMETRES ET IMPORTATION DES DICTIONNAIRES
 endos.bf <- "https://endos.minsante.bf/api"
-cpn4 <- "zmakCFoXPXN"                                    #CibleFS-Couverture en CPN4
+cpn4 <- "zmakCFoXPXN"                                #CibleFS-Couverture en CPN4
 df_fs48 <- read_excel("data/dictionnaire_fs_48_district.xlsx")
-uids_fs48 <- df_fs48$uid                                 #toutes les 48 fs publiques
+uids_fs48 <- df_fs48$uid                           #toutes les 48 fs publiques
 dico_indicateurs <- read_excel("data/dictionnaire_endos_bf.xlsx")
 indicateurs_cle_csps <- read_excel("data/dictionnaire_endos_bf.xlsx",
                                    sheet = "indicateurs cle csps")
 uid_indicateurs_cle <- indicateurs_cle_csps$id
-
+periode <- c("202601","202602","202603","202604")
 
 # --- BLOC 1 ---
 #predi: 2112 lignes 4 colonnes
@@ -30,7 +30,7 @@ resp <- request(endos.bf) |>
   req_url_query(
     dimension = c(
       paste0("dx:", paste(uid_indicateurs_cle, collapse = ";")),
-      "pe:202601;202602;202603;202604",
+      paste0("pe:", paste(periode, collapse = ";")),
       paste0("ou:", paste(uids_fs48, collapse = ";"))
     ),
     .multi = "explode"
@@ -40,8 +40,15 @@ resp <- request(endos.bf) |>
 
 # --- BLOC 2 ---
 body <- resp_body_json(resp)
+names(body)
 body$height       #contrôle : 2103, certains services non offert par certaines structures?
-length(body$rows)
+attendu <- length(uids_fs48)*length(uid_indicateurs_cle)*length(periode)
+recu    <- length(body$rows)
+ecart   <- (attendu - recu) / attendu
+
+if (ecart > 0.01) {
+  stop("Alerte ecart :", round(ecart*100,1),"% de lignes absentes (",recu,"/",attendu,"),
+verifier troncature serveur OU decrochage de service")}
 
 # --- BLOC 3 ---
 #predit: data frame 94x4
@@ -60,7 +67,7 @@ dim(df)
 #predit: une data frame de 96x4
 grille <- expand.grid(
   ou = uids_fs48,
-  pe = c("202601","202602","202603","202604"),
+  pe = periode,
   dx = uid_indicateurs_cle,
   stringsAsFactors = FALSE
 )
@@ -92,4 +99,17 @@ quadri1_icle2026 <- quadri1_icle2026 |>
 
 #exporter au format excel
 write_xlsx(quadri1_icle2026, "data/taux2026_11_indicateurs_avril.xlsx")
+
+
+
+
+
+
+
+
+
+
+
+
+
 
