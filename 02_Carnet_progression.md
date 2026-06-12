@@ -1337,10 +1337,19 @@ Principe : le script ne contient jamais de secret, seulement le nom de la variab
 
 -   **Date et durée** :
 -   **Ce qui était prévu** : Pipeline complet de la requête au data frame propre — couverture CPN4 des 49 FS sur 24 mois
--   **Ce qui a été fait** :
--   **Ce qui est acquis** :
--   **Ce qui reste flou** :
--   **Prochaine étape** :
+-   **Ce qui a été fait** : fait en session 12.3 et 4
+-   **Ce qui est acquis** :acquis en session 12.3 et 4
+-   **Ce qui reste flou** : néant
+-   **Prochaine étape** :Pipeline data elements CMA (amorce
+
+#### Session 12.5-bis — Pipeline data elements CMA (amorce)
+
+-   **Date et durée** : 11/06/2026
+-   **Ce qui était prévu** : Transposer le pipeline d'extraction au CMA
+-   **Ce qui a été fait** : Distinction data element (comptage brut, sans dénominateur démographique) vs indicateur (taux calculé) — choix des data elements pour le CMA car pas de population cible au niveau hospitalier. Distinction orgUnit (nœud hiérarchique) vs orgUnitGroup (axe transversal national, préfixe OU_GROUP- en analytics). Récupération de l'UID du nœud CMA agrégé par requête /organisationUnits (filtre combiné path:like district + organisationUnitGroups.id:eq groupe CMA). Confirmation que le filtre groupe seul renvoie tous les CMA du Burkina ; le path restreint au district. Rangement des 4 UID (CMA total + Pédiatrie/Maternité/Urgences) dans un dictionnaire dédié (tribble + xlsx).
+-   **Ce qui est acquis** : différence data element/indicateur ; différence orgUnit/orgUnitGroup ; filtre combiné groupe+path pour isoler une structure ; tribble() pour saisie row-wise lisible ; single source of truth appliqué aux métadonnées CMA
+-   **Ce qui reste flou** : le niveau de désagrégation categoryCombo des data elements CMA (à diagnostiquer la prochaine session)
+-   **Prochaine étape** : Session 12.5-ter — requête analytics data elements CMA, diagnostic categoryCombo (désagrégation), adaptation de la cardinalité de la grille et de la garde anti-troncature aux co
 
 ------------------------------------------------------------------------
 
