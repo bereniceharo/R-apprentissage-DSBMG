@@ -18,7 +18,8 @@ UID_group_FS <- request("https://endos.minsante.bf/api") |>
                 filter = "name:ilike:public") |> #"name:ilike:privee" pour l'ID du privé
   req_auth_basic(Sys.getenv("ENDOS_USER"), Sys.getenv("ENDOS_PWD")) |>
   req_perform() |>
-  resp_body_json()
+  resp_body_json(simplifyVector = TRUE)
+df_group_fs <- UID_group_FS$organisationUnitGroups
 
 #uid_privee
 UID_FS_Privee <- request("https://endos.minsante.bf/api") |>

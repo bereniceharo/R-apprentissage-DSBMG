@@ -145,7 +145,7 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 40 | `str_trunc()` — tronquer une chaîne à une largeur maximale | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
 | 41 | `str_detect()` + `regex(ignore_case = TRUE)` — détecter un pattern sans contrainte de casse | 8.2 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
 | 42 | `sample()` + `set.seed()` — simulation aléatoire reproductible | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
-| 43 | `across()` + `where()` — opérer sur plusieurs colonnes par type dans summarise() et select() | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
+| 43 | `across()` + `where()` — opérer sur plusieurs colonnes par type dans summarise() et select() | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 | 13/06/2026 | Révisé J+30 le 13/06/2026 | À jour |
 | 44 | Complétude = sum(!is.na()) / valeurs attendues x 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 | 11/06/2026 | J+30 le 11/06/2026 | Consolidé |
 | 45 | Promptitude = sum(date <= délai) / total x 100 — indicateur qualité données | 8.3 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 | 11/06/2026 | J+30 le 11/06/2026 | Consolidé |
 | 46 | `quantile()` + `probs` — calcul de percentiles (Q1, Q3) sur un vecteur numérique | 8.4 | 12/05/2026 | 13/05/2026 | 15/05/2026 | 19/05/2026 | 22/05/2026 | 11/06/2026 |  | J+7 le 22/05/2026 | À jour |
@@ -190,7 +190,7 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 85 | `%in%` — teste si chaque élément d'un vecteur appartient à un ensemble de valeurs de référence ; retourne un vecteur logique de même longueur que le vecteur testé ; combiné avec `which()` pour retrouver les index | 11.5 | 01/06/2026 | 02/06/2026 | 02/06/2026 | 08/06/2026 | 08/06/2026 | 01/07/2026 |  | J+7 le 08/06/2026 | À jour |
 | 86 | `rootJunction = "OR"` dans `req_url_query()` DHIS2 — inverse la logique de combinaison des filtres multiples : par défaut AND -> OR (au moins un filtre vrai) ; indispensable pour filtrer par appartenance à l'un de plusieurs groupes | 11.5 | 01/06/2026 | 02/06/2026 | 02/06/2026 | 08/06/2026 | 08/06/2026 | 01/07/2026 |  | J+7 le 08/06/2026 | À jour |
 | 87 | endpoint `/api/analytics` — syntaxe canonique `dimension=dx:UID&dimension=pe:...&dimension=ou:...` sérialisée via `.multi = "explode"` ; ce serveur ENDOS-BF REFUSE les raccourcis `dx=/pe=/ou=` (erreur 409 / E7104) ; périodes absolues `YYYYMM` (jamais `LAST_12_MONTHS` en production) | 12.1 | 05/06/2026 | 06/06/2026 | 07/06/2026 | 12/06/2026 |  | 05/07/2026 |  | J+1 le 07/06/2026 | À jour |
-| 88 | structure réponse analytics : `\$rows` (liste de lignes), `\$headers` (colonnes, `\$name` = nom court : dx/pe/ou/value), `\$metaData\$items` (dictionnaire UID->nom), `\$height` (nb lignes reçues) ; toutes les valeurs sont en texte, d'où `as.numeric()` obligatoire sur `value` | 12.1 | 05/06/2026 | 06/06/2026 | 07/06/2026 | 12/06/2026 |  | 05/07/2026 |  | J+1 le 07/06/2026 | À jour |
+| 88 | structure réponse analytics : `\$rows` (liste de lignes), `\$headers` (colonnes, `\$name` = nom court : dx/pe/ou/value), `\$metaData\$items` (dictionnaire UID->nom), `\$height` (nb lignes reçues) ; toutes les valeurs sont en texte, d'où `as.numeric()` obligatoire sur `value` | 12.1 | 05/06/2026 | 06/06/2026 | 07/06/2026 | 12/06/2026 | 13/06/2026 | 05/07/2026 |  | Révisé J+7 le 13/06/2026 | À jour |
 | 89 | `do.call(rbind, liste)` — applique `rbind` sur une liste de longueur inconnue en déballant ses éléments comme arguments séparés ; `do.call(f, args)` = `f(args[[1]], args[[2]], ...)` | 12.1 | 05/06/2026 | 06/06/2026 | 07/06/2026 | 12/06/2026 |  | 05/07/2026 |  | J+1 le 07/06/2026 | À jour |
 | 90 | `expand.grid()` — génère toutes les combinaisons possibles de vecteurs (grille de référence du « ce qui devrait exister ») ; nb lignes = produit des longueurs ; `stringsAsFactors = FALSE` obligatoire sinon colonnes en facteurs -> conflit de types au `left_join` | 12.1 | 05/06/2026 | 06/06/2026 | 07/06/2026 | 12/06/2026 |  | 05/07/2026 |  | J+1 le 07/06/2026 | À jour |
 | 91 | `unlist()` — aplatit une liste (même imbriquée) en un vecteur atomique unique ; supprime la structure de liste et concatène les éléments terminaux | 12.1 | 05/06/2026 | 06/06/2026 | 07/06/2026 | 12/06/2026 |  | 05/07/2026 |  | J+1 le 07/06/2026 | À jour |
@@ -202,10 +202,15 @@ la source de vérité (les colonnes détaillées) qui prime.
 | 97 | `cat()` — affichage console sans guillemets ni `[1]` ; n'ajoute pas `\n` automatiquement (piège du prompt collé) ; retourne NULL invisible ; ≠ `message()` qui va vers stderr | pipeline palu TLOH | 10/06/2026 | 11/06/2026 | J+1 le 11/06/2026 | 17/06/2026 |  | 10/07/2026 |  | J+1 le 11/06/2026 | À jour |
 | 98 | `grep(pattern, x, value = TRUE)` — recherche de motif dans un vecteur character ; sans `value` retourne les indices, avec `value = TRUE` retourne les valeurs ; sensible à la casse (`ignore.case = TRUE` pour neutraliser) | pipeline palu TLOH | 10/06/2026 | 11/06/2026 |  | 17/06/2026 |  | 10/07/2026 |  | J+0 le 10/06/2026 | À jour |
 | 99 | `seq(from, to, by)` — vecteur numérique régulier (graduations d'axe) ; borne `to` incluse seulement si elle tombe juste sur le pas ; variante `length.out` | pipeline palu TLOH | 10/06/2026 | 11/06/2026 |  | 17/06/2026 |  | 10/07/2026 |  | J+0 le 10/06/2026 | À jour |
-| 100 | `.by = ` dans `summarise()` — groupement ponctuel (vs `group_by()` persistant qui exige `ungroup()`) ; ne laisse pas de groupement résiduel ; plus robuste en pipeline de production | pipeline palu TLOH | 10/06/2026 | 11/06/2026 |  | 17/06/2026 |  | 10/07/2026 |  | J+0 le 10/06/2026 | À jour |
+| 100 | `.by = ` dans `summarise()` — groupement ponctuel (vs `group_by()` persistant qui exige `ungroup()`) ; ne laisse pas de groupement résiduel ; plus robuste en pipeline de production | pipeline palu TLOH | 10/06/2026 | 11/06/2026 | 13/06/2026 | 17/06/2026 |  | 10/07/2026 |  | Révisé J+1 le 13/06/2026 | À jour |
 | 101 | Évaluation séquentielle dans `summarise()`/`mutate()` — une colonne créée peut être réutilisée par un argument suivant du même appel (ordre d'écriture = ordre d'exécution) | pipeline palu TLOH | 10/06/2026 | 11/06/2026 |  | 17/06/2026 |  | 10/07/2026 |  | J+0 le 10/06/2026 | À jour |
 | 102 | ignoreLimit="true" comme garde anti-troncature analytics | pipeline indicateurs ENDOS | 11/06/2026 | 12/06/2026 |  | 19/06/2026 |  | 11/07/2026 |  | J+0 le 11/06/2026 | À jour |
-
+| 105 | Distinction `:eq:` vs `:in:[...]` (filtre métadonnées DHIS2) : `:eq:` teste une valeur unique (comme `==`), `:in:[...]` teste l'appartenance à une liste (comme `%in%`) ET porte une sémantique OR implicite, évitant le piège du AND multi-filtre | session 13 | 13/06/2026 | 14/06/2026 |  | 20/06/2026 |  | 13/07/2026 |  | À jour |
+| 106 | Filtre sur attribut imbriqué DHIS2 : `dataSetElements.dataSet.id:in:[...]` navigue dans la structure de l'objet par points pour ne ramener que les data elements rattachés aux datasets listés | session 13 | 13/06/2026 | 14/06/2026 |  | 20/06/2026 |  | 13/07/2026 |  | À jour |
+| 107 | Métadonnée vs donnée : `fields` n'existe que pour les requêtes métadonnées (`/dataElements`, `/dataSets`) ; `/analytics` fonctionne par `dimension`, jamais par `fields`. La période n'a de sens que sur analytics | session 13 | 13/06/2026 | 14/06/2026 |  | 20/06/2026 |  | 13/07/2026 |  | À jour |
+| 108 | Totaux vs ventilations sur analytics : omettre la dimension `co` agrège automatiquement sur les category option combos (totaux) ; l'inclure désagrège. L'agrégation suppose un type SUM dans la métadonnée | session 13 | 13/06/2026 | 14/06/2026 |  | 20/06/2026 |  | 13/07/2026 |  | À jour |
+| 109 | `complete()` masque le risque "UID mort" : en réinjectant les combinaisons manquantes de la grille en NA, il rebouche les trous APRÈS coup. Donc toute garde anti-vide doit se placer AVANT `complete()`, sur `reponse_brute$rows` brut | session 13 | 13/06/2026 | 14/06/2026 |  | 20/06/2026 |  | 13/07/2026 |  | À jour |
+| 110 | Paramètre API mal capitalisé = ignoré silencieusement : `ignorelimit` ≠ `ignoreLimit`, `categorie` ≠ `category`. L'API ne rejette pas, elle ignore. Source de fausse sécurité (garde croyant être active) | session 13 | 13/06/2026 | 14/06/2026 |  | 20/06/2026 |  | 13/07/2026 |  | À jour |
 ---
 editor_options: 
   markdown: 
@@ -2780,4 +2785,31 @@ color (trait) vs fill (surface) — confusion réelle aujourd'hui sur le mapping
 Ne jamais factoriser une variable temporelle pour geom_line() — bug du graphique vide
 as.numeric() sur un facteur → rend les codes internes, pas les valeurs ; passer par as.character() d'abord
 
+## Session 13 — 13/06/2026
 
+**Durée :** [à compléter]
+**Bloc thématique :** Pipeline ENDOS-BF — extraction métadonnées et analytics CMA
+
+**Retrieval practice :**
+- #43 (`across`/`where`) — J+30 validé après reformulation (where(is.numeric) = vecteur logique, pas colonnes). Consolidé.
+- #88 (structure réponse analytics) — J+7 validé. Confusion initiale structure (liste à aplatir) vs type (chr à convertir) ; les deux pièges distingués au final.
+- #100 (`.by =`) — J+1 validé du premier coup. Groupement temporaire vs persistance de group_by().
+- Point de vigilance récurrent identifié : mes imprécisions portent systématiquement sur le **type d'objet** (vecteur logique vs colonnes, chr vs structure).
+
+**Fait :**
+- Pipeline métadonnées CMA en 3 briques : requête `/dataSets` filtrée `name:ilike:cma` (16 datasets, aucun sous-produit de complétude) ; requête `/dataElements` par filtre imbriqué `dataSetElements.dataSet.id:in:[...]` (782 DE) ; diagnostic `categoryCombo` via `map_int`.
+- Diagnostic ventilation : forte hétérogénéité (125 DE à 1 co, mode à 3 co (329), bloc à 6 co (229), traîne jusqu'à 45). Total co = 2822.
+- Décision métier : travailler en **totaux** (omettre dimension `co`), pas en ventilations. Conséquence : grille de référence simple `ou × pe × dx`, le diagnostic categoryCombo n'a servi qu'à éclairer la décision.
+- Dictionnaire 48 DE retenus constitué par tri manuel (suppression de lignes sur Excel, name+id préservés solidaires — pas de re-vérification nécessaire).
+- Pipeline analytics CMA pour 202605, 4 org units (cma_total + pédiatrie + maternité + urgences) → `dataElements_CMA_mai26.xlsx`, 192 lignes (96 reçues, 96 NA).
+
+**Acquis :pipeline metadonnees et pipeline analytics dataelements
+
+**Flou :**  conception d'une garde adaptée au contexte CMA, distincte de la garde de transport CSPS]
+
+**Chantier ouvert (→ session 15) :**
+- Finaliser la garde anti-vide (risque C : réponse vide → fichier 192 NA d'apparence normale). 3 questions en suspens : placement AVANT `complete()` ; test `nrow(rows)` + plancher calibré sur le ~96 observé ; `stop()` vs `warning()`.
+- Corriger `ignorelimit` → `ignoreLimit` (capitalisation, sinon ignoré silencieusement).
+- Nettoyer les commentaires de prédiction obsolètes dans le script.
+
+**Prochaine session :** 15/06/2026
